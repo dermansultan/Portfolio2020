@@ -35,7 +35,7 @@ header{
   color: var(--main-txt-colour);
   font-weight: 700;
   /* font-size: 34px; */
-  font-size: clamp(18px, 2.5vw, 34px);
+  font-size: clamp(18px, 2.5vw, 24px);
 }
 
 nav {
@@ -60,18 +60,45 @@ main{
 }
 
 .heroContainer{
-  margin-top: 200px;
+  margin-top: 100px;
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
 }
 
+@keyframes float {
+	0% {
+    transform: translatey(0px);
+	}
+	50% {
+    transform: translatey(20px);
+	}
+	100% {
+    transform: translatey(0px);
+	}
+}
+
+
 .landingGraphic{
+  animation: float 5s ease-in-out infinite;
   width: 40%;
   height: auto;
 }
 
+.greetingMsg{
+  color: var(--main-txt-colour);
+  font-size: clamp(34px, 3.5vw, 48px);
+}
+
+.greetingPara{
+  margin-top: 15px;
+  color: var(--second-txt-color);
+  font-size: clamp(14px, 1vw, 21px);
+  line-height: 1.65;
+
+}
 
 
 /* Responsive */
@@ -81,12 +108,27 @@ main{
   nav{
     width: 50%;
   }
+
+  .heroContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.landingGraphic{
+  margin-top: 60px;
+  width: 70%;
+  height: auto;
+}
+
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   nav{
     width: 40%;
   }
+
+
 
 }
 

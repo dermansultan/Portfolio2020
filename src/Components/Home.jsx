@@ -11,7 +11,6 @@ const Home = () => {
             </div>
             <img draggable='false' className='landingGraphic' src={landingGraphic}/>
         </div>
-        <i className="arrow down"></i>
         <div className='projectsContainer'>
         <h1 className='projectsHeader'>Projects</h1>
         <div className='tilesContainer'>

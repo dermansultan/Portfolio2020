@@ -177,24 +177,23 @@ main {
 }
 
 .tilesContainer {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+justify-items: center;
+grid-gap: 1.5rem;
+width: 100%;
 }
 
 .tile {
-  min-width: 70vw;
-  max-width: 80vw;
+  width: 100%;
+  object-fit: cover;
   border-radius: 18px;
-  height: 40vh;
   border: 0;
-  background-color: var(--main-txt-colour);
-  margin: 12px;
+  object-fit: cover;
+  transition: all .2s ease-in-out;
 }
+
+.tile:hover { transform: scale(1.1); }
 
 /* Footer */
 footer{

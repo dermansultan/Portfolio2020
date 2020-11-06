@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import landingGraphic from '../Img/CodePenSquares.png'
-import rumaBanner from '../Img/Ruma4k.png'
 
 const Home = () => {
     return(
+        <div className='mainContainer'>
         <div className='homeContainer'>
         <div className='heroContainer'>
             <div className='greetingBio'>
@@ -32,6 +32,7 @@ const Home = () => {
         <img alt='RumaLogoBanner' draggable='false' className='tile' src={rumaBanner}/>
         <p className='tileDesc'>This is a great test.</p>
         </div> */}
+        </div>
         </div>
         </div>
         </div>

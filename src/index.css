@@ -33,8 +33,10 @@ header {
   color: var(--main-txt-colour);
   font-weight: 700;
   /* font-size: 34px; */
+  text-decoration: none;
   font-size: clamp(18px, 2.5vw, 24px);
 }
+
 
 nav {
   display: flex;
@@ -44,14 +46,14 @@ nav {
 
 nav > a {
   color: var(--main-txt-colour);
-  font-size: clamp(11px, 2.5vw, 16px);
+  font-size: clamp(14px, 2.5vw, 18px);
   font-weight: 500;
   text-decoration: none;
 }
 
 /* Landing Page Section */
 
-main {
+.mainContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -254,6 +256,41 @@ footer{
 
 .footerRight{
   padding-right: 20px;
+}
+
+/* About Page Selectors */
+
+.mainContainer.About{
+height: 100vh;
+}
+
+.aboutContainer{
+  width: 90%;
+  display: flex;
+  align-items: start;
+}
+
+.aboutBio{
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutGreeting{
+  font-weight: 700;
+  font-size: clamp(28px, 1.5vw, 46px);
+  color: var(--main-txt-colour);
+}
+
+.aboutPara {
+font-weight: 400;
+font-size: clamp(14px, 1.5vw, 21px);
+color: var(--second-txt-color);
+}
+
+.dp{
+  height: auto;
+  width: 30%;
+  border-radius: 190px;
 }
 
 /* Responsive */

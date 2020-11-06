@@ -15,10 +15,23 @@ const Home = () => {
         <div className='projectsContainer'>
         <h1 className='projectsHeader'>Projects</h1>
         <div className='tilesContainer'>
-            <img alt='RumaLogoBanner' draggable='false' className='tile' src={rumaBanner}/>
-            <img alt='RumaLogoBanner' draggable='false' className='tile' src={rumaBanner}/>
-            <img alt='RumaLogoBanner' draggable='false' className='tile' src={rumaBanner}/>
-            <img alt='RumaLogoBanner' draggable='false' className='tile' src={rumaBanner}/>
+        <div className='tileWrap'>
+        <p className='tileDesc'>Ruma - Streaming App</p>
+        <p className='tileDesc2'>UX/UI | Design Challenge</p>
+        </div>
+        <div className='tileWrap'>
+        <p className='tileDesc'>App Design</p>
+        </div>
+        <div className='tileWrap'>
+        <p className='tileDesc'>App Design - UX/UI Design</p>
+        </div>
+        <div className='tileWrap'>
+        <p className='tileDesc'>App Design - UX/UI Design</p>
+        </div>
+        {/* <div className='tileWrap'>
+        <img alt='RumaLogoBanner' draggable='false' className='tile' src={rumaBanner}/>
+        <p className='tileDesc'>This is a great test.</p>
+        </div> */}
         </div>
         </div>
         </div>

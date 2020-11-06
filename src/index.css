@@ -184,16 +184,58 @@ grid-gap: 1.5rem;
 width: 100%;
 }
 
-.tile {
-  width: 100%;
-  object-fit: cover;
+
+
+.tileWrap{
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 18px;
-  border: 0;
-  object-fit: cover;
   transition: all .2s ease-in-out;
+  width: 100%;
+  background-size: 200%;
+  height: 288px;
+  background-image: url('./Img/Ruma4k.png');
+  background-position: center;
+  border: 0;
 }
 
-.tile:hover { transform: scale(1.1); }
+.tileDesc{
+  color: #fff;
+  width: 50%;
+  visibility: hidden;
+  opacity: 0;
+  font-weight: 500;
+  transition: opacity .2s, visibility .2s;
+  padding-left: 5%;
+  padding-top: 3%;
+  white-space: nowrap;
+}
+
+
+.tileDesc2{
+  color: #fff;
+  margin-left: auto;
+  margin-top: auto;
+  text-align: right;
+  visibility: hidden;
+  opacity: 0;
+  font-weight: 500;
+  transition: opacity .2s, visibility .2s;
+  padding-right: 5%;
+  padding-bottom: 3%;
+}
+
+.tileWrap:hover .tileDesc {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tileWrap:hover .tileDesc2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tileWrap:hover { transform: scale(1.1); }
 
 /* Footer */
 footer{
@@ -253,6 +295,16 @@ footer{
   .heroContainer{
     margin-top: 0px;
     justify-content: space-around;
+  }
+
+  .tilesContainer{
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 3.5rem;
+
+  }
+
+  .tileWrap{
+    height: 425px;
   }
 
 }

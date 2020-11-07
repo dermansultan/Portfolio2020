@@ -261,7 +261,11 @@ footer{
 /* About Page Selectors */
 
 .mainContainer.About{
-height: 100vh;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutContainer{
@@ -273,24 +277,28 @@ height: 100vh;
 .aboutBio{
   display: flex;
   flex-direction: column;
+  min-width: 50%;
+  padding-left: 40px;
 }
 
 .aboutGreeting{
   font-weight: 700;
-  font-size: clamp(28px, 1.5vw, 46px);
+  font-size: clamp(30px, 1.5vw, 55px);
   color: var(--main-txt-colour);
 }
 
 .aboutPara {
 font-weight: 400;
-font-size: clamp(14px, 1.5vw, 21px);
+padding-top: 12px;
+line-height: 150%;
+font-size: clamp(14px, 1.5vw, 18px);
 color: var(--second-txt-color);
 }
 
 .dp{
   height: auto;
-  width: 30%;
-  border-radius: 190px;
+  width: 40%;
+  border-radius: 50%;
 }
 
 /* Responsive */
@@ -311,6 +319,21 @@ color: var(--second-txt-color);
     width: 85%;
     height: auto;
   }
+
+  .aboutContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dp{
+    width: 80%;
+  }
+
+  .aboutBio{
+    padding: 0;
+  }
+
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -321,6 +344,7 @@ color: var(--second-txt-color);
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -348,4 +372,7 @@ color: var(--second-txt-color);
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .dp{
+    width: 30%;
+  }
 }

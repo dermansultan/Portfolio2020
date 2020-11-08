@@ -20,13 +20,16 @@ const Home = () => {
         <p className='tileDesc2'>UX/UI | Design Challenge</p>
         </div>
         <div className='tileWrap'>
-        <p className='tileDesc'>App Design</p>
+        <p className='tileDesc'>Game-Hero BootCamp - Mobile App </p>
+        <p className='tileDesc2'>UX/UI | Design Challenge</p>
         </div>
         <div className='tileWrap'>
-        <p className='tileDesc'>App Design - UX/UI Design</p>
+        <p className='tileDesc'>ToDoList - CRUD App (Vanilla Js + Local Storage)</p>
+        <p className='tileDesc2'>UX/UI | Front End Development</p>
         </div>
         <div className='tileWrap'>
-        <p className='tileDesc'>App Design - UX/UI Design</p>
+        <p className='tileDesc'>Weather - React </p>
+        <p className='tileDesc2'>UX/UI | Front End Development</p>
         </div>
         {/* <div className='tileWrap'>
         <img alt='RumaLogoBanner' draggable='false' className='tile' src={rumaBanner}/>

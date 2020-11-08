@@ -12,7 +12,7 @@ const Home = () => {
             </div>
             <img draggable='false' className='landingGraphic' src={landingGraphic}/>
         </div>
-        <div className='projectsContainer'>
+        <div className='projectsContainer' id='projects'>
         <h1 className='projectsHeader'>Projects</h1>
         <div className='tilesContainer'>
         <div className='tileWrap'>

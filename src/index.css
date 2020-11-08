@@ -37,7 +37,6 @@ header {
   font-size: clamp(18px, 2.5vw, 24px);
 }
 
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -173,48 +172,46 @@ nav > a {
   padding-bottom: 55px;
 }
 
-.projectsHeader{
+.projectsHeader {
   font-size: clamp(21px, 1.5vw, 24px);
   padding-bottom: 30px;
+  color: var(--main-txt-colour);
 }
 
 .tilesContainer {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-justify-items: center;
-grid-gap: 1.5rem;
-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  justify-items: center;
+  grid-gap: 1.5rem;
+  width: 100%;
 }
 
-
-
-.tileWrap{
+.tileWrap {
   display: flex;
   flex-wrap: wrap;
   border-radius: 18px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
   background-size: 200%;
   height: 288px;
-  background-image: url('./Img/Ruma4k.png');
+  background-image: url("./Img/Ruma4k.png");
   background-position: center;
   border: 0;
 }
 
-.tileDesc{
+.tileDesc {
   color: #fff;
   width: 50%;
   visibility: hidden;
   opacity: 0;
   font-weight: 500;
-  transition: opacity .2s, visibility .2s;
+  transition: opacity 0.2s, visibility 0.2s;
   padding-left: 5%;
   padding-top: 3%;
   white-space: nowrap;
 }
 
-
-.tileDesc2{
+.tileDesc2 {
   color: #fff;
   margin-left: auto;
   margin-top: auto;
@@ -222,7 +219,7 @@ width: 100%;
   visibility: hidden;
   opacity: 0;
   font-weight: 500;
-  transition: opacity .2s, visibility .2s;
+  transition: opacity 0.2s, visibility 0.2s;
   padding-right: 5%;
   padding-bottom: 3%;
 }
@@ -237,10 +234,12 @@ width: 100%;
   opacity: 1;
 }
 
-.tileWrap:hover { transform: scale(1.1); }
+.tileWrap:hover {
+  transform: scale(1.1);
+}
 
 /* Footer */
-footer{
+footer {
   width: 100%;
   height: 5vh;
   align-items: center;
@@ -250,17 +249,17 @@ footer{
   justify-content: space-between;
 }
 
-.footerLeft{
+.footerLeft {
   padding-left: 20px;
 }
 
-.footerRight{
+.footerRight {
   padding-right: 20px;
 }
 
 /* About Page Selectors */
 
-.mainContainer.About{
+.mainContainer.About {
   width: 100%;
   display: flex;
   min-height: 100vh;
@@ -268,36 +267,40 @@ footer{
   justify-content: center;
 }
 
-.aboutContainer{
+.aboutContainer {
   width: 90%;
   display: flex;
   align-items: start;
 }
 
-.aboutBio{
+.aboutBio {
   display: flex;
+  padding-left: 50px;
   flex-direction: column;
-  min-width: 50%;
-  padding-left: 40px;
 }
 
-.aboutGreeting{
+.aboutGreeting {
   font-weight: 700;
   font-size: clamp(30px, 1.5vw, 55px);
   color: var(--main-txt-colour);
 }
 
 .aboutPara {
-font-weight: 400;
-padding-top: 12px;
-line-height: 150%;
-font-size: clamp(14px, 1.5vw, 18px);
-color: var(--second-txt-color);
+  font-weight: 400;
+  padding-top: 12px;
+  line-height: 150%;
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: var(--second-txt-color);
 }
 
-.dp{
+.aboutPara span {
+  color: var(--main-blue);
+  font-weight: 500;
+}
+
+.dp {
   height: auto;
-  width: 40%;
+  width: 50%;
   border-radius: 50%;
 }
 
@@ -320,20 +323,18 @@ color: var(--second-txt-color);
     height: auto;
   }
 
-  .aboutContainer{
+  .aboutContainer {
     flex-direction: column;
     align-items: center;
   }
 
-  .dp{
-    width: 80%;
+  .dp {
+    width: 75%;
   }
 
-  .aboutBio{
+  .aboutBio {
     padding: 0;
   }
-
-
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -344,7 +345,6 @@ color: var(--second-txt-color);
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -353,26 +353,24 @@ color: var(--second-txt-color);
     width: 30%;
   }
 
-  .heroContainer{
+  .heroContainer {
     margin-top: 0px;
     justify-content: space-around;
   }
 
-  .tilesContainer{
+  .tilesContainer {
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-gap: 3.5rem;
-
   }
 
-  .tileWrap{
+  .tileWrap {
     height: 425px;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .dp{
+  .dp {
     width: 30%;
   }
 }

@@ -33,9 +33,9 @@ const About = () => {
             me below.
           </p>
           <div className="socialBtnWrapper">
-            <FontAwesomeIcon icon={faEnvelope} />
-            <FontAwesomeIcon icon={faInstagram} />
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faEnvelope} className='icon' />
+            <FontAwesomeIcon icon={faInstagram} className='icon' />
+            <FontAwesomeIcon icon={faLinkedin} className='icon' />
           </div>
         </div>
       </div>

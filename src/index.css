@@ -169,7 +169,7 @@ nav > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 55px;
+  padding-bottom: 140px;
 }
 
 .projectsHeader {
@@ -194,9 +194,24 @@ nav > a {
   width: 100%;
   background-size: 200%;
   height: 288px;
-  background-image: url("./Img/Ruma4k.png");
   background-position: center;
   border: 0;
+}
+
+.tileWrap.Ruma{
+  background-image: url("./Img/Ruma4k.png");
+}
+
+.tileWrap.GHBC{
+  background-image: url("./Img/GameHero4k.png");
+}
+
+.tileWrap.ToDo{
+  background-image: url("./Img/Todolist4k.png");
+}
+
+.tileWrap.Climate{
+  background-image: url("./Img/Climate4k.png");
 }
 
 .tileDesc {
@@ -207,6 +222,7 @@ nav > a {
   font-weight: 500;
   transition: opacity 0.2s, visibility 0.2s;
   padding-left: 5%;
+  font-size: clamp(14px, 1vw, 21px);
   padding-top: 3%;
   white-space: nowrap;
 }
@@ -215,6 +231,7 @@ nav > a {
   color: #fff;
   margin-left: auto;
   margin-top: auto;
+  font-size: clamp(14px, 1vw, 21px);
   text-align: right;
   visibility: hidden;
   opacity: 0;
@@ -242,6 +259,8 @@ nav > a {
 footer {
   width: 100%;
   height: 5vh;
+  left: 0;
+  bottom: 0;
   align-items: center;
   display: flex;
   background-color: var(--main-txt-colour);
@@ -251,10 +270,20 @@ footer {
 
 .footerLeft {
   padding-left: 20px;
+  white-space: nowrap;
+    font-size: clamp(10px, 1.5vw, 18px);
 }
 
 .footerRight {
   padding-right: 20px;
+  white-space: nowrap;
+    font-size: clamp(10px, 1.5vw, 18px);
+}
+
+.icon.footer{
+  color: var(--main-bg-colour);
+font-size: clamp(14px, 3.5vw, 21px);
+margin-right: 20px;
 }
 
 /* About Page Selectors */
@@ -323,6 +352,16 @@ footer {
   height: auto;
   width: 50%;
   border-radius: 50%;
+}
+
+.socialBtnWrapper{
+  padding-top: 10px;
+}
+
+.icon{
+color: var(--main-txt-colour);
+font-size: clamp(30px, 3.5vw, 40px);
+margin-right: 20px;
 }
 
 /* Responsive */

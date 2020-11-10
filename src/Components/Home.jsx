@@ -15,19 +15,19 @@ const Home = () => {
         <div className='projectsContainer' id='projects'>
         <h1 className='projectsHeader'>Projects</h1>
         <div className='tilesContainer'>
-        <div className='tileWrap'>
+        <div className='tileWrap Ruma'>
         <p className='tileDesc'>Ruma - Streaming App</p>
         <p className='tileDesc2'>UX/UI | Design Challenge</p>
         </div>
-        <div className='tileWrap'>
+        <div className='tileWrap GHBC'>
         <p className='tileDesc'>Game-Hero BootCamp - Mobile App </p>
         <p className='tileDesc2'>UX/UI | Design Challenge</p>
         </div>
-        <div className='tileWrap'>
+        <div className='tileWrap ToDo'>
         <p className='tileDesc'>ToDoList - CRUD App (Vanilla Js + Local Storage)</p>
         <p className='tileDesc2'>UX/UI | Front End Development</p>
         </div>
-        <div className='tileWrap'>
+        <div className='tileWrap Climate'>
         <p className='tileDesc'>Weather - React </p>
         <p className='tileDesc2'>UX/UI | Front End Development</p>
         </div>

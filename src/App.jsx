@@ -8,6 +8,7 @@ import {
 import About from './Components/About'
 import Header from './Components/Header'
 import Home from './Components/Home'
+import Ruma from './Components/RumaCaseStudy'
 import Footer from './Components/Footer'
 
 
@@ -23,6 +24,9 @@ function App() {
         <About></About>
       </Route>
     </Switch>
+    <Route path='/Ruma'>
+      <Ruma></Ruma>
+    </Route>
     <Footer></Footer>
   </Router>
   </div>)

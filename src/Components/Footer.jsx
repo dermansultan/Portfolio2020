@@ -7,11 +7,6 @@ function Footer(){
     return(
         <footer>
             <p className='footerLeft'>Get in touch with me! 👉</p>
-            <div className="socialBtnWrapper">
-            <FontAwesomeIcon icon={faEnvelope} className='icon footer' />
-            <FontAwesomeIcon icon={faInstagram} className='icon footer' />
-            <FontAwesomeIcon icon={faLinkedin} className='icon footer' />
-          </div>
             <p className='footerRight'>© abdurrehman sultan 2020</p>
         </footer>
     )

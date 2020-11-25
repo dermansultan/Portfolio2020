@@ -28,8 +28,8 @@ const About = () => {
             the Web.
           </p>
           <p className="aboutPara">
-            I'm constantly looking for new oppurtunities to learn more and
-            expand my abilities. Have an oppurtunity for me? Get in touch with
+            I'm constantly looking for new opportunities to learn more and
+            expand my abilities. Have an opportunity for me? Get in touch with
             me below.
           </p>
           <div className="socialBtnWrapper">

@@ -11,7 +11,7 @@ return(
                 <div className='projectDetails'>
                     <div className='details'>
                         <p className='deTitle'>My Role</p>
-                        <p className='deSub'>UI/UX, Brand Identity, Visual Design</p>
+                        <p className='deSub'>UI/UX, Brand Identity</p>
                     </div>
                     <div className='details'>
                         <p className='deTitle'>Tools</p>

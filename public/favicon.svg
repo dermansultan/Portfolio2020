@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="69" viewBox="0 0 62 69">
+      <style>
+      text {
+        fill: red;
+      }
+
+    @media (prefers-color-scheme: dark) {
+      text {
+        fill: green;
+      }
+    }
+  </style>
+  <defs>
+    <filter id="ds" x="0" y="0" width="62" height="69" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#727272"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#ds)">
+    <text id="ds-2" data-name="ds" font-size="51" font-family="DMSans-Bold, DM Sans" font-weight="700"><tspan x="0" y="51">ds</tspan></text>
+  </g>
+
+</svg>

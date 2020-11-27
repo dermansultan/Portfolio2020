@@ -394,8 +394,8 @@ margin-right: 20px;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .projectDetails{
@@ -425,6 +425,7 @@ margin-right: 20px;
   font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 700;
   background-color: #1D66B9;
+  min-height: 50px;
   color: white;
   border-radius: 30px;
   width: 200px;

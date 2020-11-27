@@ -1,35 +1,21 @@
-import React from 'react'
-
+import React from "react";
+import ProjectDetails from "./CaseStudy/ProjectDetails";
+import ProjectBanner from "./CaseStudy/ProjectBanner";
+import rumaBanner from "../Img/Ruma4k.png";
 const Ruma = () => {
-return(
-    <div className='mainContainer Ruma'>
-        <div className='rumaContainer'>
-            <div className='caseStudyBanner Ruma'>                
-            </div>
-            <div className='projectDetailsWrapper Ruma'>
-                <button className='protoBtn Ruma'>Live Prototype</button>
-                <div className='projectDetails'>
-                    <div className='details'>
-                        <p className='deTitle'>My Role</p>
-                        <p className='deSub'>UI/UX, Brand Identity</p>
-                    </div>
-                    <div className='details'>
-                        <p className='deTitle'>Tools</p>
-                        <p className='deSub'>Invision, Adobe XD</p>
-                    </div>
-                    <div className='details'>
-                        <p className='deTitle'>Team</p>
-                        <p className='deSub'>Rohail Khan</p>
-                    </div>
-                    <div className='details'>
-                        <p className='deTitle'>Duration</p>
-                        <p className='deSub'>48 hours</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  return (
+    <div className="mainContainer Ruma">
+      <div className="rumaContainer">
+        <ProjectBanner banner={rumaBanner}></ProjectBanner>
+        <ProjectDetails
+          role={"UX/UI Design, Branding"}
+          tools={"Invision, Adobe XD"}
+          team={"Rohail Khan"}
+          duration={"48 hours"}
+        ></ProjectDetails>
+      </div>
     </div>
-)
-}
+  );
+};
 
-export default Ruma
+export default Ruma;

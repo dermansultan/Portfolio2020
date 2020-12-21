@@ -25,6 +25,10 @@ const Ruma = () => {
           <ProjectHeader text='Design Challenge'></ProjectHeader>
           <ProjectQuote text='"Design a third-party desktop web site or desktop app (not Netflix-branded) where the community can celebrate shared stories together through communal and authentic experiences."'></ProjectQuote>
         </div>
+        <div className='projectSectionWrapper' style={{paddingTop:"12px"}}>
+          <ProjectHeader text='Solution'></ProjectHeader>
+          <ProjectParagraph text='A web app that encourages users to  explore other content based on their interests, and watch content amongst their loved ones. '></ProjectParagraph>
+        </div>
         <div className='deadspace' style={{height:'900px'}}></div>
       </div>
     </div>

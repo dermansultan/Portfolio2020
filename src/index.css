@@ -5,6 +5,7 @@
   --main-txt-colour: #363635;
   --second-txt-color: #595a4a;
   --main-blue: #1d66b9;
+  --second-blue: #F3F6FF;
 }
 
 * {
@@ -387,7 +388,29 @@ margin-right: 20px;
   width: 90%;
   display: flex;
   flex-direction: column;
+}
+
+.projectSectionWrapper{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.quoteWrapper{
+  display: flex;
+  margin-top: 10px;
   align-items: center;
+  min-height: 170px;
+  max-height: 200px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--second-blue);
+}
+
+.paraProjects.quote{
+  font-size: clamp(14px, 1.5vw, 19px);
+  width: 75%;
 }
 
 .projectDetailsWrapper{
@@ -432,6 +455,19 @@ margin-right: 20px;
   border: 0;
 }
 
+.headerProjects{
+  font-size: clamp(30px, 1.5vw, 55px);
+  color: var(--main-txt-colour);
+}
+
+.paraProjects{
+  font-weight: 400;
+    padding-top: 12px;
+    line-height: 150%;
+    font-size: clamp(14px, 1.5vw, 18px);
+    color: var(--second-txt-color);
+}
+
 /* Responsive */
 
 /* Extra small devices (phones, 600px and down) */
@@ -463,6 +499,37 @@ margin-right: 20px;
   .aboutBio {
     padding: 0;
   }
+
+  /* case studies selectors */
+  .projectDetails{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.protoBtn{
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 700;
+    background-color: #1D66B9;
+    min-height: 30px;
+    color: white;
+    border-radius: 30px;
+    width: 135px;
+    border: 0;
+}
+.projectDetailsWrapper{
+
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+
 
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

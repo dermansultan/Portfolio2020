@@ -5,7 +5,7 @@
   --main-txt-colour: #363635;
   --second-txt-color: #595a4a;
   --main-blue: #1d66b9;
-  --second-blue: #F3F6FF;
+  --second-blue: #f3f6ff;
 }
 
 * {
@@ -200,19 +200,19 @@ nav > a {
   border: 0;
 }
 
-.tileWrap.Ruma{
+.tileWrap.Ruma {
   background-image: url("./Img/Ruma4k.png");
 }
 
-.tileWrap.GHBC{
+.tileWrap.GHBC {
   background-image: url("./Img/GameHero4k.png");
 }
 
-.tileWrap.ToDo{
+.tileWrap.ToDo {
   background-image: url("./Img/Todolist4k.png");
 }
 
-.tileWrap.Climate{
+.tileWrap.Climate {
   background-image: url("./Img/Climate4k.png");
 }
 
@@ -273,19 +273,19 @@ footer {
 .footerLeft {
   padding-left: 20px;
   white-space: nowrap;
-    font-size: clamp(10px, 1.5vw, 18px);
+  font-size: clamp(10px, 1.5vw, 18px);
 }
 
 .footerRight {
   padding-right: 20px;
   white-space: nowrap;
-    font-size: clamp(10px, 1.5vw, 18px);
+  font-size: clamp(10px, 1.5vw, 18px);
 }
 
-.icon.footer{
+.icon.footer {
   color: var(--main-bg-colour);
-font-size: clamp(14px, 3.5vw, 21px);
-margin-right: 20px;
+  font-size: clamp(14px, 3.5vw, 21px);
+  margin-right: 20px;
 }
 
 /* About Page Selectors */
@@ -317,25 +317,40 @@ margin-right: 20px;
 }
 
 .aboutGreeting span {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: 1;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: 1; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
   padding-right: 15px;
 }
 
 @keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
- 20% { transform: rotate(-8.0deg) }
- 30% { transform: rotate(14.0deg) }
- 40% { transform: rotate(-4.0deg) }
- 50% { transform: rotate(10.0deg) }
- 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
 
 .aboutPara {
   font-weight: 400;
@@ -356,18 +371,18 @@ margin-right: 20px;
   border-radius: 50%;
 }
 
-.socialBtnWrapper{
+.socialBtnWrapper {
   padding-top: 10px;
 }
 
-.icon{
-color: var(--main-txt-colour);
-font-size: clamp(30px, 3.5vw, 40px);
-margin-right: 20px;
+.icon {
+  color: var(--main-txt-colour);
+  font-size: clamp(30px, 3.5vw, 40px);
+  margin-right: 20px;
 }
 
 /* Case Studies */
-.caseStudyBanner{
+.caseStudyBanner {
   display: flex;
   background-size: 150%;
   background-repeat: no-repeat;
@@ -379,24 +394,24 @@ margin-right: 20px;
   height: 70vh;
 }
 /* Ruma */
-.caseStudyBanner.Ruma{
+.caseStudyBanner.Ruma {
   background-image: url("./Img/Ruma4k.png");
 }
 
-.rumaContainer{
+.rumaContainer {
   margin-top: 5vh;
   width: 90%;
   display: flex;
   flex-direction: column;
 }
 
-.projectSectionWrapper{
+.projectSectionWrapper {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.quoteWrapper{
+.quoteWrapper {
   display: flex;
   margin-top: 10px;
   align-items: center;
@@ -408,12 +423,12 @@ margin-right: 20px;
   background-color: var(--second-blue);
 }
 
-.paraProjects.quote{
+.paraProjects.quote {
   font-size: clamp(14px, 1.5vw, 19px);
   width: 75%;
 }
 
-.projectDetailsWrapper{
+.projectDetailsWrapper {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -421,33 +436,34 @@ margin-right: 20px;
   padding-bottom: 40px;
 }
 
-.projectDetails{
+.projectDetails {
   display: flex;
   width: 50%;
-  justify-content: space-between;}
+  justify-content: space-between;
+}
 
-.details{
+.details {
   display: flex;
   flex-direction: column;
 }
 
-.deTitle{
+.deTitle {
   color: var(--main-txt-colour);
   white-space: nowrap;
   font-weight: 500;
   font-size: clamp(10px, 1.5vw, 22px);
 }
 
-.deSub{
+.deSub {
   color: var(--second-txt-color);
   white-space: nowrap;
   font-size: clamp(8px, 1.5vw, 18px);
 }
 
-.protoBtn{
+.protoBtn {
   font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 700;
-  background-color: #1D66B9;
+  background-color: #1d66b9;
   min-height: 50px;
   color: white;
   border-radius: 30px;
@@ -455,17 +471,63 @@ margin-right: 20px;
   border: 0;
 }
 
-.headerProjects{
+.headerProjects {
   font-size: clamp(30px, 1.5vw, 55px);
   color: var(--main-txt-colour);
 }
 
-.paraProjects{
+.paraProjects {
   font-weight: 400;
-    padding-top: 12px;
-    line-height: 150%;
-    font-size: clamp(14px, 1.5vw, 18px);
-    color: var(--second-txt-color);
+  padding-top: 12px;
+  line-height: 150%;
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: var(--second-txt-color);
+}
+
+.projectTilesWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  justify-items: center;
+  grid-gap: 1.5rem;
+  width: 100%;
+}
+
+.projectTile {
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-size: cover; */
+  height: 288px;
+  border: 0;
+}
+
+.projectTimeline{
+  width: 100%;
+  height: auto;
+}
+
+/* Ruma  */
+.projectTile.Ruma1 {
+  background-image: url("./Img/caseStudies/Ruma/solution1.png");
+}
+
+.projectTile.Ruma2 {
+  background-image: url("./Img/caseStudies/Ruma/solution2.png");
+}
+
+.projectTile.Ruma3 {
+  background-image: url("./Img/caseStudies/Ruma/solution3.png");
+}
+
+.projectTile.Ruma4 {
+  background-image: url("./Img/caseStudies/Ruma/solution4.png");
+}
+
+.projectTimeline.Ruma {
+  margin: auto;
 }
 
 /* Responsive */
@@ -501,25 +563,24 @@ margin-right: 20px;
   }
 
   /* case studies selectors */
-  .projectDetails{
+  .projectDetails {
     display: flex;
     width: 100%;
     margin-top: 20px;
     justify-content: space-between;
-}
+  }
 
-.protoBtn{
+  .protoBtn {
     font-size: clamp(14px, 1.5vw, 18px);
     font-weight: 700;
-    background-color: #1D66B9;
+    background-color: #1d66b9;
     min-height: 30px;
     color: white;
     border-radius: 30px;
     width: 135px;
     border: 0;
-}
-.projectDetailsWrapper{
-
+  }
+  .projectDetailsWrapper {
     flex-direction: column;
     display: flex;
     width: 100%;
@@ -527,10 +588,7 @@ margin-right: 20px;
     padding-top: 20px;
     align-items: center;
     padding-bottom: 40px;
-}
-
-
-
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {

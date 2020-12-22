@@ -5,6 +5,8 @@ import rumaBanner from "../Img/Ruma4k.png";
 import ProjectHeader from "../Components/CaseStudy/ProjectHeader"
 import ProjectQuote from "../Components/CaseStudy/ProjectQuote"
 import ProjectParagraph from "../Components/CaseStudy/ProjectParagraph"
+import ProjectTiles from "../Components/CaseStudy/ProjectTiles"
+import timelineRuma from "../Img/caseStudies/Ruma/timelineRuma.png"
 
 const Ruma = () => {
   return (
@@ -28,6 +30,14 @@ const Ruma = () => {
         <div className='projectSectionWrapper' style={{paddingTop:"12px"}}>
           <ProjectHeader text='Solution'></ProjectHeader>
           <ProjectParagraph text='A web app that encourages users to  explore other content based on their interests, and watch content amongst their loved ones. '></ProjectParagraph>
+        </div>
+        <div className='projectSectionWrapper' style={{paddingTop:"12px"}}>
+        <ProjectHeader text='Solution'></ProjectHeader>
+        <ProjectTiles csTitle='Ruma'></ProjectTiles>
+        </div>
+        <div className='projectSectionWrapper' style={{paddingTop:"12px"}}>
+        <ProjectHeader text='Timeline'></ProjectHeader>
+        <img classname='projectTimeline Ruma'alt='rumaTimeline' src={timelineRuma}></img>
         </div>
         <div className='deadspace' style={{height:'900px'}}></div>
       </div>

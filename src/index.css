@@ -527,8 +527,27 @@ footer {
   background-image: url("./Img/caseStudies/Ruma/solution4.png");
 }
 
-.projectTimeline.Ruma {
-  margin: auto;
+.projectSectionWrapper.RumaBvS{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.paraProjects.RumaBvS{
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.leftContainer{
+  width: 25%;
+}
+
+.rightContainer{
+  width: 25%;
+}
+
+.userThinking{
+  color: var(--main-txt-colour);
+  font-size: clamp(18px, 1.5vw, 22px);
 }
 
 /* Responsive */

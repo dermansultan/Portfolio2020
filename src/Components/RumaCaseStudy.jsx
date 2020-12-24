@@ -73,11 +73,11 @@ The brief given to us also included many different questions to consider, we did
             <h2 className="userThinking Solution">Ruma's Solution</h2>
             <p className="paraProjects RumaBvS">
               Users are able to setup their own private rooms where they can
-              stream content with their family and friends.{" "}
+              stream content with their family and friends.
             </p>
             <p className="paraProjects RumaBvS">
               Ruma's watch rooms include a live chat. This chat is also
-              available before and after content is done being played.{" "}
+              available before and after content is done being played.
             </p>
             <p className="paraProjects RumaBvS">
               Through the dashboard interface, users are able to see watch room
@@ -86,7 +86,7 @@ The brief given to us also included many different questions to consider, we did
             </p>
             <p className="paraProjects RumaBvS">
               Ruma features user created communities which allow users to post
-              and read discussions based on their media interest.{" "}
+              and read discussions based on their media interest.
             </p>
           </div>
         </div>
@@ -106,15 +106,60 @@ The brief given to us also included many different questions to consider, we did
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Prototype, Flow and Features"></ProjectHeader>
-          <p className='paraProjects'>Our final prototype for Ruma can be seen <span>here</span> or below</p>
+          <p className="paraProjects">
+            Our final prototype for Ruma can be seen <span>here</span> or below
+          </p>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Ruma: Features"></ProjectHeader>
-          <ProjectParagraph text="yeet."></ProjectParagraph>
+          <div className="projectFeatureWrapper">
+            <img alt="gif of feature to be here!"></img>
+            <div className="featureTextWrapper">
+              <h2 className="projectSubHeader">Watch Rooms</h2>
+              <p className="paraProjects feature">
+                Users are able to host watch rooms where they can invite their
+                friends and family to enjoy content with them. In the watch
+                rooms you can chat and setup a playlist of what the room will be
+                streaming.
+              </p>
+            </div>
+          </div>
+          <div className="projectFeatureWrapper">
+            <img alt="gif of feature to be here!"></img>
+            <div className="featureTextWrapper">
+              <h2 className="projectSubHeader">Communities</h2>
+              <p className="paraProjects feature">
+                Users can join communities around the world on Ruma. These
+                communities can range from genre interests, to specific shows or
+                series. In a community users can engage in discussion with posts
+                and can join watch rooms being hosted by users within the
+                community.
+              </p>
+            </div>
+          </div>
+          <div className="projectFeatureWrapper">
+            <img alt="gif of feature to be here!"></img>
+            <div className="featureTextWrapper">
+              <h2 className="projectSubHeader">Discovery</h2>
+              <p className="paraProjects feature">
+                The discover tab lets users explore different communities they
+                can join. Based on their interest communities are reccomended to
+                them. Users also have the option to search to find communities
+                based on their search terms.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Takeaways"></ProjectHeader>
-          <ProjectParagraph text="yeet."></ProjectParagraph>
+          <h2 className="projectSubHeader">What didn't work...</h2>
+          <ProjectParagraph text="During this jam, I learned how to better allocate time. Before getting to the wireframing process we had iterated over a few different ideas of the concept of the app."></ProjectParagraph>
+          <ProjectParagraph text="One speciafic feature of the app 'Communities', felt like we didn't get enough time to flesh it out. We had understood what we wanted to include in them, but when it came to laying out that feature we slowly realized we may have no fleshed this out as much as we should have. It's very simple to say this page will feature 'x' feature but until you deep dive and see how that feature fits in the overall app and layout you won't get a feel of its true gravity. "></ProjectParagraph>
+          <ProjectParagraph text="There were many features such as the settings page that due to this problem set us back as a group. In the future I will employ other brainstorming tools such as Affinity Mapping to get a concrete idea out the door. "></ProjectParagraph>
+          <h2 className="projectSubHeader">Iterate, Iterate, Iterate</h2>
+          <ProjectParagraph text="I feel the back and forth between my partner and I was healthy. We were able to bounce ideas off one another with real criticisms. Although I feel as a duo we did this aspect well, during our iteration process we probably could have gone over more ideas. As we were pressed were time I believe this wasn't as much of a focus but it is something I definetly want to be able to do in future projects."></ProjectParagraph>
+          <h2 className="projectSubHeader">Delegating</h2>
+          <ProjectParagraph text="Most groups had 3 members. Since there was a lot of work to do amongst just us two I feel as if we could've delegated individual tasks better. There were times where we both were working on a task that we probably could've left to one individual and vice-versa."></ProjectParagraph>
         </div>
         <div className="deadspace" style={{ height: "900px" }}></div>
       </div>

@@ -54,18 +54,45 @@ The brief given to us also included many different questions to consider, we did
         <div className="projectSectionWrapper RumaBvS">
           <div className="leftContainer">
             <h2 className="userThinking Brief">Brief</h2>
-            <p className="paraProjects RumaBvS">Watch content with family remotely and privately.</p>
-            <p className="paraProjects RumaBvS">Engage in realtime conversations before, during, or afterwards.</p>
-            <p className="paraProjects RumaBvS">Create anticipation by scheduling watch parties and pre-event discussion.</p>
-            <p className="paraProjects RumaBvS">Schedule and join small community and large worldwide watch parties.</p>
+            <p className="paraProjects RumaBvS">
+              Watch content with family remotely and privately.
+            </p>
+            <p className="paraProjects RumaBvS">
+              Engage in realtime conversations before, during, or afterwards.
+            </p>
+            <p className="paraProjects RumaBvS">
+              Create anticipation by scheduling watch parties and pre-event
+              discussion.
+            </p>
+            <p className="paraProjects RumaBvS">
+              Schedule and join small community and large worldwide watch
+              parties.
+            </p>
           </div>
           <div className="rightContainer">
             <h2 className="userThinking Solution">Ruma's Solution</h2>
-            <p className="paraProjects RumaBvS">Users are able to setup their own private rooms where they can stream content with their family and friends. </p>
-            <p className="paraProjects RumaBvS">Ruma's watch rooms include a live chat. This chat is also available before and after content is done being played. </p>
-            <p className="paraProjects RumaBvS">Through the dashboard interface, users are able to see watch room status. Cards display if a room is closed, starting to watch soon or is currently watching content.</p>
-            <p className="paraProjects RumaBvS">Ruma features user created  communities which allow users to post and read discussions based on their media interest. </p>
+            <p className="paraProjects RumaBvS">
+              Users are able to setup their own private rooms where they can
+              stream content with their family and friends.{" "}
+            </p>
+            <p className="paraProjects RumaBvS">
+              Ruma's watch rooms include a live chat. This chat is also
+              available before and after content is done being played.{" "}
+            </p>
+            <p className="paraProjects RumaBvS">
+              Through the dashboard interface, users are able to see watch room
+              status. Cards display if a room is closed, starting to watch soon
+              or is currently watching content.
+            </p>
+            <p className="paraProjects RumaBvS">
+              Ruma features user created communities which allow users to post
+              and read discussions based on their media interest.{" "}
+            </p>
           </div>
+        </div>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+          <ProjectHeader text="Iteration: Concept"></ProjectHeader>
+          <ProjectParagraph text="After considering the brief questions we started to iterate on ideas of the general app. We started with topics we wanted to address, and then moved onto features."></ProjectParagraph>
         </div>
         <div className="deadspace" style={{ height: "900px" }}></div>
       </div>

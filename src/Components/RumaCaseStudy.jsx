@@ -94,6 +94,28 @@ The brief given to us also included many different questions to consider, we did
           <ProjectHeader text="Iteration: Concept"></ProjectHeader>
           <ProjectParagraph text="After considering the brief questions we started to iterate on ideas of the general app. We started with topics we wanted to address, and then moved onto features."></ProjectParagraph>
         </div>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+          <ProjectHeader text="Iteration: Wireframes and User Flows"></ProjectHeader>
+          <ProjectParagraph text="We continued to break down the features during our wireframing process."></ProjectParagraph>
+        </div>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+          <ProjectHeader text="Moodboard"></ProjectHeader>
+        </div>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+          <ProjectHeader text="Styletile"></ProjectHeader>
+        </div>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+          <ProjectHeader text="Prototype, Flow and Features"></ProjectHeader>
+          <p className='paraProjects'>Our final prototype for Ruma can be seen <span>here</span> or below</p>
+        </div>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+          <ProjectHeader text="Ruma: Features"></ProjectHeader>
+          <ProjectParagraph text="yeet."></ProjectParagraph>
+        </div>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+          <ProjectHeader text="Takeaways"></ProjectHeader>
+          <ProjectParagraph text="yeet."></ProjectParagraph>
+        </div>
         <div className="deadspace" style={{ height: "900px" }}></div>
       </div>
     </div>

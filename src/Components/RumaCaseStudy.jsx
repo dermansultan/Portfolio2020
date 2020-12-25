@@ -7,6 +7,9 @@ import ProjectQuote from "../Components/CaseStudy/ProjectQuote";
 import ProjectParagraph from "../Components/CaseStudy/ProjectParagraph";
 import ProjectTiles from "../Components/CaseStudy/ProjectTiles";
 import timelineRuma from "../Img/caseStudies/Ruma/timelineRuma.png";
+import ProjectImgCap from "../Components/CaseStudy/ProjectImgCap";
+import concept1 from "../Img/caseStudies/Ruma/concept1.png";
+import concept2 from "../Img/caseStudies/Ruma/concept2.png";
 
 const Ruma = () => {
   return (
@@ -93,6 +96,13 @@ The brief given to us also included many different questions to consider, we did
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Iteration: Concept"></ProjectHeader>
           <ProjectParagraph text="After considering the brief questions we started to iterate on ideas of the general app. We started with topics we wanted to address, and then moved onto features."></ProjectParagraph>
+          <ProjectImgCap
+            caption="Table breaking down features + content to be included 
+"
+            image={concept1}
+          ></ProjectImgCap>
+          <ProjectImgCap caption="Starting with topics we wanted to address with Ruma
+" image={concept2}></ProjectImgCap>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Iteration: Wireframes and User Flows"></ProjectHeader>

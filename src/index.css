@@ -515,6 +515,16 @@ footer {
   font-size: clamp(18px, 1.5vw, 22px);
 }
 
+.projectImgWrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImg{
+  width: 50%;
+  height: auto;
+}
+
 /* Ruma  */
 .projectTile.Ruma1 {
   background-image: url("./Img/caseStudies/Ruma/solution1.png");

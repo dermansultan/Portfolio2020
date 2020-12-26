@@ -96,13 +96,18 @@ The brief given to us also included many different questions to consider, we did
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Iteration: Concept"></ProjectHeader>
           <ProjectParagraph text="After considering the brief questions we started to iterate on ideas of the general app. We started with topics we wanted to address, and then moved onto features."></ProjectParagraph>
-          <ProjectImgCap
-            caption="Table breaking down features + content to be included 
+          <div className="projectImgContainer">
+            <ProjectImgCap
+              caption="Table breaking down features + content to be included 
 "
-            image={concept1}
-          ></ProjectImgCap>
-          <ProjectImgCap caption="Starting with topics we wanted to address with Ruma
-" image={concept2}></ProjectImgCap>
+              image={concept1}
+            ></ProjectImgCap>
+            <ProjectImgCap
+              caption="Starting with topics we wanted to address with Ruma
+"
+              image={concept2}
+            ></ProjectImgCap>
+          </div>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Iteration: Wireframes and User Flows"></ProjectHeader>

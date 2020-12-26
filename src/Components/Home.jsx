@@ -1,9 +1,11 @@
  import React from 'react'
 import landingGraphic from '../Img/CodePenSquares.png'
+import ConstructionSign from './ConstructionSign'
 
 const Home = () => {
     return(
         <div className='mainContainer'>
+        <ConstructionSign></ConstructionSign>
         <div className='homeContainer'>
         <div className='heroContainer'>
             <div className='greetingBio'>

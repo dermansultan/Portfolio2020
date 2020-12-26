@@ -10,6 +10,10 @@ import timelineRuma from "../Img/caseStudies/Ruma/timelineRuma.png";
 import ProjectImgCap from "../Components/CaseStudy/ProjectImgCap";
 import concept1 from "../Img/caseStudies/Ruma/concept1.png";
 import concept2 from "../Img/caseStudies/Ruma/concept2.png";
+import process1 from "../Img/caseStudies/Ruma/Process1.png";
+import process2 from "../Img/caseStudies/Ruma/Process2.png";
+import process3 from "../Img/caseStudies/Ruma/Process3.png";
+import process4 from "../Img/caseStudies/Ruma/Process4.png";
 
 const Ruma = () => {
   return (
@@ -112,6 +116,30 @@ The brief given to us also included many different questions to consider, we did
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Iteration: Wireframes and User Flows"></ProjectHeader>
           <ProjectParagraph text="We continued to break down the features during our wireframing process."></ProjectParagraph>
+          <ProjectImgCap
+            caption="Sections and their belonging screens
+"
+            image={process1}
+          ></ProjectImgCap>
+          <ProjectImgCap
+            caption="Organizing each individual section and breaking down what to be included
+"
+            image={process2}
+          ></ProjectImgCap>
+          <ProjectImgCap
+            caption="Different iterations for each individual page. 
+"
+            image={process3}
+          ></ProjectImgCap>
+          <ProjectParagraph
+            text="Onboarding + Joining User Flow Wireframes
+"
+          ></ProjectParagraph>
+          <ProjectImgCap
+            caption="Onboarding + Joining User Flow Wireframes
+"
+            image={process4}
+          ></ProjectImgCap>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Moodboard"></ProjectHeader>

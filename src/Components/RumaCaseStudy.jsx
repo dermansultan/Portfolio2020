@@ -14,6 +14,8 @@ import process1 from "../Img/caseStudies/Ruma/Process1.png";
 import process2 from "../Img/caseStudies/Ruma/Process2.png";
 import process3 from "../Img/caseStudies/Ruma/Process3.png";
 import process4 from "../Img/caseStudies/Ruma/Process4.png";
+import moodboard from "../Img/caseStudies/Ruma/moodboard.png";
+import styletile from "../Img/caseStudies/Ruma/styletile.png";
 
 const Ruma = () => {
   return (
@@ -143,11 +145,13 @@ The brief given to us also included many different questions to consider, we did
           ></ProjectImgCap>
           </div>
         </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px", display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
           <ProjectHeader text="Moodboard"></ProjectHeader>
+          <img className='projectImg Single' src={moodboard}></img>
         </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px", display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
           <ProjectHeader text="Styletile"></ProjectHeader>
+          <img className='projectImg Single' src={styletile} ></img>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Prototype, Flow and Features"></ProjectHeader>
@@ -158,7 +162,7 @@ The brief given to us also included many different questions to consider, we did
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Ruma: Features"></ProjectHeader>
           <div className="projectFeatureWrapper">
-            <img alt="gif of feature to be here!"></img>
+            {/* <img alt="gif of feature to be here!"></img> */}
             <div className="featureTextWrapper">
               <h2 className="projectSubHeader">Watch Rooms</h2>
               <p className="paraProjects feature">
@@ -170,7 +174,7 @@ The brief given to us also included many different questions to consider, we did
             </div>
           </div>
           <div className="projectFeatureWrapper">
-            <img alt="gif of feature to be here!"></img>
+            {/* <img alt="gif of feature to be here!"></img> */}
             <div className="featureTextWrapper">
               <h2 className="projectSubHeader">Communities</h2>
               <p className="paraProjects feature">
@@ -183,7 +187,7 @@ The brief given to us also included many different questions to consider, we did
             </div>
           </div>
           <div className="projectFeatureWrapper">
-            <img alt="gif of feature to be here!"></img>
+            {/* <img alt="gif of feature to be here!"></img> */}
             <div className="featureTextWrapper">
               <h2 className="projectSubHeader">Discovery</h2>
               <p className="paraProjects feature">

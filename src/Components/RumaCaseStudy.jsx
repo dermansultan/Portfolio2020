@@ -42,7 +42,7 @@ const Ruma = () => {
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Project Timeline"></ProjectHeader>
           <img
-            class="projectTimeline Ruma"
+            className="projectTimeline Ruma"
             alt="rumaTimeline"
             src={timelineRuma}
           ></img>
@@ -116,6 +116,7 @@ The brief given to us also included many different questions to consider, we did
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Iteration: Wireframes and User Flows"></ProjectHeader>
           <ProjectParagraph text="We continued to break down the features during our wireframing process."></ProjectParagraph>
+          <div className="projectImgContainer" style={{flexDirection: 'column'}}>
           <ProjectImgCap
             caption="Sections and their belonging screens
 "
@@ -140,6 +141,7 @@ The brief given to us also included many different questions to consider, we did
 "
             image={process4}
           ></ProjectImgCap>
+          </div>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Moodboard"></ProjectHeader>

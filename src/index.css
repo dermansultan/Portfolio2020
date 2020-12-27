@@ -516,12 +516,13 @@ footer {
 }
 
 .projectImgContainer{
-  padding-top: 25px;
+  padding-top: 60px;
   display: flex;
 }
 
 .projectImgWrapper{
   display: flex;
+  padding-bottom: 29px;
   align-items: center;
   flex-direction: column;
 }

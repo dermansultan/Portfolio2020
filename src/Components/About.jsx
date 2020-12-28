@@ -1,16 +1,32 @@
 import React from "react";
 import dp from "../Img/dp.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faEnvelope, faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCoffee,
+  faEnvelope,
+  faEnvelopeOpen,
+} from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
+
+const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const About = () => {
   return (
     <div className="mainContainer About">
-      <div className="aboutContainer">
+      <motion.div
+        exit={{ opacity: 0 }}
+        transition={outro}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="aboutContainer"
+      >
         <img className="dp" src={dp} />
         <div className="aboutBio">
-          <h1 className="aboutGreeting"> <span>👋</span>Hello there.</h1>
+          <h1 className="aboutGreeting">
+            {" "}
+            <span>👋</span>Hello there.
+          </h1>
           <p className="aboutPara">
             <span>An affinity for design and technology</span> - I love going
             out my way to find new ways to solve complex problems. I'm always
@@ -33,12 +49,12 @@ const About = () => {
             me below.
           </p>
           <div className="socialBtnWrapper">
-            <FontAwesomeIcon icon={faEnvelope} className='icon' />
-            <FontAwesomeIcon icon={faInstagram} className='icon' />
-            <FontAwesomeIcon icon={faLinkedin} className='icon' />
+            <FontAwesomeIcon icon={faEnvelope} className="icon" />
+            <FontAwesomeIcon icon={faInstagram} className="icon" />
+            <FontAwesomeIcon icon={faLinkedin} className="icon" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

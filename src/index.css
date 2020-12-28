@@ -87,11 +87,17 @@ nav > a {
   }
 }
 
+.protoBtn.Home{
+margin-top: 50px;
+width: 230px;
+height: 45px;
+}
+
 .landingGraphic {
-  animation: fadeIn ease-in-out 3s forwards, float 6s ease-in-out infinite;
-  animation-delay: 1.65s;
+  /* animation: fadeIn ease-in-out 3s forwards, float 6s ease-in-out infinite;
+  animation-delay: 1.65s; */
   width: 35%;
-  opacity: 0;
+  /* opacity: 0; */
   user-select: none;
   height: auto;
 }
@@ -136,10 +142,10 @@ nav > a {
   margin-top: 15px;
   color: var(--second-txt-color);
   font-size: clamp(14px, 1vw, 21px);
-  opacity: 0;
+  /* opacity: 0; */
   line-height: 1.65;
-  animation: fadeIn ease-in-out 2s forwards;
-  animation-delay: 1.65s;
+  /* animation: fadeIn ease-in-out 2s forwards;
+  animation-delay: 1.65s; */
 }
 
 @keyframes fadeIn {
@@ -147,7 +153,7 @@ nav > a {
     opacity: 1;
   }
 }
-
+/* 
 .arrow {
   border: solid var(--second-txt-color);
   border-width: 0 3px 3px 0;
@@ -156,13 +162,13 @@ nav > a {
   opacity: 0;
   animation: fadeIn ease-in-out 2s forwards;
   animation-delay: 1.65s;
-}
+} */
 
-.down {
+/* .down {
   margin-top: 70px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-}
+} */
 
 /* Projects Container Home */
 

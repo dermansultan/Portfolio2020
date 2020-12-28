@@ -16,11 +16,20 @@ import process3 from "../Img/caseStudies/Ruma/Process3.png";
 import process4 from "../Img/caseStudies/Ruma/Process4.png";
 import moodboard from "../Img/caseStudies/Ruma/moodboard.png";
 import styletile from "../Img/caseStudies/Ruma/styletile.png";
+import { motion } from "framer-motion";
+
+const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Ruma = () => {
   return (
     <div className="mainContainer Ruma">
-      <div className="rumaContainer">
+      <motion.div
+        exit={{ opacity: 0 }}
+        transition={outro}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="rumaContainer"
+      >
         <ProjectBanner banner={rumaBanner}></ProjectBanner>
         <ProjectDetails
           role={"UX/UI Design, Branding"}
@@ -118,40 +127,59 @@ The brief given to us also included many different questions to consider, we did
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Iteration: Wireframes and User Flows"></ProjectHeader>
           <ProjectParagraph text="We continued to break down the features during our wireframing process."></ProjectParagraph>
-          <div className="projectImgContainer" style={{flexDirection: 'column'}}>
-          <ProjectImgCap
-            caption="Sections and their belonging screens
+          <div
+            className="projectImgContainer"
+            style={{ flexDirection: "column" }}
+          >
+            <ProjectImgCap
+              caption="Sections and their belonging screens
 "
-            image={process1}
-          ></ProjectImgCap>
-          <ProjectImgCap
-            caption="Organizing each individual section and breaking down what to be included
+              image={process1}
+            ></ProjectImgCap>
+            <ProjectImgCap
+              caption="Organizing each individual section and breaking down what to be included
 "
-            image={process2}
-          ></ProjectImgCap>
-          <ProjectImgCap
-            caption="Different iterations for each individual page. 
+              image={process2}
+            ></ProjectImgCap>
+            <ProjectImgCap
+              caption="Different iterations for each individual page. 
 "
-            image={process3}
-          ></ProjectImgCap>
-          <ProjectParagraph
-            text="Onboarding + Joining User Flow Wireframes
+              image={process3}
+            ></ProjectImgCap>
+            <ProjectParagraph
+              text="Onboarding + Joining User Flow Wireframes
 "
-          ></ProjectParagraph>
-          <ProjectImgCap
-            caption="Onboarding + Joining User Flow Wireframes
+            ></ProjectParagraph>
+            <ProjectImgCap
+              caption="Onboarding + Joining User Flow Wireframes
 "
-            image={process4}
-          ></ProjectImgCap>
+              image={process4}
+            ></ProjectImgCap>
           </div>
         </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px", display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+        <div
+          className="projectSectionWrapper"
+          style={{
+            paddingTop: "12px",
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
           <ProjectHeader text="Moodboard"></ProjectHeader>
-          <img className='projectImg Single' src={moodboard}></img>
+          <img className="projectImg Single" src={moodboard}></img>
         </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px", display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+        <div
+          className="projectSectionWrapper"
+          style={{
+            paddingTop: "12px",
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+          }}
+        >
           <ProjectHeader text="Styletile"></ProjectHeader>
-          <img className='projectImg Single' src={styletile} ></img>
+          <img className="projectImg Single" src={styletile}></img>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Prototype, Flow and Features"></ProjectHeader>
@@ -211,7 +239,7 @@ The brief given to us also included many different questions to consider, we did
           <ProjectParagraph text="Most groups had 3 members. Since there was a lot of work to do amongst just us two I feel as if we could've delegated individual tasks better. There were times where we both were working on a task that we probably could've left to one individual and vice-versa."></ProjectParagraph>
         </div>
         <div className="deadspace" style={{ height: "900px" }}></div>
-      </div>
+      </motion.div>
     </div>
   );
 };

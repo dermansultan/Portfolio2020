@@ -14,7 +14,7 @@ function Header() {
           <HashLink smooth to="/#projects">
             Projects
           </HashLink>
-          <Link to="/Resume">Resume</Link>
+          <Link to="/">Resume</Link>
         </nav>
       </div>
     </header>

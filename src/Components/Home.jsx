@@ -2,15 +2,17 @@ import React from "react";
 import landingGraphic from "../Img/CodePenSquares.png";
 import ConstructionSign from "./ConstructionSign";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const intro = { delay: 1.75, duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
 const introType = { duration: 3, ease: [0.6, 0.01, -0.05, 0.9] };
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
+
 const Home = () => {
   return (
     <div className="mainContainer">
-      {/* <ConstructionSign></ConstructionSign> */}
+      <ConstructionSign></ConstructionSign>
       <div className="homeContainer">
         <div className="heroContainer">
           <div className="greetingBio">
@@ -69,24 +71,26 @@ const Home = () => {
         <div className="projectsContainer" id="projects">
           <h1 className="projectsHeader">Projects</h1>
           <div className="tilesContainer">
-            <div className="tileWrap Ruma">
+          <Link to="/Ruma" className="tileWrap Ruma">
+            <motion.div whileHover={{ scale: 1.10 }} className="tileWrap Ruma">
               <p className="tileDesc">Ruma - Streaming App</p>
               <p className="tileDesc2">UI/UX | Design Challenge</p>
-            </div>
-            <div className="tileWrap GHBC">
+            </motion.div>
+            </Link>
+            <motion.div whileHover={{ scale: 1.10 }} className="tileWrap GHBC">
               <p className="tileDesc">Game-Hero BootCamp - Mobile App </p>
               <p className="tileDesc2">UI/UX | Design Challenge</p>
-            </div>
-            <div className="tileWrap ToDo">
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.10 }} className="tileWrap ToDo">
               <p className="tileDesc">
                 ToDoList - CRUD App (Vanilla Js + Local Storage)
               </p>
               <p className="tileDesc2">UI/UX | Front End Development</p>
-            </div>
-            <div className="tileWrap Climate">
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.10 }} className="tileWrap Climate">
               <p className="tileDesc">Climate - Weather App </p>
               <p className="tileDesc2">UI/UX | Front End Development</p>
-            </div>
+            </motion.div>
             {/* <div className='tileWrap'>
         <img alt='RumaLogoBanner' draggable='false' className='tile' src={rumaBanner}/>
         <p className='tileDesc'>This is a great test.</p>

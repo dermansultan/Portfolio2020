@@ -3,7 +3,7 @@
 :root {
   --main-bg-colour: #f4f4f4;
   --main-txt-colour: #363635;
-  --second-txt-color: #595a4a;
+  --second-txt-color: ##39393a;
   --main-blue: #1d66b9;
   --second-blue: #f3f6ff;
 }
@@ -87,10 +87,10 @@ nav > a {
   }
 }
 
-.protoBtn.Home{
-margin-top: 50px;
-width: 230px;
-height: 45px;
+.protoBtn.Home {
+  margin-top: 50px;
+  width: 230px;
+  height: 45px;
 }
 
 .landingGraphic {
@@ -194,6 +194,14 @@ height: 45px;
   width: 100%;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
 .tileWrap {
   display: flex;
   flex-wrap: wrap;
@@ -259,9 +267,9 @@ height: 45px;
   opacity: 1;
 }
 
-.tileWrap:hover {
+/* .tileWrap:hover {
   transform: scale(1.1);
-}
+} */
 
 /* Footer */
 footer {
@@ -511,40 +519,40 @@ footer {
   border: 0;
 }
 
-.projectTimeline{
+.projectTimeline {
   width: 100%;
   height: auto;
 }
 
-.projectSubHeader{
+.projectSubHeader {
   color: var(--main-txt-colour);
   font-size: clamp(18px, 1.5vw, 22px);
 }
 
-.projectImgContainer{
+.projectImgContainer {
   padding-top: 60px;
   display: flex;
 }
 
-.projectImgWrapper{
+.projectImgWrapper {
   display: flex;
   padding-bottom: 29px;
   align-items: center;
   flex-direction: column;
 }
 
-.projectImg{
+.projectImg {
   width: 50%;
   height: auto;
-  border: 1px solid #252A41;
+  border: 1px solid #252a41;
 }
 
-.projectImg.Single{
+.projectImg.Single {
   align-self: center;
   border: none;
 }
 
-.projectImgCap{
+.projectImgCap {
   font-size: clamp(14px, 1.5vw, 18px);
   margin-top: 20px;
 }
@@ -566,25 +574,25 @@ footer {
   background-image: url("./Img/caseStudies/Ruma/solution4.png");
 }
 
-.projectSectionWrapper.RumaBvS{
+.projectSectionWrapper.RumaBvS {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
 
-.paraProjects.RumaBvS{
+.paraProjects.RumaBvS {
   font-size: clamp(14px, 1.5vw, 16px);
 }
 
-.leftContainer{
+.leftContainer {
   width: 25%;
 }
 
-.rightContainer{
+.rightContainer {
   width: 25%;
 }
 
-.userThinking{
+.userThinking {
   color: var(--main-txt-colour);
   font-size: clamp(18px, 1.5vw, 22px);
 }

@@ -40,7 +40,7 @@ const About = () => {
             became obsessed with JavaScript through expirementing with{" "}
             <span>FreeCodeCamp</span> and <span>TheOdinProject</span>. As of
             right now, I am messing around about with the <span>React</span>{" "}
-            framework, learning more CSS techniques and about Accesibility on
+            framework, (what this portfolio was made in!) learning more CSS techniques and about Accesibility on
             the Web.
           </p>
           <p className="aboutPara">

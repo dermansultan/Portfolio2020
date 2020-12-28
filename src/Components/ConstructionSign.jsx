@@ -1,7 +1,7 @@
 
 function ConstructionSign(){
     return(
-<div className='construction' style={{overflow:'hidden', backgroundColor: '#DC143C', position: 'fixed', top:'0', width: '100%', color: 'white', textAlign: 'center', height: '30px', fontSize: 'clamp(14px, 1.5vw, 18px)', zIndex: '5'}}>
+<div className='construction' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', overflow:'hidden', borderRadius: '40px',backgroundColor: '#DC143C', top:'50px',position: 'fixed', width: '55%', color: 'white', textAlign: 'center', height: '35px', fontSize: 'clamp(14px, 1.5vw, 18px)', zIndex: '5', opacity: '50%'}}>
     <p>🚧 This website is under construction! If you're viewing this thank you for you patience. 🚧</p>
 </div>
     )

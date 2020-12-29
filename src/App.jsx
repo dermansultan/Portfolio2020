@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./Components/About";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Ruma from "./Components/RumaCaseStudy";
 import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "./Components/ScrollToTop"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       {/* editing locally get rid of basename attr */}
       {/* <Header></Header> */}
       <Router basename="/">
+      <ScrollToTop />
       <Header></Header>
         <Route
           render={({ location }) => (
@@ -27,7 +29,6 @@ function App() {
         />
         <Footer></Footer>
       </Router>
-      {/* <Footer></Footer> */}
     </div>
   );
 }

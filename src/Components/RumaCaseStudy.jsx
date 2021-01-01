@@ -181,11 +181,14 @@ The brief given to us also included many different questions to consider, we did
           <ProjectHeader text="Styletile"></ProjectHeader>
           <img className="projectImg Single" src={styletile}></img>
         </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+        <div className="projectSectionWrapper" style={{ paddingTop: "12px", width: "100%"}}>
           <ProjectHeader text="Prototype, Flow and Features"></ProjectHeader>
           <p className="paraProjects">
             Our final prototype for Ruma can be seen <span>here</span> or below
           </p>
+          <div className='protoWrap'>
+          <iframe width="1280" height="720" src="https://xd.adobe.com/embed/5a675d5e-e5ab-47c2-92ab-ed169babdfd4-0f34/?fullscreen" frameBorder="0" allowFullScreen></iframe>
+          </div>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Ruma: Features"></ProjectHeader>
@@ -238,7 +241,7 @@ The brief given to us also included many different questions to consider, we did
           <h2 className="projectSubHeader">Delegating</h2>
           <ProjectParagraph text="Most groups had 3 members. Since there was a lot of work to do amongst just us two I feel as if we could've delegated individual tasks better. There were times where we both were working on a task that we probably could've left to one individual and vice-versa."></ProjectParagraph>
         </div>
-        <div className="deadspace" style={{ height: "900px" }}></div>
+        {/* <div className="deadspace" style={{ height: "900px" }}></div> */}
       </motion.div>
     </div>
   );

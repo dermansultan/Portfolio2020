@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectDetails from "./CaseStudy/ProjectDetails";
 import ProjectBanner from "./CaseStudy/ProjectBanner";
 import rumaBanner from "../Img/Ruma4k.png";
@@ -17,10 +17,16 @@ import process4 from "../Img/caseStudies/Ruma/Process4.png";
 import moodboard from "../Img/caseStudies/Ruma/moodboard.png";
 import styletile from "../Img/caseStudies/Ruma/styletile.png";
 import { motion } from "framer-motion";
+import { docTitleUpdate } from "./docTitleUpdate";
 
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Ruma = () => {
+
+  useEffect(() => {
+   docTitleUpdate('| Ruma Case Study')
+  });
+
   return (
     <div className="mainContainer Ruma">
       <motion.div
@@ -181,13 +187,22 @@ The brief given to us also included many different questions to consider, we did
           <ProjectHeader text="Styletile"></ProjectHeader>
           <img className="projectImg Single" src={styletile}></img>
         </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px", width: "100%"}}>
+        <div
+          className="projectSectionWrapper"
+          style={{ paddingTop: "12px", width: "100%" }}
+        >
           <ProjectHeader text="Prototype, Flow and Features"></ProjectHeader>
           <p className="paraProjects">
             Our final prototype for Ruma can be seen <span>here</span> or below
           </p>
-          <div className='protoWrap'>
-          <iframe width="1280" height="720" src="https://xd.adobe.com/embed/5a675d5e-e5ab-47c2-92ab-ed169babdfd4-0f34/?fullscreen" frameBorder="0" allowFullScreen></iframe>
+          <div className="protoWrap">
+            <iframe
+              width="1280"
+              height="720"
+              src="https://xd.adobe.com/embed/5a675d5e-e5ab-47c2-92ab-ed169babdfd4-0f34/?fullscreen"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>

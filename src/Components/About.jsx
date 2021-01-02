@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import dp from "../Img/dp.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,6 +12,11 @@ import { motion } from "framer-motion";
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const About = () => {
+
+  useEffect(() => {
+    docTitleUpdate('| About Me')
+   });
+
   return (
     <div className="mainContainer About">
       <motion.div

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import landingGraphic from "../Img/CodePenSquares.png";
 import ConstructionSign from "./ConstructionSign";
 import { motion } from "framer-motion";
@@ -10,6 +10,11 @@ const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 
 const Home = () => {
+
+  useEffect(() => {
+    docTitleUpdate('| Home ')
+   });
+
   return (
     <div className="mainContainer">
       <ConstructionSign></ConstructionSign>

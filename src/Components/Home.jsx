@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import landingGraphic from "../Img/CodePenSquares.png";
 import ConstructionSign from "./ConstructionSign";
 import { motion } from "framer-motion";
+import { docTitleUpdate } from "./docTitleUpdate"
 import { Link } from "react-router-dom";
 
 const intro = { delay: 1.75, duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };

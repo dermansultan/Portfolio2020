@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
+import { docTitleUpdate } from "./docTitleUpdate"
 
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 

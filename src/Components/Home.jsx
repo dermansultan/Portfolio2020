@@ -13,7 +13,7 @@ const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 const Home = () => {
 
   useEffect(() => {
-    docTitleUpdate('| Home ')
+    docTitleUpdate('| 🏠 Home ')
    });
 
   return (

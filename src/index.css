@@ -625,6 +625,7 @@ footer {
   }
 
   .aboutContainer {
+    padding-top: 50px;
     flex-direction: column;
     align-items: center;
   }
@@ -633,8 +634,13 @@ footer {
     width: 75%;
   }
 
+  .mainContainer.About{
+    align-items: flex-start;
+  }
+
   .aboutBio {
     padding: 0;
+    padding-top: 10%;
   }
 
   /* case studies selectors */

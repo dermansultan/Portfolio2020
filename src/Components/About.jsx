@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCoffee,
   faEnvelope,
-  faEnvelopeOpen,
+  faEnvelopeOpen
 } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate"
 
@@ -50,7 +50,7 @@ const About = () => {
             the Web.
           </p>
           <p className="aboutPara">
-            I'm constantly looking for new opportunities to learn more and
+            I'm currently looking for new opportunities to learn more and
             expand my abilities. Have an opportunity for me? Get in touch with
             me below.
           </p>
@@ -58,6 +58,7 @@ const About = () => {
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
             <FontAwesomeIcon icon={faInstagram} className="icon" />
             <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            <FontAwesomeIcon icon={faGithub} className="icon"/>
           </div>
         </div>
       </motion.div>

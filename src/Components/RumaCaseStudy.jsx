@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ProjectDetails from "./CaseStudy/ProjectDetails";
 import ProjectBanner from "./CaseStudy/ProjectBanner";
 import rumaBanner from "../Img/Ruma4k.png";
@@ -22,13 +22,18 @@ import { docTitleUpdate } from "./docTitleUpdate";
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Ruma = () => {
-
   useEffect(() => {
-   docTitleUpdate('| Ruma Case Study')
+    docTitleUpdate("| Ruma Case Study");
   });
+
+  const [lightBox, setLightBox] = useState(concept2);
+
 
   return (
     <div className="mainContainer Ruma">
+    <div>
+      <img src={lightBox}></img>
+    </div>
       <motion.div
         exit={{ opacity: 0 }}
         transition={outro}

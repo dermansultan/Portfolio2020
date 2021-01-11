@@ -198,7 +198,7 @@ a:hover {
   text-decoration: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -485,11 +485,10 @@ footer {
   border: 0;
 }
 
-.protoWrap{
+.protoWrap {
   padding-top: 30px;
   display: flex;
   justify-content: center;
-
 }
 
 .headerProjects {
@@ -605,6 +604,27 @@ footer {
   font-size: clamp(18px, 1.5vw, 22px);
 }
 
+.projectImgWrapper.lightBox {
+  display: flex; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.lightBox.Content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
 /* Responsive */
 
 /* Extra small devices (phones, 600px and down) */
@@ -634,7 +654,7 @@ footer {
     width: 75%;
   }
 
-  .mainContainer.About{
+  .mainContainer.About {
     align-items: flex-start;
   }
 

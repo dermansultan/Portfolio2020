@@ -19,6 +19,8 @@ import styletile from "../Img/caseStudies/Ruma/styletile.png";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
 
+//Create master Image module for img imports
+
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Ruma = () => {
@@ -28,12 +30,17 @@ const Ruma = () => {
 
   const [lightBox, setLightBox] = useState(concept2);
 
+  const lightBoxHandler = (img, cap) => {
+    setLightBox(img, cap);
+  };
 
   return (
     <div className="mainContainer Ruma">
-    <div>
-      <img src={lightBox}></img>
-    </div>
+      <div className='lightBox wrapper'>
+      <div className='lightBox content'>
+        <img src={lightBox}></img>
+        </div>
+      </div>
       <motion.div
         exit={{ opacity: 0 }}
         transition={outro}
@@ -59,7 +66,10 @@ const Ruma = () => {
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Solution"></ProjectHeader>
           <ProjectParagraph text="A web app that encourages users to  explore other content based on their interests, and watch content amongst their loved ones. "></ProjectParagraph>
-          <ProjectTiles csTitle="Ruma"></ProjectTiles>
+          <ProjectTiles
+            handleClick={lightBoxHandler}
+            csTitle="Ruma"
+          ></ProjectTiles>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Project Timeline"></ProjectHeader>

@@ -605,7 +605,7 @@ footer {
 }
 
 .lightBox.wrapper {
-  display: flex;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -621,6 +621,7 @@ footer {
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .lightBox.content img {

@@ -28,17 +28,21 @@ const Ruma = () => {
     docTitleUpdate("| Ruma Case Study");
   });
 
-  const [lightBox, setLightBox] = useState(concept2);
+  const [lightBox, setLightBox] = useState({
+    image: "",
+    caption: "",
+  });
 
   const lightBoxHandler = (img, cap) => {
-    setLightBox(img, cap);
+    setLightBox({ "image": img, "caption": cap });
   };
 
   return (
     <div className="mainContainer Ruma">
-      <div className='lightBox wrapper'>
-      <div className='lightBox content'>
-        <img src={lightBox}></img>
+      <div className="lightBox wrapper">
+        <div className="lightBox content">
+          <img src={lightBox.image}></img>
+          <h2>{lightBox.caption}</h2>
         </div>
       </div>
       <motion.div
@@ -66,10 +70,7 @@ const Ruma = () => {
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Solution"></ProjectHeader>
           <ProjectParagraph text="A web app that encourages users to  explore other content based on their interests, and watch content amongst their loved ones. "></ProjectParagraph>
-          <ProjectTiles
-            handleClick={lightBoxHandler}
-            csTitle="Ruma"
-          ></ProjectTiles>
+          <ProjectTiles csTitle="Ruma"></ProjectTiles>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Project Timeline"></ProjectHeader>
@@ -77,6 +78,7 @@ const Ruma = () => {
             className="projectTimeline Ruma"
             alt="rumaTimeline"
             src={timelineRuma}
+            onClick={() => {lightBoxHandler(timelineRuma, "This was a timeline!")}}
           ></img>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>

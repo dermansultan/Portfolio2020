@@ -20,7 +20,6 @@ import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
 
 //Create master Image module for img imports
-
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Ruma = () => {
@@ -33,13 +32,30 @@ const Ruma = () => {
     caption: "",
   });
 
+  const toggleLightBox = () => {
+    let elem = document.getElementById("lightBoxElem");
+    if (elem.style.display == "none") {
+      elem.style.display = "flex";
+    } else {
+      elem.style.display = "none";
+    }
+  };
+
   const lightBoxHandler = (img, cap) => {
-    setLightBox({ "image": img, "caption": cap });
+    setLightBox({ image: img, caption: cap });
+    toggleLightBox();
   };
 
   return (
     <div className="mainContainer Ruma">
-      <div className="lightBox wrapper">
+      <div
+        className="lightBox wrapper"
+        id="lightBoxElem"
+        onClick={() => {
+          toggleLightBox();
+        }}
+        style={{display: "none"}}
+      >
         <div className="lightBox content">
           <img src={lightBox.image}></img>
           <h2>{lightBox.caption}</h2>
@@ -78,7 +94,9 @@ const Ruma = () => {
             className="projectTimeline Ruma"
             alt="rumaTimeline"
             src={timelineRuma}
-            onClick={() => {lightBoxHandler(timelineRuma, "This was a timeline!")}}
+            onClick={() => {
+              lightBoxHandler(timelineRuma, "This was a timeline!");
+            }}
           ></img>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
@@ -139,6 +157,12 @@ The brief given to us also included many different questions to consider, we did
               caption="Table breaking down features + content to be included 
 "
               image={concept1}
+              onClick={() => {
+                lightBoxHandler(
+                  concept1,
+                  "Table breaking down features + content to be included"
+                );
+              }}
             ></ProjectImgCap>
             <ProjectImgCap
               caption="Starting with topics we wanted to address with Ruma

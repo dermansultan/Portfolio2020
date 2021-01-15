@@ -22,33 +22,33 @@ import { docTitleUpdate } from "./docTitleUpdate";
 //Create master Image module for img imports
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
-const Ruma = () => {
+const Ruma = ({ lightBoxHandler }) => {
   useEffect(() => {
     docTitleUpdate("| Ruma Case Study");
   });
 
-  const [lightBox, setLightBox] = useState({
-    image: "",
-    caption: "",
-  });
+  // const [lightBox, setLightBox] = useState({
+  //   image: "",
+  //   caption: "",
+  // });
 
-  const toggleLightBox = () => {
-    let elem = document.getElementById("lightBoxElem");
-    if (elem.style.display == "none") {
-      elem.style.display = "flex";
-    } else {
-      elem.style.display = "none";
-    }
-  };
+  // const toggleLightBox = () => {
+  //   let elem = document.getElementById("lightBoxElem");
+  //   if (elem.style.display == "none") {
+  //     elem.style.display = "flex";
+  //   } else {
+  //     elem.style.display = "none";
+  //   }
+  // };
 
-  const lightBoxHandler = (img, cap) => {
-    setLightBox({ image: img, caption: cap });
-    toggleLightBox();
-  };
+  // const lightBoxHandler = (img, cap) => {
+  //   setLightBox({ image: img, caption: cap });
+  //   toggleLightBox();
+  // };
 
   return (
     <div className="mainContainer Ruma">
-      <div
+      {/* <div
         className="lightBox wrapper"
         id="lightBoxElem"
         onClick={() => {
@@ -60,7 +60,7 @@ const Ruma = () => {
           <img src={lightBox.image}></img>
           <h2>{lightBox.caption}</h2>
         </div>
-      </div>
+      </div> */}
       <motion.div
         exit={{ opacity: 0 }}
         transition={outro}

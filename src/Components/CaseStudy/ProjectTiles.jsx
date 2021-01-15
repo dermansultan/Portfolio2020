@@ -1,12 +1,7 @@
 const ProjectTile = (props) => {
-  return (
-    <div className="projectTilesWrapper">
-      <div className={`projectTile ${props.csTitle}1`}></div>
-      <div className={`projectTile ${props.csTitle}2`}></div>
-      <div className={`projectTile ${props.csTitle}3`}></div>
-      <div className={`projectTile ${props.csTitle}4`}></div>
-    </div>
-  );
+  const images = props.images;
+  const imagesList = images.map((image) => <img key={image.toString()} src={image}></img>);
+  return <div className="projectTilesWrapper">{imagesList}</div>;
 };
 
 export default ProjectTile;

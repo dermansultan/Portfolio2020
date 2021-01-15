@@ -8,16 +8,9 @@ import ProjectParagraph from "../Components/CaseStudy/ProjectParagraph";
 import ProjectTiles from "../Components/CaseStudy/ProjectTiles";
 import timelineRuma from "../Img/caseStudies/Ruma/timelineRuma.png";
 import ProjectImgCap from "../Components/CaseStudy/ProjectImgCap";
-import concept1 from "../Img/caseStudies/Ruma/concept1.png";
-import concept2 from "../Img/caseStudies/Ruma/concept2.png";
-import process1 from "../Img/caseStudies/Ruma/Process1.png";
-import process2 from "../Img/caseStudies/Ruma/Process2.png";
-import process3 from "../Img/caseStudies/Ruma/Process3.png";
-import process4 from "../Img/caseStudies/Ruma/Process4.png";
-import moodboard from "../Img/caseStudies/Ruma/moodboard.png";
-import styletile from "../Img/caseStudies/Ruma/styletile.png";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
+import {images, solutionArr} from "../Img/caseStudies/Ruma/Image";
 
 //Create master Image module for img imports
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -27,40 +20,8 @@ const Ruma = ({ lightBoxHandler }) => {
     docTitleUpdate("| Ruma Case Study");
   });
 
-  // const [lightBox, setLightBox] = useState({
-  //   image: "",
-  //   caption: "",
-  // });
-
-  // const toggleLightBox = () => {
-  //   let elem = document.getElementById("lightBoxElem");
-  //   if (elem.style.display == "none") {
-  //     elem.style.display = "flex";
-  //   } else {
-  //     elem.style.display = "none";
-  //   }
-  // };
-
-  // const lightBoxHandler = (img, cap) => {
-  //   setLightBox({ image: img, caption: cap });
-  //   toggleLightBox();
-  // };
-
   return (
     <div className="mainContainer Ruma">
-      {/* <div
-        className="lightBox wrapper"
-        id="lightBoxElem"
-        onClick={() => {
-          toggleLightBox();
-        }}
-        style={{display: "none"}}
-      >
-        <div className="lightBox content">
-          <img src={lightBox.image}></img>
-          <h2>{lightBox.caption}</h2>
-        </div>
-      </div> */}
       <motion.div
         exit={{ opacity: 0 }}
         transition={outro}
@@ -86,7 +47,7 @@ const Ruma = ({ lightBoxHandler }) => {
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Solution"></ProjectHeader>
           <ProjectParagraph text="A web app that encourages users to  explore other content based on their interests, and watch content amongst their loved ones. "></ProjectParagraph>
-          <ProjectTiles csTitle="Ruma"></ProjectTiles>
+          <ProjectTiles lightBox={lightBoxHandler} images={solutionArr}></ProjectTiles>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Project Timeline"></ProjectHeader>
@@ -156,10 +117,10 @@ The brief given to us also included many different questions to consider, we did
             <ProjectImgCap
               caption="Table breaking down features + content to be included 
 "
-              image={concept1}
+              image={images[0].src}
               onClick={() => {
                 lightBoxHandler(
-                  concept1,
+                  images[1].src,
                   "Table breaking down features + content to be included"
                 );
               }}
@@ -167,7 +128,7 @@ The brief given to us also included many different questions to consider, we did
             <ProjectImgCap
               caption="Starting with topics we wanted to address with Ruma
 "
-              image={concept2}
+              image={images[1].src}
             ></ProjectImgCap>
           </div>
         </div>
@@ -181,17 +142,17 @@ The brief given to us also included many different questions to consider, we did
             <ProjectImgCap
               caption="Sections and their belonging screens
 "
-              image={process1}
+              image={images[2].src}
             ></ProjectImgCap>
             <ProjectImgCap
               caption="Organizing each individual section and breaking down what to be included
 "
-              image={process2}
+              image={images[3].src}
             ></ProjectImgCap>
             <ProjectImgCap
               caption="Different iterations for each individual page. 
 "
-              image={process3}
+              image={images[4].src}
             ></ProjectImgCap>
             <ProjectParagraph
               text="Onboarding + Joining User Flow Wireframes
@@ -200,7 +161,7 @@ The brief given to us also included many different questions to consider, we did
             <ProjectImgCap
               caption="Onboarding + Joining User Flow Wireframes
 "
-              image={process4}
+              image={images[5].src}
             ></ProjectImgCap>
           </div>
         </div>
@@ -214,7 +175,7 @@ The brief given to us also included many different questions to consider, we did
           }}
         >
           <ProjectHeader text="Moodboard"></ProjectHeader>
-          <img className="projectImg Single" src={moodboard}></img>
+          <img className="projectImg Single" src={images[6].src}></img>
         </div>
         <div
           className="projectSectionWrapper"
@@ -226,7 +187,7 @@ The brief given to us also included many different questions to consider, we did
           }}
         >
           <ProjectHeader text="Styletile"></ProjectHeader>
-          <img className="projectImg Single" src={styletile}></img>
+          <img className="projectImg Single" src={images[7].src}></img>
         </div>
         <div
           className="projectSectionWrapper"

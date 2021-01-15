@@ -513,6 +513,12 @@ footer {
   width: 100%;
 }
 
+.projectTilesWrapper img{
+  width: 100%;
+  height: auto;
+
+}
+
 .projectTile {
   display: flex;
   flex-wrap: wrap;
@@ -564,22 +570,6 @@ footer {
   margin-top: 20px;
 }
 
-/* Ruma  */
-.projectTile.Ruma1 {
-  background-image: url("./Img/caseStudies/Ruma/solution1.png");
-}
-
-.projectTile.Ruma2 {
-  background-image: url("./Img/caseStudies/Ruma/solution2.png");
-}
-
-.projectTile.Ruma3 {
-  background-image: url("./Img/caseStudies/Ruma/solution3.png");
-}
-
-.projectTile.Ruma4 {
-  background-image: url("./Img/caseStudies/Ruma/solution4.png");
-}
 
 .projectSectionWrapper.RumaBvS {
   display: flex;

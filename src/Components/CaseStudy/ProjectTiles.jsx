@@ -1,7 +1,15 @@
 const ProjectTile = (props) => {
   const images = props.images;
-  const imagesList = images.map((image) => <img key={image.toString()} src={image}></img>);
+  const imagesList = images.map((image) => (
+    <img
+      key={image.toString()}
+      src={image.src}
+      onClick={() => {
+        props.lightBox(image.src, image.description);
+      }}
+    ></img>
+  ));
   return <div className="projectTilesWrapper">{imagesList}</div>;
 };
 
-export default ProjectTile;
+export default ProjectTile; 

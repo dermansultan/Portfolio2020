@@ -4,19 +4,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCoffee,
   faEnvelope,
-  faEnvelopeOpen
+  faEnvelopeOpen,
 } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
-import { docTitleUpdate } from "./docTitleUpdate"
+import { docTitleUpdate } from "./docTitleUpdate";
 
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const About = () => {
-
   useEffect(() => {
-    docTitleUpdate('| 👋 About Me')
-   });
+    docTitleUpdate("| 👋 About Me");
+  });
 
   return (
     <div className="mainContainer About">
@@ -46,19 +49,27 @@ const About = () => {
             became obsessed with JavaScript through expirementing with{" "}
             <span>FreeCodeCamp</span> and <span>TheOdinProject</span>. As of
             right now, I am messing around about with the <span>React</span>{" "}
-            framework, (what this portfolio was made in!) learning more CSS techniques and about Accesibility on
-            the Web.
+            framework, (what this portfolio was made in!) learning more CSS
+            techniques and about Accesibility on the Web.
           </p>
           <p className="aboutPara">
-            I'm currently looking for new opportunities to learn more and
-            expand my abilities. Have an opportunity for me? Get in touch with
-            me below.
+            I'm currently looking for new opportunities to learn more and expand
+            my abilities. Have an opportunity for me? Get in touch with me
+            below.
           </p>
           <div className="socialBtnWrapper">
-            <FontAwesomeIcon icon={faEnvelope} className="icon" />
-            <FontAwesomeIcon icon={faInstagram} className="icon" />
-            <FontAwesomeIcon icon={faLinkedin} className="icon" />
-            <FontAwesomeIcon icon={faGithub} className="icon"/>
+            <a href="mailto:abdurrehmansultan4@gmail.com" target="_blank">
+              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+            </a>
+            <a href="https://www.instagram.com/ixderman/" target="_blank">
+              <FontAwesomeIcon icon={faInstagram} className="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/derman-sultan/" target="_blank">
+              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            </a>
+            <a href="https://github.com/dermansultan" target="_blank">
+              <FontAwesomeIcon icon={faGithub} className="icon" />
+            </a>
           </div>
         </div>
       </motion.div>

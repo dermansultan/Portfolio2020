@@ -1,6 +1,6 @@
 import React from "react";
-import { motion } from "framer-motion";
 
+// Recreate with styled-component
 
 function ProjectDetails(props) {
   return (

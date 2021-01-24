@@ -1,3 +1,5 @@
+// recreate with styled component
+
 function ProjectImgCap(props) {
   return (
 <div className='projectImgWrapper' onClick={props.onClick}>

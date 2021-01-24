@@ -1,3 +1,5 @@
+// styled components
+
 const ProjectTile = (props) => {
   const images = props.images;
   const imagesList = images.map((image) => (

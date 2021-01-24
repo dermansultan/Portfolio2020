@@ -1,5 +1,7 @@
 import React from "react";
 
+// recreate with styled-components
+
 function ProjectQuote(props) {
   return (
     <div className='quoteWrapper'>

@@ -2,6 +2,15 @@ import styled from "styled-components";
 
 export const Banner = styled.div`
   backgroundimage: url(${(props) => props.backImg});
+  display: flex;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  height: 70vh;
 `;
 
 export const BodyPara = styled.p`
@@ -27,4 +36,3 @@ export const Section = styled.section`
   padding-top: 20px;
   padding-bottom: 20px;
 `;
-

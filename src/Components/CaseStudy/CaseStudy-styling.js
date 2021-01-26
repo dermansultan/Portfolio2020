@@ -23,7 +23,8 @@ export const WrapperCol = styled.div`
 `;
 
 export const Section = styled.section`
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 

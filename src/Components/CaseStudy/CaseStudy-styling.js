@@ -1,8 +1,15 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
+export const CaseContainer = styled(motion.div)`
+  margin-top: 5vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+`;
 
 export const Banner = styled.div`
-  backgroundimage: url(${(props) => props.backImg});
+  background-image: url(${(props) => props.backImg});
   display: flex;
   background-size: 150%;
   background-repeat: no-repeat;

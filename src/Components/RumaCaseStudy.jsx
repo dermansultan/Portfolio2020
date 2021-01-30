@@ -10,8 +10,8 @@ import timelineRuma from "../Img/caseStudies/Ruma/timelineRuma.png";
 import ProjectImgCap from "../Components/CaseStudy/ProjectImgCap";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
-import {images, solutionArr} from "../Img/caseStudies/Ruma/Image";
-import * as CaseStudyStyles from "./CaseStudy/CaseStudy-styling";
+import { images, solutionArr } from "../Img/caseStudies/Ruma/Image";
+import { CaseContainer, Banner, BodyPara, Header, WrapperCol, Section } from "./CaseStudy/CaseStudy-styling";
 
 //Create master Image module for img imports
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -23,32 +23,34 @@ const Ruma = ({ lightBoxHandler }) => {
 
   return (
     <div className="mainContainer Ruma">
-      <motion.div
+      <CaseContainer
         exit={{ opacity: 0 }}
         transition={outro}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="rumaContainer"
       >
-        <ProjectBanner banner={rumaBanner}></ProjectBanner>
+      <Banner backImg={rumaBanner}></Banner>
         <ProjectDetails
           role={"UX/UI Design, Branding"}
           tools={"Invision, Adobe XD"}
           team={"Rohail Khan"}
           duration={"48 hours"}
         ></ProjectDetails>
-        <div className="projectSectionWrapper">
-          <ProjectHeader text="Background"></ProjectHeader>
-          <ProjectParagraph text="I took part in the Adobe x Netflix Creative Jam, a 48 hour online design challenge. My partner and I came up with our project Ruma. Ruma is a desktop app that aims to give families and friends a way to enjoy content together remotely."></ProjectParagraph>
-        </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
-          <ProjectHeader text="Design Challenge"></ProjectHeader>
+        <Section>
+          <Header>Background</Header>
+          <BodyPara>"I took part in the Adobe x Netflix Creative Jam, a 48 hour online design challenge. My partner and I came up with our project Ruma. Ruma is a desktop app that aims to give families and friends a way to enjoy content together remotely."</BodyPara>
+        </Section>
+        <Section>
+        <Header>Design Challenge</Header>
           <ProjectQuote text='"Design a third-party desktop web site or desktop app (not Netflix-branded) where the community can celebrate shared stories together through communal and authentic experiences."'></ProjectQuote>
-        </div>
+        </Section>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Solution"></ProjectHeader>
           <ProjectParagraph text="A web app that encourages users to  explore other content based on their interests, and watch content amongst their loved ones. "></ProjectParagraph>
-          <ProjectTiles lightBox={lightBoxHandler} images={solutionArr}></ProjectTiles>
+          <ProjectTiles
+            lightBox={lightBoxHandler}
+            images={solutionArr}
+          ></ProjectTiles>
         </div>
         <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
           <ProjectHeader text="Project Timeline"></ProjectHeader>
@@ -260,7 +262,7 @@ The brief given to us also included many different questions to consider, we did
           <ProjectParagraph text="Most groups had 3 members. Since there was a lot of work to do amongst just us two I feel as if we could've delegated individual tasks better. There were times where we both were working on a task that we probably could've left to one individual and vice-versa."></ProjectParagraph>
         </div>
         {/* <div className="deadspace" style={{ height: "900px" }}></div> */}
-      </motion.div>
+      </CaseContainer>
     </div>
   );
 };

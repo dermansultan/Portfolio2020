@@ -63,7 +63,7 @@ function ProjectDetails(props) {
   return (
     <DetailsWrapper>
       <a href={props.demoLink}>
-        <ProtoBtn></ProtoBtn>
+        <ProtoBtn>Live Prototype</ProtoBtn>
       </a>
       <ContentWrapper>
         <WrapperCol>

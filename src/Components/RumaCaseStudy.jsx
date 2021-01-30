@@ -11,6 +11,7 @@ import ProjectImgCap from "../Components/CaseStudy/ProjectImgCap";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
 import {images, solutionArr} from "../Img/caseStudies/Ruma/Image";
+import * as CaseStudyStyles from "./CaseStudy/CaseStudy-styling";
 
 //Create master Image module for img imports
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };

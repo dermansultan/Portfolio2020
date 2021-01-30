@@ -64,7 +64,10 @@ const About = () => {
             <a href="https://www.instagram.com/ixderman/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} className="icon" />
             </a>
-            <a href="https://www.linkedin.com/in/derman-sultan/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/derman-sultan/"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faLinkedin} className="icon" />
             </a>
             <a href="https://github.com/dermansultan" target="_blank">

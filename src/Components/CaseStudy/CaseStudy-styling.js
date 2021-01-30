@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Banner = styled.div`
   backgroundimage: url(${(props) => props.backImg});
   display: flex;

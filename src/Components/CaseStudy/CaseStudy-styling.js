@@ -8,6 +8,12 @@ export const CaseContainer = styled(motion.div)`
   flex-direction: column;
 `;
 
+export const MainContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 export const Banner = styled.div`
   background-image: url(${(props) => props.backImg});
   display: flex;
@@ -32,6 +38,12 @@ export const BodyPara = styled.p`
 export const Header = styled.h1`
   font-size: clamp(30px, 1.5vw, 55px);
   color: var(--main-txt-colour);
+`;
+
+export const SubHeader = styled.h2`
+  color: var(--main-txt-colour);
+  padding-top: 12px;
+  font-size: clamp(18px, 1.5vw, 22px);
 `;
 
 export const WrapperCol = styled.div`

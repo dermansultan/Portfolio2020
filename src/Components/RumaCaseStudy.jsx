@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ProjectDetails from "./CaseStudy/ProjectDetails";
-import ProjectBanner from "./CaseStudy/ProjectBanner";
 import rumaBanner from "../Img/Ruma4k.png";
 import ProjectHeader from "../Components/CaseStudy/ProjectHeader";
 import ProjectQuote from "../Components/CaseStudy/ProjectQuote";
@@ -18,6 +17,8 @@ import {
   Header,
   WrapperCol,
   Section,
+  SubHeader,
+  MainContainer,
 } from "./CaseStudy/CaseStudy-styling";
 
 //Create master Image module for img imports
@@ -29,7 +30,8 @@ const Ruma = ({ lightBoxHandler }) => {
   });
 
   return (
-    <div className="mainContainer Ruma">
+    // <div className="mainContainer Ruma">
+    <MainContainer>
       <CaseContainer
         exit={{ opacity: 0 }}
         transition={outro}
@@ -134,9 +136,14 @@ const Ruma = ({ lightBoxHandler }) => {
             </p>
           </div>
         </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
-          <ProjectHeader text="Iteration: Concept"></ProjectHeader>
-          <ProjectParagraph text="After considering the brief questions we started to iterate on ideas of the general app. We started with topics we wanted to address, and then moved onto features."></ProjectParagraph>
+        {/* <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}> */}
+        <Section>
+          <Header>Iteration: Concept</Header>
+          <BodyPara>
+            After considering the brief questions we started to iterate on ideas
+            of the general app. We started with topics we wanted to address, and
+            then moved onto features.
+          </BodyPara>
           <div className="projectImgContainer">
             <ProjectImgCap
               caption="Table breaking down features + content to be included 
@@ -155,10 +162,13 @@ const Ruma = ({ lightBoxHandler }) => {
               image={images[1].src}
             ></ProjectImgCap>
           </div>
-        </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
-          <ProjectHeader text="Iteration: Wireframes and User Flows"></ProjectHeader>
-          <ProjectParagraph text="We continued to break down the features during our wireframing process."></ProjectParagraph>
+        </Section>
+        <Section>
+          <Header>Iteration: Wireframes and User Flows</Header>
+          <BodyPara>
+            We continued to break down the features during our wireframing
+            process.
+          </BodyPara>
           <div
             className="projectImgContainer"
             style={{ flexDirection: "column" }}
@@ -188,7 +198,7 @@ const Ruma = ({ lightBoxHandler }) => {
               image={images[5].src}
             ></ProjectImgCap>
           </div>
-        </div>
+        </Section>
         <div
           className="projectSectionWrapper"
           style={{
@@ -271,20 +281,51 @@ const Ruma = ({ lightBoxHandler }) => {
             </div>
           </div>
         </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
-          <ProjectHeader text="Takeaways"></ProjectHeader>
-          <h2 className="projectSubHeader">What didn't work...</h2>
-          <ProjectParagraph text="During this jam, I learned how to better allocate time. Before getting to the wireframing process we had iterated over a few different ideas of the concept of the app."></ProjectParagraph>
-          <ProjectParagraph text="One speciafic feature of the app 'Communities', felt like we didn't get enough time to flesh it out. We had understood what we wanted to include in them, but when it came to laying out that feature we slowly realized we may have no fleshed this out as much as we should have. It's very simple to say this page will feature 'x' feature but until you deep dive and see how that feature fits in the overall app and layout you won't get a feel of its true gravity. "></ProjectParagraph>
-          <ProjectParagraph text="There were many features such as the settings page that due to this problem set us back as a group. In the future I will employ other brainstorming tools such as Affinity Mapping to get a concrete idea out the door. "></ProjectParagraph>
-          <h2 className="projectSubHeader">Iterate, Iterate, Iterate</h2>
-          <ProjectParagraph text="I feel the back and forth between my partner and I was healthy. We were able to bounce ideas off one another with real criticisms. Although I feel as a duo we did this aspect well, during our iteration process we probably could have gone over more ideas. As we were pressed were time I believe this wasn't as much of a focus but it is something I definetly want to be able to do in future projects."></ProjectParagraph>
-          <h2 className="projectSubHeader">Delegating</h2>
-          <ProjectParagraph text="Most groups had 3 members. Since there was a lot of work to do amongst just us two I feel as if we could've delegated individual tasks better. There were times where we both were working on a task that we probably could've left to one individual and vice-versa."></ProjectParagraph>
-        </div>
+        {/* <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}> */}
+        <Section>
+          <Header>Takeaways</Header>
+          <SubHeader>What didn't work...</SubHeader>
+          <BodyPara>
+            During this jam, I learned how to better allocate time. Before
+            getting to the wireframing process we had iterated over a few
+            different ideas of the concept of the app.
+          </BodyPara>
+          <BodyPara>
+            One specific feature of the app 'Communities', felt like we didn't
+            get enough time to flesh it out. We had understood what we wanted to
+            include in them, but when it came to laying out that feature we
+            slowly realized we may have no fleshed this out as much as we should
+            have. It's very simple to say this page will feature 'x' feature but
+            until you deep dive and see how that feature fits in the overall app
+            and layout you won't get a feel of its true gravity.
+          </BodyPara>
+          <BodyPara>
+            There were many features such as the settings page that due to this
+            problem set us back as a group. In the future I will employ other
+            brainstorming tools such as Affinity Mapping to get a concrete idea
+            out the door.
+          </BodyPara>
+          <SubHeader>Iterate, Iterate, Iterate</SubHeader>
+          <BodyPara>
+            I feel the back and forth between my partner and I was healthy. We
+            were able to bounce ideas off one another with real criticisms.
+            Although I feel as a duo we did this aspect well, during our
+            iteration process we probably could have gone over more ideas. As we
+            were pressed were time I believe this wasn't as much of a focus but
+            it is something I definetly want to be able to do in future
+            projects.
+          </BodyPara>
+          <SubHeader>Delegating</SubHeader>
+          <BodyPara>
+            Most groups had 3 members. Since there was a lot of work to do
+            amongst just us two I feel as if we could've delegated individual
+            tasks better. There were times where we both were working on a task
+            that we probably could've left to one individual and vice-versa.
+          </BodyPara>
+        </Section>
         {/* <div className="deadspace" style={{ height: "900px" }}></div> */}
       </CaseContainer>
-    </div>
+    </MainContainer>
   );
 };
 

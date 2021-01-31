@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./Components/ScrollToTop";
 
+
 function App() {
   const [lightBox, setLightBox] = useState({
     image: "",
@@ -29,8 +30,6 @@ function App() {
   };
   return (
     <div className="App">
-      {/* editing locally get rid of basename attr */}
-      {/* <Header></Header> */}
       <div
         className="lightBox wrapper"
         id="lightBoxElem"

@@ -7,7 +7,41 @@ import Ruma from "./Components/RumaCaseStudy";
 import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./Components/ScrollToTop";
+import styled from "styled-components";
 
+const LightBoxWrapper = styled.div`
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+`;
+
+const LightBoxContent = styled.div`
+  position: relative;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+`;
+
+const LightBoxImg = styled.img`
+  width: 70%;
+  height: auto;
+`;
+
+const LightBoxCaption = styled.figcaption`
+  color: var(--main-txt-colour);
+  padding-top: 12px;
+  font-size: clamp(18px, 1.5vw, 22px);
+`;
 
 function App() {
   const [lightBox, setLightBox] = useState({
@@ -30,19 +64,18 @@ function App() {
   };
   return (
     <div className="App">
-      <div
-        className="lightBox wrapper"
-        id="lightBoxElem"
+      <LightBoxWrapper
+      id="lightBoxElem"
         onClick={() => {
           toggleLightBox();
         }}
         style={{ display: "none" }}
       >
-        <div className="lightBox content">
-          <img src={lightBox.image}></img>
-          <h2>{lightBox.caption}</h2>
-        </div>
-      </div>
+        <LightBoxContent>
+          <LightBoxImg src={lightBox.image} />
+          <LightBoxCaption>{lightBox.caption}</LightBoxCaption>
+        </LightBoxContent>
+      </LightBoxWrapper>
       <Router basename="/">
         <ScrollToTop />
         <Header></Header>

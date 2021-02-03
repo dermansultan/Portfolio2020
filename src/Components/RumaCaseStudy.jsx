@@ -136,7 +136,6 @@ const Ruma = ({ lightBoxHandler }) => {
             </p>
           </div>
         </div>
-        {/* <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}> */}
         <Section>
           <Header>Iteration: Concept</Header>
           <BodyPara>

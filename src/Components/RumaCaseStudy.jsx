@@ -9,7 +9,7 @@ import timelineRuma from "../Img/caseStudies/Ruma/timelineRuma.png";
 import ProjectImgCap from "../Components/CaseStudy/ProjectImgCap";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
-import { images, solutionArr } from "../Img/caseStudies/Ruma/Image";
+import { images, solutionArr } from "../Img/caseStudies/Ruma/image";
 import {
   CaseContainer,
   Banner,

@@ -4,6 +4,7 @@ import ConstructionSign from "./ConstructionSign";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate"
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const intro = { delay: 1.75, duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
 const introType = { duration: 3, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -55,6 +56,7 @@ const Home = () => {
               </span>
               .
             </motion.p>
+            <HashLink smooth to="/#projects">
             <motion.button
               exit={{ opacity: 0, transition: { outro } }}
               transition={intro}
@@ -64,6 +66,7 @@ const Home = () => {
             >
               My Work
             </motion.button>
+            </HashLink>
           </div>
           <motion.img
             transition={intro}

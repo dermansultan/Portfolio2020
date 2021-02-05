@@ -19,7 +19,11 @@ import {
   Section,
   SubHeader,
   MainContainer,
+  ListItem,
+  List
 } from "./CaseStudy/CaseStudy-styling";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 //Create master Image module for img imports
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -143,7 +147,20 @@ const Ruma = ({ lightBoxHandler }) => {
             of the general app. We started with topics we wanted to address, and
             then moved onto features.
           </BodyPara>
-          <div className="projectImgContainer">
+          <WrapperCol>
+            <WrapperCol row itemCenter>
+            <FontAwesomeIcon icon={faInfoCircle}/>
+            <SubHeader>Feature:</SubHeader>
+            </WrapperCol>
+            <SubHeader>Create anticipation by scheduling parties</SubHeader>
+            <SubHeader>Information Required</SubHeader>
+            <List>
+              <ListItem>Date, Time, Timezone</ListItem>
+              <ListItem>User who scheduled</ListItem>
+              <ListItem>Confirmation</ListItem>
+            </List>
+          </WrapperCol>
+          {/* <div className="projectImgContainer">
             <ProjectImgCap
               caption="Table breaking down features + content to be included 
 "
@@ -160,7 +177,7 @@ const Ruma = ({ lightBoxHandler }) => {
 "
               image={images[1].src}
             ></ProjectImgCap>
-          </div>
+          </div> */}
         </Section>
         <Section>
           <Header>Iteration: Wireframes and User Flows</Header>

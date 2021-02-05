@@ -48,7 +48,8 @@ export const SubHeader = styled.h2`
 
 export const WrapperCol = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${props => props.row ? "row" : "column" }
+  align-items: ${props => props.itemCenter ? "center" : "flex-start"}
 `;
 
 export const Section = styled.section`
@@ -56,3 +57,9 @@ export const Section = styled.section`
   padding-top: 20px;
   padding-bottom: 20px;
 `;
+
+export const List = styled.ul`
+`
+
+export const ListItem = styled.li`
+`

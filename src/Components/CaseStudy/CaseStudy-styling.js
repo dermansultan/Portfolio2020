@@ -41,15 +41,16 @@ export const Header = styled.h1`
 `;
 
 export const SubHeader = styled.h2`
-  color: var(--main-txt-colour);
-  padding-top: 12px;
+  color: ${props => props.blue ? "var(--main-blue)" : "var(--main-txt-colour)" };
+  margin: ${props => props.margin};
   font-size: clamp(18px, 1.5vw, 22px);
 `;
 
 export const WrapperCol = styled.div`
   display: flex;
-  flex-direction: ${props => props.row ? "row" : "column" }
-  align-items: ${props => props.itemCenter ? "center" : "flex-start"}
+  margin: ${props => props.margin};
+  flex-direction: ${props => props.row ? "row" : "column" };
+  align-items: ${props => props.itemCenter ? "center" : "flex-start"};
 `;
 
 export const Section = styled.section`
@@ -59,6 +60,7 @@ export const Section = styled.section`
 `;
 
 export const List = styled.ul`
+ list-style-position: inside;
 `
 
 export const ListItem = styled.li`

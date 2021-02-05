@@ -20,7 +20,7 @@ import {
   SubHeader,
   MainContainer,
   ListItem,
-  List
+  List,
 } from "./CaseStudy/CaseStudy-styling";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
@@ -148,16 +148,74 @@ const Ruma = ({ lightBoxHandler }) => {
             then moved onto features.
           </BodyPara>
           <WrapperCol>
-            <WrapperCol row itemCenter>
-            <FontAwesomeIcon icon={faInfoCircle}/>
-            <SubHeader>Feature:</SubHeader>
+            <WrapperCol row itemCenter margin={"5px 0 5px 0"}>
+              <FontAwesomeIcon
+                icon={faInfoCircle}
+                style={{ marginRight: "4px" }}
+              />
+              <SubHeader>Feature:</SubHeader>
             </WrapperCol>
-            <SubHeader>Create anticipation by scheduling parties</SubHeader>
+            <SubHeader blue>
+              Create anticipation by scheduling parties
+            </SubHeader>
             <SubHeader>Information Required</SubHeader>
             <List>
               <ListItem>Date, Time, Timezone</ListItem>
               <ListItem>User who scheduled</ListItem>
               <ListItem>Confirmation</ListItem>
+            </List>
+          </WrapperCol>
+          <WrapperCol>
+            <WrapperCol row itemCenter margin={"5px 0 5px 0"}>
+              <FontAwesomeIcon
+                icon={faInfoCircle}
+                style={{ marginRight: "4px" }}
+              />
+              <SubHeader>Feature:</SubHeader>
+            </WrapperCol>
+            <SubHeader blue>Watching shared content</SubHeader>
+            <SubHeader>Information Required</SubHeader>
+            <List>
+              <ListItem>Chat</ListItem>
+              <ListItem>Audio/Video Call</ListItem>
+              <ListItem>Playlist</ListItem>
+              <ListItem>Invite Link</ListItem>
+            </List>
+          </WrapperCol>
+          <WrapperCol>
+            <WrapperCol row itemCenter margin={"5px 0 5px 0"}>
+              <FontAwesomeIcon
+                icon={faInfoCircle}
+                style={{ marginRight: "4px" }}
+              />
+              <SubHeader>Feature:</SubHeader>
+            </WrapperCol>
+            <SubHeader blue>Engage in pre and post-event discussions</SubHeader>
+            <SubHeader>Information Required</SubHeader>
+            <List>
+              <ListItem>Comments</ListItem>
+              <ListItem>Name</ListItem>
+              <ListItem>Time</ListItem>
+            </List>
+          </WrapperCol>
+          <WrapperCol>
+            <WrapperCol row itemCenter margin={"5px 0 5px 0"}>
+              <FontAwesomeIcon
+                icon={faInfoCircle}
+                style={{ marginRight: "4px" }}
+              />
+              <SubHeader>Feature:</SubHeader>
+            </WrapperCol>
+            <SubHeader blue>Join watch parties in different communities</SubHeader>
+            <SubHeader>Information Required</SubHeader>
+            <List>
+              <ListItem>Genre</ListItem>
+              <ListItem>Title</ListItem>
+              <ListItem>Ability to share</ListItem>
+              <ListItem>Ability to like</ListItem>
+              <ListItem>Locations</ListItem>
+              <ListItem>Description</ListItem>
+              <ListItem>Timing for events</ListItem>
             </List>
           </WrapperCol>
           {/* <div className="projectImgContainer">

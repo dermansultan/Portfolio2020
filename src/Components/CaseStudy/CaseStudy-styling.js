@@ -41,17 +41,29 @@ export const Header = styled.h1`
 `;
 
 export const SubHeader = styled.h2`
-  color: ${props => props.blue ? "var(--main-blue)" : "var(--main-txt-colour)" };
-  margin: ${props => props.margin};
+  color: ${(props) =>
+    props.blue ? "var(--main-blue)" : "var(--main-txt-colour)"};
+  margin: ${(props) => props.margin};
   font-size: clamp(18px, 1.5vw, 22px);
 `;
 
 export const WrapperCol = styled.div`
   display: flex;
-  margin: ${props => props.margin};
-  flex-direction: ${props => props.row ? "row" : "column" };
-  align-items: ${props => props.itemCenter ? "center" : "flex-start"};
+  margin: ${(props) => props.margin};
+  width: ${(props) => props.width};
+  justify-content: ${(props) => props.justCont};
+  flex-direction: ${(props) => (props.row ? "row" : "column")};
+  align-items: ${(props) => (props.itemCenter ? "center" : "flex-start")};
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
+
+export const IconWrapper = styled.div`
+display: flex;
+align-items: center;
+`
+
 
 export const Section = styled.section`
   width: 100%;
@@ -60,8 +72,7 @@ export const Section = styled.section`
 `;
 
 export const List = styled.ul`
- list-style-position: inside;
-`
+  list-style-position: inside;
+`;
 
-export const ListItem = styled.li`
-`
+export const ListItem = styled.li``;

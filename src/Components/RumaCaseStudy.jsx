@@ -3,11 +3,8 @@ import ProjectDetails from "./CaseStudy/ProjectDetails";
 import rumaBanner from "../Img/Ruma4k.png";
 import ProjectHeader from "../Components/CaseStudy/ProjectHeader";
 import ProjectQuote from "../Components/CaseStudy/ProjectQuote";
-import ProjectParagraph from "../Components/CaseStudy/ProjectParagraph";
 import ProjectTiles from "../Components/CaseStudy/ProjectTiles";
 import timelineRuma from "../Img/caseStudies/Ruma/timelineRuma.png";
-import ProjectImgCap from "../Components/CaseStudy/ProjectImgCap";
-import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
 import { images, solutionArr } from "../Img/caseStudies/Ruma/image";
 import {
@@ -22,6 +19,7 @@ import {
   ListItem,
   List,
   IconWrapper,
+  ProjectImg,
 } from "./CaseStudy/CaseStudy-styling";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
@@ -49,6 +47,7 @@ const Ruma = ({ lightBoxHandler }) => {
           tools={"Invision, Adobe XD"}
           team={"Rohail Khan"}
           duration={"48 hours"}
+          demoLink={"https://xd.adobe.com/view/5a675d5e-e5ab-47c2-92ab-ed169babdfd4-0f34/?fullscreen"}
         ></ProjectDetails>
         <Section>
           <Header>Background</Header>
@@ -76,14 +75,16 @@ const Ruma = ({ lightBoxHandler }) => {
         </Section>
         <Section>
           <Header>Project Timeline</Header>
-          <img
-            className="projectTimeline Ruma"
-            alt="rumaTimeline"
+          <ProjectImg
+            single
+            margin={"15px 0 0 0"}
+            width={"50%"}
+            noBorder
             src={timelineRuma}
             onClick={() => {
-              lightBoxHandler(timelineRuma, "This was a timeline!");
+              lightBoxHandler(timelineRuma, "Timeline of project");
             }}
-          ></img>
+          />
         </Section>
         <Section>
           <Header>User Thinking: Audience and the Brief</Header>
@@ -142,13 +143,18 @@ const Ruma = ({ lightBoxHandler }) => {
           </div>
         </div>
         <Section>
-          <Header>Iteration: Concept</Header>
+          <Header>Iteration: Concept Exploration</Header>
           <BodyPara>
             After considering the brief questions we started to iterate on ideas
             of the general app. We started with topics we wanted to address, and
             then moved onto features.
           </BodyPara>
-          <WrapperCol width={"100%"} row justCont={"space-around"} margin={"12px 0 0 0"}>
+          <WrapperCol
+            width={"100%"}
+            row
+            justCont={"space-around"}
+            margin={"12px 0 0 0"}
+          >
             <WrapperCol>
               <WrapperCol row itemCenter margin={"8px 0 8px 0"}>
                 <IconWrapper>
@@ -257,40 +263,42 @@ const Ruma = ({ lightBoxHandler }) => {
           </WrapperCol>
         </Section>
         <Section>
-          <Header>Iteration: Wireframes and User Flows</Header>
+          <Header>Iteration: Final Concept</Header>
           <BodyPara>
             We continued to break down the features during our wireframing
-            process.
+            process. Finalizing into three core features we wanted to focus our
+            user experience on. The dashboard and rooms page was to be the base
+            that would connect the concepts all together.
           </BodyPara>
-          <div
-            className="projectImgContainer"
-            style={{ flexDirection: "column" }}
-          >
-            <ProjectImgCap
-              caption="Sections and their belonging screens
-"
-              image={images[2].src}
-            ></ProjectImgCap>
-            <ProjectImgCap
-              caption="Organizing each individual section and breaking down what to be included
-"
-              image={images[3].src}
-            ></ProjectImgCap>
-            <ProjectImgCap
-              caption="Different iterations for each individual page. 
-"
-              image={images[4].src}
-            ></ProjectImgCap>
-            <ProjectParagraph
-              text="Onboarding + Joining User Flow Wireframes
-"
-            ></ProjectParagraph>
-            <ProjectImgCap
-              caption="Onboarding + Joining User Flow Wireframes
-"
-              image={images[5].src}
-            ></ProjectImgCap>
-          </div>
+          <ProjectImg
+            single
+            width={"90%"}
+            margin={"30px 0 0 0"}
+            noBorder
+            src={images[12].src}
+            onClick={() => {
+              lightBoxHandler(images[12].src, "Timeline of project");
+            }}
+          />
+        </Section>
+        <Section>
+          <Header>Wireframes</Header>
+          <BodyPara>
+            We went on to creating wireframes that fit our intended user
+            journey. We made sure to keep an emphasis on visibility and
+            organization. At a glance the user should be able to fully
+            understand the context of the page they are on.
+          </BodyPara>
+          <ProjectImg
+            single
+            width={"90%"}
+            margin={"30px 0 0 0"}
+            noBorder
+            src={images[15].src}
+            onClick={() => {
+              lightBoxHandler(images[15].src, "Wireframes");
+            }}
+          />
         </Section>
         <div
           className="projectSectionWrapper"
@@ -313,71 +321,77 @@ const Ruma = ({ lightBoxHandler }) => {
             flexDirection: "column",
           }}
         >
-          <ProjectHeader text="Styletile"></ProjectHeader>
+          <Header>Design System</Header>
           <img className="projectImg Single" src={images[7].src}></img>
         </div>
-        <div
-          className="projectSectionWrapper"
-          style={{ paddingTop: "12px", width: "100%" }}
-        >
-          <ProjectHeader text="Prototype, Flow and Features"></ProjectHeader>
-          <p className="paraProjects">
-            Our final prototype for Ruma can be seen <span>here</span> or below
-          </p>
-          <div className="protoWrap">
-            <iframe
-              width="1280"
-              height="720"
-              src="https://xd.adobe.com/embed/5a675d5e-e5ab-47c2-92ab-ed169babdfd4-0f34/?fullscreen"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-        <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}>
+        <Section>
           <ProjectHeader text="Ruma: Features"></ProjectHeader>
-          <div className="projectFeatureWrapper">
-            {/* <img alt="gif of feature to be here!"></img> */}
-            <div className="featureTextWrapper">
-              <h2 className="projectSubHeader">Watch Rooms</h2>
-              <p className="paraProjects feature">
+          <WrapperCol row>
+            <ProjectImg
+              width={"65%"}
+              margin={"30px 0 0 0"}
+              noBorder
+              src={images[9].src}
+              onClick={() => {
+                lightBoxHandler(images[9].src, "Watchroom");
+              }}
+            />
+            <WrapperCol alignSelf={"center"} margin={"0 0 0 10px"}>
+              <SubHeader>Watch Rooms</SubHeader>
+              <BodyPara>
                 Users are able to host watch rooms where they can invite their
                 friends and family to enjoy content with them. In the watch
                 rooms you can chat and setup a playlist of what the room will be
                 streaming.
-              </p>
-            </div>
-          </div>
-          <div className="projectFeatureWrapper">
-            {/* <img alt="gif of feature to be here!"></img> */}
-            <div className="featureTextWrapper">
-              <h2 className="projectSubHeader">Communities</h2>
-              <p className="paraProjects feature">
+              </BodyPara>
+            </WrapperCol>
+          </WrapperCol>
+          <WrapperCol row>
+            <ProjectImg
+              width={"65%"}
+              margin={"30px 0 0 0"}
+              noBorder
+              src={images[13].src}
+              onClick={() => {
+                lightBoxHandler(images[13].src, "Community Page");
+              }}
+            />
+            <WrapperCol alignSelf={"center"} margin={"0 0 0 10px"}>
+              <SubHeader>Communities</SubHeader>
+              <BodyPara>
                 Users can join communities around the world on Ruma. These
                 communities can range from genre interests, to specific shows or
                 series. In a community users can engage in discussion with posts
                 and can join watch rooms being hosted by users within the
                 community.
-              </p>
-            </div>
-          </div>
-          <div className="projectFeatureWrapper">
-            {/* <img alt="gif of feature to be here!"></img> */}
-            <div className="featureTextWrapper">
-              <h2 className="projectSubHeader">Discovery</h2>
-              <p className="paraProjects feature">
+              </BodyPara>
+            </WrapperCol>
+          </WrapperCol>
+          <WrapperCol row>
+            <ProjectImg
+              width={"65%"}
+              margin={"30px 0 0 0"}
+              noBorder
+              src={images[14].src}
+              onClick={() => {
+                lightBoxHandler(images[14].src, "Discovery");
+              }}
+            />
+            <WrapperCol alignSelf={"center"} margin={"0 0 0 10px"}>
+              <SubHeader>Discovery</SubHeader>
+              <BodyPara>
                 The discover tab lets users explore different communities they
                 can join. Based on their interest communities are reccomended to
                 them. Users also have the option to search to find communities
                 based on their search terms.
-              </p>
-            </div>
-          </div>
-        </div>
+              </BodyPara>
+            </WrapperCol>
+          </WrapperCol>
+        </Section>
         {/* <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}> */}
-        <Section>
-          <Header>Takeaways</Header>
-          <SubHeader>What didn't work...</SubHeader>
+        <Section padding={"0 0 90px 0"} margin={"40px 0 0 0"}>
+          <Header margin={"0 0 12px 0"}>Takeaways</Header>
+          <SubHeader margin={"12px 0 0 0"}>What didn't work...</SubHeader>
           <BodyPara>
             During this jam, I learned how to better allocate time. Before
             getting to the wireframing process we had iterated over a few
@@ -398,7 +412,7 @@ const Ruma = ({ lightBoxHandler }) => {
             brainstorming tools such as Affinity Mapping to get a concrete idea
             out the door.
           </BodyPara>
-          <SubHeader>Iterate, Iterate, Iterate</SubHeader>
+          <SubHeader margin={"12px 0 0 0"}>Iterate, Iterate, Iterate</SubHeader>
           <BodyPara>
             I feel the back and forth between my partner and I was healthy. We
             were able to bounce ideas off one another with real criticisms.
@@ -408,7 +422,7 @@ const Ruma = ({ lightBoxHandler }) => {
             it is something I definetly want to be able to do in future
             projects.
           </BodyPara>
-          <SubHeader>Delegating</SubHeader>
+          <SubHeader margin={"12px 0 0 0"}>Delegating</SubHeader>
           <BodyPara>
             Most groups had 3 members. Since there was a lot of work to do
             amongst just us two I feel as if we could've delegated individual

@@ -62,7 +62,7 @@ const ContentWrapper = styled.div`
 function ProjectDetails(props) {
   return (
     <DetailsWrapper>
-      <a href={props.demoLink}>
+      <a href={props.demoLink} target="_blank">
         <ProtoBtn>Live Prototype</ProtoBtn>
       </a>
       <ContentWrapper>

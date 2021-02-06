@@ -28,6 +28,7 @@ export const Banner = styled.div`
 `;
 
 export const BodyPara = styled.p`
+  margin: ${(props) => props.margin};
   font-weight: 400;
   padding-top: 12px;
   line-height: 150%;
@@ -36,11 +37,13 @@ export const BodyPara = styled.p`
 `;
 
 export const Header = styled.h1`
+  margin: ${(props) => props.margin};
   font-size: clamp(30px, 1.5vw, 55px);
   color: var(--main-txt-colour);
 `;
 
 export const SubHeader = styled.h2`
+  margin: ${(props) => props.margin};
   color: ${(props) =>
     props.blue ? "var(--main-blue)" : "var(--main-txt-colour)"};
   margin: ${(props) => props.margin};
@@ -53,6 +56,7 @@ export const WrapperCol = styled.div`
   width: ${(props) => props.width};
   justify-content: ${(props) => props.justCont};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
+  align-self: ${(props) => props.alignSelf};
   align-items: ${(props) => (props.itemCenter ? "center" : "flex-start")};
   @media only screen and (max-width: 700px) {
     flex-direction: column;
@@ -60,15 +64,18 @@ export const WrapperCol = styled.div`
 `;
 
 export const IconWrapper = styled.div`
-display: flex;
-align-items: center;
-`
-
+  display: flex;
+  align-items: center;
+`;
 
 export const Section = styled.section`
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding: ${(props) => props.padding};
+  display: flex;
+  margin: ${(props) => props.margin};
+  flex-direction: column;
 `;
 
 export const List = styled.ul`
@@ -76,3 +83,11 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li``;
+
+export const ProjectImg = styled.img`
+  margin: ${(props) => props.margin};
+  width: ${(props) => props.width};
+  height: auto;
+  border: ${(props) => (props.noBorder ? "none" : "1px solid #252a41")};
+  align-self: ${(props) => (props.single ? "center" : "")};
+`;

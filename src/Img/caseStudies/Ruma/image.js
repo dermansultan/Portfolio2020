@@ -1,4 +1,4 @@
-import concept1 from "../Ruma/concept1.png"
+import concept1 from "../Ruma/concept1.png";
 import concept2 from "../Ruma/concept2.png";
 import process1 from "../Ruma/Process1.png";
 import process2 from "../Ruma/Process2.png";
@@ -10,6 +10,10 @@ import solution1 from "../Ruma/solution1.png";
 import solution2 from "../Ruma/solution2.png";
 import solution3 from "../Ruma/solution3.png";
 import solution4 from "../Ruma/solution4.png";
+import rumaConcept from "../Ruma/rumaConcept.png";
+import wireframeRuma from "../Ruma/wireframeRuma.png";
+import community from "../Ruma/community.png";
+import discovery from "../Ruma/discovery.png";
 
 const images = [
   {
@@ -86,9 +90,38 @@ const images = [
     title: "solution-four",
     description: "Rooms Screen",
   },
+  {
+    id: 13,
+    src: rumaConcept,
+    title: "Concept Circles",
+    description: "Concepts to focus on",
+  },
+  {
+    id: 14,
+    src: community,
+    title: "Ruma Communities",
+    description: "Communities page",
+  },
+  {
+    id: 15,
+    src: discovery,
+    title: "Ruma Discovery",
+    description: "Ruma Discovery Page",
+  },
+  {
+    id: 16,
+    src: wireframeRuma,
+    title: "Ruma Wireframes",
+    description: "Collection of wireframes",
+  },
+  {
+    id: 17,
+    src: wireframeRuma,
+    title: "Ruma Wireframes",
+    description: "Collection of wireframes",
+  },
 ];
 
+const solutionArr = [images[8], images[9], images[10], images[11]];
 
-const solutionArr = [ images[8], images[9], images[10], images[11]];
-
-export {images, solutionArr};
+export { images, solutionArr };

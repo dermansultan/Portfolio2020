@@ -19,7 +19,6 @@ const Home = () => {
 
   return (
     <div className="mainContainer">
-      <ConstructionSign></ConstructionSign>
       <div className="homeContainer">
         <div className="heroContainer">
           <div className="greetingBio">
@@ -90,7 +89,7 @@ const Home = () => {
               <p className="tileDesc">Game-Hero BootCamp - Mobile App </p>
               <p className="tileDesc2">UI/UX | Design Challenge</p>
             </motion.div>
-            <Link to="/ToDo">
+            <Link to="/ToDo" className="tileWrap ToDo">
             <motion.div whileHover={{ scale: 1.10 }} className="tileWrap ToDo">
               <p className="tileDesc">
                 ToDoList - CRUD App (Vanilla Js + Local Storage)
@@ -98,14 +97,12 @@ const Home = () => {
               <p className="tileDesc2">UI/UX | Front End Development</p>
             </motion.div>
             </Link>
+            <Link to="/Climate" className="tileWrap Climate">
             <motion.div whileHover={{ scale: 1.10 }} className="tileWrap Climate">
               <p className="tileDesc">Climate - Weather App </p>
               <p className="tileDesc2">UI/UX | Front End Development</p>
             </motion.div>
-            {/* <div className='tileWrap'>
-        <img alt='RumaLogoBanner' draggable='false' className='tile' src={rumaBanner}/>
-        <p className='tileDesc'>This is a great test.</p>
-        </div> */}
+            </Link>
           </div>
         </div>
       </div>

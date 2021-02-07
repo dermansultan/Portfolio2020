@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Ruma from "./Components/RumaCaseStudy";
 import ToDo from "./Components/ToDoCaseStudy";
+import Weather from "./Components/WeatherCaseStudy";
 import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -75,7 +76,7 @@ function App() {
   return (
     <div className="App">
       <LightBoxWrapper
-      id="lightBoxElem"
+        id="lightBoxElem"
         onClick={() => {
           toggleLightBox();
         }}
@@ -105,6 +106,9 @@ function App() {
                 </Route>
                 <Route exact path="/ToDo">
                   <ToDo lightBoxHandler={lightBoxHandler}></ToDo>
+                </Route>
+                <Route exact path="/Climate">
+                  <Weather lightBoxHandler={lightBoxHandler}></Weather>
                 </Route>
               </Switch>
             </AnimatePresence>

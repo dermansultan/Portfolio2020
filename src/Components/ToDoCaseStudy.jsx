@@ -49,9 +49,9 @@ const ToDo = ({ lightBoxHandler }) => {
             This was my first go at creating a full on JavaScript 'application'.
             Before this I had only expiremented with coding applications that
             were narrow in scope such as a weight calculator or tic tac toe{" "}
-            <SpanPara>(you can see those on my github!).</SpanPara> I set out
-            to create a ToDoList with Vanilla JavaScript in hopes of learning a
-            few new technologies.
+            <SpanPara>(you can see those on my github!).</SpanPara> I set out to
+            create a ToDoList with Vanilla JavaScript in hopes of learning a few
+            new technologies.
           </BodyPara>
         </Section>
         <Section>
@@ -169,9 +169,10 @@ const ToDo = ({ lightBoxHandler }) => {
           <SubHeader margin={"12px 0 0 0"}>Set out a plan</SubHeader>
           <BodyPara>
             This was my first code project where I had to plan out my
-            application structure. After (many scribbles in my notebook) I
-            planned out a structure for the to do objects to follow and went on
-            to research Local Storage and libraries I could use. projects.
+            application structure. After{" "}
+            <SpanPara>(many scribbles in my notebook)</SpanPara> I planned out a
+            structure for the to do objects to follow and went on to research
+            Local Storage and libraries I could use in the project.
           </BodyPara>
           <SubHeader margin={"12px 0 0 0"}>For next time</SubHeader>
           <BodyPara>

@@ -114,9 +114,6 @@ const ToDo = ({ lightBoxHandler }) => {
               src={images[0].src}
               width={"20%"}
               MobWidth={"60%"}
-              onClick={() => {
-                lightBoxHandler(images[0].src, "");
-              }}
             />
             <ProjectImg
               shadow
@@ -124,9 +121,6 @@ const ToDo = ({ lightBoxHandler }) => {
               src={images[1].src}
               width={"20%"}
               MobWidth={"60%"}
-              onClick={() => {
-                lightBoxHandler(images[1].src, "");
-              }}
             />
             <ProjectImg
               shadow
@@ -134,9 +128,6 @@ const ToDo = ({ lightBoxHandler }) => {
               src={images[2].src}
               width={"20%"}
               MobWidth={"60%"}
-              onClick={() => {
-                lightBoxHandler(images[2].src, "");
-              }}
             />
             <ProjectImg
               shadow
@@ -144,9 +135,6 @@ const ToDo = ({ lightBoxHandler }) => {
               src={images[3].src}
               width={"20%"}
               MobWidth={"60%"}
-              onClick={() => {
-                lightBoxHandler(images[3].src, "");
-              }}
             />
           </WrapperCol>
         </Section>
@@ -172,9 +160,6 @@ const ToDo = ({ lightBoxHandler }) => {
               shadow
               noBorder
               src={images[6].src}
-              onClick={() => {
-                lightBoxHandler(images[6].src, "");
-              }}
               width={"20%"}
               MobWidth={"60%"}
             />
@@ -182,9 +167,6 @@ const ToDo = ({ lightBoxHandler }) => {
               shadow
               noBorder
               src={images[7].src}
-              onClick={() => {
-                lightBoxHandler(images[7].src, "");
-              }}
               width={"20%"}
               MobWidth={"60%"}
             />

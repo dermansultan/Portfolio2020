@@ -14,7 +14,7 @@ function Header() {
           <HashLink smooth to="/#projects">
             Projects
           </HashLink>
-          <Link to="/">Resume</Link>
+          <a href="https://drive.google.com/file/d/1lecwuIV7KS5TpqWKUv4kHMeXbNNZwD-M/view?usp=sharing" target="_blank">Resume</a>
         </nav>
       </div>
     </header>

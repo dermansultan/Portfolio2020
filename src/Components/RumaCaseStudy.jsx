@@ -24,7 +24,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
-//Create master Image module for img imports
+
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Ruma = ({ lightBoxHandler }) => {

@@ -36,6 +36,14 @@ export const BodyPara = styled.p`
   color: var(--second-txt-color);
 `;
 
+
+export const SpanPara = styled.span`
+  margin: ${(props) => props.margin};
+  font-weight: 600;
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: var(--second-txt-color);
+`;
+
 export const Header = styled.h1`
   margin: ${(props) => props.margin};
   font-size: clamp(30px, 1.5vw, 55px);
@@ -54,6 +62,7 @@ export const WrapperCol = styled.div`
   display: flex;
   margin: ${(props) => props.margin};
   width: ${(props) => props.width};
+  height: ${(props) => props.height};
   justify-content: ${(props) => props.justCont};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   align-self: ${(props) => props.alignSelf};
@@ -93,4 +102,10 @@ export const ProjectImg = styled.img`
   height: auto;
   border: ${(props) => (props.noBorder ? "none" : "1px solid #252a41")};
   align-self: ${(props) => (props.single ? "center" : "")};
+  box-shadow: ${(props) =>
+    props.shadow ? "0px 4px 4px rgba(180, 180, 180, 0.7)" : ""};
+  border-radius: ${(props) => props.borderRad};
+  @media only screen and (max-width: 700px) {
+    width: ${(props) => props.MobWidth};
+  }
 `;

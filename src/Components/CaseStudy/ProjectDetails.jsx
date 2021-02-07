@@ -47,6 +47,7 @@ const DetailsPara = styled.p`
   font-size: clamp(8px, 1.5vw, 18px);
 `;
 
+
 const ContentWrapper = styled.div`
   display: flex;
   width: 50%;
@@ -60,55 +61,59 @@ const ContentWrapper = styled.div`
 // Recreate with styled-component
 
 function ProjectDetails(props) {
-  return (
-    <DetailsWrapper>
-      <a href={props.demoLink} target="_blank">
-        <ProtoBtn>Live Prototype</ProtoBtn>
-      </a>
-      <ContentWrapper>
-        <WrapperCol>
-          <DetailsTitle>My Role</DetailsTitle>
-          <DetailsPara>{props.role}</DetailsPara>
-        </WrapperCol>
-        <WrapperCol>
-          <DetailsTitle>Tools</DetailsTitle>
-          <DetailsPara>{props.tools}</DetailsPara>
-        </WrapperCol>
-        <WrapperCol>
-          <DetailsTitle>Team</DetailsTitle>
-          <DetailsPara>{props.team}</DetailsPara>
-        </WrapperCol>
-        <WrapperCol>
-          <DetailsTitle>Duration</DetailsTitle>
-          <DetailsPara>{props.duration}</DetailsPara>
-        </WrapperCol>
-      </ContentWrapper>
-    </DetailsWrapper>
-
-    // <div className="projectDetailsWrapper">
-    //   <a href={props.demoLink}>
-    //     <button className="protoBtn">Live Prototype</button>
-    //   </a>
-    //   <div className="projectDetails">
-    //     <div className="details">
-    //       <p className="deTitle">My Role</p>
-    //       <p className="deSub">{props.role}</p>
-    //     </div>
-    //     <div className="details">
-    //       <p className="deTitle">Tools</p>
-    //       <p className="deSub">{props.tools}</p>
-    //     </div>
-    //     <div className="details">
-    //       <p className="deTitle">Team</p>
-    //       <p className="deSub">{props.team}</p>
-    //     </div>
-    //     <div className="details">
-    //       <p className="deTitle">Duration</p>
-    //       <p className="deSub">{props.duration}</p>
-    //     </div>
-    //   </div>
-    // </div>
-  );
+  if (props.codeProject) {
+    return (
+      <DetailsWrapper>
+        <a href={props.demoLink} target="_blank">
+          <ProtoBtn>Demo + Live Code</ProtoBtn>
+        </a>
+        <ContentWrapper>
+          <WrapperCol>
+            <DetailsTitle>My Role</DetailsTitle>
+            <DetailsPara>{props.role}</DetailsPara>
+          </WrapperCol>
+          <WrapperCol>
+            <DetailsTitle>Tools</DetailsTitle>
+            <DetailsPara>{props.tools}</DetailsPara>
+          </WrapperCol>
+          <WrapperCol>
+            <DetailsTitle>Team</DetailsTitle>
+            <DetailsPara>{props.team}</DetailsPara>
+          </WrapperCol>
+          <WrapperCol>
+            <DetailsTitle>Duration</DetailsTitle>
+            <DetailsPara>{props.duration}</DetailsPara>
+          </WrapperCol>
+        </ContentWrapper>
+      </DetailsWrapper>
+    );
+  } else {
+    return (
+      <DetailsWrapper>
+        <a href={props.demoLink} target="_blank">
+          <ProtoBtn>Live Prototype</ProtoBtn>
+        </a>
+        <ContentWrapper>
+          <WrapperCol>
+            <DetailsTitle>My Role</DetailsTitle>
+            <DetailsPara>{props.role}</DetailsPara>
+          </WrapperCol>
+          <WrapperCol>
+            <DetailsTitle>Tools</DetailsTitle>
+            <DetailsPara>{props.tools}</DetailsPara>
+          </WrapperCol>
+          <WrapperCol>
+            <DetailsTitle>Team</DetailsTitle>
+            <DetailsPara>{props.team}</DetailsPara>
+          </WrapperCol>
+          <WrapperCol>
+            <DetailsTitle>Duration</DetailsTitle>
+            <DetailsPara>{props.duration}</DetailsPara>
+          </WrapperCol>
+        </ContentWrapper>
+      </DetailsWrapper>
+    );
+  }
 }
 
 export default ProjectDetails;

@@ -90,12 +90,14 @@ const Home = () => {
               <p className="tileDesc">Game-Hero BootCamp - Mobile App </p>
               <p className="tileDesc2">UI/UX | Design Challenge</p>
             </motion.div>
+            <Link to="/ToDo">
             <motion.div whileHover={{ scale: 1.10 }} className="tileWrap ToDo">
               <p className="tileDesc">
                 ToDoList - CRUD App (Vanilla Js + Local Storage)
               </p>
               <p className="tileDesc2">UI/UX | Front End Development</p>
             </motion.div>
+            </Link>
             <motion.div whileHover={{ scale: 1.10 }} className="tileWrap Climate">
               <p className="tileDesc">Climate - Weather App </p>
               <p className="tileDesc2">UI/UX | Front End Development</p>

@@ -4,6 +4,7 @@ import About from "./Components/About";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Ruma from "./Components/RumaCaseStudy";
+import ToDo from "./Components/ToDoCaseStudy";
 import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -101,6 +102,9 @@ function App() {
                 />
                 <Route exact path="/Ruma">
                   <Ruma lightBoxHandler={lightBoxHandler}></Ruma>
+                </Route>
+                <Route exact path="/ToDo">
+                  <ToDo lightBoxHandler={lightBoxHandler}></ToDo>
                 </Route>
               </Switch>
             </AnimatePresence>

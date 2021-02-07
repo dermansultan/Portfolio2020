@@ -30,11 +30,20 @@ const LightBoxContent = styled.div`
   align-items: center;
   justify-content: center;
   width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  @media only screen and (max-width: 700px) {
+    height: 50%;
+    width: 95%;
+  }
 `;
 
 const LightBoxImg = styled.img`
   width: 70%;
   height: auto;
+  @media only screen and (max-width: 700px) {
+    width: 95%;
+  }
 `;
 
 const LightBoxCaption = styled.figcaption`

@@ -47,7 +47,9 @@ const Ruma = ({ lightBoxHandler }) => {
           tools={"Invision, Adobe XD"}
           team={"Rohail Khan"}
           duration={"48 hours"}
-          demoLink={"https://xd.adobe.com/view/5a675d5e-e5ab-47c2-92ab-ed169babdfd4-0f34/?fullscreen"}
+          demoLink={
+            "https://xd.adobe.com/view/5a675d5e-e5ab-47c2-92ab-ed169babdfd4-0f34/?fullscreen"
+          }
         ></ProjectDetails>
         <Section>
           <Header>Background</Header>
@@ -242,24 +244,6 @@ const Ruma = ({ lightBoxHandler }) => {
                 <ListItem>Timing for events</ListItem>
               </List>
             </WrapperCol>
-            {/* <div className="projectImgContainer">
-            <ProjectImgCap
-              caption="Table breaking down features + content to be included 
-"
-              image={images[0].src}
-              onClick={() => {
-                lightBoxHandler(
-                  images[1].src,
-                  "Table breaking down features + content to be included"
-                );
-              }}
-            ></ProjectImgCap>
-            <ProjectImgCap
-              caption="Starting with topics we wanted to address with Ruma
-"
-              image={images[1].src}
-            ></ProjectImgCap>
-          </div> */}
           </WrapperCol>
         </Section>
         <Section>
@@ -291,7 +275,7 @@ const Ruma = ({ lightBoxHandler }) => {
           </BodyPara>
           <ProjectImg
             single
-            width={"90%"}
+            width={"85%"}
             margin={"30px 0 0 0"}
             noBorder
             src={images[15].src}
@@ -322,7 +306,13 @@ const Ruma = ({ lightBoxHandler }) => {
           }}
         >
           <Header>Design System</Header>
-          <img className="projectImg Single" src={images[7].src}></img>
+          <img
+            className="projectImg Single"
+            src={images[7].src}
+            onClick={() => {
+              lightBoxHandler(images[7].src, "Design System");
+            }}
+          ></img>
         </div>
         <Section>
           <ProjectHeader text="Ruma: Features"></ProjectHeader>
@@ -388,7 +378,6 @@ const Ruma = ({ lightBoxHandler }) => {
             </WrapperCol>
           </WrapperCol>
         </Section>
-        {/* <div className="projectSectionWrapper" style={{ paddingTop: "12px" }}> */}
         <Section padding={"0 0 90px 0"} margin={"40px 0 0 0"}>
           <Header margin={"0 0 12px 0"}>Takeaways</Header>
           <SubHeader margin={"12px 0 0 0"}>What didn't work...</SubHeader>
@@ -430,7 +419,6 @@ const Ruma = ({ lightBoxHandler }) => {
             that we probably could've left to one individual and vice-versa.
           </BodyPara>
         </Section>
-        {/* <div className="deadspace" style={{ height: "900px" }}></div> */}
       </CaseContainer>
     </MainContainer>
   );

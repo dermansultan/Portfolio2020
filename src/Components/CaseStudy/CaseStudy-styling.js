@@ -82,7 +82,10 @@ export const List = styled.ul`
   list-style-position: inside;
 `;
 
-export const ListItem = styled.li``;
+export const ListItem = styled.li`
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: var(--second-txt-color);
+`;
 
 export const ProjectImg = styled.img`
   margin: ${(props) => props.margin};

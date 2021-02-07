@@ -55,6 +55,24 @@ const ToDo = ({ lightBoxHandler }) => {
           </BodyPara>
         </Section>
         <Section>
+          <Header>App Features</Header>
+          <List>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+              User can create named 'projects' that are seperate to do lists
+            </ListItem>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+              User can create, delete and update to do list items
+            </ListItem>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+              To do list items feature, due date, priority level, title, and
+              description
+            </ListItem>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+              Filter tasks within projects by due date, and date added
+            </ListItem>
+          </List>
+        </Section>
+        <Section>
           <Header>First times...</Header>
           <BodyPara>
             Through this personal project I was able to learn quite a few useful
@@ -96,6 +114,9 @@ const ToDo = ({ lightBoxHandler }) => {
               src={images[0].src}
               width={"20%"}
               MobWidth={"60%"}
+              onClick={() => {
+                lightBoxHandler(images[0].src, "");
+              }}
             />
             <ProjectImg
               shadow
@@ -103,6 +124,9 @@ const ToDo = ({ lightBoxHandler }) => {
               src={images[1].src}
               width={"20%"}
               MobWidth={"60%"}
+              onClick={() => {
+                lightBoxHandler(images[1].src, "");
+              }}
             />
             <ProjectImg
               shadow
@@ -110,6 +134,9 @@ const ToDo = ({ lightBoxHandler }) => {
               src={images[2].src}
               width={"20%"}
               MobWidth={"60%"}
+              onClick={() => {
+                lightBoxHandler(images[2].src, "");
+              }}
             />
             <ProjectImg
               shadow
@@ -117,6 +144,9 @@ const ToDo = ({ lightBoxHandler }) => {
               src={images[3].src}
               width={"20%"}
               MobWidth={"60%"}
+              onClick={() => {
+                lightBoxHandler(images[3].src, "");
+              }}
             />
           </WrapperCol>
         </Section>
@@ -142,6 +172,9 @@ const ToDo = ({ lightBoxHandler }) => {
               shadow
               noBorder
               src={images[6].src}
+              onClick={() => {
+                lightBoxHandler(images[6].src, "");
+              }}
               width={"20%"}
               MobWidth={"60%"}
             />
@@ -149,6 +182,9 @@ const ToDo = ({ lightBoxHandler }) => {
               shadow
               noBorder
               src={images[7].src}
+              onClick={() => {
+                lightBoxHandler(images[7].src, "");
+              }}
               width={"20%"}
               MobWidth={"60%"}
             />

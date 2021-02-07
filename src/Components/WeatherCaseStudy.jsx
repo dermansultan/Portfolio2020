@@ -54,6 +54,25 @@ const Weather = ({ lightBoxHandler }) => {
           </BodyPara>
         </Section>
         <Section>
+          <Header>App Features</Header>
+          <List>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+              User can search location using geolocation API or manually search
+              with Country/City
+            </ListItem>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+              Toggle between fahrenheit and celsius
+            </ListItem>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+              Data from OpenWeatherAPI
+            </ListItem>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+              Displays location's Sunrise and Sunset time, Cloudiness, Humidity
+              percent, Wind speed and Visibility
+            </ListItem>
+          </List>
+        </Section>
+        <Section>
           <Header>Wireframes and Final Prototype</Header>
           <WrapperCol
             margin={"25px 0 0 0"}
@@ -66,6 +85,9 @@ const Weather = ({ lightBoxHandler }) => {
               shadow
               noBorder
               src={images[0].src}
+              onClick={() => {
+                lightBoxHandler(images[12].src, "Timeline of project");
+              }}
               width={"20%"}
               MobWidth={"60%"}
             />
@@ -75,6 +97,9 @@ const Weather = ({ lightBoxHandler }) => {
               src={images[1].src}
               width={"20%"}
               MobWidth={"60%"}
+              onClick={() => {
+                lightBoxHandler(images[1].src, "");
+              }}
             />
           </WrapperCol>
           <ProjectImg
@@ -83,6 +108,9 @@ const Weather = ({ lightBoxHandler }) => {
             shadow
             noBorder
             src={images[2].src}
+            onClick={() => {
+              lightBoxHandler(images[2].src, "");
+            }}
             width={"50%"}
             MobWidth={"60%"}
           />

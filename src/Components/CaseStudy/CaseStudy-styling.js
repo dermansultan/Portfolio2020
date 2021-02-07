@@ -36,7 +36,6 @@ export const BodyPara = styled.p`
   color: var(--second-txt-color);
 `;
 
-
 export const SpanPara = styled.span`
   margin: ${(props) => props.margin};
   font-weight: 600;
@@ -89,11 +88,14 @@ export const Section = styled.section`
 
 export const List = styled.ul`
   list-style-position: inside;
+  margin: ${(props) => props.margin};
 `;
 
 export const ListItem = styled.li`
+  margin: ${(props) => props.margin};
   font-size: clamp(14px, 1.5vw, 18px);
   color: var(--second-txt-color);
+  font-weight: ${(props) => props.weight}
 `;
 
 export const ProjectImg = styled.img`

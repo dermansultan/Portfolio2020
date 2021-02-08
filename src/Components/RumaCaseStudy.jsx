@@ -54,10 +54,10 @@ const Ruma = ({ lightBoxHandler }) => {
         <Section>
           <Header>Background</Header>
           <BodyPara>
-            "I took part in the Adobe x Netflix Creative Jam, a 48 hour online
+            I took part in the Adobe x Netflix Creative Jam, a 48 hour online
             design challenge. My partner and I came up with our project Ruma.
             Ruma is a desktop app that aims to give families and friends a way
-            to enjoy content together remotely."
+            to enjoy content together remotely.
           </BodyPara>
         </Section>
         <Section>

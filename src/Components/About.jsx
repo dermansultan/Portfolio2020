@@ -44,8 +44,12 @@ const About = () => {
             meaningful user experiences.
           </p>
           <p className="aboutPara">
-            I'm currently all about <span>Front End Development</span>. My
-            journey started early in 2020. With no prior coding experience I
+            I'm currently a second year <span>Interaction Design</span> student
+            studying at Sheridan College in Oakville and I'm all about{" "}
+            <span>Front End Development!</span>
+          </p>
+          <p className="aboutPara">
+            My journey started early in 2020. With no prior coding experience I
             became obsessed with JavaScript through expirementing with{" "}
             <span>FreeCodeCamp</span> and <span>TheOdinProject</span>. As of
             right now, I am messing around about with the <span>React</span>{" "}
@@ -53,9 +57,12 @@ const About = () => {
             techniques and about Accesibility on the Web.
           </p>
           <p className="aboutPara">
+          When I'm not messing around with code or design you can find me looking at corgi pictures on Instagram, powerlifting (pre-pandemic), or obsessing over the latest PC hardware.
+          </p>
+          <p className="aboutPara">
             I'm currently looking for new opportunities to learn more and expand
             my abilities. Have an opportunity for me? Get in touch with me
-            below.
+            below!
           </p>
           <div className="socialBtnWrapper">
             <a href="mailto:abdurrehmansultan4@gmail.com" target="_blank">

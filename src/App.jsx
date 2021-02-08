@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Ruma from "./Components/RumaCaseStudy";
 import ToDo from "./Components/ToDoCaseStudy";
 import Weather from "./Components/WeatherCaseStudy";
+import Trac from "./Components/TracCaseStudy";
 import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -32,16 +33,16 @@ const LightBoxContent = styled.div`
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: 90%;
+  height: 95%;
   border-radius: 10px;
   @media only screen and (max-width: 700px) {
-    height: 50%;
+    height: 70%;
     width: 95%;
   }
 `;
 
 const LightBoxImg = styled.img`
-  width: 70%;
+  width: 60%;
   height: auto;
   @media only screen and (max-width: 700px) {
     width: 95%;
@@ -109,6 +110,9 @@ function App() {
                 </Route>
                 <Route exact path="/Climate">
                   <Weather lightBoxHandler={lightBoxHandler}></Weather>
+                </Route>
+                <Route exact path="/Trac">
+                  <Trac lightBoxHandler={lightBoxHandler}></Trac>
                 </Route>
               </Switch>
             </AnimatePresence>

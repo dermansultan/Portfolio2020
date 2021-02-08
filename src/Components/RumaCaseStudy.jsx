@@ -24,7 +24,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
-
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Ruma = ({ lightBoxHandler }) => {
@@ -61,8 +60,8 @@ const Ruma = ({ lightBoxHandler }) => {
           </BodyPara>
         </Section>
         <Section>
-          <Header>Design Challenge</Header>
-          <ProjectQuote text='"Design a third-party desktop web site or desktop app (not Netflix-branded) where the community can celebrate shared stories together through communal and authentic experiences."'></ProjectQuote>
+          <Header>Challenge</Header>
+          <ProjectQuote text="How might we create a platform for people to share experiences with contents like movie and tv shows?"></ProjectQuote>
         </Section>
         <Section>
           <Header>Solution</Header>
@@ -79,8 +78,8 @@ const Ruma = ({ lightBoxHandler }) => {
           <Header>Project Timeline</Header>
           <ProjectImg
             single
-            margin={"15px 0 0 0"}
-            width={"50%"}
+            margin={"35px 0 25px 0"}
+            width={"70%"}
             noBorder
             src={timelineRuma}
             onClick={() => {
@@ -163,15 +162,20 @@ const Ruma = ({ lightBoxHandler }) => {
                   {" "}
                   <FontAwesomeIcon
                     icon={faInfoCircle}
-                    style={{ marginRight: "4px" }}
+                    style={{
+                      marginRight: "4px",
+                      color: "var(--main-txt-colour)",
+                    }}
                   />
                   <SubHeader>Feature:</SubHeader>
                 </IconWrapper>
               </WrapperCol>
-              <SubHeader blue>
+              <SubHeader blue listSub>
                 Create anticipation by scheduling parties
               </SubHeader>
-              <SubHeader>Information Required</SubHeader>
+              <SubHeader margin={"10px 0 10px 0"}>
+                Information Required
+              </SubHeader>
               <List>
                 <ListItem>Date, Time, Timezone</ListItem>
                 <ListItem>User who scheduled</ListItem>
@@ -184,13 +188,20 @@ const Ruma = ({ lightBoxHandler }) => {
                   {" "}
                   <FontAwesomeIcon
                     icon={faInfoCircle}
-                    style={{ marginRight: "4px" }}
+                    style={{
+                      marginRight: "4px",
+                      color: "var(--main-txt-colour)",
+                    }}
                   />
                   <SubHeader>Feature:</SubHeader>
                 </IconWrapper>
               </WrapperCol>
-              <SubHeader blue>Watching shared content</SubHeader>
-              <SubHeader>Information Required</SubHeader>
+              <SubHeader blue listSub>
+                Watching shared content
+              </SubHeader>
+              <SubHeader margin={"10px 0 10px 0"}>
+                Information Required
+              </SubHeader>
               <List>
                 <ListItem>Chat</ListItem>
                 <ListItem>Audio/Video Call</ListItem>
@@ -204,15 +215,20 @@ const Ruma = ({ lightBoxHandler }) => {
                   {" "}
                   <FontAwesomeIcon
                     icon={faInfoCircle}
-                    style={{ marginRight: "4px" }}
+                    style={{
+                      marginRight: "4px",
+                      color: "var(--main-txt-colour)",
+                    }}
                   />
                   <SubHeader>Feature:</SubHeader>
                 </IconWrapper>
               </WrapperCol>
-              <SubHeader blue>
+              <SubHeader blue listSub>
                 Engage in pre and post-event discussions
               </SubHeader>
-              <SubHeader>Information Required</SubHeader>
+              <SubHeader margin={"10px 0 10px 0"}>
+                Information Required
+              </SubHeader>
               <List>
                 <ListItem>Comments</ListItem>
                 <ListItem>Name</ListItem>
@@ -225,15 +241,20 @@ const Ruma = ({ lightBoxHandler }) => {
                   {" "}
                   <FontAwesomeIcon
                     icon={faInfoCircle}
-                    style={{ marginRight: "4px" }}
+                    style={{
+                      marginRight: "4px",
+                      color: "var(--main-txt-colour)",
+                    }}
                   />
                   <SubHeader>Feature:</SubHeader>
                 </IconWrapper>
               </WrapperCol>
-              <SubHeader blue>
+              <SubHeader blue listSub>
                 Join watch parties in different communities
               </SubHeader>
-              <SubHeader>Information Required</SubHeader>
+              <SubHeader margin={"10px 0 10px 0"}>
+                Information Required
+              </SubHeader>
               <List>
                 <ListItem>Genre</ListItem>
                 <ListItem>Title</ListItem>
@@ -316,9 +337,9 @@ const Ruma = ({ lightBoxHandler }) => {
         </div>
         <Section>
           <ProjectHeader text="Ruma: Features"></ProjectHeader>
-          <WrapperCol row>
+          <WrapperCol row margin={"12px 0 0 0"}>
             <ProjectImg
-              width={"65%"}
+              width={"60%"}
               margin={"30px 0 0 0"}
               noBorder
               src={images[9].src}
@@ -326,7 +347,7 @@ const Ruma = ({ lightBoxHandler }) => {
                 lightBoxHandler(images[9].src, "Watchroom");
               }}
             />
-            <WrapperCol alignSelf={"center"} margin={"0 0 0 10px"}>
+            <WrapperCol alignSelf={"center"} margin={"0 0 0 40px"}>
               <SubHeader>Watch Rooms</SubHeader>
               <BodyPara>
                 Users are able to host watch rooms where they can invite their
@@ -336,9 +357,9 @@ const Ruma = ({ lightBoxHandler }) => {
               </BodyPara>
             </WrapperCol>
           </WrapperCol>
-          <WrapperCol row>
+          <WrapperCol row margin={"12px 0 0 0"}>
             <ProjectImg
-              width={"65%"}
+              width={"60%"}
               margin={"30px 0 0 0"}
               noBorder
               src={images[13].src}
@@ -346,7 +367,7 @@ const Ruma = ({ lightBoxHandler }) => {
                 lightBoxHandler(images[13].src, "Community Page");
               }}
             />
-            <WrapperCol alignSelf={"center"} margin={"0 0 0 10px"}>
+            <WrapperCol alignSelf={"center"} margin={"0 0 0 40px"}>
               <SubHeader>Communities</SubHeader>
               <BodyPara>
                 Users can join communities around the world on Ruma. These
@@ -357,9 +378,9 @@ const Ruma = ({ lightBoxHandler }) => {
               </BodyPara>
             </WrapperCol>
           </WrapperCol>
-          <WrapperCol row>
+          <WrapperCol row margin={"12px 0 0 0"}>
             <ProjectImg
-              width={"65%"}
+              width={"60%"}
               margin={"30px 0 0 0"}
               noBorder
               src={images[14].src}
@@ -367,7 +388,7 @@ const Ruma = ({ lightBoxHandler }) => {
                 lightBoxHandler(images[14].src, "Discovery");
               }}
             />
-            <WrapperCol alignSelf={"center"} margin={"0 0 0 10px"}>
+            <WrapperCol alignSelf={"center"} margin={"0 0 0 40px"}>
               <SubHeader>Discovery</SubHeader>
               <BodyPara>
                 The discover tab lets users explore different communities they

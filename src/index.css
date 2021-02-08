@@ -47,11 +47,15 @@ nav {
 
 nav > a {
   color: var(--main-txt-colour);
-  font-size: clamp(14px, 2.5vw, 18px);
-  font-weight: 500;
+  font-size: clamp(1em, 2.5vw, 1.15em);
+  font-weight: 700;
   text-decoration: none;
 }
 
+nav > a:hover {
+  transition: all 0.2s ease-in-out;
+  color: var(--main-blue);
+}
 /* Landing Page Section */
 
 .mainContainer {
@@ -114,7 +118,8 @@ nav > a {
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 1.75s steps(45, start), blink-caret 0.5s step-end infinite;
-  -moz-animation:  typingFF 1.75s steps(45, start), blink-caret 0.5s step-end infinite;
+  -moz-animation: typingFF 1.75s steps(45, start),
+    blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
@@ -241,6 +246,10 @@ a {
   background-image: url("./Img/GameHero4k.png");
 }
 
+.tileWrap.Trac{
+  background-image: url("./Img/Trac4k.png");
+}
+
 .tileWrap.ToDo {
   background-image: url("./Img/Todolist4k.png");
 }
@@ -254,7 +263,7 @@ a {
   width: 50%;
   visibility: hidden;
   opacity: 0;
-  font-weight: 500;
+  font-weight: 700;
   transition: opacity 0.2s, visibility 0.2s;
   padding-left: 5%;
   font-size: clamp(14px, 1vw, 21px);
@@ -270,10 +279,18 @@ a {
   text-align: right;
   visibility: hidden;
   opacity: 0;
-  font-weight: 500;
+  font-weight: 700;
   transition: opacity 0.2s, visibility 0.2s;
   padding-right: 5%;
   padding-bottom: 3%;
+}
+
+.tileDesc.dark{
+  color: var(--main-txt-colour);
+}
+
+.tileDesc2.dark{
+  color: var(--main-txt-colour);
 }
 
 .tileWrap:hover .tileDesc {
@@ -405,13 +422,18 @@ footer {
 }
 
 .socialBtnWrapper {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .icon {
   color: var(--main-txt-colour);
   font-size: clamp(30px, 3.5vw, 40px);
   margin-right: 20px;
+}
+
+.icon:hover {
+  transition: all 0.1s ease-in-out;
+  color: var(--main-blue);
 }
 
 /* Case Studies */

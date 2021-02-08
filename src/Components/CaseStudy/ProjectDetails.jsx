@@ -45,8 +45,8 @@ const DetailsPara = styled.p`
   color: var(--second-txt-color);
   white-space: nowrap;
   font-size: clamp(8px, 1.5vw, 18px);
+  word-break: break-all;
 `;
-
 
 const ContentWrapper = styled.div`
   display: flex;

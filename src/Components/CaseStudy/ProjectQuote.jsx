@@ -6,16 +6,23 @@ const QuoteWrapper = styled.div`
   display: flex;
   margin-top: 10px;
   align-items: center;
-  min-height: 170px;
-  max-height: 200px;
-  width: 100%;
+  min-height: 200px;
+  max-height: 250px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   justify-content: center;
   text-align: center;
   background-color: var(--second-blue);
 `;
 
 const QuotePara = styled.p`
-  font-size: clamp(14px, 1.5vw, 19px);
+  font-size: clamp(1em, 1.5vw, 1.5em);
+  font-weight: 700;
+  color: var(--main-blue);
   width: 75%;
 `;
 

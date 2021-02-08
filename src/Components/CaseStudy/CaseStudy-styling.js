@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const CaseContainer = styled(motion.div)`
   margin-top: 5vh;
-  width: 90%;
+  width: 60%;
   display: flex;
   flex-direction: column;
 `;
@@ -12,6 +12,7 @@ export const MainContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 `;
 
 export const Banner = styled.div`
@@ -54,7 +55,7 @@ export const SubHeader = styled.h2`
   color: ${(props) =>
     props.blue ? "var(--main-blue)" : "var(--main-txt-colour)"};
   margin: ${(props) => props.margin};
-  font-size: clamp(18px, 1.5vw, 22px);
+  font-size: ${(props) => props.listSub ? "clamp(1em, 1.5vw, 1.25em)" : "clamp(18px, 1.5vw, 22px)"}
 `;
 
 export const WrapperCol = styled.div`

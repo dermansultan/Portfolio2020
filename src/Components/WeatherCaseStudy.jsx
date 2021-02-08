@@ -56,17 +56,17 @@ const Weather = ({ lightBoxHandler }) => {
         <Section>
           <Header>App Features</Header>
           <List>
-            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+            <ListItem margin={"10px 0 0 0"} weight={"400"}>
               User can search location using geolocation API or manually search
               with Country/City
             </ListItem>
-            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+            <ListItem margin={"10px 0 0 0"} weight={"400"}>
               Toggle between fahrenheit and celsius
             </ListItem>
-            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+            <ListItem margin={"10px 0 0 0"} weight={"400"}>
               Data from OpenWeatherAPI
             </ListItem>
-            <ListItem margin={"10px 0 0 0"} weight={"700"}>
+            <ListItem margin={"10px 0 0 0"} weight={"400"}>
               Displays location's Sunrise and Sunset time, Cloudiness, Humidity
               percent, Wind speed and Visibility
             </ListItem>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import landingGraphic from "../Img/CodePenSquares.png";
 import ConstructionSign from "./ConstructionSign";
 import { motion } from "framer-motion";
-import { docTitleUpdate } from "./docTitleUpdate"
+import { docTitleUpdate } from "./docTitleUpdate";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -10,12 +10,10 @@ const intro = { delay: 1.75, duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
 const introType = { duration: 3, ease: [0.6, 0.01, -0.05, 0.9] };
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
-
 const Home = () => {
-
   useEffect(() => {
-    docTitleUpdate('| 🏠 Home ')
-   });
+    docTitleUpdate("| 🏠 Home ");
+  });
 
   return (
     <div className="mainContainer">
@@ -56,15 +54,15 @@ const Home = () => {
               .
             </motion.p>
             <HashLink smooth to="/#projects">
-            <motion.button
-              exit={{ opacity: 0, transition: { outro } }}
-              transition={intro}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="protoBtn Home"
-            >
-              My Work
-            </motion.button>
+              <motion.button
+                exit={{ opacity: 0, transition: { outro } }}
+                transition={intro}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="protoBtn Home"
+              >
+                My Work
+              </motion.button>
             </HashLink>
           </div>
           <motion.img
@@ -79,29 +77,34 @@ const Home = () => {
         <div className="projectsContainer" id="projects">
           <h1 className="projectsHeader">Projects</h1>
           <div className="tilesContainer">
-          <Link to="/Ruma" className="tileWrap Ruma">
-            <motion.div whileHover={{ scale: 1.10 }} className="tileWrap Ruma">
-              <p className="tileDesc">Ruma - Streaming App</p>
-              <p className="tileDesc2">UI/UX | Design Challenge</p>
-            </motion.div>
+            <Link to="/Ruma" className="tileWrap Ruma">
+              <motion.div whileHover={{ scale: 1.1 }} className="tileWrap Ruma">
+                <p className="tileDesc">Ruma - Streaming App</p>
+                <p className="tileDesc2">UI/UX | Design Challenge</p>
+              </motion.div>
             </Link>
-            <motion.div whileHover={{ scale: 1.10 }} className="tileWrap GHBC">
-              <p className="tileDesc">Game-Hero BootCamp - Mobile App </p>
-              <p className="tileDesc2">UI/UX | Design Challenge</p>
-            </motion.div>
+            <Link to="/Trac" className="tileWrap Trac">
+              <motion.div whileHover={{ scale: 1.1 }} className="tileWrap Trac">
+                <p className="tileDesc dark">Trac - Mobile App </p>
+                <p className="tileDesc2 dark">UI/UX | Design Challenge</p>
+              </motion.div>
+            </Link>
             <Link to="/ToDo" className="tileWrap ToDo">
-            <motion.div whileHover={{ scale: 1.10 }} className="tileWrap ToDo">
-              <p className="tileDesc">
-                ToDoList - CRUD App (Vanilla Js + Local Storage)
-              </p>
-              <p className="tileDesc2">UI/UX | Front End Development</p>
-            </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }} className="tileWrap ToDo">
+                <p className="tileDesc">
+                  ToDoList - CRUD App (Vanilla Js + Local Storage)
+                </p>
+                <p className="tileDesc2">UI/UX | Front End Development</p>
+              </motion.div>
             </Link>
             <Link to="/Climate" className="tileWrap Climate">
-            <motion.div whileHover={{ scale: 1.10 }} className="tileWrap Climate">
-              <p className="tileDesc">Climate - Weather App </p>
-              <p className="tileDesc2">UI/UX | Front End Development</p>
-            </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="tileWrap Climate"
+              >
+                <p className="tileDesc">Climate - Weather App </p>
+                <p className="tileDesc2">UI/UX | Front End Development</p>
+              </motion.div>
             </Link>
           </div>
         </div>

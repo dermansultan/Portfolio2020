@@ -18,6 +18,7 @@ import {
   ProjectImg,
   SpanPara,
 } from "./CaseStudy/CaseStudy-styling";
+import images from "../Img/caseStudies/Trac/image";
 
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -66,9 +67,73 @@ const Trac = ({ lightBoxHandler }) => {
         </Section>
         <Section>
           <Header>Design Process</Header>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 0 0"}
+            width={"75%"}
+            MobWidth={"135%"}
+            single
+            src={images[4].src}
+          ></ProjectImg>
         </Section>
         <Section>
           <Header>Research</Header>
+          <SubHeader margin={"20px 0 0 0"}>Interviews</SubHeader>
+          <BodyPara>
+            To be able to empathise with how students have been operating in the
+            new e-learning environment we conducted nine user interviews from
+            students in various university and college programs. We asked
+            questions focusing on three main metrics.
+          </BodyPara>
+          <SubHeader margin={"20px 0 0 0"}>Insights</SubHeader>
+          <BodyPara>
+            Participants of the research study expressed their problems with
+            their e-learning experience. The greatest concerns were that
+            students felt it was difficult to manage their time, had difficulty
+            locating information across platforms and that they had to develop
+            their own system to manage their course loads.{" "}
+          </BodyPara>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 0 0"}
+            width={"75%"}
+            MobWidth={"100%"}
+            single
+            src={images[3].src}
+          />
+        </Section>
+        <Section>
+          <Header>Design</Header>
+          <SubHeader margin={"20px 0 0 0"}>Brainstorming</SubHeader>
+          <BodyPara>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            libero purus, sodales a massa sagittis, sodales scelerisque lectus.
+            Pellentesque elit ex, aliquet ut commodo nec, iaculis quis enim.
+            Pellentesque a finibus sem. Morbi rhoncus, nisi eu pretium vehicula,
+            lectus sapien posuere lectus, sed tempor sem velit efficitur neque.{" "}
+          </BodyPara>
+        </Section>
+        <Section>
+          <SubHeader>Wireframes</SubHeader>
+          <BodyPara>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            libero purus, sodales a massa sagittis, sodales scelerisque lectus.
+            Pellentesque elit ex, aliquet ut commodo nec, iaculis quis enim.
+            Pellentesque a finibus sem. Morbi rhoncus, nisi eu pretium vehicula,
+            lectus sapien posuere lectus, sed tempor sem velit efficitur neque.
+          </BodyPara>
+        </Section>
+        <Section>
+          <Header>Design System</Header>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 0 0"}
+            width={"75%"}
+            MobWidth={"100%"}
+            single
+            src={images[10].src}
+          />
         </Section>
       </CaseContainer>
     </MainContainer>

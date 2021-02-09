@@ -36,8 +36,10 @@ const ToDo = ({ lightBoxHandler }) => {
       >
         <Banner backImg={toDoBanner}></Banner>
         <ProjectDetails
+          btnCol={"#46529D"}
+          name={"ToDo"}
           codeProject
-          role={"Front-End Development , UX Design"}
+          role={"Front-End Development"}
           tools={"Figma"}
           team={"Me 👋"}
           duration={"Ongoing"}

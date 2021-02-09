@@ -26,6 +26,12 @@ export const Banner = styled.div`
   background-size: cover;
   border-radius: 10px;
   height: 70vh;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 `;
 
 export const BodyPara = styled.p`
@@ -46,7 +52,7 @@ export const SpanPara = styled.span`
 
 export const Header = styled.h1`
   margin: ${(props) => props.margin};
-  font-size: clamp(30px, 1.5vw, 55px);
+  font-size: clamp(30px, 1.5vw, 75px);
   color: var(--main-txt-colour);
 `;
 
@@ -55,7 +61,8 @@ export const SubHeader = styled.h2`
   color: ${(props) =>
     props.blue ? "var(--main-blue)" : "var(--main-txt-colour)"};
   margin: ${(props) => props.margin};
-  font-size: ${(props) => props.listSub ? "clamp(1em, 1.5vw, 1.25em)" : "clamp(18px, 1.5vw, 22px)"}
+  font-size: ${(props) =>
+    props.listSub ? "clamp(1em, 1.5vw, 1.25em)" : "clamp(18px, 1.5vw, 22px)"};
 `;
 
 export const WrapperCol = styled.div`
@@ -96,7 +103,7 @@ export const ListItem = styled.li`
   margin: ${(props) => props.margin};
   font-size: clamp(14px, 1.5vw, 18px);
   color: var(--second-txt-color);
-  font-weight: ${(props) => props.weight}
+  font-weight: ${(props) => props.weight};
 `;
 
 export const ProjectImg = styled.img`

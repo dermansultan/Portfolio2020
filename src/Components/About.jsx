@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
+import ReactGa from "react-ga";
 
 const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -20,6 +21,14 @@ const About = () => {
   useEffect(() => {
     docTitleUpdate("| 👋 About Me");
   });
+
+  const gaClickHandler = (name) => {
+    ReactGa.event({
+      category: "Button",
+      action: `${name}`,
+    });
+    // console.log(`${name} was clicked!`);
+  };
 
   return (
     <div className="mainContainer About">
@@ -57,7 +66,9 @@ const About = () => {
             techniques and about Accesibility on the Web.
           </p>
           <p className="aboutPara">
-          When I'm not messing around with code or design you can find me looking at corgi pictures on Instagram, powerlifting (pre-pandemic), or obsessing over the latest PC hardware.
+            When I'm not messing around with code or design you can find me
+            looking at corgi pictures on Instagram, powerlifting (pre-pandemic),
+            or obsessing over the latest PC hardware.
           </p>
           <p className="aboutPara">
             I'm currently looking for new opportunities to learn more and expand
@@ -66,19 +77,35 @@ const About = () => {
           </p>
           <div className="socialBtnWrapper">
             <a href="mailto:abdurrehmansultan4@gmail.com" target="_blank">
-              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="icon"
+                onClick={() => gaClickHandler("email was clicked")}
+              />
             </a>
             <a href="https://www.instagram.com/ixderman/" target="_blank">
-              <FontAwesomeIcon icon={faInstagram} className="icon" />
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="icon"
+                onClick={() => gaClickHandler("IG was clicked")}
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/derman-sultan/"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="icon"
+                onClick={() => gaClickHandler("LinkedIn was clicked")}
+              />
             </a>
             <a href="https://github.com/dermansultan" target="_blank">
-              <FontAwesomeIcon icon={faGithub} className="icon" />
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="icon"
+                onClick={() => gaClickHandler("Github was clicked")}
+              />
             </a>
           </div>
         </div>

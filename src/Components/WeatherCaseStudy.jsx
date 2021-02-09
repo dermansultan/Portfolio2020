@@ -36,8 +36,10 @@ const Weather = ({ lightBoxHandler }) => {
       >
         <Banner backImg={climateBanner}></Banner>
         <ProjectDetails
+          btnCol={"#9072F5"}
+          name={"Weather"}
           codeProject
-          role={"Front-End Development , UX Design"}
+          role={"Front-End Development"}
           tools={"Figma"}
           team={"Me 👋"}
           duration={"48 hours"}

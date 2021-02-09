@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { WrapperCol } from "./CaseStudy-styling";
+import ReactGa from "react-ga";
 
 const DetailsWrapper = styled.div`
   display: flex;
@@ -21,7 +22,7 @@ const DetailsWrapper = styled.div`
 const ProtoBtn = styled.button`
   font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 700;
-  background-color: #1d66b9;
+  background-color: ${(props) => props.btnCol};
   min-height: 50px;
   color: white;
   border-radius: 30px;
@@ -61,11 +62,24 @@ const ContentWrapper = styled.div`
 // Recreate with styled-component
 
 function ProjectDetails(props) {
+  const gaClickHandler = (name) => {
+    ReactGa.event({
+      category: "Button",
+      action: `${name} was project prototype was clicked`,
+    });
+    // console.log(`${name} was clicked!`);
+  };
+
   if (props.codeProject) {
     return (
       <DetailsWrapper>
         <a href={props.demoLink} target="_blank">
-          <ProtoBtn>Demo + Live Code</ProtoBtn>
+          <ProtoBtn
+            btnCol={props.btnCol}
+            onClick={() => gaClickHandler(props.name)}
+          >
+            Demo + Live Code
+          </ProtoBtn>
         </a>
         <ContentWrapper>
           <WrapperCol>
@@ -91,7 +105,12 @@ function ProjectDetails(props) {
     return (
       <DetailsWrapper>
         <a href={props.demoLink} target="_blank">
-          <ProtoBtn>Live Prototype</ProtoBtn>
+          <ProtoBtn
+            btnCol={props.btnCol}
+            onClick={() => gaClickHandler(props.name)}
+          >
+            Live Prototype
+          </ProtoBtn>
         </a>
         <ContentWrapper>
           <WrapperCol>

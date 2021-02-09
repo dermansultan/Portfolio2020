@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import About from "./Components/About";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -11,6 +12,7 @@ import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./Components/ScrollToTop";
 import styled from "styled-components";
+import ReactGa from "react-ga";
 
 const LightBoxWrapper = styled.div`
   position: fixed;
@@ -56,6 +58,13 @@ const LightBoxCaption = styled.figcaption`
 `;
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize("G-Y103XVNVEG");
+
+    // report view
+    ReactGa.pageview(window.location.pathname);
+  }, []);
+
   const [lightBox, setLightBox] = useState({
     image: "",
     caption: "",

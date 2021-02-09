@@ -22,7 +22,7 @@ const QuoteWrapper = styled.div`
 const QuotePara = styled.p`
   font-size: clamp(1em, 1.5vw, 1.5em);
   font-weight: 700;
-  color: var(--main-blue);
+  color: var(--main-txt-colour);
   width: 75%;
 `;
 

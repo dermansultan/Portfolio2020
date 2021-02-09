@@ -42,6 +42,8 @@ const Ruma = ({ lightBoxHandler }) => {
       >
         <Banner backImg={rumaBanner}></Banner>
         <ProjectDetails
+        btnCol={"#1d66b9"}
+          name={"Ruma"}
           role={"UX/UI Design, Branding"}
           tools={"Invision, Adobe XD"}
           team={"Rohail Khan"}

@@ -42,7 +42,7 @@ const Ruma = ({ lightBoxHandler }) => {
       >
         <Banner backImg={rumaBanner}></Banner>
         <ProjectDetails
-        btnCol={"#1d66b9"}
+          btnCol={"#1d66b9"}
           name={"Ruma"}
           role={"UX/UI Design, Branding"}
           tools={"Invision, Adobe XD"}
@@ -349,7 +349,12 @@ const Ruma = ({ lightBoxHandler }) => {
                 lightBoxHandler(images[9].src, "Watchroom");
               }}
             />
-            <WrapperCol alignSelf={"center"} margin={"0 0 0 40px"}>
+            <WrapperCol
+              alignSelf={"center"}
+              margin={"0 0 0 40px"}
+              MobMargin={"10% 0 0 0"}
+              MobPadding={"0 0 0 0"}
+            >
               <SubHeader>Watch Rooms</SubHeader>
               <BodyPara>
                 Users are able to host watch rooms where they can invite their
@@ -369,7 +374,12 @@ const Ruma = ({ lightBoxHandler }) => {
                 lightBoxHandler(images[13].src, "Community Page");
               }}
             />
-            <WrapperCol alignSelf={"center"} margin={"0 0 0 40px"}>
+            <WrapperCol
+              alignSelf={"center"}
+              margin={"0 0 0 40px"}
+              MobMargin={"10% 0 0 0"}
+              MobPadding={"0 0 0 0"}
+            >
               <SubHeader>Communities</SubHeader>
               <BodyPara>
                 Users can join communities around the world on Ruma. These
@@ -390,7 +400,12 @@ const Ruma = ({ lightBoxHandler }) => {
                 lightBoxHandler(images[14].src, "Discovery");
               }}
             />
-            <WrapperCol alignSelf={"center"} margin={"0 0 0 40px"}>
+            <WrapperCol
+              alignSelf={"center"}
+              margin={"0 0 0 40px"}
+              MobMargin={"10% 0 0 0"}
+              MobPadding={"0 0 0 0"}
+            >
               <SubHeader>Discovery</SubHeader>
               <BodyPara>
                 The discover tab lets users explore different communities they

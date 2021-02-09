@@ -51,24 +51,26 @@ const Weather = ({ lightBoxHandler }) => {
             Another front-end project. This time I set out to learn some React
             and work with some sort of API to handle data. I decided on using
             Open-Weather. This was my first time using a framework as well as
-            recieving data from a server. I was able to learn JSON Responses,
-            the Fetch API, and many different React quirks.
+            recieving data from a server. I was able to learn{" "}
+            <SpanPara>JSON Responses</SpanPara>, the{" "}
+            <SpanPara>Fetch API</SpanPara>, and many different{" "}
+            <SpanPara>React</SpanPara> quirks.
           </BodyPara>
         </Section>
         <Section>
           <Header>App Features</Header>
-          <List>
-            <ListItem margin={"10px 0 0 0"} weight={"400"}>
+          <List margin={"20px 0 0 0"}>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
               User can search location using geolocation API or manually search
               with Country/City
             </ListItem>
-            <ListItem margin={"10px 0 0 0"} weight={"400"}>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
               Toggle between fahrenheit and celsius
             </ListItem>
-            <ListItem margin={"10px 0 0 0"} weight={"400"}>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
               Data from OpenWeatherAPI
             </ListItem>
-            <ListItem margin={"10px 0 0 0"} weight={"400"}>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
               Displays location's Sunrise and Sunset time, Cloudiness, Humidity
               percent, Wind speed and Visibility
             </ListItem>
@@ -89,6 +91,7 @@ const Weather = ({ lightBoxHandler }) => {
               src={images[0].src}
               width={"20%"}
               MobWidth={"60%"}
+              margin={"20px 0 0 0"}
             />
             <ProjectImg
               shadow
@@ -112,17 +115,18 @@ const Weather = ({ lightBoxHandler }) => {
           <Header margin={"0 0 12px 0"}>Takeaways</Header>
           <SubHeader margin={"12px 0 0 0"}>React Goodies</SubHeader>
           <BodyPara>
-            I learned to better visualize React component structure and then
-            transfer it over in code. It was great to finally be able to map
-            data to a component and see it stay up to date with State. I also
-            messed a bit with conditional rendering.
+            I learned to better visualize React{" "}
+            <SpanPara>component structure</SpanPara> and then transfer it over
+            in code. It was great to finally be able to map data to a component
+            and see it stay up to date with State. I also messed a bit with
+            conditional rendering.
           </BodyPara>
           <SubHeader margin={"12px 0 0 0"}>JSON Response</SubHeader>
           <BodyPara>
             I did a deep dive into JavaScript promises with You Don't Know JS,
-            and learned as much as I could about the Fetch API. I was able to
-            recieve the data needed for the users search and store it as an
-            object in state.
+            and learned as much as I could about the{" "}
+            <SpanPara>Fetch API</SpanPara>. I was able to recieve the data
+            needed for the users search and store it as an object in state.
           </BodyPara>
           <SubHeader margin={"12px 0 0 0"}>For next time</SubHeader>
           <BodyPara>

@@ -13,6 +13,8 @@ import highfidel from "../Trac/highfidel.png";
 import wireframe from "../Trac/wireframes.png"
 import features from "../Trac/features.png"
 import metrics from "../Trac/metrics.png";
+import smallhighfidel from "../Trac/smallhighfidel.png";
+import systemmap from "../Trac/systemmap.png"
 
 const images = [
   { id: 1, src: dashboard },
@@ -30,6 +32,9 @@ const images = [
   { id: 1, src: wireframe },
   { id: 1, src: features },
   { id: 1, src: metrics },
+  { id: 1, src: smallhighfidel },
+  { id: 1, src: systemmap },
+
 ];
 
 export default images;

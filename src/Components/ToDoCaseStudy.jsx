@@ -52,24 +52,24 @@ const ToDo = ({ lightBoxHandler }) => {
             Before this I had only expiremented with coding applications that
             were narrow in scope such as a weight calculator or tic tac toe{" "}
             <SpanPara>(you can see those on my github!).</SpanPara> I set out to
-            create a ToDoList with Vanilla JavaScript in hopes of learning a few
-            new technologies.
+            create a ToDoList with <SpanPara>Vanilla JavaScript</SpanPara> in
+            hopes of learning a few new technologies.
           </BodyPara>
         </Section>
         <Section>
           <Header>App Features</Header>
-          <List>
-            <ListItem margin={"10px 0 0 0"} weight={"400"}>
+          <List margin={"20px 0 0 0"}>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
               User can create named 'projects' that are seperate to do lists
             </ListItem>
-            <ListItem margin={"10px 0 0 0"} weight={"400"}>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
               User can create, delete and update to do list items
             </ListItem>
-            <ListItem margin={"10px 0 0 0"} weight={"400"}>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
               To do list items feature, due date, priority level, title, and
               description
             </ListItem>
-            <ListItem margin={"10px 0 0 0"} weight={"400"}>
+            <ListItem margin={"10px 0 0 0"} weight={"700"}>
               Filter tasks within projects by due date, and date added
             </ListItem>
           </List>
@@ -78,15 +78,15 @@ const ToDo = ({ lightBoxHandler }) => {
           <Header>First times...</Header>
           <BodyPara>
             Through this personal project I was able to learn quite a few useful
-            skills. To save on bundle size I used Webpack for the very first
-            time. This was quite the challenge as I had never used NPM or a
-            bundler before. I was able to get Webpack up and running (through
-            their amazing documentation page) , setting up scripts within my
-            package.json, and configuring webpack to support plugins such as
-            font and css loaders.
+            skills. To save on bundle size I used <SpanPara>Webpack</SpanPara>{" "}
+            for the very first time. This was quite the challenge as I had never
+            used NPM or a bundler before. I was able to get Webpack up and
+            running (through their amazing documentation page) , setting up
+            scripts within my package.json, and configuring webpack to support
+            plugins such as font and css loaders.
           </BodyPara>
           <BodyPara>
-            I practiced code-splitting and had worked with an external module
+            I practiced <SpanPara>code-splitting</SpanPara> and had worked with an external module
             for the first time. Previously I had never seperated my code into
             seperate modules. As I wasn't relying on a JavaScript framework I
             had to split up my code into seperate modules since how 'manual' DOM
@@ -94,11 +94,12 @@ const ToDo = ({ lightBoxHandler }) => {
             dates a little easier on the user side.
           </BodyPara>
           <BodyPara>
-            I chose to keep all the user data within local storage as I intended
-            for this project to be mainly practice. The users 'projects' fall
-            under objects which contain tasklists arrays within them. Each task
-            is an object that holds different key value pairs such as title,
-            description, due date etc.
+            I chose to keep all the user data within{" "}
+            <SpanPara>local storage</SpanPara> as I intended for this project to
+            be mainly practice. The users 'projects' fall under objects which
+            contain tasklists arrays within them. Each task is an object that
+            holds different key value pairs such as title, description, due date
+            etc.
           </BodyPara>
         </Section>
         <Section>
@@ -143,6 +144,7 @@ const ToDo = ({ lightBoxHandler }) => {
         <Section>
           <Header>Design System</Header>
           <ProjectImg
+            margin={"20px 0 0 0"}
             shadow
             single
             noBorder

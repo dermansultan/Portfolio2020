@@ -75,7 +75,9 @@ export const WrapperCol = styled.div`
   align-self: ${(props) => props.alignSelf};
   align-items: ${(props) => (props.itemCenter ? "center" : "flex-start")};
   @media only screen and (max-width: 700px) {
-    flex-direction: column;
+    flex-direction: ${(props) => (props.MobDirec ? props.MobDirec : "column")};
+    margin: ${(props) => props.MobMargin};
+    padding: ${(props) => props.MobPadding};
   }
 `;
 

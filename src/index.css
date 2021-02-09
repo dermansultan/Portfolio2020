@@ -61,6 +61,7 @@ nav > a:hover {
 .mainContainer {
   width: 100%;
   display: flex;
+  padding-bottom: 125px;
   justify-content: center;
 }
 
@@ -246,7 +247,7 @@ a {
   background-image: url("./Img/GameHero4k.png");
 }
 
-.tileWrap.Trac{
+.tileWrap.Trac {
   background-image: url("./Img/Trac4k.png");
 }
 
@@ -285,11 +286,11 @@ a {
   padding-bottom: 3%;
 }
 
-.tileDesc.dark{
+.tileDesc.dark {
   color: var(--main-txt-colour);
 }
 
-.tileDesc2.dark{
+.tileDesc2.dark {
   color: var(--main-txt-colour);
 }
 

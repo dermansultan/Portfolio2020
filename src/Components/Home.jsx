@@ -87,16 +87,6 @@ const Home = () => {
         <div className="projectsContainer" id="projects">
           <h1 className="projectsHeader">Projects</h1>
           <div className="tilesContainer">
-            <Link to="/Ruma" className="tileWrap Ruma">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="tileWrap Ruma"
-                onClick={() => gaClickHandler("Ruma was clicked into.")}
-              >
-                <p className="tileDesc">Ruma - Streaming App</p>
-                <p className="tileDesc2">UI/UX | Design Challenge</p>
-              </motion.div>
-            </Link>
             <Link to="/Trac" className="tileWrap Trac">
               <motion.div
                 whileHover={{ scale: 1.1 }}
@@ -105,6 +95,16 @@ const Home = () => {
               >
                 <p className="tileDesc dark">Trac - Mobile App </p>
                 <p className="tileDesc2 dark">UI/UX | Design Challenge</p>
+              </motion.div>
+            </Link>
+            <Link to="/Ruma" className="tileWrap Ruma">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="tileWrap Ruma"
+                onClick={() => gaClickHandler("Ruma was clicked into.")}
+              >
+                <p className="tileDesc">Ruma - Streaming App</p>
+                <p className="tileDesc2">UI/UX | Design Challenge</p>
               </motion.div>
             </Link>
             <Link to="/ToDo" className="tileWrap ToDo">

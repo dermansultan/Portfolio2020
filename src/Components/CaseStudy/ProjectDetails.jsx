@@ -5,10 +5,15 @@ import ReactGa from "react-ga";
 
 const DetailsWrapper = styled.div`
   display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -49,10 +54,23 @@ const DetailsPara = styled.p`
   word-break: break-all;
 `;
 
+const Detailsitem = styled.li`
+  color: var(--second-txt-color);
+  white-space: nowrap;
+  font-size: clamp(8px, 1.5vw, 18px);
+  word-break: break-all;
+`;
+
+const DetailsList = styled.ul`
+  list-style-position: inside;
+  margin: ${(props) => props.margin};
+  list-style-type: none;
+`;
+
 const ContentWrapper = styled.div`
   display: flex;
   width: 50%;
-  justify-content: space-between;
+  justify-content: space-around;
   @media only screen and (max-width: 600px) {
     width: 100%;
     margin-top: 20px;
@@ -69,6 +87,10 @@ function ProjectDetails(props) {
     });
     // console.log(`${name} was clicked!`);
   };
+
+  const namelist = props.namelist.map((name) => (
+    <Detailsitem>{name}</Detailsitem>
+  ));
 
   if (props.codeProject) {
     return (
@@ -92,7 +114,7 @@ function ProjectDetails(props) {
           </WrapperCol>
           <WrapperCol>
             <DetailsTitle>Team</DetailsTitle>
-            <DetailsPara>{props.team}</DetailsPara>
+            <DetailsList margin={"5px 0 0 0"}>{namelist}</DetailsList>
           </WrapperCol>
           <WrapperCol>
             <DetailsTitle>Duration</DetailsTitle>
@@ -123,7 +145,7 @@ function ProjectDetails(props) {
           </WrapperCol>
           <WrapperCol>
             <DetailsTitle>Team</DetailsTitle>
-            <DetailsPara>{props.team}</DetailsPara>
+            <DetailsList margin={"5px 0 0 0"}>{namelist}</DetailsList>
           </WrapperCol>
           <WrapperCol>
             <DetailsTitle>Duration</DetailsTitle>

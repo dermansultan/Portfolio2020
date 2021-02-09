@@ -41,7 +41,8 @@ const Trac = ({ lightBoxHandler }) => {
           btnCol={"#1DB954"}
           role={"User Research"}
           tools={"Figma"}
-          team={"Rohail Khan"}
+          team={"Rohail Khan, Amelia Tziougras, Rowan Abraham, Spencer Black"}
+          namelist={['Rohail Khan', 'Amelia Tziougras', 'Rowan Abraham', 'Spencer Black']}
           duration={"8 weeks"}
           demoLink={
             "https://www.figma.com/proto/UH5EO1vWdPOG8AbPfqGR7U/Trac-Prototype?node-id=0%3A1&viewport=575%2C935%2C0.1355305165052414&scaling=scale-down"
@@ -61,17 +62,91 @@ const Trac = ({ lightBoxHandler }) => {
           <Header margin={"0 0 20px 0"}>Challenge</Header>
           <ProjectQuote text="How might we develop a mobile application that helps students keep track of their course work and manage their time?"></ProjectQuote>
         </Section>
-        <Section>
-          <Header>Solution</Header>
+        <Section padding={"0 0 55px 0"}>
+          <Header margin={"20px 0 0 0"}>Solution</Header>
           <BodyPara margin={"20px 0 0 0"}>
             <SpanPara>Trac</SpanPara> - a personal management application that
             helps students keep track of tasks, deadlines and facilitate
             planning of group work.
           </BodyPara>
+          <WrapperCol row margin={"55px 0 0 0"}>
+            <ProjectImg
+              noBorder
+              margin={"0 20px 0 0"}
+              width={"30%"}
+              MobWidth={"100%"}
+              src={images[0].src}
+              shadow
+              borderRad={"12px"}
+            />
+            <WrapperCol
+              alignSelf={"center"}
+              margin={"0 0 0 10%"}
+              MobMargin={"10% 0 0 0"}
+              MobPadding={"0 0 0 0"}
+            >
+              <Header>Dashboard</Header>
+              <BodyPara>
+                The dashboard provides users with an an overview of their week.
+                At a glance they are able to see upcoming deadlines and on going
+                projects.
+              </BodyPara>
+            </WrapperCol>
+          </WrapperCol>
+          <WrapperCol row margin={"55px 0 0 0"} MobDirec={"column-reverse"}>
+            <WrapperCol
+              alignSelf={"center"}
+              margin={"0 10% 0 0"}
+              MobMargin={"10% 0 0 0"}
+              MobPadding={"0 0 0 0"}
+            >
+              <Header>Calendar</Header>
+              <BodyPara>
+                The calendar page features all created tasks colour coded by the
+                user in a monthly view.
+              </BodyPara>
+            </WrapperCol>
+            <ProjectImg
+              noBorder
+              margin={"0 20px 0 0"}
+              width={"30%"}
+              MobWidth={"100%"}
+              src={images[1].src}
+              shadow
+              borderRad={"12px"}
+            />
+          </WrapperCol>
+          <WrapperCol row margin={"55px 0 0 0"}>
+            <ProjectImg
+              noBorder
+              margin={"0 20px 0 0"}
+              width={"30%"}
+              MobWidth={"100%"}
+              src={images[2].src}
+              shadow
+              borderRad={"12px"}
+            />
+            <WrapperCol
+              alignSelf={"center"}
+              margin={"0 0 0 10%"}
+              MobMargin={"10% 0 0 0"}
+              MobPadding={"0 0 0 0"}
+            >
+              <Header>Tasks</Header>
+              <BodyPara>
+                Tasks can be imported through the students e-learning platform
+                or manually created by the student. To promote collaboration
+                Trac tasks can also be shared with other students.
+              </BodyPara>
+            </WrapperCol>
+          </WrapperCol>
         </Section>
         <Section>
           <Header>Design Process</Header>
           <ProjectImg
+            onClick={() => {
+              lightBoxHandler(images[4].src, "");
+            }}
             noBorder
             margin={"55px 0 0 0"}
             width={"75%"}
@@ -87,7 +162,7 @@ const Trac = ({ lightBoxHandler }) => {
             To be able to empathise with how students have been operating in the
             new e-learning environment we conducted nine user interviews from
             students in various university and college programs. We asked
-            questions focusing on three main metrics.
+            questions focusing on <SpanPara>three main metrics</SpanPara>.
           </BodyPara>
           <ProjectImg
             noBorder
@@ -100,12 +175,19 @@ const Trac = ({ lightBoxHandler }) => {
           <SubHeader margin={"20px 0 0 0"}>Insights</SubHeader>
           <BodyPara>
             Participants of the research study expressed their problems with
-            their e-learning experience. The greatest concerns were that
-            students felt it was difficult to manage their time, had difficulty
-            locating information across platforms and that they had to develop
-            their own system to manage their course loads.{" "}
+            their e-learning experience.{" "}
+            <SpanPara>
+              The greatest concerns were that students felt it was difficult to
+              manage their time, had difficulty locating information across
+              platforms and that they had to develop their own system to manage
+              their course loads
+            </SpanPara>
+            .{" "}
           </BodyPara>
           <ProjectImg
+            onClick={() => {
+              lightBoxHandler(images[3].src, "");
+            }}
             noBorder
             margin={"55px 0 0 0"}
             width={"75%"}
@@ -125,6 +207,9 @@ const Trac = ({ lightBoxHandler }) => {
             flow on.
           </BodyPara>
           <ProjectImg
+            onClick={() => {
+              lightBoxHandler(images[13].src, "");
+            }}
             noBorder
             margin={"55px 0 0 0"}
             width={"75%"}
@@ -132,6 +217,24 @@ const Trac = ({ lightBoxHandler }) => {
             single
             src={images[13].src}
           />
+        </Section>
+        <Section>
+          <SubHeader>System Map</SubHeader>
+          <BodyPara>
+            With the user-flow in mind we created a system map to better
+            visualize how our application would be structured.
+          </BodyPara>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 0 0"}
+            width={"75%"}
+            MobWidth={"135%"}
+            single
+            src={images[16].src}
+            onClick={() => {
+              lightBoxHandler(images[16].src, "");
+            }}
+          ></ProjectImg>
         </Section>
         <Section>
           <SubHeader>Wireframes</SubHeader>
@@ -147,6 +250,9 @@ const Trac = ({ lightBoxHandler }) => {
             MobWidth={"135%"}
             single
             src={images[12].src}
+            onClick={() => {
+              lightBoxHandler(images[12].src, "");
+            }}
           ></ProjectImg>
         </Section>
         <Section>
@@ -163,6 +269,9 @@ const Trac = ({ lightBoxHandler }) => {
             MobWidth={"100%"}
             single
             src={images[10].src}
+            onClick={() => {
+              lightBoxHandler(images[10].src, "");
+            }}
           />
         </Section>
         <Section>
@@ -178,43 +287,14 @@ const Trac = ({ lightBoxHandler }) => {
         </Section>
         <Section padding={"0 0 90px 0"} margin={"40px 0 0 0"}>
           <Header margin={"0 0 20px 0"}>Takeaways</Header>
-          <SubHeader margin={"20px 0 0 0"}>What didn't work...</SubHeader>
+          <SubHeader margin={"20px 0 0 0"}>Being the listener</SubHeader>
           <BodyPara margin={"20px 0 0 0"}>
-            During this jam, I learned how to better allocate time. Before
-            getting to the wireframing process we had iterated over a few
-            different ideas of the concept of the app.
-          </BodyPara>
-          <BodyPara margin={"20px 0 0 0"}>
-            One specific feature of the app 'Communities', felt like we didn't
-            get enough time to flesh it out. We had understood what we wanted to
-            include in them, but when it came to laying out that feature we
-            slowly realized we may have no fleshed this out as much as we should
-            have. It's very simple to say this page will feature 'x' feature but
-            until you deep dive and see how that feature fits in the overall app
-            and layout you won't get a feel of its true gravity.
-          </BodyPara>
-          <BodyPara margin={"20px 0 0 0"}>
-            There were many features such as the settings page that due to this
-            problem set us back as a group. In the future I will employ other
-            brainstorming tools such as Affinity Mapping to get a concrete idea
-            out the door.
-          </BodyPara>
-          <SubHeader margin={"20px 0 0 0"}>Iterate, Iterate, Iterate</SubHeader>
-          <BodyPara margin={"20px 0 0 0"}>
-            I feel the back and forth between my partner and I was healthy. We
-            were able to bounce ideas off one another with real criticisms.
-            Although I feel as a duo we did this aspect well, during our
-            iteration process we probably could have gone over more ideas. As we
-            were pressed were time I believe this wasn't as much of a focus but
-            it is something I definetly want to be able to do in future
-            projects.
-          </BodyPara>
-          <SubHeader margin={"20px 0 0 0"}>Delegating</SubHeader>
-          <BodyPara margin={"20px 0 0 0"}>
-            Most groups had 3 members. Since there was a lot of work to do
-            amongst just us two I feel as if we could've delegated individual
-            tasks better. There were times where we both were working on a task
-            that we probably could've left to one individual and vice-versa.
+            Conducting remote interviews really put me on the spot, but I was
+            able to find my footing. I did my best to let conversations
+            free-flow so I could gain unique insights from each of my
+            interviews. Often I would get similar opinions but frustrations that
+            varied. Each interview provided me with new perspectives that I
+            could incorporate into our brain-storming.
           </BodyPara>
         </Section>
       </CaseContainer>

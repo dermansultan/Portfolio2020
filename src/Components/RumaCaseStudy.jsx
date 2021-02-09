@@ -47,6 +47,7 @@ const Ruma = ({ lightBoxHandler }) => {
           role={"UX/UI Design, Branding"}
           tools={"Invision, Adobe XD"}
           team={"Rohail Khan"}
+          namelist={["Rohail Khan"]}
           duration={"48 hours"}
           demoLink={
             "https://xd.adobe.com/view/5a675d5e-e5ab-47c2-92ab-ed169babdfd4-0f34/?fullscreen"

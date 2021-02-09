@@ -42,6 +42,7 @@ const ToDo = ({ lightBoxHandler }) => {
           role={"Front-End Development"}
           tools={"Figma"}
           team={"Me 👋"}
+          namelist={["Me 👋"]}
           duration={"Ongoing"}
           demoLink={"https://github.com/dermansultan/ToDoList"}
         ></ProjectDetails>

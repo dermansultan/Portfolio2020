@@ -42,6 +42,7 @@ const Weather = ({ lightBoxHandler }) => {
           role={"Front-End Development"}
           tools={"Figma"}
           team={"Me 👋"}
+          namelist={["Me 👋"]}
           duration={"48 hours"}
           demoLink={"https://github.com/dermansultan/WeatherApp"}
         ></ProjectDetails>

@@ -65,7 +65,7 @@ function ProjectDetails(props) {
   const gaClickHandler = (name) => {
     ReactGa.event({
       category: "Button",
-      action: `${name} was project prototype was clicked`,
+      action: `${name} project prototype was clicked`,
     });
     // console.log(`${name} was clicked!`);
   };

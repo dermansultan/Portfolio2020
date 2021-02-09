@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import About from "./Components/About";
 import Header from "./Components/Header";
@@ -12,6 +12,7 @@ import Footer from "./Components/Footer";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./Components/ScrollToTop";
 import styled from "styled-components";
+import { createBrowserHistory } from "history";
 import ReactGa from "react-ga";
 
 const LightBoxWrapper = styled.div`
@@ -57,12 +58,13 @@ const LightBoxCaption = styled.figcaption`
   font-size: clamp(18px, 1.5vw, 22px);
 `;
 
+const trackingId = "UA-177262949-1";
+
 function App() {
   useEffect(() => {
-    ReactGa.initialize("G-Y103XVNVEG");
+    ReactGa.initialize(trackingId);
 
-    // report view
-    ReactGa.pageview(window.location.pathname);
+    ReactGa.pageview(window.location.pathname + window.location.search);
   }, []);
 
   const [lightBox, setLightBox] = useState({

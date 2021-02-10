@@ -4,13 +4,14 @@ import styled from "styled-components";
 const TileWrapper = styled.div`
   padding-top: 12px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   justify-items: center;
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
   width: 100%;
 `;
 
 const TileImage = styled.img`
+  cursor: ${(props) => (props.onClick ? "pointer" : "")};
   width: 100%;
   height: auto;
 `;

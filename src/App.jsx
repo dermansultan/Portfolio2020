@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import {browserHistory} from "react-router-dom"
 import About from "./Components/About";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -58,7 +58,9 @@ const LightBoxCaption = styled.figcaption`
   font-size: clamp(18px, 1.5vw, 22px);
 `;
 
-const trackingId = "UA-177262949-1";
+// const trackingId = "UA-177262949-1";
+const trackingId = "FAKE";
+
 
 function App() {
   useEffect(() => {

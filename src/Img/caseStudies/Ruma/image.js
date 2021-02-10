@@ -5,15 +5,17 @@ import process2 from "../Ruma/Process2.png";
 import process3 from "../Ruma/Process3.png";
 import process4 from "../Ruma/Process4.png";
 import moodboard from "../Ruma/moodboard.png";
-import styletile from "../Ruma/styletile.png";
+import styletile from "../Ruma/styletile.svg";
 import solution1 from "../Ruma/solution1.png";
 import solution2 from "../Ruma/solution2.png";
 import solution3 from "../Ruma/solution3.png";
 import solution4 from "../Ruma/solution4.png";
-import rumaConcept from "../Ruma/rumaConcept.png";
-import wireframeRuma from "../Ruma/wireframeRuma.png";
+import timelineRuma from "../Ruma/timelineRuma.svg";
+import rumaConcept from "../Ruma/rumaConcept.svg";
+import wireframeRuma from "../Ruma/wireframeRuma.svg";
 import community from "../Ruma/community.png";
 import discovery from "../Ruma/discovery.png";
+import brainstorming from "../Ruma/brainstorming.svg";
 
 const images = [
   {
@@ -120,6 +122,8 @@ const images = [
     title: "Ruma Wireframes",
     description: "Collection of wireframes",
   },
+  { id: 18, src: brainstorming },
+  {id: 19, src: timelineRuma}
 ];
 
 const solutionArr = [images[8], images[9], images[10], images[11]];

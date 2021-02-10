@@ -32,6 +32,7 @@ const ProtoBtn = styled.button`
   color: white;
   border-radius: 30px;
   width: 200px;
+  cursor: pointer;
   border: 0;
 
   @media only screen and (max-width: 600px) {

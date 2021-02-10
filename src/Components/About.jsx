@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
 import ReactGa from "react-ga";
 
-const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
+const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const About = () => {
   useEffect(() => {

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1487.303" height="478.184" viewBox="0 0 1487.303 478.184">
+  <g id="Group_1576" data-name="Group 1576" transform="translate(-185.789 -5951.5)">
+    <text id="User_needs_to_be_able_to_get_a_quick_overview_of_all_upcoming_assignments_and_deadlines." data-name="User needs to be able to get a quick overview of all upcoming assignments and deadlines." transform="translate(294 6072)" fill="#39393a" font-size="24" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="24">User needs to be able to get a quick overview of all </tspan><tspan x="0" y="59">upcoming assignments and deadlines.</tspan></text>
+    <text id="User_needs_to_be_able_to_share_group_project_deadlines_with_peers." data-name="User needs to be able to share group project deadlines with peers." transform="translate(294 6185)" fill="#39393a" font-size="24" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="24">User needs to be able to share group project deadlines </tspan><tspan x="0" y="59">with peers.</tspan></text>
+    <text id="User_needs_to_be_able_to_create_their_own_tasks_and_projects" data-name="User needs to be able to create their own tasks and projects" transform="translate(294 6299)" fill="#39393a" font-size="24" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="24">User needs to be able to create their own tasks and </tspan><tspan x="0" y="59">projects</tspan></text>
+    <path id="star-solid" d="M47.185,1.978l-7.3,14.8-16.326,2.38a3.578,3.578,0,0,0-1.978,6.1L33.4,36.764,30.6,53.024a3.574,3.574,0,0,0,5.185,3.766l14.605-7.677L65,56.789a3.577,3.577,0,0,0,5.185-3.766L67.388,36.764,79.2,25.255a3.578,3.578,0,0,0-1.978-6.1L60.9,16.773l-7.3-14.8a3.579,3.579,0,0,0-6.414,0Z" transform="translate(165.289 6074.048)" fill="#1db954"/>
+    <path id="star-solid-2" data-name="star-solid" d="M47.185,1.978l-7.3,14.8-16.326,2.38a3.578,3.578,0,0,0-1.978,6.1L33.4,36.764,30.6,53.024a3.574,3.574,0,0,0,5.185,3.766l14.605-7.677L65,56.789a3.577,3.577,0,0,0,5.185-3.766L67.388,36.764,79.2,25.255a3.578,3.578,0,0,0-1.978-6.1L60.9,16.773l-7.3-14.8a3.579,3.579,0,0,0-6.414,0Z" transform="translate(165.289 6187.247)" fill="#1db954"/>
+    <path id="star-solid-3" data-name="star-solid" d="M47.185,1.978l-7.3,14.8-16.326,2.38a3.578,3.578,0,0,0-1.978,6.1L33.4,36.764,30.6,53.024a3.574,3.574,0,0,0,5.185,3.766l14.605-7.677L65,56.789a3.577,3.577,0,0,0,5.185-3.766L67.388,36.764,79.2,25.255a3.578,3.578,0,0,0-1.978-6.1L60.9,16.773l-7.3-14.8a3.579,3.579,0,0,0-6.414,0Z" transform="translate(165.289 6300.445)" fill="#1db954"/>
+    <g id="Group_1573" data-name="Group 1573" transform="translate(669 44)">
+      <text id="Calendar_" data-name="Calendar
+" transform="translate(385 6262)" fill="#39393a" font-size="30" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="30">Calendar</tspan></text>
+      <text id="Weekly_calendar_" data-name="Weekly calendar
+" transform="translate(416 6318)" fill="#39393a" font-size="20" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="20">Weekly calendar</tspan></text>
+      <text id="assignment_calendar_" data-name="assignment calendar
+" transform="translate(416 6351)" fill="#39393a" font-size="20" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="20">assignment calendar</tspan></text>
+      <circle id="Ellipse_14" data-name="Ellipse 14" cx="7.5" cy="7.5" r="7.5" transform="translate(385 6324)" fill="#1db954"/>
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="7.5" cy="7.5" r="7.5" transform="translate(385 6357)" fill="#1db954"/>
+    </g>
+    <text id="Tasks_" data-name="Tasks
+" transform="translate(1052 6060)" fill="#39393a" font-size="30" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="30">Tasks</tspan></text>
+    <text id="Priority_" data-name="Priority 
+" transform="translate(1083 6116)" fill="#39393a" font-size="20" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="20">Priority </tspan></text>
+    <text id="Notifications_" data-name="Notifications
+" transform="translate(1083 6149)" fill="#39393a" font-size="20" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="20">Notifications</tspan></text>
+    <text id="Sync_with_E-learning_Platform_" data-name="Sync with E-learning Platform
+" transform="translate(1083 6180)" fill="#39393a" font-size="20" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="20">Sync with E-learning Platform</tspan><tspan x="0" y="46"></tspan></text>
+    <text id="Collobartion_with_peers_" data-name="Collobartion with peers
+" transform="translate(1083 6217)" fill="#39393a" font-size="20" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="20">Collobartion with </tspan><tspan x="0" y="46">peers</tspan></text>
+    <circle id="Ellipse_14-2" data-name="Ellipse 14" cx="7.5" cy="7.5" r="7.5" transform="translate(1052 6122)" fill="#1db954"/>
+    <circle id="Ellipse_15-2" data-name="Ellipse 15" cx="7.5" cy="7.5" r="7.5" transform="translate(1052 6155)" fill="#1db954"/>
+    <circle id="Ellipse_16" data-name="Ellipse 16" cx="7.5" cy="7.5" r="7.5" transform="translate(1052 6186)" fill="#1db954"/>
+    <circle id="Ellipse_17" data-name="Ellipse 17" cx="7.5" cy="7.5" r="7.5" transform="translate(1052 6219)" fill="#1db954"/>
+    <g id="Group_1574" data-name="Group 1574" transform="translate(1013 -192)">
+      <text id="Dashboard_" data-name="Dashboard
+" transform="translate(385 6257)" fill="#39393a" font-size="30" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="30">Dashboard</tspan></text>
+      <text id="Simplifies_all_the_componenets_of_the_app_on_one_page_" data-name="Simplifies all the componenets of the app on one page
+" transform="translate(416 6309)" fill="#39393a" font-size="20" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="20">Simplifies all the </tspan><tspan x="0" y="46">componenets of the </tspan><tspan x="0" y="72">app on one page</tspan></text>
+      <circle id="Ellipse_14-3" data-name="Ellipse 14" cx="7.5" cy="7.5" r="7.5" transform="translate(385 6324)" fill="#1db954"/>
+    </g>
+    <rect id="Rectangle_690" data-name="Rectangle 690" width="478.184" height="5" rx="2.5" transform="translate(1005.5 5951.5) rotate(90)" fill="#1db954"/>
+    <rect id="Rectangle_691" data-name="Rectangle 691" width="1487.184" height="5" rx="2.5" transform="translate(1673.092 6030.092) rotate(180)" fill="#1db954"/>
+    <text id="User_needs_based_on_insights_" data-name="User needs based on insights
+" transform="translate(186 5952)" fill="#363635" font-size="36" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="36">User needs based on insights</tspan></text>
+    <text id="Features_to_address_needs_" data-name="Features to address needs
+" transform="translate(1093 5952)" fill="#363635" font-size="36" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="36">Features to address needs</tspan></text>
+  </g>
+</svg>

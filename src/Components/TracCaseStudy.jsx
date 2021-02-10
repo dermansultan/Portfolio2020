@@ -20,7 +20,7 @@ import {
 } from "./CaseStudy/CaseStudy-styling";
 import images from "../Img/caseStudies/Trac/image";
 
-const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
+const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Trac = ({ lightBoxHandler }) => {
   useEffect(() => {
@@ -42,7 +42,12 @@ const Trac = ({ lightBoxHandler }) => {
           role={"User Research"}
           tools={"Figma"}
           team={"Rohail Khan, Amelia Tziougras, Rowan Abraham, Spencer Black"}
-          namelist={['Rohail Khan', 'Amelia Tziougras', 'Rowan Abraham', 'Spencer Black']}
+          namelist={[
+            "Rohail Khan",
+            "Amelia Tziougras",
+            "Rowan Abraham",
+            "Spencer Black",
+          ]}
           duration={"8 weeks"}
           demoLink={
             "https://www.figma.com/proto/UH5EO1vWdPOG8AbPfqGR7U/Trac-Prototype?node-id=0%3A1&viewport=575%2C935%2C0.1355305165052414&scaling=scale-down"
@@ -87,9 +92,8 @@ const Trac = ({ lightBoxHandler }) => {
             >
               <Header>Dashboard</Header>
               <BodyPara>
-                The dashboard provides users with an an overview of their week.
-                At a glance they are able to see upcoming deadlines and on going
-                projects.
+                Provides users with an an overview of their week. At a glance
+                they are able to see upcoming deadlines and on going projects.
               </BodyPara>
             </WrapperCol>
           </WrapperCol>
@@ -102,8 +106,8 @@ const Trac = ({ lightBoxHandler }) => {
             >
               <Header>Calendar</Header>
               <BodyPara>
-                The calendar page features all created tasks colour coded by the
-                user in a monthly view.
+                Features all created tasks colour coded by the user in a monthly
+                view.
               </BodyPara>
             </WrapperCol>
             <ProjectImg
@@ -175,14 +179,16 @@ const Trac = ({ lightBoxHandler }) => {
           <SubHeader margin={"20px 0 0 0"}>Insights</SubHeader>
           <BodyPara>
             Participants of the research study expressed their problems with
-            their e-learning experience.{" "}
+            their e-learning experience. The greatest concerns were that
+            students felt it was difficult to
+            <SpanPara>manage their time</SpanPara>,{" "}
             <SpanPara>
-              The greatest concerns were that students felt it was difficult to
-              manage their time, had difficulty locating information across
-              platforms and that they had to develop their own system to manage
-              their course loads
+              had difficulty locating information across platforms
             </SpanPara>
-            .{" "}
+            , and that they had to{" "}
+            <SpanPara>
+              develop their own system to manage their course loads.
+            </SpanPara>
           </BodyPara>
           <ProjectImg
             onClick={() => {
@@ -258,9 +264,9 @@ const Trac = ({ lightBoxHandler }) => {
         <Section>
           <Header>Design System</Header>
           <BodyPara margin={"20px 0 0 0"}>
-            During this jam, I learned how to better allocate time. Before
-            getting to the wireframing process we had iterated over a few
-            different ideas of the concept of the app.
+            We wanted the design system behind the application to match modern
+            interfaces students were accustomed to. The simple but clean
+            identity ensures users are able to comprehend all interactions.
           </BodyPara>
           <ProjectImg
             noBorder
@@ -295,6 +301,12 @@ const Trac = ({ lightBoxHandler }) => {
             interviews. Often I would get similar opinions but frustrations that
             varied. Each interview provided me with new perspectives that I
             could incorporate into our brain-storming.
+          </BodyPara>
+          <SubHeader margin={"20px 0 0 0"}>For next time</SubHeader>
+          <BodyPara margin={"20px 0 0 0"}>
+            I would've liked to expand more on the feature set of collaboration
+            amongst students. It was a reoccurring paint point that I felt we
+            could've addressed better if we had more time.
           </BodyPara>
         </Section>
       </CaseContainer>

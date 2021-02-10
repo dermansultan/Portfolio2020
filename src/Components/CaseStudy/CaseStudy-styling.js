@@ -109,6 +109,7 @@ export const ListItem = styled.li`
 `;
 
 export const ProjectImg = styled.img`
+  cursor:  ${(props) => (props.onClick ? "pointer" : "")};
   margin: ${(props) => props.margin};
   width: ${(props) => props.width};
   height: auto;
@@ -121,3 +122,4 @@ export const ProjectImg = styled.img`
     width: ${(props) => props.MobWidth};
   }
 `;
+

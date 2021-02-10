@@ -19,7 +19,7 @@ import {
 import toDoBanner from "../Img/Todolist4k.png";
 import images from "../Img/caseStudies/ToDo/image";
 
-const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
+const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const ToDo = ({ lightBoxHandler }) => {
   useEffect(() => {

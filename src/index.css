@@ -525,7 +525,9 @@ footer {
   border-radius: 30px;
   width: 200px;
   border: 0;
+  cursor: pointer;
 }
+
 
 .protoWrap {
   padding-top: 30px;

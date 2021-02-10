@@ -19,7 +19,7 @@ import {
 import climateBanner from "../Img/Climate4k.png";
 import images from "../Img/caseStudies/Weather/image";
 
-const outro = { duration: 1.45, ease: [0.6, 0.01, -0.05, 0.9] };
+const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Weather = ({ lightBoxHandler }) => {
   useEffect(() => {

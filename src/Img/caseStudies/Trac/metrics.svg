@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1074" height="49" viewBox="0 0 1074 49">
+  <g id="metrics" transform="translate(-392 -4470)">
+    <g id="Group_1561" data-name="Group 1561" transform="translate(392 4464)">
+      <text id="Communication" transform="translate(61 7)" fill="#39393a" font-size="24" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="24">Communication</tspan></text>
+      <circle id="Ellipse_8" data-name="Ellipse 8" cx="16" cy="16" r="16" transform="translate(0 8)" fill="#63d297"/>
+    </g>
+    <g id="Group_1562" data-name="Group 1562" transform="translate(801.874 4464)">
+      <text id="Engagement" transform="translate(61.126 6)" fill="#39393a" font-size="24" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="24">Engagement</tspan></text>
+      <circle id="Ellipse_8-2" data-name="Ellipse 8" cx="16" cy="16" r="16" transform="translate(0.126 8)" fill="#63d297"/>
+    </g>
+    <g id="Group_1563" data-name="Group 1563" transform="translate(1140 4464)">
+      <text id="Self-Regulation" transform="translate(56 6)" fill="#39393a" font-size="24" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="24">Self-Regulation</tspan></text>
+      <circle id="Ellipse_8-3" data-name="Ellipse 8" cx="16" cy="16" r="16" transform="translate(0 8)" fill="#63d297"/>
+    </g>
+  </g>
+</svg>

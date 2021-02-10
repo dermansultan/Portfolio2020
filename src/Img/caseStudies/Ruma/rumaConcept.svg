@@ -1,0 +1,72 @@
+<svg id="Group_1551" data-name="Group 1551" xmlns="http://www.w3.org/2000/svg" width="1695" height="479" viewBox="0 0 1695 479">
+  <rect id="Rectangle_696" data-name="Rectangle 696" width="193.194" height="4.489" rx="2.245" transform="translate(294.033 295.993) rotate(-90)" fill="#1d66b9"/>
+  <rect id="Rectangle_697" data-name="Rectangle 697" width="193.194" height="4.489" rx="2.245" transform="translate(833.616 295.993) rotate(-90)" fill="#1d66b9"/>
+  <rect id="Rectangle_698" data-name="Rectangle 698" width="193.194" height="4.489" rx="2.245" transform="translate(1359.732 295.993) rotate(-90)" fill="#1d66b9"/>
+  <g id="Group_1606" data-name="Group 1606" transform="translate(193.029 273.547)">
+    <g id="Group_1547" data-name="Group 1547" transform="translate(0)">
+      <g id="Group_1537" data-name="Group 1537" transform="translate(245.102 24.241)">
+        <text id="Watch_Parties" data-name="Watch Parties" transform="translate(13.869 21.212)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Watch Parties</tspan></text>
+        <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-0.131 12.212)" fill="#39393a"/>
+      </g>
+      <g id="Group_1538" data-name="Group 1538" transform="translate(245.102 56.562)">
+        <text id="User_Hosted" data-name="User Hosted" transform="translate(13.869 20.891)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">User Hosted</tspan></text>
+        <circle id="Ellipse_6-2" data-name="Ellipse 6" cx="3.5" cy="3.5" r="3.5" transform="translate(-0.131 12.891)" fill="#39393a"/>
+      </g>
+      <g id="Group_1539" data-name="Group 1539" transform="translate(245.102 88.883)">
+        <text id="Chat_box" data-name="Chat box" transform="translate(13.869 20.57)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Chat box</tspan></text>
+        <circle id="Ellipse_6-3" data-name="Ellipse 6" cx="3.5" cy="3.5" r="3.5" transform="translate(-0.131 11.57)" fill="#39393a"/>
+      </g>
+      <g id="Group_1540" data-name="Group 1540" transform="translate(245.102 121.204)">
+        <text id="Live_stream" data-name="Live stream" transform="translate(13.869 21.249)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Live stream</tspan></text>
+        <ellipse id="Ellipse_6-4" data-name="Ellipse 6" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(-0.131 11.249)" fill="#39393a"/>
+      </g>
+      <g id="Group_1545" data-name="Group 1545" transform="translate(245.102 154.423)">
+        <text id="Schedule" transform="translate(13.869 21.03)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Schedule</tspan></text>
+        <circle id="Ellipse_6-5" data-name="Ellipse 6" cx="3.5" cy="3.5" r="3.5" transform="translate(-0.131 11.03)" fill="#39393a"/>
+      </g>
+      <g id="Group_1535" data-name="Group 1535" transform="translate(0)">
+        <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="103" cy="102.5" rx="103" ry="102.5" transform="translate(-0.029 0.453)" fill="#252a41"/>
+        <text id="Watch_rooms" data-name="Watch rooms" transform="translate(36.971 108.453)" fill="#f3f6ff" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Watch rooms</tspan></text>
+      </g>
+    </g>
+    <g id="Group_1548" data-name="Group 1548" transform="translate(1066.597)">
+      <g id="Group_1537-2" data-name="Group 1537" transform="translate(238.817 73.62)">
+        <text id="Search" transform="translate(13.557 20.833)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Search</tspan></text>
+        <ellipse id="Ellipse_6-6" data-name="Ellipse 6" cx="4" cy="3" rx="4" ry="3" transform="translate(-0.443 13.833)" fill="#39393a"/>
+      </g>
+      <g id="Group_1538-2" data-name="Group 1538" transform="translate(238.817 101.453)">
+        <text id="Recommendations" transform="translate(13.557 21)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Recommendations</tspan></text>
+        <ellipse id="Ellipse_6-7" data-name="Ellipse 6" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(-0.443 13)" fill="#39393a"/>
+      </g>
+      <g id="Group_1535-2" data-name="Group 1535" transform="translate(0 0)">
+        <circle id="Ellipse_7-2" data-name="Ellipse 7" cx="102.5" cy="102.5" r="102.5" transform="translate(0.374 0.453)" fill="#252a41"/>
+        <text id="Discover" transform="translate(60.374 108.453)" fill="#f3f6ff" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Discover</tspan></text>
+      </g>
+    </g>
+    <g id="Group_1546" data-name="Group 1546" transform="translate(541.379)">
+      <g id="Group_1541" data-name="Group 1541" transform="translate(245.102 46.686)">
+        <text id="Discussions" transform="translate(13.49 20.767)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Discussions</tspan></text>
+        <circle id="Ellipse_6-8" data-name="Ellipse 6" cx="3.5" cy="3.5" r="3.5" transform="translate(0.49 12.767)" fill="#39393a"/>
+      </g>
+      <g id="Group_1542" data-name="Group 1542" transform="translate(245.102 84.394)">
+        <text id="User_Posts" data-name="User Posts" transform="translate(13.49 21.059)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">User Posts</tspan></text>
+        <circle id="Ellipse_6-9" data-name="Ellipse 6" cx="3.5" cy="3.5" r="3.5" transform="translate(0.49 13.059)" fill="#39393a"/>
+      </g>
+      <g id="Group_1543" data-name="Group 1543" transform="translate(245.102 121.204)">
+        <text id="User_Feed" data-name="User Feed" transform="translate(13.49 21.249)" fill="#39393a" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">User Feed</tspan></text>
+        <ellipse id="Ellipse_6-10" data-name="Ellipse 6" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(0.49 12.249)" fill="#39393a"/>
+      </g>
+      <g id="Group_1536" data-name="Group 1536" transform="translate(0)">
+        <ellipse id="Ellipse_7-3" data-name="Ellipse 7" cx="103" cy="102.5" rx="103" ry="102.5" transform="translate(-0.408 0.453)" fill="#252a41"/>
+        <text id="Communities" transform="translate(36.592 108.453)" fill="#f3f6ff" font-size="21" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Communities</tspan></text>
+      </g>
+    </g>
+  </g>
+  <rect id="Rectangle_695" data-name="Rectangle 695" width="1170.835" height="4.489" transform="translate(1364.23 104.677) rotate(180)" fill="#1d66b9"/>
+  <g id="Group_1605" data-name="Group 1605" transform="translate(0)">
+    <g id="Group_1536-2" data-name="Group 1536" transform="translate(0)">
+      <circle id="Ellipse_7-4" data-name="Ellipse 7" cx="128" cy="128" r="128" fill="#1d66b9"/>
+      <text id="Dashboard" transform="translate(62 134)" fill="#f3f6ff" font-size="26" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Dashboard</tspan></text>
+    </g>
+  </g>
+</svg>

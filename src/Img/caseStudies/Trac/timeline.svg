@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="294" viewBox="0 0 1180 294">
+  <g id="Group_1483" data-name="Group 1483" transform="translate(-301 -3308)">
+    <g id="Group_1476" data-name="Group 1476" transform="translate(301 3308)">
+      <rect id="Rectangle_666" data-name="Rectangle 666" width="276" height="123" rx="27" fill="#1db954"/>
+      <text id="Research" transform="translate(57 73)" fill="#f3f6ff" font-size="36" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="0">Research</tspan></text>
+    </g>
+    <g id="Group_1477" data-name="Group 1477" transform="translate(732.568 3308)">
+      <rect id="Rectangle_666-2" data-name="Rectangle 666" width="276" height="123" rx="27" transform="translate(0.432)" fill="#1db954"/>
+      <text id="Ideation" transform="translate(70.432 74)" fill="#f3f6ff" font-size="37" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="0">Ideation</tspan></text>
+    </g>
+    <g id="Group_1480" data-name="Group 1480" transform="translate(1204.873 3308)">
+      <rect id="Rectangle_666-3" data-name="Rectangle 666" width="276" height="123" rx="27" transform="translate(0.127 0)" fill="#1db954"/>
+      <text id="Prototype" transform="translate(55.127 73)" fill="#f3f6ff" font-size="35" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="0">Prototype</tspan></text>
+    </g>
+    <text id="User_Interviews" data-name="User Interviews" transform="translate(306 3473)" fill="#252a41" font-size="22" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">User Interviews</tspan></text>
+    <text id="Brainstorming" transform="translate(740 3474)" fill="#252a41" font-size="22" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Brainstorming</tspan></text>
+    <text id="High_Fidelity" data-name="High Fidelity" transform="translate(1220 3473)" fill="#252a41" font-size="22" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">High Fidelity</tspan></text>
+    <text id="Wireframes" transform="translate(739 3513)" fill="#252a41" font-size="22" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Wireframes</tspan></text>
+    <text id="System_Map" data-name="System Map" transform="translate(739 3554)" fill="#252a41" font-size="22" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">System Map</tspan></text>
+    <text id="Design_System" data-name="Design System" transform="translate(740 3595)" fill="#252a41" font-size="22" font-family="DMSans-Regular, DM Sans"><tspan x="0" y="0">Design System</tspan></text>
+    <g id="Group_1481" data-name="Group 1481" transform="translate(601.442 3365.288)">
+      <rect id="Rectangle_671" data-name="Rectangle 671" width="111" height="5" transform="translate(-0.442 -0.288)" fill="#46e57e"/>
+    </g>
+    <g id="Group_1552" data-name="Group 1552" transform="translate(1055.925 3370.38)">
+      <rect id="Rectangle_671-2" data-name="Rectangle 671" width="111" height="5" transform="translate(0.075 -0.38)" fill="#46e57e"/>
+    </g>
+  </g>
+</svg>

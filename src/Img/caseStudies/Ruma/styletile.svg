@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1923" height="1087" viewBox="0 0 1923 1087">
+  <defs>
+    <filter id="Rectangle_2" x="0" y="0" width="1923" height="1087" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="1.091" y1="0.104" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6cda"/>
+      <stop offset="1" stop-color="#f92e87"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1.518" y1="-0.427" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3978df"/>
+      <stop offset="1" stop-color="#2dd5a3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1.518" y1="-0.427" x2="-0.09" y2="1.258" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#be68d5"/>
+      <stop offset="1" stop-color="#673ebd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="1.518" y1="-0.427" x2="-0.09" y2="1.258" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7244f0"/>
+      <stop offset="1" stop-color="#2bbbef"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="1.518" y1="-0.427" x2="-0.09" y2="1.258" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee6d62"/>
+      <stop offset="1" stop-color="#f9be74"/>
+    </linearGradient>
+    <filter id="Rectangle_31" x="455" y="566" width="85" height="85" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_303" data-name="Group 303" transform="translate(-13)">
+    <g transform="matrix(1, 0, 0, 1, 13, 0)" filter="url(#Rectangle_2)">
+      <rect id="Rectangle_2-2" data-name="Rectangle 2" width="1833" height="997" rx="38" transform="translate(45 42)" fill="#fff"/>
+    </g>
+    <g id="Background_Card" data-name="Background / Card" transform="translate(284 450)">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="67" height="67" rx="17" fill="#252a41"/>
+    </g>
+    <g id="Header_Text" data-name="Header Text" transform="translate(379 451)">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="67" height="67" rx="17" fill="#3b3f54"/>
+    </g>
+    <g id="Text_on_black_background" data-name="Text on black background" transform="translate(284 572)">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="67" height="67" rx="17" fill="#cbcdda"/>
+    </g>
+    <g id="Grey_Body_Text" data-name="Grey Body Text" transform="translate(572 572)">
+      <rect id="Rectangle_32" data-name="Rectangle 32" width="67" height="67" rx="17" fill="#b1b1b1"/>
+    </g>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="67" height="67" rx="17" transform="translate(284 689)" fill="#eeedf2"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(284 807)">
+      <rect id="Rectangle_26" data-name="Rectangle 26" width="67" height="67" rx="17" fill="url(#linear-gradient)"/>
+    </g>
+    <rect id="Rectangle_27" data-name="Rectangle 27" width="67" height="67" rx="17" transform="translate(380 807)" fill="url(#linear-gradient-2)"/>
+    <rect id="Rectangle_28" data-name="Rectangle 28" width="67" height="67" rx="17" transform="translate(481 807)" fill="url(#linear-gradient-3)"/>
+    <rect id="Rectangle_30" data-name="Rectangle 30" width="67" height="67" rx="17" transform="translate(582 807)" fill="url(#linear-gradient-4)"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="67" height="67" rx="17" transform="translate(678 807)" fill="url(#linear-gradient-5)"/>
+    <rect id="Rectangle_12" data-name="Rectangle 12" width="34" height="33" rx="10" transform="translate(325 681)" fill="#989ba1"/>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="67" height="67" rx="17" transform="translate(380 689)" fill="#fdeee8"/>
+    <rect id="Rectangle_14" data-name="Rectangle 14" width="67" height="67" rx="17" transform="translate(481 689)" fill="#e3effe"/>
+    <rect id="Rectangle_16" data-name="Rectangle 16" width="67" height="67" rx="17" transform="translate(582 689)" fill="#e2f3f4"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="67" height="67" rx="17" transform="translate(379 572)" fill="#252a41"/>
+    <g id="White_Text" data-name="White Text" transform="translate(477 572)">
+      <g transform="matrix(1, 0, 0, 1, -464, -572)" filter="url(#Rectangle_31)">
+        <rect id="Rectangle_31-2" data-name="Rectangle 31" width="67" height="67" rx="17" transform="translate(464 572)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Accent_Buttons_" data-name="Accent (Buttons)" transform="translate(474 450)">
+      <rect id="Rectangle_9" data-name="Rectangle 9" width="67" height="67" rx="17" fill="#23cac7"/>
+    </g>
+    <text id="Fonts" transform="translate(117 118)" fill="#e0e0e0" font-size="13" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500"><tspan x="0" y="0">Fonts</tspan></text>
+    <text id="Text" transform="translate(1041 131)" fill="#e0e0e0" font-size="13" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500"><tspan x="0" y="0">Text</tspan></text>
+    <text id="Colours" transform="translate(112 392)" fill="#e0e0e0" font-size="13" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500"><tspan x="0" y="0">Colours</tspan></text>
+    <text id="Background" transform="translate(125 490)" fill="#c6c4c4" font-size="20" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500"><tspan x="0" y="0">Background</tspan></text>
+    <text id="Text-2" data-name="Text" transform="translate(196 611)" fill="#c6c4c4" font-size="20" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500"><tspan x="0" y="0">Text</tspan></text>
+    <text id="Tags" transform="translate(193 729)" fill="#c6c4c4" font-size="20" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500"><tspan x="0" y="0">Tags</tspan></text>
+    <text id="Gradients" transform="translate(145 856)" fill="#c6c4c4" font-size="20" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500"><tspan x="0" y="0">Gradients</tspan></text>
+    <text id="Background-2" data-name="Background" transform="translate(296 536)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Background</tspan></text>
+    <text id="Text_1" data-name="Text #1" transform="translate(304 656)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Text #1</tspan></text>
+    <text id="Tags_1" data-name="Tags 1" transform="translate(304 773)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Tags 1</tspan></text>
+    <text id="Gradient_1" data-name="Gradient 1" transform="translate(298 901)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Gradient 1</tspan></text>
+    <text id="Gradient_3" data-name="Gradient 3" transform="translate(494 901)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Gradient 3</tspan></text>
+    <text id="Gradient_2" data-name="Gradient 2" transform="translate(393 901)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Gradient 2</tspan></text>
+    <text id="Gradient_4" data-name="Gradient 4" transform="translate(595 901)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Gradient 4</tspan></text>
+    <text id="Gradient_5" data-name="Gradient 5" transform="translate(691 901)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Gradient 5</tspan></text>
+    <text id="Tags_2" data-name="Tags 2" transform="translate(405 773)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Tags 2</tspan></text>
+    <text id="Tags_3" data-name="Tags 3" transform="translate(506 773)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Tags 3</tspan></text>
+    <text id="Tags_4" data-name="Tags 4" transform="translate(607 773)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Tags 4</tspan></text>
+    <text id="Text_2" data-name="Text #2" transform="translate(398 656)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Text #2</tspan></text>
+    <text id="Text_3" data-name="Text #3" transform="translate(496 656)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Text #3</tspan></text>
+    <text id="Text_4" data-name="Text #4" transform="translate(590 656)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Text #4</tspan></text>
+    <text id="Card_Background" data-name="Card Background" transform="translate(382 536)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Card Background</tspan></text>
+    <text id="Accent_Colour" data-name="Accent Colour" transform="translate(479 536)" fill="#bfbfbf" font-size="8" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500" letter-spacing="0.04em"><tspan x="0" y="0">Accent Colour</tspan></text>
+    <text id="Circular_Std_Medium" data-name="Circular Std Medium" transform="translate(117 187)" fill="#373737" font-size="39" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500"><tspan x="0" y="0">Circular Std Medium</tspan></text>
+    <text id="Header" transform="translate(1041 202)" fill="#3b3f54" font-size="33" font-family="CircularStd-Medium, Circular Std Medium" font-weight="500"><tspan x="0" y="0">Header</tspan></text>
+    <text id="Lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_e_lit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua._Ut_enim_ad_minim_venia_m_quis_nostrud_exercitation_ullamco_laboris_nsi.pariatur." data-name="Lorem ipsum dolor sit amet, consectetur adipiscing e
+lit, sed do eiusmod tempor incididunt ut labore
+et dolore magna aliqua. Ut enim ad minim venia
+m, quis nostrud exercitation ullamco laboris nsi.pariatur." transform="translate(1041 247)" fill="#b1b1b1" font-size="17" font-family="CircularStd-Book, Circular Std Book" letter-spacing="0.035em"><tspan x="0" y="0">Lorem ipsum dolor sit amet, consectetur adipiscing e</tspan><tspan x="0" y="28">lit, sed do eiusmod tempor incididunt ut labore</tspan><tspan x="0" y="56">et dolore magna aliqua. Ut enim ad minim venia</tspan><tspan x="0" y="84">m, quis nostrud exercitation ullamco laboris nsi.pariatur.</tspan></text>
+    <text id="Circular_Std_Black" data-name="Circular Std Black" transform="translate(117 259)" fill="#373737" font-size="39" font-family="CircularStd-Book, Circular Std Book"><tspan x="0" y="0">Circular Std Black</tspan></text>
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="34" height="33" rx="10" transform="translate(426 681)" fill="#f1a58f"/>
+    <rect id="Rectangle_15" data-name="Rectangle 15" width="34" height="33" rx="10" transform="translate(527 681)" fill="#8db3e3"/>
+    <rect id="Rectangle_17" data-name="Rectangle 17" width="34" height="33" rx="10" transform="translate(628 681)" fill="#57aeae"/>
+    <line id="Line_1" data-name="Line 1" x2="621" transform="translate(112.5 352.5)" fill="none" stroke="#e8e8e8" stroke-width="1"/>
+    <line id="Line_3" data-name="Line 3" y1="273" transform="translate(860.5 85.5)" fill="none" stroke="#e8e8e8" stroke-width="1"/>
+    <line id="Line_2" data-name="Line 2" y1="524" transform="translate(860.5 396.5)" fill="none" stroke="#e8e8e8" stroke-width="1"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_33" data-name="Ellipse 33" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_47" data-name="Ellipse 47" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_61" data-name="Ellipse 61" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_75" data-name="Ellipse 75" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_89" data-name="Ellipse 89" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_103" data-name="Ellipse 103" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_117" data-name="Ellipse 117" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_131" data-name="Ellipse 131" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_145" data-name="Ellipse 145" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_159" data-name="Ellipse 159" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_173" data-name="Ellipse 173" cx="1.5" cy="1.5" r="1.5" transform="translate(1608 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_29" data-name="Ellipse 29" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_43" data-name="Ellipse 43" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_57" data-name="Ellipse 57" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_71" data-name="Ellipse 71" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_85" data-name="Ellipse 85" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_99" data-name="Ellipse 99" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_113" data-name="Ellipse 113" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_127" data-name="Ellipse 127" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_141" data-name="Ellipse 141" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_155" data-name="Ellipse 155" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_169" data-name="Ellipse 169" cx="1.5" cy="1.5" r="1.5" transform="translate(1545 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_23" data-name="Ellipse 23" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_37" data-name="Ellipse 37" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_51" data-name="Ellipse 51" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_65" data-name="Ellipse 65" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_79" data-name="Ellipse 79" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_93" data-name="Ellipse 93" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_107" data-name="Ellipse 107" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_121" data-name="Ellipse 121" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_135" data-name="Ellipse 135" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_149" data-name="Ellipse 149" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_163" data-name="Ellipse 163" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_177" data-name="Ellipse 177" cx="1.5" cy="1.5" r="1.5" transform="translate(1617 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_13" data-name="Ellipse 13" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_16" data-name="Ellipse 16" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_30" data-name="Ellipse 30" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_44" data-name="Ellipse 44" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_58" data-name="Ellipse 58" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_72" data-name="Ellipse 72" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_86" data-name="Ellipse 86" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_100" data-name="Ellipse 100" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_114" data-name="Ellipse 114" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_128" data-name="Ellipse 128" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_142" data-name="Ellipse 142" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_156" data-name="Ellipse 156" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_170" data-name="Ellipse 170" cx="1.5" cy="1.5" r="1.5" transform="translate(1554 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_24" data-name="Ellipse 24" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_38" data-name="Ellipse 38" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_52" data-name="Ellipse 52" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_66" data-name="Ellipse 66" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_80" data-name="Ellipse 80" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_94" data-name="Ellipse 94" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_108" data-name="Ellipse 108" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_122" data-name="Ellipse 122" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_136" data-name="Ellipse 136" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_150" data-name="Ellipse 150" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_164" data-name="Ellipse 164" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_178" data-name="Ellipse 178" cx="1.5" cy="1.5" r="1.5" transform="translate(1626 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_17" data-name="Ellipse 17" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_31" data-name="Ellipse 31" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_45" data-name="Ellipse 45" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_59" data-name="Ellipse 59" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_73" data-name="Ellipse 73" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_87" data-name="Ellipse 87" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_101" data-name="Ellipse 101" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_115" data-name="Ellipse 115" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_129" data-name="Ellipse 129" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_143" data-name="Ellipse 143" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_157" data-name="Ellipse 157" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_171" data-name="Ellipse 171" cx="1.5" cy="1.5" r="1.5" transform="translate(1563 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_25" data-name="Ellipse 25" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_39" data-name="Ellipse 39" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_53" data-name="Ellipse 53" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_67" data-name="Ellipse 67" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_81" data-name="Ellipse 81" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_95" data-name="Ellipse 95" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_109" data-name="Ellipse 109" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_123" data-name="Ellipse 123" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_137" data-name="Ellipse 137" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_151" data-name="Ellipse 151" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_165" data-name="Ellipse 165" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_179" data-name="Ellipse 179" cx="1.5" cy="1.5" r="1.5" transform="translate(1635 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_32" data-name="Ellipse 32" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_46" data-name="Ellipse 46" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_60" data-name="Ellipse 60" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_74" data-name="Ellipse 74" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_88" data-name="Ellipse 88" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_102" data-name="Ellipse 102" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_116" data-name="Ellipse 116" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_130" data-name="Ellipse 130" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_144" data-name="Ellipse 144" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_158" data-name="Ellipse 158" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_172" data-name="Ellipse 172" cx="1.5" cy="1.5" r="1.5" transform="translate(1572 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_26" data-name="Ellipse 26" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_40" data-name="Ellipse 40" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_54" data-name="Ellipse 54" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_68" data-name="Ellipse 68" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_82" data-name="Ellipse 82" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_96" data-name="Ellipse 96" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_110" data-name="Ellipse 110" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_124" data-name="Ellipse 124" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_138" data-name="Ellipse 138" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_152" data-name="Ellipse 152" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_166" data-name="Ellipse 166" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_180" data-name="Ellipse 180" cx="1.5" cy="1.5" r="1.5" transform="translate(1644 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_20" data-name="Ellipse 20" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_34" data-name="Ellipse 34" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_48" data-name="Ellipse 48" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_62" data-name="Ellipse 62" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_76" data-name="Ellipse 76" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_90" data-name="Ellipse 90" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_104" data-name="Ellipse 104" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_118" data-name="Ellipse 118" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_132" data-name="Ellipse 132" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_146" data-name="Ellipse 146" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_160" data-name="Ellipse 160" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_174" data-name="Ellipse 174" cx="1.5" cy="1.5" r="1.5" transform="translate(1581 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_27" data-name="Ellipse 27" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_41" data-name="Ellipse 41" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_55" data-name="Ellipse 55" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_69" data-name="Ellipse 69" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_83" data-name="Ellipse 83" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_97" data-name="Ellipse 97" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_111" data-name="Ellipse 111" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_125" data-name="Ellipse 125" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_139" data-name="Ellipse 139" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_153" data-name="Ellipse 153" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_167" data-name="Ellipse 167" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_181" data-name="Ellipse 181" cx="1.5" cy="1.5" r="1.5" transform="translate(1653 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_21" data-name="Ellipse 21" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_35" data-name="Ellipse 35" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_49" data-name="Ellipse 49" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_63" data-name="Ellipse 63" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_77" data-name="Ellipse 77" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_91" data-name="Ellipse 91" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_105" data-name="Ellipse 105" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_119" data-name="Ellipse 119" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_133" data-name="Ellipse 133" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_147" data-name="Ellipse 147" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_161" data-name="Ellipse 161" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_175" data-name="Ellipse 175" cx="1.5" cy="1.5" r="1.5" transform="translate(1590 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_28" data-name="Ellipse 28" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_42" data-name="Ellipse 42" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_56" data-name="Ellipse 56" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_70" data-name="Ellipse 70" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_84" data-name="Ellipse 84" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_98" data-name="Ellipse 98" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_112" data-name="Ellipse 112" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_126" data-name="Ellipse 126" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_140" data-name="Ellipse 140" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_154" data-name="Ellipse 154" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_168" data-name="Ellipse 168" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_182" data-name="Ellipse 182" cx="1.5" cy="1.5" r="1.5" transform="translate(1662 324)" fill="#cbcdda"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 240)" fill="#cbcdda"/>
+    <circle id="Ellipse_22" data-name="Ellipse 22" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 247)" fill="#cbcdda"/>
+    <circle id="Ellipse_36" data-name="Ellipse 36" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 254)" fill="#cbcdda"/>
+    <circle id="Ellipse_50" data-name="Ellipse 50" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 261)" fill="#cbcdda"/>
+    <circle id="Ellipse_64" data-name="Ellipse 64" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 268)" fill="#cbcdda"/>
+    <circle id="Ellipse_78" data-name="Ellipse 78" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 275)" fill="#cbcdda"/>
+    <circle id="Ellipse_92" data-name="Ellipse 92" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 282)" fill="#cbcdda"/>
+    <circle id="Ellipse_106" data-name="Ellipse 106" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 289)" fill="#cbcdda"/>
+    <circle id="Ellipse_120" data-name="Ellipse 120" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 296)" fill="#cbcdda"/>
+    <circle id="Ellipse_134" data-name="Ellipse 134" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 303)" fill="#cbcdda"/>
+    <circle id="Ellipse_148" data-name="Ellipse 148" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 310)" fill="#cbcdda"/>
+    <circle id="Ellipse_162" data-name="Ellipse 162" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 317)" fill="#cbcdda"/>
+    <circle id="Ellipse_176" data-name="Ellipse 176" cx="1.5" cy="1.5" r="1.5" transform="translate(1599 324)" fill="#cbcdda"/>
+    <text id="ruma" transform="translate(1041 547)" fill="#3b3f54" font-size="133" font-family="CircularStd-Bold, Circular Std Bold" font-weight="700" letter-spacing="-0.03em"><tspan x="0" y="0">ruma</tspan></text>
+    <circle id="Ellipse_273" data-name="Ellipse 273" cx="9.5" cy="9.5" r="9.5" transform="translate(1118 461)" fill="#23cac7"/>
+  </g>
+</svg>

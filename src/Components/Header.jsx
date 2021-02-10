@@ -23,10 +23,10 @@ function Header() {
             to="/About"
             onClick={() => gaClickHandler("About me was clicked")}
           >
-            About
+            About Me
           </Link>
           <HashLink smooth to="/#projects">
-            Projects
+            Work
           </HashLink>
           <a
             href="https://drive.google.com/file/d/1lecwuIV7KS5TpqWKUv4kHMeXbNNZwD-M/view?usp=sharing"

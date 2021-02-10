@@ -6,7 +6,7 @@ function Footer(){
     return(
         <footer>
             <p className='footerLeft'>Made with <span><FontAwesomeIcon icon={faReact}/></span> and 🦾 </p>
-            <p className='footerRight'>© abdurrehman sultan 2020</p>
+            <p className='footerRight'>© abdurrehman sultan 2021</p>
         </footer>
     )
 }

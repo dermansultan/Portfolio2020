@@ -333,6 +333,7 @@ footer {
   font-size: clamp(10px, 1.5vw, 18px);
 }
 
+
 .icon.footer {
   color: var(--main-bg-colour);
   font-size: clamp(14px, 3.5vw, 21px);

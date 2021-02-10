@@ -21,8 +21,7 @@ import {
   IconWrapper,
   ProjectImg,
 } from "./CaseStudy/CaseStudy-styling";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import BackBtn from "./CaseStudy/BackToProjectsBtn";
 
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -32,7 +31,6 @@ const Ruma = ({ lightBoxHandler }) => {
   });
 
   return (
-    // <div className="mainContainer Ruma">
     <MainContainer>
       <CaseContainer
         exit={{ opacity: 0 }}
@@ -317,6 +315,7 @@ const Ruma = ({ lightBoxHandler }) => {
             tasks better. There were times where we both were working on a task
             that we probably could've left to one individual and vice-versa.
           </BodyPara>
+          <BackBtn margin={"55px 0 0 0"} btnCol={"#1d66b9"}></BackBtn>
         </Section>
       </CaseContainer>
     </MainContainer>

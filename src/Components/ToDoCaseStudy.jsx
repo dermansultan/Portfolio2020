@@ -18,6 +18,7 @@ import {
 } from "./CaseStudy/CaseStudy-styling";
 import toDoBanner from "../Img/Todolist4k.png";
 import images from "../Img/caseStudies/ToDo/image";
+import BackBtn from "./CaseStudy/BackToProjectsBtn";
 
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -204,6 +205,7 @@ const ToDo = ({ lightBoxHandler }) => {
             and build out my own backend, or even dabbling with some css +
             promise based animations.
           </BodyPara>
+          <BackBtn margin={"55px 0 0 0"} btnCol={"#46529D"}></BackBtn>
         </Section>
       </CaseContainer>
     </MainContainer>

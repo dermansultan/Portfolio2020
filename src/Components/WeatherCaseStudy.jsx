@@ -18,6 +18,7 @@ import {
 } from "./CaseStudy/CaseStudy-styling";
 import climateBanner from "../Img/Climate4k.png";
 import images from "../Img/caseStudies/Weather/image";
+import BackBtn from "./CaseStudy/BackToProjectsBtn";
 
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -135,6 +136,7 @@ const Weather = ({ lightBoxHandler }) => {
             family messing around with hooks and styled-components. I'm hoping
             to dive into more projects with React in the future.
           </BodyPara>
+          <BackBtn margin={"55px 0 0 0"} btnCol={"#9072F5"}></BackBtn>
         </Section>
       </CaseContainer>
     </MainContainer>

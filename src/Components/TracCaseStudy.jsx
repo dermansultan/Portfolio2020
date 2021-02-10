@@ -19,6 +19,7 @@ import {
   SpanPara,
 } from "./CaseStudy/CaseStudy-styling";
 import images from "../Img/caseStudies/Trac/image";
+import BackBtn from "./CaseStudy/BackToProjectsBtn";
 
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -308,6 +309,7 @@ const Trac = ({ lightBoxHandler }) => {
             amongst students. It was a reoccurring paint point that I felt we
             could've addressed better if we had more time.
           </BodyPara>
+          <BackBtn margin={"55px 0 0 0"}btnCol={"#1DB954"}></BackBtn>
         </Section>
       </CaseContainer>
     </MainContainer>

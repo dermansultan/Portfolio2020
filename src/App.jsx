@@ -58,8 +58,8 @@ const LightBoxCaption = styled.figcaption`
   font-size: clamp(18px, 1.5vw, 22px);
 `;
 
-// const trackingId = "UA-177262949-1";
-const trackingId = "FAKE";
+const trackingId = "UA-177262949-1";
+// const trackingId = "FAKE";
 
 
 function App() {

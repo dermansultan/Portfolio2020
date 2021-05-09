@@ -45,9 +45,13 @@ nav {
 }
 
 nav > a {
-  font-family: "Merriweather", serif;
-  color: var(--main-txt-colour);
-  font-size: clamp(1.05em, 2.5vw, 1.05em);
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #343434;
+  font-size: clamp(14px, 1vw, 18px);
   font-weight: 700;
   text-decoration: none;
 }

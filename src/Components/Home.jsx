@@ -3,8 +3,12 @@ import ConstructionSign from "./ConstructionSign";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
 import { Link } from "react-router-dom";
+import CaseCard from "./Main/CaseCard";
 import { HashLink } from "react-router-hash-link";
 import ReactGa from "react-ga";
+import trac from "../Img/caseStudies/Trac/trac.png";
+import ruma2 from "../Img/caseStudies/Ruma/ruma2.png";
+import ghbc from "../Img/caseStudies/GH/ghbc.png";
 
 const intro = { delay: 1.75, duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
 const introType = { duration: 3, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -75,39 +79,64 @@ const Home = () => {
             </HashLink>
           </div>
         </div>
-        <div className="projectsContainer" id="projects">
-          <h1 className="projectsHeader">Projects</h1>
-          <div className="tilesContainer">
-            <Link to="/Trac" className="tileWrap Trac">
-              <motion.div
-                className="tileWrap Trac"
-                whileHover={{ scale: 1.05 }}
-                onClick={() => gaClickHandler("Trac was clicked into.")}
-              >
-                <p className="tileDesc dark">Trac - Mobile App </p>
-                <p className="tileDesc2 dark">UI/UX | Design Challenge</p>
-              </motion.div>
-            </Link>
-            <Link to="/Ruma" className="tileWrap Ruma">
-              <motion.div
-                className="tileWrap Ruma"
-                whileHover={{ scale: 1.05 }}
-                onClick={() => gaClickHandler("Ruma was clicked into.")}
-              >
-                <p className="tileDesc">Ruma - Streaming App</p>
-                <p className="tileDesc2">UI/UX | Design Challenge</p>
-              </motion.div>
-            </Link>
-            {/* <Link to="/ToDo" className="tileWrap ToDo"> */}
-            <motion.div
-              className="tileWrap"
-              onClick={() => gaClickHandler("ToDo was clicked into.")}
-            >
-              <p className="tileDesc">🚧 Under Construction</p>
-              <p className="tileDesc2">Case Study </p>
-            </motion.div>
-            {/* </Link> */}
-          </div>
+        <div
+          className="projectsContainer"
+          id="projects"
+          style={{
+            backgroundColor: "#343434",
+            width: "100vw",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <CaseCard
+            title={"Trac"}
+            titleCol={"#1882FF"}
+            role={"UI / UX design"}
+            roleCol={"#343434"}
+            desc={
+              "A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."
+            }
+            descCol={"#646464"}
+            img={trac}
+            imgAlt={"Mockup of Trac Application"}
+            btnColor={"#FFFFFF"}
+            btnBackCol={"#1882FF"}
+            reverse={false}
+            mainBackCol={"#FFFFFF"}
+          />
+          <CaseCard
+            title={"Ruma"}
+            titleCol={"#FFFFFF"}
+            role={"UI / UX design"}
+            roleCol={"#FFFFFF"}
+            desc={
+              "A desktop app that aims to give families and friends a way to enjoy content together remotely."
+            }
+            descCol={"#FFFFFF"}
+            img={ruma2}
+            imgAlt={"Mockup of Ruma Application"}
+            btnColor={"#343434"}
+            btnBackCol={"#FFFFFF"}
+            reverse={true}
+            mainBackCol={"#1882FF"}
+          />
+          <CaseCard
+            title={"GH BootCamp"}
+            titleCol={"#252A41"}
+            role={"UI / UX design"}
+            roleCol={"#343434"}
+            desc={
+              "A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."
+            }
+            descCol={"#252A41"}
+            img={ghbc}
+            imgAlt={"Mockup of Game-Hero BootCamp Application"}
+            btnColor={"#FFFFFF"}
+            btnBackCol={"#252A41"}
+            reverse={false}
+            mainBackCol={"#9CECFD"}
+          />
         </div>
       </div>
     </div>

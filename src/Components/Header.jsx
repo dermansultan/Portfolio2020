@@ -1,6 +1,7 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
+import Logo from "../Img/Logo.svg";
 import ReactGa from "react-ga";
 
 function Header() {
@@ -16,7 +17,7 @@ function Header() {
     <header>
       <div className="headerMain">
         <Link to="/" className="headerLogo">
-          derman sultan
+          <img style={{margin: "15px 0 0 0"}} src={Logo} alt={"Logo"} />
         </Link>
         <nav>
           <Link

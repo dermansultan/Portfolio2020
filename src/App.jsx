@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import {browserHistory} from "react-router-dom"
+import { browserHistory } from "react-router-dom";
 import About from "./Components/About";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
+import Extra from "./Components/Extra";
 import Ruma from "./Components/RumaCaseStudy";
 import ToDo from "./Components/ToDoCaseStudy";
 import Weather from "./Components/WeatherCaseStudy";
@@ -60,7 +61,6 @@ const LightBoxCaption = styled.figcaption`
 
 const trackingId = "UA-177262949-1";
 // const trackingId = "FAKE";
-
 
 function App() {
   useEffect(() => {
@@ -126,6 +126,9 @@ function App() {
                 </Route>
                 <Route exact path="/Trac">
                   <Trac lightBoxHandler={lightBoxHandler}></Trac>
+                </Route>
+                <Route exact path="/Extras">
+                  <Extra lightBoxHandler={lightBoxHandler}></Extra>
                 </Route>
               </Switch>
             </AnimatePresence>

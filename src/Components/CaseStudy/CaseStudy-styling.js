@@ -13,6 +13,7 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   overflow-x: hidden;
+  background-color: #f9f8fd;
 `;
 
 export const Banner = styled.div`
@@ -109,7 +110,7 @@ export const ListItem = styled.li`
 `;
 
 export const ProjectImg = styled.img`
-  cursor:  ${(props) => (props.onClick ? "pointer" : "")};
+  cursor: ${(props) => (props.onClick ? "pointer" : "")};
   margin: ${(props) => props.margin};
   width: ${(props) => props.width};
   height: auto;
@@ -122,4 +123,3 @@ export const ProjectImg = styled.img`
     width: ${(props) => props.MobWidth};
   }
 `;
-

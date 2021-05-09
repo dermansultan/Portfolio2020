@@ -53,14 +53,12 @@ const About = () => {
             meaningful user experiences.
           </p>
           <p className="aboutPara">
-            I'm currently a second year <span>Interaction Design</span> student
+            I'm currently a third year <span>Interaction Design</span> student
             studying at Sheridan College in Oakville and I'm all about{" "}
-            <span>Front End Development!</span>
+            <span>UX/UI </span> and
+            <span> Front End Development!</span>
           </p>
-          <p className="aboutPara">
-            My journey started early in 2020. With no prior coding experience I
-            became obsessed with JavaScript through expirementing with{" "}
-            <span>FreeCodeCamp</span> and <span>TheOdinProject</span>. As of
+          <p className="aboutPara"> As of
             right now, I am messing around about with the <span>React</span>{" "}
             framework, (what this portfolio was made in!) learning more CSS
             techniques and about Accesibility on the Web.

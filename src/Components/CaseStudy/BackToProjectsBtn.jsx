@@ -11,19 +11,21 @@ const Btn = styled.button`
   border-radius: 30px;
   width: 220px;
   cursor: pointer;
-  margin:  ${(props) => props.margin};
+  margin: ${(props) => props.margin};
   border: 0;
 
   @media only screen and (max-width: 600px) {
-    min-height: 30px;
-    width: 135px;
+    min-height: 50px;
+    width: 195px;
   }
 `;
 
 function BackBtn(props) {
   return (
     <HashLink smooth to="/#projects">
-      <Btn margin={props.margin} btnCol={props.btnCol}>Back to My Projects</Btn>
+      <Btn margin={props.margin} btnCol={props.btnCol}>
+        Back to My Projects
+      </Btn>
     </HashLink>
   );
 }

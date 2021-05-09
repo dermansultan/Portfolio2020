@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import landingGraphic from "../Img/CodePenSquares.png";
 import ConstructionSign from "./ConstructionSign";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
@@ -36,7 +35,7 @@ const Home = () => {
               animate={{ opacity: 1 }}
               className="greetingMsg"
             >
-              Derman.greeting();
+              Hello there!
             </motion.h1>
             <motion.p
               exit={{ opacity: 0, transition: { outro } }}
@@ -75,22 +74,14 @@ const Home = () => {
               </motion.button>
             </HashLink>
           </div>
-          <motion.img
-            transition={intro}
-            exit={{ opacity: 0, transition: { outro } }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="landingGraphic"
-            src={landingGraphic}
-          />
         </div>
         <div className="projectsContainer" id="projects">
           <h1 className="projectsHeader">Projects</h1>
           <div className="tilesContainer">
             <Link to="/Trac" className="tileWrap Trac">
               <motion.div
-                whileHover={{ scale: 1.1 }}
                 className="tileWrap Trac"
+                whileHover={{ scale: 1.05 }}
                 onClick={() => gaClickHandler("Trac was clicked into.")}
               >
                 <p className="tileDesc dark">Trac - Mobile App </p>
@@ -99,36 +90,23 @@ const Home = () => {
             </Link>
             <Link to="/Ruma" className="tileWrap Ruma">
               <motion.div
-                whileHover={{ scale: 1.1 }}
                 className="tileWrap Ruma"
+                whileHover={{ scale: 1.05 }}
                 onClick={() => gaClickHandler("Ruma was clicked into.")}
               >
                 <p className="tileDesc">Ruma - Streaming App</p>
                 <p className="tileDesc2">UI/UX | Design Challenge</p>
               </motion.div>
             </Link>
-            <Link to="/ToDo" className="tileWrap ToDo">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="tileWrap ToDo"
-                onClick={() => gaClickHandler("ToDo was clicked into.")}
-              >
-                <p className="tileDesc">
-                  ToDoList - CRUD App (Vanilla Js + Local Storage)
-                </p>
-                <p className="tileDesc2">UI/UX | Front End Development</p>
-              </motion.div>
-            </Link>
-            <Link to="/Climate" className="tileWrap Climate">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="tileWrap Climate"
-                onClick={() => gaClickHandler("Climate was clicked into.")}
-              >
-                <p className="tileDesc">Climate - Weather App </p>
-                <p className="tileDesc2">UI/UX | Front End Development</p>
-              </motion.div>
-            </Link>
+            {/* <Link to="/ToDo" className="tileWrap ToDo"> */}
+            <motion.div
+              className="tileWrap"
+              onClick={() => gaClickHandler("ToDo was clicked into.")}
+            >
+              <p className="tileDesc">🚧 Under Construction</p>
+              <p className="tileDesc2">Case Study </p>
+            </motion.div>
+            {/* </Link> */}
           </div>
         </div>
       </div>

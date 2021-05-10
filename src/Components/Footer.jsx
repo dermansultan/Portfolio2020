@@ -12,13 +12,6 @@ function Footer() {
   return (
     <footer>
       <p className="footerLeft">
-        Made with{" "}
-        <span>
-          <FontAwesomeIcon icon={faReact} />
-        </span>{" "}
-        and 🦾{" "}
-      </p>
-      <p className="footerLeft">
         <span>
           <a href="https://www.instagram.com/ixderman/" target="_blank">
             <FontAwesomeIcon icon={faInstagram} className="icon footer" />

@@ -37,7 +37,8 @@ const Role = styled.p`
 const CardContainer = styled.div`
   display: flex;
   position: relative;
-  margin: 25px 0 0 0;
+  justify-content: space-evenly;
+  margin: 55px 0 0 0;
   width: 95%;
   max-height: 640px;
   border-radius: 58px;
@@ -47,20 +48,19 @@ const CardContainer = styled.div`
     width: 90%;
     height: 450px;
     flex-direction: column-reverse;
-    margin: 25px 0 0 0;
+    margin: 55px 0 0 0;
     border-radius: 20px;
   }
 `;
 
 const CaseImg = styled.img`
   max-width: 55%;
-  margin: 35px 0 0 0;
   height: auto;
-  margin: ${(props) => (props.reverse ? "0 50px 0 0px" : "0 0 0 50px")};
+  margin: ${(props) => (props.reverse ? "35px 50px 0 0px" : "35px 0 0 50px")};
   @media only screen and (max-width: 769px) {
     margin: ${(props) => (props.reverse ? "0 0 0 0" : "0 0 0 0")};
     padding-top: 25px;
-    width: 40%;
+    max-width: 75%;
     align-self: center;
   }
 `;
@@ -154,7 +154,7 @@ function CaseCard({
   return (
     <>
       <CardContainer reverse={reverse} mainBackCol={mainBackCol}>
-        <Col width="50%" height="100%" reverse={reverse}>
+        <Col width="50%" reverse={reverse}>
           <Header titleCol={titleCol} reverse={reverse}>
             {title}
           </Header>

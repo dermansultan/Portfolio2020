@@ -14,6 +14,38 @@ import {
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
 import ReactGa from "react-ga";
+import styled from "styled-components";
+
+const Header = styled.h2``;
+
+const Para = styled.p`
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%;
+  color: #343434;
+  margin: 9px 0 9px 0;
+  font-size: clamp(14px, 1.5vw, 18px);
+`;
+
+const Dp = styled.img`
+  width: 100%;
+  max-width: 374px;
+  height: auto;
+  ${
+    "" /* @media only screen and (max-width: 600px) {
+    width: 55%;
+    height: auto;
+  }
+  @media only screen and (min-width: 601px) {
+    width: 20%;
+    height: auto;
+  }
+  @media only screen and (min-width: 1200px) {
+    width: 50%;
+    height: auto; */
+  }
+`;
 
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -39,40 +71,29 @@ const About = () => {
         animate={{ opacity: 1 }}
         className="aboutContainer"
       >
-        <img className="dp" src={dp} />
+        <Dp src={dp} />
         <div className="aboutBio">
-          <h1 className="aboutGreeting">
-            {" "}
-            <span>👋</span>Hello there.
-          </h1>
-          <p className="aboutPara">
-            <span>An affinity for design and technology</span> - I love going
-            out my way to find new ways to solve complex problems. I'm always
-            challenging myself to learn the latest trends and technologies. I
-            want to combine my passion for problem solving and design to craft
-            meaningful user experiences.
-          </p>
-          <p className="aboutPara">
-            I'm currently a third year <span>Interaction Design</span> student
-            studying at Sheridan College in Oakville and I'm all about{" "}
-            <span>UX/UI </span> and
-            <span> Front End Development!</span>
-          </p>
-          <p className="aboutPara"> As of
-            right now, I am messing around about with the <span>React</span>{" "}
-            framework, (what this portfolio was made in!) learning more CSS
-            techniques and about Accesibility on the Web.
-          </p>
-          <p className="aboutPara">
+          <Para>
+            An affinity for design and technology - I love going out my way to
+            find new ways to solve complex problems. I want to combine my
+            passion for problem solving and design to craft meaningful user
+            experiences.
+          </Para>
+          <Para>
+            You can find me reading medium articles on the latest trends,
+            messing around with Figma plug-ins or creating something cool in
+            React!
+          </Para>
+          <Para>
             When I'm not messing around with code or design you can find me
             looking at corgi pictures on Instagram, powerlifting (pre-pandemic),
-            or obsessing over the latest PC hardware.
-          </p>
-          <p className="aboutPara">
-            I'm currently looking for new opportunities to learn more and expand
+            and obsessing over the latest PC hardware.
+          </Para>
+          <Para>
+            I’m always looking for new opportunities to learn more, and expand
             my abilities. Have an opportunity for me? Get in touch with me
             below!
-          </p>
+          </Para>
           <div className="socialBtnWrapper">
             <a href="mailto:abdurrehmansultan4@gmail.com" target="_blank">
               <FontAwesomeIcon

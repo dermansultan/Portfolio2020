@@ -59,7 +59,9 @@ const Header = styled.h1`
   line-height: 135px;
   white-space: nowrap;
   width: 100%;
-  color: #343434;
+  background: linear-gradient(180deg, #343434 0%, rgba(52, 52, 52, 0.75) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const Btn = styled.button`
@@ -87,8 +89,8 @@ const Btn = styled.button`
   }
 `;
 
-const intro = { delay: 1.75, duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
-const introType = { duration: 3, ease: [0.6, 0.01, -0.05, 0.9] };
+const intro = { delay: 0, duration: 1.5, ease: [0.6, 0.01, -0.05, 0.9] };
+const introType = { duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = () => {
@@ -105,20 +107,27 @@ const Home = () => {
   };
 
   return (
-    <div className="mainContainer">
-      <div className="homeContainer">
-        <div className="heroContainer">
-          <div className="greetingBio">
-            <Header>Hello there.</Header>
-            <IntroPara margin={"15px 0 0 0"}>
-              I'm <Span fWeight={"bold"}>Derman</Span>, a{" "}
-              <Span fColor={"#1882FF"} fWeight={"bold"}>
-                Product Designer
-              </Span>{" "}
-              with a passion for creating elegant and intuitive experiences
-              through Design and Code.
-            </IntroPara>
-            {/* <motion.h1
+    <>
+      <div className="mainContainer">
+        <motion.div
+          exit={{ opacity: 0, transition: { outro } }}
+          transition={intro}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="homeContainer"
+        >
+          <div className="heroContainer">
+            <div className="greetingBio">
+              <Header>Hello there.</Header>
+              <IntroPara margin={"15px 0 0 0"}>
+                I'm <Span fWeight={"bold"}>Derman</Span>, a{" "}
+                <Span fColor={"#1882FF"} fWeight={"bold"}>
+                  Product Designer
+                </Span>{" "}
+                with a passion for creating elegant and intuitive experiences
+                through Design and Code.
+              </IntroPara>
+              {/* <motion.h1
               exit={{ opacity: 0, transition: { outro } }}
               transition={introType}
               initial={{ opacity: 0 }}
@@ -127,7 +136,7 @@ const Home = () => {
             >
               Hello there!
             </motion.h1> */}
-            {/* <motion.p
+              {/* <motion.p
               exit={{ opacity: 0, transition: { outro } }}
               transition={intro}
               initial={{ opacity: 0 }}
@@ -151,24 +160,36 @@ const Home = () => {
               </span>
               .
             </motion.p> */}
-            <HashLink smooth to="/#projects">
-              <Btn
-                margin={"55px 0 0 0"}
-                onClick={() => gaClickHandler("My work was clicked.")}
-              >
-                My Work
-              </Btn>
-            </HashLink>
+              <HashLink smooth to="/#projects">
+                <Btn
+                  margin={"55px 0 0 0"}
+                  onClick={() => gaClickHandler("My work was clicked.")}
+                >
+                  My Work
+                </Btn>
+              </HashLink>
+            </div>
           </div>
-        </div>
+        </motion.div>
+      </div>
+      <div
+        className="projectsContainer"
+        id="projects"
+        style={{
+          backgroundColor: "#343434",
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          position: "relative",
+          overflowX: "hidden",
+        }}
+      >
         <div
-          className="projectsContainer"
-          id="projects"
           style={{
-            backgroundColor: "#343434",
-            width: "100vw",
+            width: "95%",
             display: "flex",
             alignItems: "center",
+            flexDirection: "column",
           }}
         >
           <CaseCard
@@ -221,7 +242,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

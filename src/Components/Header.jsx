@@ -17,7 +17,7 @@ function Header() {
     <header>
       <div className="headerMain">
         <Link to="/" className="headerLogo">
-          <img style={{margin: "15px 0 0 0"}} src={Logo} alt={"Logo"} />
+          <img style={{ margin: "15px 0 0 0" }} src={Logo} alt={"Logo"} />
         </Link>
         <nav>
           <Link
@@ -29,12 +29,6 @@ function Header() {
           <HashLink smooth to="/#projects">
             Work
           </HashLink>
-          <Link
-            to="/Extras"
-            onClick={() => gaClickHandler("About me was clicked")}
-          >
-            Extras!
-          </Link>
           <a
             href="https://drive.google.com/file/d/1lecwuIV7KS5TpqWKUv4kHMeXbNNZwD-M/view?usp=sharing"
             target="_blank"

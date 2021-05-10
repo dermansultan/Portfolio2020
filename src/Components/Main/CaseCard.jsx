@@ -84,7 +84,7 @@ const Btn = styled.button`
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: clamp(14px, 2.5vw, 36px);
+  font-size: clamp(14px, 2.5vw, 28px);
   line-height: 137%;
   align-self: ${(props) => (props.reverse ? "flex-end" : "flex-start")};
   background-color: ${(props) => props.btnBackCol};

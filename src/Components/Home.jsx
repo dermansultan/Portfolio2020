@@ -9,6 +9,83 @@ import ReactGa from "react-ga";
 import trac from "../Img/caseStudies/Trac/trac.png";
 import ruma2 from "../Img/caseStudies/Ruma/ruma2.png";
 import ghbc from "../Img/caseStudies/GH/ghbc.png";
+import styled from "styled-components";
+
+const MainContainer = styled.div`
+  width: 100%;
+  display: flex;
+  padding-bottom: 125px;
+  justify-content: center;
+  background-color: #f9f8fd;
+`;
+
+const HomeContainer = styled.div`
+  width: 90%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+`;
+
+const HeroContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
+const GreetingMsg = styled.div``;
+
+const Span = styled.span`
+  font-weight: ${(props) => props.fWeight};
+  color: ${(props) => props.fColor};
+`;
+
+const IntroPara = styled.p`
+  margin: ${(props) => props.margin};
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+  font-size: clamp(22px, 1vw, 48px);
+  line-height: 137%;
+  color: #343434;
+`;
+
+const Header = styled.h1`
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: clamp(72px, 5vw, 144px);
+  line-height: 135px;
+  white-space: nowrap;
+  width: 100%;
+  color: #343434;
+`;
+
+const Btn = styled.button`
+  margin: ${(props) => props.margin};
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: clamp(16px, 2.5vw, 24px);
+  line-height: 31px;
+  color: #ffffff;
+  border: none;
+  width: 475px;
+  height: 74px;
+  background: linear-gradient(
+    90deg,
+    #1882ff 0%,
+    rgba(24, 130, 255, 0.76) 103.03%
+  );
+  border-radius: 52px;
+  @media only screen and (max-width: 769px) {
+    margin: 34px 0 0 0;
+    width: 100%;
+    height: 65px;
+    border-radius: 52px;
+  }
+`;
 
 const intro = { delay: 1.75, duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
 const introType = { duration: 3, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -32,7 +109,16 @@ const Home = () => {
       <div className="homeContainer">
         <div className="heroContainer">
           <div className="greetingBio">
-            <motion.h1
+            <Header>Hello there.</Header>
+            <IntroPara margin={"15px 0 0 0"}>
+              I'm <Span fWeight={"bold"}>Derman</Span>, a{" "}
+              <Span fColor={"#1882FF"} fWeight={"bold"}>
+                Product Designer
+              </Span>{" "}
+              with a passion for creating elegant and intuitive experiences
+              through Design and Code.
+            </IntroPara>
+            {/* <motion.h1
               exit={{ opacity: 0, transition: { outro } }}
               transition={introType}
               initial={{ opacity: 0 }}
@@ -40,8 +126,8 @@ const Home = () => {
               className="greetingMsg"
             >
               Hello there!
-            </motion.h1>
-            <motion.p
+            </motion.h1> */}
+            {/* <motion.p
               exit={{ opacity: 0, transition: { outro } }}
               transition={intro}
               initial={{ opacity: 0 }}
@@ -64,18 +150,14 @@ const Home = () => {
                 {""} Code
               </span>
               .
-            </motion.p>
+            </motion.p> */}
             <HashLink smooth to="/#projects">
-              <motion.button
+              <Btn
+                margin={"55px 0 0 0"}
                 onClick={() => gaClickHandler("My work was clicked.")}
-                exit={{ opacity: 0, transition: { outro } }}
-                transition={intro}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="protoBtn Home"
               >
                 My Work
-              </motion.button>
+              </Btn>
             </HashLink>
           </div>
         </div>

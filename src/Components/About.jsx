@@ -16,7 +16,53 @@ import { docTitleUpdate } from "./docTitleUpdate";
 import ReactGa from "react-ga";
 import styled from "styled-components";
 
-const Header = styled.h2``;
+const Header = styled.h2`
+  font-family: DM Sans;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 125px;
+  font-size: clamp(46px, 4vw, 96px);
+  color: #1882ff;
+`;
+
+const Wavespan = styled.span`
+  white-space: nowrap;
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: 1; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+  padding-right: 15px;
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+`;
 
 const Para = styled.p`
   font-family: DM Sans;
@@ -32,18 +78,8 @@ const Dp = styled.img`
   width: 100%;
   max-width: 374px;
   height: auto;
-  ${
-    "" /* @media only screen and (max-width: 600px) {
-    width: 55%;
-    height: auto;
-  }
-  @media only screen and (min-width: 601px) {
-    width: 20%;
-    height: auto;
-  }
-  @media only screen and (min-width: 1200px) {
-    width: 50%;
-    height: auto; */
+  @media only screen and (max-width: 900px) {
+    align-self: center;
   }
 `;
 
@@ -73,6 +109,9 @@ const About = () => {
       >
         <Dp src={dp} />
         <div className="aboutBio">
+          <Header>
+            I’m Derman! <Wavespan>👋</Wavespan>
+          </Header>
           <Para>
             An affinity for design and technology - I love going out my way to
             find new ways to solve complex problems. I want to combine my

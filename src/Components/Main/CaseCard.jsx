@@ -7,7 +7,7 @@ const Header = styled.h2`
   font-style: normal;
   font-weight: bold;
   text-align: ${(props) => (props.reverse ? "right" : "left")};
-  font-size: clamp(18px, 5vw, 96px);
+  font-size: clamp(18px, 4vw, 96px);
   line-height: 137%;
   color: ${(props) => props.titleCol};
   margin: 0 0 0 0;
@@ -22,7 +22,7 @@ const Role = styled.p`
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(14px, 1.5vw, 36px);
+  font-size: clamp(14px, 1.25vw, 36px);
   line-height: 137%;
   text-align: ${(props) => (props.reverse ? "right" : "left")};
   color: ${(props) => props.roleCol};
@@ -40,16 +40,22 @@ const CardContainer = styled.div`
   justify-content: space-evenly;
   margin: 55px 0 0 0;
   width: 95%;
-  max-height: 640px;
+  max-height: 540px;
   border-radius: 58px;
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   background-color: ${(props) => props.mainBackCol};
+
   @media only screen and (max-width: 769px) {
     width: 90%;
     height: 450px;
     flex-direction: column-reverse;
     margin: 55px 0 0 0;
     border-radius: 20px;
+  }
+  transition: transform 0.2s; /* Animation */
+
+  &:hover {
+    transform: scale(1.05);
   }
 `;
 
@@ -118,6 +124,12 @@ const Btn = styled.button`
     margin: 25px 0 0 0;
     border-radius: 12px;
   }
+  transition: transform 0.2s; /* Animation */
+
+  &:hover {
+    background-color: ${(props) => props.btnColor};
+    color: ${(props) => props.btnBackCol};
+  }
 `;
 
 const Desc = styled.p`
@@ -126,7 +138,7 @@ const Desc = styled.p`
   font-weight: 500;
   width: ${(props) => props.width};
   text-align: ${(props) => (props.reverse ? "right" : "left")};
-  font-size: clamp(14px, 1.5vw, 36px);
+  font-size: clamp(14px, 1.25vw, 36px);
   line-height: 137%;
   color: ${(props) => props.descCol};
   margin: 12px 0 0 0;

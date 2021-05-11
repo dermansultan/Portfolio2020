@@ -64,6 +64,26 @@ const Header = styled.h1`
   -webkit-text-fill-color: transparent;
 `;
 
+const Subheader = styled.h2`
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: 135px;
+  white-space: nowrap;
+  align-self: flex-start;
+  margin-top: 25px;
+  color: white;
+`;
+
+const Rounded = styled.hr`
+  border: 8px solid #1882ff;
+  border-radius: 90px;
+  width: 20%;
+  align-self: flex-start;
+  margin: 0;
+`;
+
 const Btn = styled.button`
   margin: ${(props) => props.margin};
   font-family: DM Sans;
@@ -81,6 +101,12 @@ const Btn = styled.button`
     rgba(24, 130, 255, 0.76) 103.03%
   );
   border-radius: 52px;
+  transition: transform 0.2s; /* Animation */
+
+&:hover {
+  transform: scale(
+    1.01
+  ); 
   @media only screen and (max-width: 769px) {
     margin: 34px 0 0 0;
     width: 100%;
@@ -120,7 +146,7 @@ const Home = () => {
             <div className="greetingBio">
               <Header>Hello there.</Header>
               <IntroPara margin={"15px 0 0 0"}>
-                I'm <Span fWeight={"bold"}>Derman</Span>, a{" "}
+                I'm <Span fWeight={"bold"}>Derman Sultan</Span>, a{" "}
                 <Span fColor={"#1882FF"} fWeight={"bold"}>
                   Product Designer
                 </Span>{" "}
@@ -182,6 +208,7 @@ const Home = () => {
           alignItems: "center",
           position: "relative",
           overflowX: "hidden",
+          borderTop: "15px solid #1882FF",
         }}
       >
         <div
@@ -192,6 +219,8 @@ const Home = () => {
             flexDirection: "column",
           }}
         >
+          <Subheader>My Work</Subheader>
+          <Rounded></Rounded>
           <CaseCard
             title={"Trac"}
             titleCol={"#1882FF"}

@@ -786,5 +786,22 @@ footer {
 
   .aboutContainer {
     align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutBio {
+    width: 90%;
+  }
+
+  .aboutContainer {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

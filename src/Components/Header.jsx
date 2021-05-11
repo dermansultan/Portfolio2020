@@ -3,6 +3,20 @@ import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import Logo from "../Img/Logo.svg";
 import ReactGa from "react-ga";
+import styled from "styled-components";
+
+const Dlogo = styled.img`
+  margin: 15px 0 0 0;
+  height: auto;
+  width: 75%;
+  transition: transform 0.2s; /* Animation */
+
+  &:hover {
+    transform: scale(
+      1.20
+    ); 
+  }
+`;
 
 function Header() {
   const gaClickHandler = (name) => {
@@ -17,7 +31,7 @@ function Header() {
     <header>
       <div className="headerMain">
         <Link to="/" className="headerLogo">
-          <img style={{ margin: "15px 0 0 0" }} src={Logo} alt={"Logo"} />
+          <Dlogo src={Logo} alt={"Logo"} />
         </Link>
         <nav>
           <Link

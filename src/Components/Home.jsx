@@ -45,9 +45,9 @@ const IntroPara = styled.p`
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
-  width: 100%;
+  width: 85%;
   font-size: clamp(22px, 1vw, 48px);
-  line-height: 137%;
+  line-height: 150%;
   color: #343434;
 `;
 
@@ -76,25 +76,17 @@ const Subheader = styled.h2`
   color: white;
 `;
 
-const Rounded = styled.hr`
-  border: 8px solid #1882ff;
-  border-radius: 90px;
-  width: 20%;
-  align-self: flex-start;
-  margin: 0;
-`;
-
 const Btn = styled.button`
   margin: ${(props) => props.margin};
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: clamp(16px, 2.5vw, 24px);
+  font-size: clamp(14px, 2.5vw, 16px);
   line-height: 31px;
   color: #ffffff;
   border: none;
-  width: 475px;
-  height: 74px;
+  width: 385px;
+  height: 65px;
   background: linear-gradient(
     90deg,
     #1882ff 0%,
@@ -121,7 +113,7 @@ const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = () => {
   useEffect(() => {
-    docTitleUpdate("| 🏠 Home ");
+    docTitleUpdate("| Home");
   });
 
   const gaClickHandler = (name) => {
@@ -153,39 +145,6 @@ const Home = () => {
                 with a passion for creating elegant and intuitive experiences
                 through Design and Code.
               </IntroPara>
-              {/* <motion.h1
-              exit={{ opacity: 0, transition: { outro } }}
-              transition={introType}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="greetingMsg"
-            >
-              Hello there!
-            </motion.h1> */}
-              {/* <motion.p
-              exit={{ opacity: 0, transition: { outro } }}
-              transition={intro}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="greetingPara"
-            >
-              I'm a {""}
-              <span style={{ color: "#1D66B9", fontWeight: 500 }}>
-                UX/UI Designer {""}
-              </span>
-              with a passion for creating elegant and intuitive experiences
-              through
-              <span style={{ color: "#1DB954", fontWeight: 500 }}>
-                {" "}
-                {""} Design {""}
-              </span>
-              and
-              <span style={{ color: "#1D66B9", fontWeight: 500 }}>
-                {" "}
-                {""} Code
-              </span>
-              .
-            </motion.p> */}
               <HashLink smooth to="/#projects">
                 <Btn
                   margin={"55px 0 0 0"}
@@ -220,7 +179,6 @@ const Home = () => {
           }}
         >
           <Subheader>My Work</Subheader>
-          <Rounded></Rounded>
           <CaseCard
             title={"Trac"}
             titleCol={"#1882FF"}
@@ -236,6 +194,7 @@ const Home = () => {
             btnBackCol={"#1882FF"}
             reverse={false}
             mainBackCol={"#FFFFFF"}
+            projLink={"/Trac"}
           />
           <CaseCard
             title={"Ruma"}
@@ -252,15 +211,14 @@ const Home = () => {
             btnBackCol={"#FFFFFF"}
             reverse={true}
             mainBackCol={"#1882FF"}
+            projLink={"/Ruma"}
           />
           <CaseCard
-            title={"GH BootCamp"}
+            title={"Coming Soon"}
             titleCol={"#252A41"}
             role={"UI / UX design"}
             roleCol={"#343434"}
-            desc={
-              "A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."
-            }
+            desc={"Sit tight! This case study is under construction."}
             descCol={"#252A41"}
             img={ghbc}
             imgAlt={"Mockup of Game-Hero BootCamp Application"}
@@ -268,6 +226,8 @@ const Home = () => {
             btnBackCol={"#252A41"}
             reverse={false}
             mainBackCol={"#9CECFD"}
+            projLink={"/"}
+            construct={true}
           />
         </div>
       </div>

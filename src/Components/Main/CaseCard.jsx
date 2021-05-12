@@ -1,5 +1,6 @@
 import react from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Header = styled.h2`
   white-space: nowrap;
@@ -55,7 +56,7 @@ const CardContainer = styled.div`
   transition: transform 0.2s; /* Animation */
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
   }
 `;
 
@@ -77,7 +78,7 @@ const Col = styled.div`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   justify-content: center;
-  padding: ${(props) => (props.reverse ? "0 55px 0 0px" : "0 0 0 55px")};
+  padding: ${(props) => (props.reverse ? "0 85px 0 0px" : "0 0 0 85px")};
   margin: 0 0 0 0;
   @media only screen and (max-width: 769px) {
     margin: 0 0 0 0;
@@ -93,37 +94,35 @@ const Btn = styled.button`
   font-size: clamp(14px, 2.5vw, 28px);
   line-height: 137%;
   align-self: ${(props) => (props.reverse ? "flex-end" : "flex-start")};
+  justify-self: ${(props) => (props.reverse ? "flex-end" : "flex-start")};
   background-color: ${(props) => props.btnBackCol};
   color: ${(props) => props.btnColor};
   border-radius: 26px;
   border: none;
-  width: 579px;
-  height: 117px;
+  width: 90%;
+  height: 90px;
   margin: 25px 0 0 0;
+  cursor: pointer;
+  display: ${(props) => (props.construct ? "none" : "")};
+
   @media only screen and (max-width: 769px) {
     margin: 12px 0 0 0;
     width: 100%;
     height: 65px;
     border-radius: 15px;
   }
-  @media only screen and (min-width: 769px) {
-    width: 290px;
-    height: 55px;
+  ${'' /* @media only screen and (min-width: 769px) {
     margin: 12px 0 0 0;
     border-radius: 15px;
   }
   @media only screen and (min-width: 1024px) {
-    width: 425px;
-    height: 90px;
     margin: 12px 0 0 0;
     border-radius: 12px;
   }
   @media only screen and (min-width: 1200px) {
-    width: 579px;
-    height: 117px;
     margin: 25px 0 0 0;
     border-radius: 12px;
-  }
+  } */}
   transition: transform 0.2s; /* Animation */
 
   &:hover {
@@ -162,6 +161,8 @@ function CaseCard({
   btnBackCol,
   mainBackCol,
   reverse,
+  projLink,
+  construct,
 }) {
   return (
     <>
@@ -176,9 +177,16 @@ function CaseCard({
           <Desc descCol={descCol} reverse={reverse} width={"100%"}>
             {desc}
           </Desc>
-          <Btn btnColor={btnColor} btnBackCol={btnBackCol} reverse={reverse}>
-            View Case Study
-          </Btn>
+          <Link to={projLink}>
+            <Btn
+              btnColor={btnColor}
+              btnBackCol={btnBackCol}
+              reverse={reverse}
+              construct={construct}
+            >
+              View Case Study
+            </Btn>
+          </Link>
         </Col>
         <CaseImg src={img} alt={imgAlt} reverse={reverse} />
       </CardContainer>

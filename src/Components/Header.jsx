@@ -8,13 +8,11 @@ import styled from "styled-components";
 const Dlogo = styled.img`
   margin: 15px 0 0 0;
   height: auto;
-  width: 75%;
+  width: 80%;
   transition: transform 0.2s; /* Animation */
 
   &:hover {
-    transform: scale(
-      1.20
-    ); 
+    transform: scale(1.2);
   }
 `;
 
@@ -46,6 +44,7 @@ function Header() {
           <a
             href="https://drive.google.com/file/d/1lecwuIV7KS5TpqWKUv4kHMeXbNNZwD-M/view?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
             onClick={() => gaClickHandler("Resume was clicked")}
           >
             Resume

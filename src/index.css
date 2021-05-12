@@ -58,7 +58,7 @@ nav > a {
 
 nav > a:hover {
   transition: all 0.2s ease-in-out;
-  color: var(--main-blue);
+  color: #1882ff;
 }
 /* Landing Page Section */
 

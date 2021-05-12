@@ -12,7 +12,7 @@ const Dlogo = styled.img`
   transition: transform 0.2s; /* Animation */
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.08) perspective(1000px);
   }
 `;
 

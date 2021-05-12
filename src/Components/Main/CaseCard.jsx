@@ -56,7 +56,7 @@ const CardContainer = styled.div`
   transition: transform 0.2s; /* Animation */
 
   &:hover {
-    transform: scale(1.04);
+    transform: scale(1.04) perspective(1000px);
   }
 `;
 
@@ -111,7 +111,8 @@ const Btn = styled.button`
     height: 65px;
     border-radius: 15px;
   }
-  ${'' /* @media only screen and (min-width: 769px) {
+  ${
+    "" /* @media only screen and (min-width: 769px) {
     margin: 12px 0 0 0;
     border-radius: 15px;
   }
@@ -122,7 +123,8 @@ const Btn = styled.button`
   @media only screen and (min-width: 1200px) {
     margin: 25px 0 0 0;
     border-radius: 12px;
-  } */}
+  } */
+  }
   transition: transform 0.2s; /* Animation */
 
   &:hover {

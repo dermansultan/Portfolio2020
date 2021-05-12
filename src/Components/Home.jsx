@@ -176,6 +176,7 @@ const Home = () => {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
+            position: "relative",
           }}
         >
           <Subheader>My Work</Subheader>

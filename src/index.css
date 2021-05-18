@@ -74,7 +74,7 @@ nav > a:hover {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .homeContainer {
@@ -765,7 +765,7 @@ footer {
 
   .heroContainer {
     margin-top: 0px;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .tilesContainer {
@@ -792,6 +792,10 @@ footer {
   }
 }
 
+@media only screen and (max-width: 768px) {
+
+}
+
 @media only screen and (max-width: 900px) {
   .aboutBio {
     width: 90%;
@@ -804,4 +808,9 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .heroContainer {
+    flex-direction: column-reverse;
+  }
+
 }

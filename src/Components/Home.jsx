@@ -10,6 +10,7 @@ import trac from "../Img/caseStudies/Trac/trac.png";
 import ruma2 from "../Img/caseStudies/Ruma/ruma2.png";
 import ghbc from "../Img/caseStudies/GH/ghbc.png";
 import styled from "styled-components";
+import landing from "../Img/landing.svg";
 
 const MainContainer = styled.div`
   width: 100%;
@@ -46,7 +47,7 @@ const IntroPara = styled.p`
   font-style: normal;
   font-weight: normal;
   width: 85%;
-  font-size: clamp(22px, 1vw, 48px);
+  font-size: clamp(16px, 1vw, 48px);
   line-height: 150%;
   color: #343434;
 `;
@@ -55,7 +56,7 @@ const Header = styled.h1`
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: clamp(72px, 5vw, 144px);
+  font-size: clamp(50px, 5vw, 144px);
   line-height: 135px;
   white-space: nowrap;
   width: 100%;
@@ -74,6 +75,24 @@ const Subheader = styled.h2`
   align-self: flex-start;
   margin-top: 25px;
   color: white;
+`;
+
+const Landing = styled.img`
+  width: 30%;
+  height: auto;
+  @media only screen and (max-width: 900px) {
+    width: 35%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 50%;
+  }
+`;
+
+const GreetingBio = styled.div`
+  width: 50%;
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 const Btn = styled.button`
@@ -95,10 +114,9 @@ const Btn = styled.button`
   border-radius: 52px;
   transition: transform 0.2s; /* Animation */
 
-&:hover {
-  transform: scale(
-    1.01
-  ); 
+  &:hover {
+    transform: scale(1.01);
+  }
   @media only screen and (max-width: 769px) {
     margin: 34px 0 0 0;
     width: 100%;
@@ -135,7 +153,7 @@ const Home = () => {
           className="homeContainer"
         >
           <div className="heroContainer">
-            <div className="greetingBio">
+            <GreetingBio>
               <Header>Hello there.</Header>
               <IntroPara margin={"15px 0 0 0"}>
                 I'm <Span fWeight={"bold"}>Derman Sultan</Span>, a{" "}
@@ -153,7 +171,8 @@ const Home = () => {
                   My Work
                 </Btn>
               </HashLink>
-            </div>
+            </GreetingBio>
+            <Landing src={landing} />
           </div>
         </motion.div>
       </div>

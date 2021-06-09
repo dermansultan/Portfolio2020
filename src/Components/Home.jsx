@@ -41,6 +41,12 @@ const Span = styled.span`
   color: ${(props) => props.fColor};
 `;
 
+const SpanLink = styled.a`
+  font-weight: ${(props) => props.fWeight};
+  color: ${(props) => props.fColor};
+  border-bottom: 2.5px solid;
+`;
+
 const IntroPara = styled.p`
   margin: ${(props) => props.margin};
   font-family: DM Sans;
@@ -48,7 +54,7 @@ const IntroPara = styled.p`
   font-weight: normal;
   width: 85%;
   font-size: clamp(16px, 1vw, 48px);
-  line-height: 150%;
+  line-height: 175%;
   color: #343434;
 `;
 
@@ -57,7 +63,7 @@ const Header = styled.h1`
   font-style: normal;
   font-weight: bold;
   font-size: clamp(50px, 5vw, 144px);
-  line-height: 135px;
+  line-height: 140%;
   white-space: nowrap;
   width: 100%;
   background: linear-gradient(180deg, #343434 0%, rgba(52, 52, 52, 0.75) 100%);
@@ -104,8 +110,8 @@ const Btn = styled.button`
   line-height: 31px;
   color: #ffffff;
   border: none;
-  width: 385px;
-  height: 65px;
+  width: 300px;
+  height: 55px;
   background: linear-gradient(
     90deg,
     #1882ff 0%,
@@ -161,7 +167,27 @@ const Home = () => {
                   Product Designer
                 </Span>{" "}
                 with a passion for creating elegant and intuitive experiences
-                through Design and Code.
+                through Design and Code. Currently I am working as a{" "}
+                <Span fWeight={"bold"}>UI/UX Designer</Span> at{" "}
+                <SpanLink
+                  href="https://lumber.dev/"
+                  target="_blank"
+                  rel="noreferrer"
+                  fColor={"#1882FF"}
+                  fWeight={"bold"}
+                >
+                  Lumber
+                </SpanLink>{" "}
+                , and a <Span fWeight={"bold"}>Product Designer</Span> at{" "}
+                <SpanLink
+                  href="https://mypalate.ca/"
+                  target="_blank"
+                  rel="noreferrer"
+                  fColor={"#1882FF"}
+                  fWeight={"bold"}
+                >
+                  MyPalate
+                </SpanLink>{" "}
               </IntroPara>
               <HashLink smooth to="/#projects">
                 <Btn

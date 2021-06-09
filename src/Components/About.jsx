@@ -27,6 +27,12 @@ const Header = styled.h2`
   color: #1882ff;
 `;
 
+const SpanLink = styled.a`
+  font-weight: ${(props) => props.fWeight};
+  color: ${(props) => props.fColor};
+  border-bottom: 2.5px solid;
+`;
+
 const Wavespan = styled.span`
   white-space: nowrap;
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
@@ -117,6 +123,29 @@ const About = () => {
             find new ways to solve complex problems. I want to combine my
             passion for problem solving and design to craft meaningful user
             experiences.
+          </Para>
+          <Para>
+            I'm currently working as a UI/UX Designer at{" "}
+            <SpanLink
+              href="https://lumber.dev/"
+              target="_blank"
+              rel="noreferrer"
+              fColor={"#1882FF"}
+              fWeight={"bold"}
+            >
+              Lumber
+            </SpanLink>
+            , and in my left over time I volunteer as a Product Designer at{" "}
+            <SpanLink
+              href="https://mypalate.ca/"
+              target="_blank"
+              rel="noreferrer"
+              fColor={"#1882FF"}
+              fWeight={"bold"}
+            >
+              MyPalate
+            </SpanLink>
+            .
           </Para>
           <Para>
             You can find me reading medium articles on the latest trends,

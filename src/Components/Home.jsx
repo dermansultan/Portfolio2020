@@ -33,6 +33,11 @@ const HeroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media only screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 6rem;
+  }
 `;
 const GreetingMsg = styled.div``;
 
@@ -56,6 +61,9 @@ const IntroPara = styled.p`
   font-size: clamp(16px, 1vw, 48px);
   line-height: 175%;
   color: #343434;
+  @media only screen and (max-width: 900px) {
+    width: 95%;
+  }
 `;
 
 const Header = styled.h1`
@@ -90,7 +98,7 @@ const Landing = styled.img`
     width: 35%;
   }
   @media only screen and (max-width: 600px) {
-    width: 50%;
+    width: 70%;
   }
 `;
 
@@ -98,6 +106,8 @@ const GreetingBio = styled.div`
   width: 50%;
   @media only screen and (max-width: 900px) {
     width: 100%;
+    margin-top: 5rem;
+}
   }
 `;
 
@@ -126,7 +136,7 @@ const Btn = styled.button`
   @media only screen and (max-width: 769px) {
     margin: 34px 0 0 0;
     width: 100%;
-    height: 65px;
+    height: 50px;
     border-radius: 52px;
   }
 `;
@@ -158,7 +168,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           className="homeContainer"
         >
-          <div className="heroContainer">
+          <HeroContainer>
             <GreetingBio>
               <Header>Hello there.</Header>
               <IntroPara margin={"15px 0 0 0"}>
@@ -199,7 +209,7 @@ const Home = () => {
               </HashLink>
             </GreetingBio>
             <Landing src={landing} />
-          </div>
+          </HeroContainer>
         </motion.div>
       </div>
       <div

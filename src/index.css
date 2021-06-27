@@ -813,4 +813,8 @@ footer {
     flex-direction: column-reverse;
   }
 
+  .homeContainer{
+    padding-bottom: 6rem
+  }
+
 }

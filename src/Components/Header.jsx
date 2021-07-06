@@ -42,7 +42,7 @@ function Header() {
             Work
           </HashLink>
           <a
-            href="https://drive.google.com/file/d/1lecwuIV7KS5TpqWKUv4kHMeXbNNZwD-M/view?usp=sharing"
+            href="https://drive.google.com/file/d/14IzreAWqx-epNf9E1EFd-LYWfenWPV8g/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => gaClickHandler("Resume was clicked")}

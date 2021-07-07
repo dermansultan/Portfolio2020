@@ -31,6 +31,13 @@ const SpanLink = styled.a`
   font-weight: ${(props) => props.fWeight};
   color: ${(props) => props.fColor};
   border-bottom: 2.5px solid;
+  &:hover {
+    color: #0c468a;
+  }
+`;
+
+const ParaSpan = styled.span`
+  font-weight: 500;
 `;
 
 const Wavespan = styled.span`
@@ -73,7 +80,7 @@ const Wavespan = styled.span`
 const Para = styled.p`
   font-family: DM Sans;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 145%;
   color: #343434;
   margin: 9px 0 9px 0;
@@ -119,10 +126,10 @@ const About = () => {
             I’m Derman! <Wavespan>👋</Wavespan>
           </Header>
           <Para>
-            An affinity for design and technology - I love going out my way to
-            find new ways to solve complex problems. I want to combine my
-            passion for problem solving and design to craft meaningful user
-            experiences.
+            <ParaSpan>An affinity for design and technology</ParaSpan> - I love
+            going out my way to find new ways to solve complex problems. I want
+            to combine my passion for problem solving and design to craft
+            meaningful user experiences.
           </Para>
           <Para>
             I'm currently working as a UI/UX Designer at{" "}
@@ -154,7 +161,7 @@ const About = () => {
           </Para>
           <Para>
             When I'm not messing around with code or design you can find me
-            looking at corgi pictures on Instagram, powerlifting (pre-pandemic),
+            looking at corgi pictures on Instagram, powerlifting,
             and obsessing over the latest PC hardware.
           </Para>
           <Para>

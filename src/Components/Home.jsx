@@ -32,7 +32,7 @@ const HeroContainer = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   @media only screen and (max-width: 900px) {
     flex-direction: column-reverse;
     justify-content: flex-end;
@@ -69,11 +69,10 @@ const IntroPara = styled.p`
 const Header = styled.h1`
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
-  font-size: clamp(50px, 5vw, 144px);
+  font-weight: 400;
+  font-size: clamp(50px, 3.25vw, 144px);
   line-height: 140%;
   white-space: nowrap;
-  width: 100%;
   background: linear-gradient(180deg, #343434 0%, rgba(52, 52, 52, 0.75) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -93,6 +92,7 @@ const Subheader = styled.h2`
 
 const Landing = styled.img`
   width: 30%;
+  max-width: 475px;
   height: auto;
   @media only screen and (max-width: 900px) {
     width: 35%;
@@ -177,7 +177,7 @@ const Home = () => {
                   Product Designer
                 </Span>{" "}
                 with a passion for creating elegant and intuitive experiences
-                through Design and Code. Currently I am working as a{" "}
+                through design and code. Currently I am working as a{" "}
                 <Span fWeight={"bold"}>UI/UX Designer</Span> at{" "}
                 <SpanLink
                   href="https://lumber.dev/"

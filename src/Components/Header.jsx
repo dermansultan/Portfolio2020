@@ -8,7 +8,7 @@ import styled from "styled-components";
 const Dlogo = styled.img`
   margin: 15px 0 0 0;
   height: auto;
-  width: 80%;
+  width: 60%;
   transition: transform 0.2s; /* Animation */
 
   &:hover {

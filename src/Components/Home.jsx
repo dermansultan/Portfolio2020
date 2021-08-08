@@ -69,13 +69,11 @@ const IntroPara = styled.p`
 const Header = styled.h1`
   font-family: DM Sans;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: clamp(50px, 3.25vw, 144px);
   line-height: 140%;
   white-space: nowrap;
-  background: linear-gradient(180deg, #343434 0%, rgba(52, 52, 52, 0.75) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #363635;
 `;
 
 const Subheader = styled.h2`
@@ -122,6 +120,7 @@ const Btn = styled.button`
   border: none;
   width: 300px;
   height: 55px;
+  cursor: pointer;
   background: linear-gradient(
     90deg,
     #1882ff 0%,

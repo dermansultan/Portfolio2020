@@ -181,7 +181,7 @@ const Trac = ({ lightBoxHandler }) => {
           <BodyPara>
             Participants of the research study expressed their problems with
             their e-learning experience. The greatest concerns were that
-            students felt it was difficult to
+            students felt it was difficult to{" "}
             <SpanPara>manage their time</SpanPara>,{" "}
             <SpanPara>
               had difficulty locating information across platforms
@@ -309,7 +309,7 @@ const Trac = ({ lightBoxHandler }) => {
             amongst students. It was a reoccurring paint point that I felt we
             could've addressed better if we had more time.
           </BodyPara>
-          <BackBtn margin={"55px 0 0 0"}btnCol={"#1DB954"}></BackBtn>
+          <BackBtn margin={"55px 0 0 0"} btnCol={"#1DB954"}></BackBtn>
         </Section>
       </CaseContainer>
     </MainContainer>

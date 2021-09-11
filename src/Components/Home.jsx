@@ -9,8 +9,20 @@ import ReactGa from "react-ga";
 import trac from "../Img/caseStudies/Trac/trac.png";
 import ruma2 from "../Img/caseStudies/Ruma/ruma2.png";
 import ghbc from "../Img/caseStudies/GH/ghbc.png";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import landing from "../Img/landing.svg";
+import { ReactComponent as Circle } from "../Img/dash-circle.svg";
+import { ReactComponent as VertLine } from "../Img/vert-line.svg";
+import { ReactComponent as HorizLine } from "../Img/horiz-line.svg";
+
+const scaleUp = keyframes`
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+`;
 
 const MainContainer = styled.div`
   width: 100%;
@@ -89,6 +101,13 @@ const Subheader = styled.h2`
 `;
 
 const Landing = styled.img`
+  width: 100%;
+  z-index: 1;
+  position: relative;
+`;
+
+const LandingContainer = styled.div`
+  position: relative;
   width: 30%;
   max-width: 475px;
   height: auto;
@@ -97,6 +116,31 @@ const Landing = styled.img`
   }
   @media only screen and (max-width: 600px) {
     width: 70%;
+  }
+  .circle {
+    width: 133%;
+    height: 133%;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ${scaleUp} 1s ease;
+    animation-delay: 1s;
+    transform-origin: top left;
+  }
+
+  .vertLine,
+  .horizLine {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .vertLine {
+    height: 133%;
+  }
+  .horizLine {
+    width: 133%;
   }
 `;
 
@@ -207,7 +251,13 @@ const Home = () => {
                 </Btn>
               </HashLink>
             </GreetingBio>
-            <Landing src={landing} />
+
+            <LandingContainer>
+              <Landing src={landing} />
+              <Circle className="circle" />
+              <VertLine className="vertLine" />
+              <HorizLine className="horizLine" />
+            </LandingContainer>
           </HeroContainer>
         </motion.div>
       </div>

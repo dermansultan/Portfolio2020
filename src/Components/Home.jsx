@@ -1,28 +1,17 @@
-import React, { useEffect } from "react";
-import ConstructionSign from "./ConstructionSign";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
-import { Link } from "react-router-dom";
 import CaseCard from "./Main/CaseCard";
 import { HashLink } from "react-router-hash-link";
 import ReactGa from "react-ga";
 import trac from "../Img/caseStudies/Trac/trac.png";
 import ruma2 from "../Img/caseStudies/Ruma/ruma2.png";
 import ghbc from "../Img/caseStudies/GH/ghbc.png";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import landing from "../Img/landing.svg";
 import { ReactComponent as Circle } from "../Img/dash-circle.svg";
 import { ReactComponent as VertLine } from "../Img/vert-line.svg";
 import { ReactComponent as HorizLine } from "../Img/horiz-line.svg";
-
-const scaleUp = keyframes`
-  from {
-    transform: translate(-50%, -50%) scale(0);
-  }
-  to {
-    transform: translate(-50%, -50%) scale(1);
-  }
-`;
 
 const MainContainer = styled.div`
   width: 100%;
@@ -123,24 +112,39 @@ const LandingContainer = styled.div`
     position: absolute;
     top: 47%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ${scaleUp} 1s ease;
-    animation-delay: 1s;
+    transform: translate(-50%, -50%) scale(0);
     transform-origin: top left;
+    transition: transform 1s ease, opacity 0.25s ease;
+    opacity: 0;
+    transition-delay: 2s;
   }
 
   .vertLine,
   .horizLine {
     position: absolute;
-    top: 47%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    transition: 1s ease, opacity 0.25s ease;
+    opacity: 0;
   }
   .vertLine {
     height: 133%;
+    top: 47%;
+    left: -50%;
   }
   .horizLine {
-    width: 133%;
+    width: 132%;
+    top: -50%;
+    left: 50%;
+    transition-delay: 1s;
+  }
+
+  &.visible .vertLine,
+  &.visible .horizLine,
+  &.visible .circle {
+    opacity: 1;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 `;
 
@@ -189,9 +193,13 @@ const introType = { duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     docTitleUpdate("| Home");
-  });
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 1000);
+  }, []);
 
   const gaClickHandler = (name) => {
     ReactGa.event({
@@ -252,7 +260,7 @@ const Home = () => {
               </HashLink>
             </GreetingBio>
 
-            <LandingContainer>
+            <LandingContainer className={isVisible ? "visible" : null}>
               <Landing src={landing} />
               <Circle className="circle" />
               <VertLine className="vertLine" />

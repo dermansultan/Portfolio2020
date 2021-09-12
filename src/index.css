@@ -19,7 +19,6 @@ header {
   display: flex;
   height: 5vh;
   justify-content: center;
-  background-color: #f9f8fd;
 }
 
 .headerMain {
@@ -65,7 +64,7 @@ nav > a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #f9f8fd;
+  background-color: #fdfdfd;
 }
 
 .heroContainer {
@@ -207,6 +206,7 @@ nav > a:hover {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 140px;
+  background-color: #fdfdfd;
 }
 
 .projectsHeader {

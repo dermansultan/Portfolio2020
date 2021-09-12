@@ -1,6 +1,21 @@
 import react from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+const hover = keyframes`
+  0% {
+    transform: translateX(0px)
+  }
+  50% {
+    transform: translateX(4px)
+  }
+  100% {
+    transform: translateX(0px)
+
+  }
+`;
 
 const Header = styled.h2`
   white-space: nowrap;
@@ -42,6 +57,7 @@ const CardContainer = styled.div`
   margin: 55px 0 0 0;
   width: 95%;
   max-height: 540px;
+  box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.25);
   border-radius: 58px;
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   background-color: ${(props) => props.mainBackCol};
@@ -52,11 +68,6 @@ const CardContainer = styled.div`
     flex-direction: column-reverse;
     margin: 55px 0 0 0;
     border-radius: 20px;
-  }
-  transition: transform 0.2s; /* Animation */
-
-  &:hover {
-    transform: scale(1.04) perspective(1000px);
   }
 `;
 
@@ -88,19 +99,21 @@ const Col = styled.div`
 `;
 
 const Btn = styled.button`
+  --color: ${(props) => props.btnColor};
+  --bg: ${(props) => props.btnBackCol};
+  position: relative;
+  overflow: hidden;
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: clamp(14px, 2.5vw, 28px);
-  line-height: 137%;
+  font-size: 24px;
   align-self: ${(props) => (props.reverse ? "flex-end" : "flex-start")};
   justify-self: ${(props) => (props.reverse ? "flex-end" : "flex-start")};
-  background-color: ${(props) => props.btnBackCol};
-  color: ${(props) => props.btnColor};
+  background-color: var(--bg);
+  color: var(--color);
   border-radius: 26px;
   border: none;
-  width: 90%;
-  height: 90px;
+  padding: 18px 107px;
   margin: 25px 0 0 0;
   cursor: pointer;
   display: ${(props) => (props.construct ? "none" : "")};
@@ -111,25 +124,13 @@ const Btn = styled.button`
     height: 65px;
     border-radius: 15px;
   }
-  ${
-    "" /* @media only screen and (min-width: 769px) {
-    margin: 12px 0 0 0;
-    border-radius: 15px;
-  }
-  @media only screen and (min-width: 1024px) {
-    margin: 12px 0 0 0;
-    border-radius: 12px;
-  }
-  @media only screen and (min-width: 1200px) {
-    margin: 25px 0 0 0;
-    border-radius: 12px;
-  } */
-  }
+
   transition: transform 0.2s; /* Animation */
 
   &:hover {
-    background-color: ${(props) => props.btnColor};
-    color: ${(props) => props.btnBackCol};
+    svg {
+      animation: ${hover} 1s ease infinite;
+    }
   }
 `;
 
@@ -186,7 +187,12 @@ function CaseCard({
               reverse={reverse}
               construct={construct}
             >
-              View Case Study
+              View Case Study{" "}
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                size="sm"
+                style={{ marginLeft: "10px" }}
+              />
             </Btn>
           </Link>
         </Col>

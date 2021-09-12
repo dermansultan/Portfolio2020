@@ -7,11 +7,26 @@ import ReactGa from "react-ga";
 import trac from "../Img/caseStudies/Trac/trac.png";
 import ruma2 from "../Img/caseStudies/Ruma/ruma2.png";
 import ghbc from "../Img/caseStudies/GH/ghbc.png";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import landing from "../Img/landing.svg";
 import { ReactComponent as Circle } from "../Img/dash-circle.svg";
 import { ReactComponent as VertLine } from "../Img/vert-line.svg";
 import { ReactComponent as HorizLine } from "../Img/horiz-line.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
+const hover = keyframes`
+  0% {
+    transform: translateY(0px)
+  }
+  50% {
+    transform: translateY(3px)
+  }
+  100% {
+    transform: translateY(0px)
+
+  }
+`;
 
 const HeroContainer = styled.div`
   width: 100%;
@@ -162,7 +177,10 @@ const Btn = styled.button`
   transition: transform 0.2s; /* Animation */
 
   &:hover {
-    transform: scale(1.01);
+    transform: scale(0.99);
+    svg {
+      animation: ${hover} 1s ease infinite;
+    }
   }
   @media only screen and (max-width: 769px) {
     margin: 34px 0 0 0;
@@ -238,7 +256,11 @@ const Home = () => {
                   margin={"55px 0 0 0"}
                   onClick={() => gaClickHandler("My work was clicked.")}
                 >
-                  My Work
+                  My Work{" "}
+                  <FontAwesomeIcon
+                    icon={faChevronDown}
+                    style={{ marginLeft: "15px" }}
+                  />
                 </Btn>
               </HashLink>
             </GreetingBio>
@@ -256,13 +278,11 @@ const Home = () => {
         className="projectsContainer"
         id="projects"
         style={{
-          backgroundColor: "#343434",
           width: "100%",
           display: "flex",
           alignItems: "center",
           position: "relative",
           overflowX: "hidden",
-          borderTop: "15px solid #1882FF",
         }}
       >
         <div
@@ -274,20 +294,19 @@ const Home = () => {
             position: "relative",
           }}
         >
-          <Subheader>My Work</Subheader>
           <CaseCard
             title={"Trac"}
-            titleCol={"#1882FF"}
+            titleCol={"#0040C9"}
             role={"UI / UX design"}
-            roleCol={"#343434"}
+            roleCol={"#2F62CE"}
             desc={
               "A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."
             }
-            descCol={"#646464"}
+            descCol={"#505050"}
             img={trac}
             imgAlt={"Mockup of Trac Application"}
             btnColor={"#FFFFFF"}
-            btnBackCol={"#1882FF"}
+            btnBackCol={"#0040C9"}
             reverse={false}
             mainBackCol={"#FFFFFF"}
             projLink={"/Trac"}

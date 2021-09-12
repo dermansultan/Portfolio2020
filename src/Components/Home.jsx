@@ -13,21 +13,6 @@ import { ReactComponent as Circle } from "../Img/dash-circle.svg";
 import { ReactComponent as VertLine } from "../Img/vert-line.svg";
 import { ReactComponent as HorizLine } from "../Img/horiz-line.svg";
 
-const MainContainer = styled.div`
-  width: 100%;
-  display: flex;
-  padding-bottom: 125px;
-  justify-content: center;
-  background-color: #f9f8fd;
-`;
-
-const HomeContainer = styled.div`
-  width: 90%;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-`;
-
 const HeroContainer = styled.div`
   width: 100%;
   height: 100vh;
@@ -40,7 +25,6 @@ const HeroContainer = styled.div`
     padding-top: 6rem;
   }
 `;
-const GreetingMsg = styled.div``;
 
 const Span = styled.span`
   font-weight: ${(props) => props.fWeight};
@@ -189,7 +173,6 @@ const Btn = styled.button`
 `;
 
 const intro = { delay: 0, duration: 1.5, ease: [0.6, 0.01, -0.05, 0.9] };
-const introType = { duration: 2, ease: [0.6, 0.01, -0.05, 0.9] };
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = () => {

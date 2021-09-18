@@ -115,34 +115,36 @@ const LandingContainer = styled.div`
     transform-origin: top left;
     transition: transform 1s ease, opacity 0.25s ease;
     opacity: 0;
-    transition-delay: 2s;
   }
 
   .vertLine,
   .horizLine {
     position: absolute;
     transform: translate(-50%, -50%);
-    transition: 1s ease, opacity 0.25s ease;
+    transition: clip-path 1s linear, opacity 0.25s ease;
     opacity: 0;
   }
   .vertLine {
     height: 133%;
     top: 47%;
-    left: -50%;
+    left: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition-delay: 1s;
   }
   .horizLine {
     width: 132%;
-    top: -50%;
+    top: 47%;
     left: 50%;
-    transition-delay: 1s;
+    transition-delay: 2s;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   }
 
   &.visible .vertLine,
   &.visible .horizLine,
   &.visible .circle {
     opacity: 1;
-    top: 47%;
-    left: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
     transform: translate(-50%, -50%) scale(1);
   }
 `;

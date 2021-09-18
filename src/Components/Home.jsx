@@ -179,7 +179,6 @@ const Btn = styled.button`
   transition: transform 0.2s; /* Animation */
 
   &:hover {
-    transform: scale(0.99);
     svg {
       animation: ${hover} 1s ease infinite;
     }

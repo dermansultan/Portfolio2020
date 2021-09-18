@@ -23,7 +23,7 @@ const Header = styled.h2`
   font-style: normal;
   font-weight: bold;
   text-align: ${(props) => (props.reverse ? "right" : "left")};
-  font-size: clamp(18px, 4vw, 96px);
+  font-size: 64px;
   line-height: 137%;
   color: ${(props) => props.titleCol};
   margin: 0 0 0 0;

@@ -92,6 +92,10 @@ const Landing = styled.img`
   width: 100%;
   z-index: 1;
   position: relative;
+  opacity: 0;
+  transform: scale(0.99);
+  transition: 0.5s ease;
+  transition-delay: 2.8s;
 `;
 
 const LandingContainer = styled.div`
@@ -113,7 +117,7 @@ const LandingContainer = styled.div`
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transform-origin: top left;
-    transition: transform 1s ease, opacity 0.25s ease;
+    transition: transform 0.7s ease, opacity 0.25s ease;
     opacity: 0;
   }
 
@@ -121,7 +125,7 @@ const LandingContainer = styled.div`
   .horizLine {
     position: absolute;
     transform: translate(-50%, -50%);
-    transition: clip-path 1s linear, opacity 0.25s ease;
+    transition: clip-path 0.5s linear, opacity 0.25s ease;
     opacity: 0;
   }
   .vertLine {
@@ -144,8 +148,12 @@ const LandingContainer = styled.div`
   &.visible .circle {
     opacity: 1;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
     transform: translate(-50%, -50%) scale(1);
+  }
+
+  &.visible img {
+    opacity: 1;
+    transform: none;
   }
 `;
 
@@ -154,7 +162,6 @@ const GreetingBio = styled.div`
   @media only screen and (max-width: 900px) {
     width: 100%;
     margin-top: 5rem;
-}
   }
 `;
 
@@ -298,7 +305,7 @@ const Home = () => {
           <CaseCard
             title={"Trac"}
             titleCol={"#0040C9"}
-            role={"UI / UX design"}
+            roles={["UX/UI Design", "User Research"]}
             roleCol={"#2F62CE"}
             desc={
               "A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."
@@ -311,11 +318,12 @@ const Home = () => {
             reverse={false}
             mainBackCol={"#FFFFFF"}
             projLink={"/Trac"}
+            reverse
           />
           <CaseCard
             title={"Ruma"}
             titleCol={"#FFFFFF"}
-            role={"UI / UX design"}
+            roles={["UI / UX design"]}
             roleCol={"#FFFFFF"}
             desc={
               "A desktop app that aims to give families and friends a way to enjoy content together remotely."
@@ -332,7 +340,7 @@ const Home = () => {
           <CaseCard
             title={"Coming Soon"}
             titleCol={"#252A41"}
-            role={"UI / UX design"}
+            roles={["UI / UX design"]}
             roleCol={"#343434"}
             desc={"Sit tight! This case study is under construction."}
             descCol={"#252A41"}

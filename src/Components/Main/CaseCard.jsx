@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { device } from "../../theme";
 
 const hover = keyframes`
   0% {
@@ -27,34 +28,26 @@ const Header = styled.h2`
   font-style: normal;
   font-weight: bold;
   text-align: ${(props) => (props.reverse ? "right" : "left")};
-  font-size: 64px;
+  font-size: clamp(24px, 4vw, 64px);
   line-height: 137%;
   color: ${(props) => props.titleCol};
   margin: 0 0 30px 0;
-  @media only screen and (max-width: 769px) {
-    align-self: center;
-    margin: 0 0 0 0;
-    width: 90%;
+  @media screen and ${device.mobile} {
+    margin-bottom: 20px;
   }
 `;
 
 const Role = styled.p`
   border: 2px solid;
-  padding: 2px 43px;
+  padding: 2px clamp(10px, 2.5vw, 43px);
   border-radius: 26px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: clamp(16px, 1.5vw, 24px);
   line-height: 137%;
-  text-align: ${(props) => (props.reverse ? "right" : "left")};
+  margin: ${(props) => (props.reverse ? "0 0 0 auto" : "0 auto 0 0")};
   color: ${(props) => props.roleCol};
-  margin: 0 0 0 0;
-  @media only screen and (max-width: 769px) {
-    align-self: center;
-    margin: 12px 0 0 0;
-    width: 90%;
-  }
 `;
 
 const CardContainer = styled.div`
@@ -73,12 +66,25 @@ const CardContainer = styled.div`
   :hover rect {
     transform: ${(props) => (props.hover ? hoverEffects[props.hover] : "none")};
   }
-  @media only screen and (max-width: 769px) {
-    width: 90%;
-    height: 450px;
+  @media screen and ${device.tablet} {
+    padding: ${(props) => (props.reverse ? "0 50px 0 16px" : "0 50px 0 50px")};
+    gap: 20px;
+    height: 500px;
+  }
+
+  @media screen and ${device.mobileTablet} {
     flex-direction: column-reverse;
-    margin: 55px 0 0 0;
-    border-radius: 20px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    margin: 100px 0 0 0;
+    :first-of-type {
+      margin: 30px 0 0 0;
+    }
+  }
+  @media screen and ${device.mobile} {
+    padding: 30px;
   }
 `;
 
@@ -90,9 +96,7 @@ const Col = styled.div`
   height: ${(props) => props.height};
   justify-content: center;
   margin: 0 0 0 0;
-  @media only screen and (max-width: 769px) {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+  @media screen and ${device.mobileTablet} {
     width: 100%;
   }
 `;
@@ -105,7 +109,7 @@ const Btn = styled.button`
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: clamp(18px, 1.7vw, 24px);
   align-self: ${(props) => (props.reverse ? "flex-end" : "flex-start")};
   justify-self: ${(props) => (props.reverse ? "flex-end" : "flex-start")};
   background-color: var(--bg);
@@ -113,17 +117,12 @@ const Btn = styled.button`
   border-radius: 26px;
   border: none;
   padding: 18px 0;
-  width: 439px;
+  width: 22vw;
+  min-width: 230px;
+  max-width: 439px;
   margin: 30px 0 0 0;
   cursor: pointer;
   display: ${(props) => (props.construct ? "none" : "")};
-
-  @media only screen and (max-width: 769px) {
-    margin: 12px 0 0 0;
-    width: 100%;
-    height: 65px;
-    border-radius: 15px;
-  }
 
   transition: transform 0.2s; /* Animation */
 
@@ -140,24 +139,50 @@ const Desc = styled.p`
   font-weight: 500;
   width: ${(props) => props.width};
   text-align: ${(props) => (props.reverse ? "right" : "left")};
-  font-size: 24px;
+  font-size: clamp(16px, 1.5vw, 24px);
   line-height: 137%;
   color: ${(props) => props.descCol};
   margin: 30px 0 0 0;
-  @media only screen and (max-width: 769px) {
-    align-self: center;
-    margin: 12px 0 0 0;
-    width: 90%;
+  @media screen and ${device.mobileTablet} {
+    max-width: 600px;
+  }
+  @media screen and ${device.mobile} {
+    margin-top: 10px;
   }
 `;
 
 const CaseImg = styled.div`
   display: flex;
   align-items: center;
+  justify-content: ${(props) => (!props.reverse ? "flex-end" : "flex-start")};
+  width: 50%;
   rect {
     transform-origin: center;
     transition: 0.25s ease;
   }
+  svg {
+    height: auto;
+    max-height: 100%;
+  }
+  @media screen and ${device.mobileTablet} {
+    width: 100%;
+    svg {
+      margin: 0 auto !important;
+      max-height: 385px;
+    }
+  }
+
+  @media screen and ${device.mobileTablet} {
+    svg {
+      max-height: 240px;
+    }
+  }
+`;
+
+const RolesContainer = styled.div`
+  display: flex;
+  gap: 10px 15px;
+  flex-wrap: wrap;
 `;
 
 function CaseCard({
@@ -184,13 +209,13 @@ function CaseCard({
           <Header titleCol={titleCol} reverse={reverse}>
             {title}
           </Header>
-          <div style={{ display: "flex", gap: "0 15px" }}>
+          <RolesContainer>
             {roles.map((role) => (
               <Role roleCol={roleCol} reverse={reverse}>
                 {role}
               </Role>
             ))}
-          </div>
+          </RolesContainer>
           <Desc descCol={descCol} reverse={reverse} width={"100%"}>
             {desc}
           </Desc>
@@ -210,7 +235,7 @@ function CaseCard({
             </Btn>
           </Link>
         </Col>
-        <CaseImg>{vector}</CaseImg>
+        <CaseImg reverse={reverse}>{vector}</CaseImg>
       </CardContainer>
     </>
   );

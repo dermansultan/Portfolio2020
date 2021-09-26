@@ -16,6 +16,7 @@ import { ReactComponent as MyPalate } from "../Img/caseStudies/MyPalate/mypalate
 import { ReactComponent as Trac } from "../Img/caseStudies/Trac/trac.svg";
 import { ReactComponent as Ruma } from "../Img/caseStudies/Ruma/ruma.svg";
 import { ReactComponent as Lumber } from "../Img/caseStudies/Lumber/lumber.svg";
+import { device } from "../theme";
 
 const hover = keyframes`
   0% {
@@ -200,6 +201,18 @@ const Btn = styled.button`
   }
 `;
 
+const CaseCardsContainer = styled.div`
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  @media screen and ${device.mobile} {
+    padding: 20px;
+  }
+`;
+
 const intro = { delay: 0, duration: 1.5, ease: [0.6, 0.01, -0.05, 0.9] };
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -295,15 +308,7 @@ const Home = () => {
           overflowX: "hidden",
         }}
       >
-        <div
-          style={{
-            width: "95%",
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-            position: "relative",
-          }}
-        >
+        <CaseCardsContainer>
           <CaseCard
             title={"Dashboard Redesign"}
             titleCol={"#124561"}
@@ -385,7 +390,7 @@ const Home = () => {
             projLink={"/"}
             construct={true}
           /> */}
-        </div>
+        </CaseCardsContainer>
       </div>
     </>
   );

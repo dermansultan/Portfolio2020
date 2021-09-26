@@ -209,6 +209,12 @@ nav > a:hover {
   background-color: #fdfdfd;
 }
 
+@media screen and (max-width: 1024px) {
+  .projectsContainer {
+    padding-bottom: 200px;
+  }
+}
+
 .projectsHeader {
   font-family: "Merriweather", serif;
   font-size: clamp(21px, 1.5vw, 24px);

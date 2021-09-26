@@ -322,7 +322,7 @@ const Home = () => {
             btnBackCol={"#124561"}
             reverse
             mainBackCol={"#FFFFFF"}
-            projLink={"/Trac"}
+            projLink={"/Lumber"}
             vector={<Lumber style={{ marginLeft: "90px" }} />}
           />
           <CaseCard

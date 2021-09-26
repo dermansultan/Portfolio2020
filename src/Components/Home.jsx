@@ -4,9 +4,6 @@ import { docTitleUpdate } from "./docTitleUpdate";
 import CaseCard from "./Main/CaseCard";
 import { HashLink } from "react-router-hash-link";
 import ReactGa from "react-ga";
-import trac from "../Img/caseStudies/Trac/trac.png";
-import ruma2 from "../Img/caseStudies/Ruma/ruma2.png";
-import ghbc from "../Img/caseStudies/GH/ghbc.png";
 import styled, { keyframes } from "styled-components";
 import landing from "../Img/landing.svg";
 import { ReactComponent as Circle } from "../Img/dash-circle.svg";
@@ -14,6 +11,11 @@ import { ReactComponent as VertLine } from "../Img/vert-line.svg";
 import { ReactComponent as HorizLine } from "../Img/horiz-line.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
+import { ReactComponent as MyPalate } from "../Img/caseStudies/MyPalate/mypalate.svg";
+import { ReactComponent as Trac } from "../Img/caseStudies/Trac/trac.svg";
+import { ReactComponent as Ruma } from "../Img/caseStudies/Ruma/ruma.svg";
+import { ReactComponent as Lumber } from "../Img/caseStudies/Lumber/lumber.svg";
 
 const hover = keyframes`
   0% {
@@ -303,6 +305,37 @@ const Home = () => {
           }}
         >
           <CaseCard
+            title={"Dashboard Redesign"}
+            titleCol={"#124561"}
+            roles={["UX Consulting", "Information Architecture"]}
+            roleCol={"#505050"}
+            desc={
+              "An overhaul to a client of Lumber’s - Goodehealth’s original dashboard with the goal of increasing user retention and conversion."
+            }
+            descCol={"#505050"}
+            btnColor={"#FFFFFF"}
+            btnBackCol={"#124561"}
+            reverse
+            mainBackCol={"#FFFFFF"}
+            projLink={"/Trac"}
+            vector={<Lumber style={{ marginLeft: "90px" }} />}
+          />
+          <CaseCard
+            title={"MyPalate Inc."}
+            titleCol={"#4E0BDC"}
+            roles={["Research", "Design Systems"]}
+            roleCol={"#4E0BDC"}
+            desc={
+              "Health and food based start-up. I had the pleasure of researching and creating a design system to use across web and mobile platforms."
+            }
+            descCol={"#505050"}
+            btnColor={"#FFFFFF"}
+            btnBackCol={"#4E0BDC"}
+            mainBackCol={"#FFFFFF"}
+            projLink={"/MyPalate"}
+            vector={<MyPalate />}
+          />
+          <CaseCard
             title={"Trac"}
             titleCol={"#0040C9"}
             roles={["UX/UI Design", "User Research"]}
@@ -311,33 +344,30 @@ const Home = () => {
               "A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."
             }
             descCol={"#505050"}
-            img={trac}
-            imgAlt={"Mockup of Trac Application"}
             btnColor={"#FFFFFF"}
             btnBackCol={"#0040C9"}
-            reverse={false}
+            reverse
             mainBackCol={"#FFFFFF"}
             projLink={"/Trac"}
-            reverse
+            vector={<Trac />}
           />
           <CaseCard
             title={"Ruma"}
-            titleCol={"#FFFFFF"}
-            roles={["UI / UX design"]}
-            roleCol={"#FFFFFF"}
+            titleCol={"#23514F"}
+            roles={["UX/UI Design"]}
+            roleCol={"#23514F"}
             desc={
               "A desktop app that aims to give families and friends a way to enjoy content together remotely."
             }
-            descCol={"#FFFFFF"}
-            img={ruma2}
+            descCol={"#505050"}
             imgAlt={"Mockup of Ruma Application"}
-            btnColor={"#343434"}
-            btnBackCol={"#FFFFFF"}
-            reverse={true}
-            mainBackCol={"#1882FF"}
+            btnColor={"#FFFFFF"}
+            btnBackCol={"#23514F"}
+            mainBackCol={"#FFFFFF"}
             projLink={"/Ruma"}
+            vector={<Ruma />}
           />
-          <CaseCard
+          {/* <CaseCard
             title={"Coming Soon"}
             titleCol={"#252A41"}
             roles={["UI / UX design"]}
@@ -352,7 +382,7 @@ const Home = () => {
             mainBackCol={"#9CECFD"}
             projLink={"/"}
             construct={true}
-          />
+          /> */}
         </div>
       </div>
     </>

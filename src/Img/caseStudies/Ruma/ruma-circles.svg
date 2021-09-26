@@ -1,0 +1,14 @@
+<svg width="583" height="385" viewBox="0 0 583 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="191.998" cy="192.228" r="172.232" transform="rotate(7.02294 191.998 192.228)" fill="url(#paintRuma0_linear)"/>
+<circle cx="441.259" cy="230.293" r="127.149" transform="rotate(7.02294 441.259 230.293)" fill="url(#paintRuma1_linear)"/>
+<defs>
+<linearGradient id="paintRuma0_linear" x1="191.998" y1="19.9963" x2="191.998" y2="364.46" gradientUnits="userSpaceOnUse">
+<stop stop-color="#57E1D0"/>
+<stop offset="1" stop-color="#2ECFC9"/>
+</linearGradient>
+<linearGradient id="paintRuma1_linear" x1="441.259" y1="103.143" x2="441.259" y2="357.442" gradientUnits="userSpaceOnUse">
+<stop stop-color="#57E1D0"/>
+<stop offset="1" stop-color="#2ECFC9"/>
+</linearGradient>
+</defs>
+</svg>

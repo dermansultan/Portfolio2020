@@ -35,7 +35,7 @@ const Header = styled.h2`
 `;
 
 const Role = styled.p`
-  border: 2px solid #2f62ce;
+  border: 2px solid;
   padding: 2px 43px;
   border-radius: 26px;
   font-family: DM Sans;
@@ -56,8 +56,9 @@ const Role = styled.p`
 const CardContainer = styled.div`
   display: flex;
   position: relative;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 55px 0 0 0;
+  padding: ${(props) => (props.reverse ? "0 104px 0 26px" : "0 125px 0 103px")};
   width: 100%;
   max-width: 1420px;
   height: 600px;
@@ -75,19 +76,6 @@ const CardContainer = styled.div`
   }
 `;
 
-const CaseImg = styled.img`
-  width: 620px;
-  height: auto;
-  object-fit: contain;
-  margin: ${(props) => (props.reverse ? "35px 50px 0 0px" : "35px 0 0 50px")};
-  @media only screen and (max-width: 769px) {
-    margin: ${(props) => (props.reverse ? "0 0 0 0" : "0 0 0 0")};
-    padding-top: 25px;
-    max-width: 75%;
-    align-self: center;
-  }
-`;
-
 const Col = styled.div`
   display: flex;
   flex-direction: column;
@@ -95,7 +83,6 @@ const Col = styled.div`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   justify-content: center;
-  padding: ${(props) => (props.reverse ? "0 100px 0 0px" : "0 0 0 100px")};
   margin: 0 0 0 0;
   @media only screen and (max-width: 769px) {
     margin: 0 0 0 0;
@@ -165,14 +152,13 @@ function CaseCard({
   roleCol,
   desc,
   descCol,
-  img,
-  imgAlt,
   btnColor,
   btnBackCol,
   mainBackCol,
   reverse,
   projLink,
   construct,
+  vector,
 }) {
   return (
     <>
@@ -207,7 +193,7 @@ function CaseCard({
             </Btn>
           </Link>
         </Col>
-        <CaseImg src={img} alt={imgAlt} reverse={reverse} />
+        <div style={{ display: "flex", alignItems: "center" }}>{vector}</div>
       </CardContainer>
     </>
   );

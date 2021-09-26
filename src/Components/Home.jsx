@@ -35,6 +35,7 @@ const HeroContainer = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
+  gap: 25px;
   align-items: center;
   justify-content: center;
   @media only screen and (max-width: 900px) {
@@ -60,8 +61,8 @@ const IntroPara = styled.p`
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
-  width: 85%;
-  font-size: clamp(16px, 1vw, 48px);
+  width: 92%;
+  font-size: clamp(16px, 1.2vw, 48px);
   line-height: 175%;
   color: #343434;
   @media only screen and (max-width: 900px) {
@@ -247,32 +248,12 @@ const Home = () => {
             <GreetingBio>
               <Header>Hello there.</Header>
               <IntroPara margin={"15px 0 0 0"}>
-                I'm <Span fWeight={"bold"}>Derman Sultan</Span>, a{" "}
+                I'm <Span fWeight={"bold"}>Derman</Span>, a{" "}
                 <Span fColor={"#1882FF"} fWeight={"bold"}>
                   Product Designer
                 </Span>{" "}
                 with a passion for creating elegant and intuitive experiences
-                through design and code. Currently I am working as a{" "}
-                <Span fWeight={"bold"}>UI/UX Designer</Span> at{" "}
-                <SpanLink
-                  href="https://lumber.dev/"
-                  target="_blank"
-                  rel="noreferrer"
-                  fColor={"#1882FF"}
-                  fWeight={"bold"}
-                >
-                  Lumber
-                </SpanLink>{" "}
-                , and a <Span fWeight={"bold"}>Product Designer</Span> at{" "}
-                <SpanLink
-                  href="https://mypalate.ca/"
-                  target="_blank"
-                  rel="noreferrer"
-                  fColor={"#1882FF"}
-                  fWeight={"bold"}
-                >
-                  MyPalate
-                </SpanLink>{" "}
+                through Design and Code.
               </IntroPara>
               <HashLink smooth to="/#projects">
                 <Btn

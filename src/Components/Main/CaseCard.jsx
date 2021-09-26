@@ -1,4 +1,4 @@
-import react from "react";
+import react, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,6 +16,10 @@ const hover = keyframes`
 
   }
 `;
+const hoverEffects = {
+  rotate: "rotate(7deg)",
+  scale: "scale(1.05)",
+};
 
 const Header = styled.h2`
   white-space: nowrap;
@@ -57,7 +61,7 @@ const CardContainer = styled.div`
   display: flex;
   position: relative;
   justify-content: space-between;
-  margin: 55px 0 0 0;
+  margin: 200px 0 0 0;
   padding: ${(props) => (props.reverse ? "0 104px 0 26px" : "0 125px 0 103px")};
   width: 100%;
   max-width: 1420px;
@@ -66,7 +70,9 @@ const CardContainer = styled.div`
   border-radius: 58px;
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   background-color: ${(props) => props.mainBackCol};
-
+  :hover rect {
+    transform: ${(props) => (props.hover ? hoverEffects[props.hover] : "none")};
+  }
   @media only screen and (max-width: 769px) {
     width: 90%;
     height: 450px;
@@ -145,6 +151,15 @@ const Desc = styled.p`
   }
 `;
 
+const CaseImg = styled.div`
+  display: flex;
+  align-items: center;
+  rect {
+    transform-origin: center;
+    transition: 0.25s ease;
+  }
+`;
+
 function CaseCard({
   title,
   titleCol,
@@ -159,10 +174,12 @@ function CaseCard({
   projLink,
   construct,
   vector,
+  hover,
 }) {
+  const [transformEffect, setTransformEffect] = useState("none");
   return (
     <>
-      <CardContainer reverse={reverse} mainBackCol={mainBackCol}>
+      <CardContainer hover={hover} reverse={reverse} mainBackCol={mainBackCol}>
         <Col width="50%" reverse={reverse}>
           <Header titleCol={titleCol} reverse={reverse}>
             {title}
@@ -193,7 +210,7 @@ function CaseCard({
             </Btn>
           </Link>
         </Col>
-        <div style={{ display: "flex", alignItems: "center" }}>{vector}</div>
+        <CaseImg>{vector}</CaseImg>
       </CardContainer>
     </>
   );

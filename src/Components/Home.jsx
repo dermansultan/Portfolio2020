@@ -350,6 +350,7 @@ const Home = () => {
             mainBackCol={"#FFFFFF"}
             projLink={"/Trac"}
             vector={<Trac />}
+            hover="rotate"
           />
           <CaseCard
             title={"Ruma"}
@@ -366,6 +367,7 @@ const Home = () => {
             mainBackCol={"#FFFFFF"}
             projLink={"/Ruma"}
             vector={<Ruma />}
+            hover="scale"
           />
           {/* <CaseCard
             title={"Coming Soon"}

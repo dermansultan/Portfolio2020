@@ -366,15 +366,22 @@ footer {
 }
 
 .aboutContainer {
-  width: 90%;
+  width: 100%;
+  padding-left: 378px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .aboutBio {
-  width: 50%;
+  position: relative;
+  box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.25);
+  border-radius: 20px;
+  width: 94%;
   display: flex;
-  padding-left: 50px;
+  padding-left: 28.5vw;
+  padding-right: 92px;
+  padding-top: 5vw;
+  padding-bottom: 13vw;
   flex-direction: column;
 }
 
@@ -794,7 +801,8 @@ footer {
   .aboutContainer {
     align-items: center;
     padding-top: 50px;
-    padding-left: 50px;
+    padding-left: 378px;
+    padding-right: 93px;
     padding-bottom: 50px;
   }
 }

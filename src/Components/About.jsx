@@ -23,14 +23,14 @@ const Header = styled.h2`
   font-weight: bold;
   font-size: 96px;
   line-height: 125px;
-  font-size: clamp(46px, 4vw, 96px);
-  color: #1882ff;
+  font-size: clamp(35px, 4vw, 96px);
+  color: #0051b0;
 `;
 
 const SpanLink = styled.a`
   font-weight: ${(props) => props.fWeight};
   color: ${(props) => props.fColor};
-  border-bottom: 2.5px solid;
+  text-decoration: underline;
   &:hover {
     color: #0c468a;
   }
@@ -82,17 +82,50 @@ const Para = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
-  color: #343434;
-  margin: 9px 0 9px 0;
-  font-size: clamp(14px, 1.5vw, 18px);
+  color: #505050;
+  margin: 25px 0 25px 0;
+  font-size: clamp(14px, 1.35vw, 28px);
 `;
 
 const Dp = styled.img`
-  width: 100%;
-  max-width: 374px;
+  position: absolute;
+  width: clamp(200px, 33vw, 627px);
+  left: 0;
+  top: 42%;
+  border-radius: 20px;
+  transform: translate(-35%, -50%);
   height: auto;
   @media only screen and (max-width: 900px) {
     align-self: center;
+  }
+`;
+
+const PersonalInfo = styled.div`
+  display: flex;
+  align-items: center;
+  background-color: #f9fafa;
+  width: 100%;
+  border-radius: 20px;
+  padding: 34px 10px;
+  padding-left: 0;
+
+  .emoji {
+    margin: 0 39px 0 43px;
+  }
+  @media (max-width: 1440px) {
+    padding: 24px 20px;
+
+    .emoji {
+      margin: 0 35px 0 35px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding: 15px 15px;
+
+    .emoji {
+      margin: 0 15px 0 15px;
+    }
   }
 `;
 
@@ -120,54 +153,52 @@ const About = () => {
         animate={{ opacity: 1 }}
         className="aboutContainer"
       >
-        <Dp src={dp} />
         <div className="aboutBio">
+          <Dp src={dp} />
           <Header>
             I’m Derman! <Wavespan>👋</Wavespan>
           </Header>
+          <div style={{ height: "2.9vw" }}></div>
+
           <Para>
             <ParaSpan>An affinity for design and technology</ParaSpan> - I love
-            going out my way to find new ways to solve complex problems. I want
-            to combine my passion for problem solving and design to craft
-            meaningful user experiences.
+            going out my way to find new ways to solve complex problems.
           </Para>
+          <div style={{ height: "1.7vw" }}></div>
           <Para>
-            I'm currently working as a UI/UX Designer at{" "}
+            <PersonalInfo>
+              <div className="emoji">🎓</div>Bachelor of Interaction Design at
+              Sheridan College
+            </PersonalInfo>
+            <div style={{ marginTop: "37px" }}></div>
+            <PersonalInfo>
+              <div className="emoji">🍁</div>Currently based in Toronto, Canada
+            </PersonalInfo>
+          </Para>
+          <div style={{ height: "0.65vw" }}></div>
+
+          <Para>
+            You can currently find me working at{" "}
             <SpanLink
               href="https://lumber.dev/"
               target="_blank"
               rel="noreferrer"
-              fColor={"#1882FF"}
+              fColor={"#0051B0"}
               fWeight={"bold"}
             >
               Lumber
-            </SpanLink>
-            , and in my left over time I volunteer as a Product Designer at{" "}
-            <SpanLink
-              href="https://mypalate.ca/"
-              target="_blank"
-              rel="noreferrer"
-              fColor={"#1882FF"}
-              fWeight={"bold"}
-            >
-              MyPalate
-            </SpanLink>
-            .
+            </SpanLink>{" "}
+            where I help our clients better understand and solve their user’s
+            needs through design.
           </Para>
           <Para>
-            You can find me reading medium articles on the latest trends,
-            messing around with Figma plug-ins or creating something cool in
-            React!
-          </Para>
-          <Para>
-            When I'm not messing around with code or design you can find me
-            looking at corgi pictures on Instagram, powerlifting,
-            and obsessing over the latest PC hardware.
+            When I'm not messing around with design you can find me looking at
+            corgi pictures on Instagram, reading (mostly non-fiction), or
+            obsessing over the latest PC hardware.
           </Para>
           <Para>
             I’m always looking for new opportunities to learn more, and expand
-            my abilities. Have an opportunity for me? Get in touch with me
-            below!
+            my abilities.
           </Para>
           <div className="socialBtnWrapper">
             <a href="mailto:abdurrehmansultan4@gmail.com" target="_blank">

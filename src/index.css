@@ -367,7 +367,9 @@ footer {
 
 .aboutContainer {
   width: 100%;
-  padding-left: 378px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 93px 0 378px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -376,12 +378,10 @@ footer {
   position: relative;
   box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.25);
   border-radius: 20px;
-  width: 94%;
+  width: 100%;
   display: flex;
-  padding-left: 28.5vw;
-  padding-right: 92px;
-  padding-top: 5vw;
-  padding-bottom: 13vw;
+
+  padding: 113px 92px 258px 504px;
   flex-direction: column;
 }
 
@@ -727,7 +727,6 @@ footer {
   }
 
   .aboutBio {
-    width: 90%;
     padding: 0;
     padding-top: 10%;
   }
@@ -797,24 +796,12 @@ footer {
   .dp {
     width: 30%;
   }
-
-  .aboutContainer {
-    align-items: center;
-    padding-top: 50px;
-    padding-left: 378px;
-    padding-right: 93px;
-    padding-bottom: 50px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
 }
 
 @media only screen and (max-width: 900px) {
-  .aboutBio {
-    width: 90%;
-  }
-
   .aboutContainer {
     padding-top: 50px;
     padding-left: 50px;
@@ -829,5 +816,47 @@ footer {
 
   .homeContainer {
     padding-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 1919px) {
+  .aboutBio {
+    padding: 93px 72px 208px 404px;
+  }
+
+  .aboutContainer {
+    padding: 0 53px 0 278px;
+    max-width: 1440px;
+  }
+}
+
+@media only screen and (max-width: 1439px) {
+  .aboutBio {
+    padding: 73px 62px 158px 354px;
+  }
+
+  .aboutContainer {
+    padding: 0 53px 0 278px;
+    max-width: 1280px;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .aboutBio {
+    padding: 53px 62px 108px 200px;
+  }
+
+  .aboutContainer {
+    padding: 0 53px 0 100px;
+    max-width: 830px;
+  }
+}
+
+@media only screen and (max-width: 689px) {
+  .aboutBio {
+    padding: 280px 30px 30px;
+  }
+
+  .aboutContainer {
+    padding: 70px 20px 0;
   }
 }

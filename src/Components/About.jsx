@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import { docTitleUpdate } from "./docTitleUpdate";
 import ReactGa from "react-ga";
 import styled from "styled-components";
+import { device } from "../theme";
 
 const Header = styled.h2`
   font-family: DM Sans;
@@ -22,9 +23,20 @@ const Header = styled.h2`
   font-style: normal;
   font-weight: bold;
   font-size: 96px;
-  line-height: 125px;
-  font-size: clamp(35px, 4vw, 96px);
+  line-height: 130%;
+  font-size: 96px;
   color: #0051b0;
+
+  @media screen and ${device.smallDesktop} {
+    font-size: 70px;
+  }
+
+  @media screen and ${device.smallLaptop} {
+    font-size: 54px;
+  }
+  @media screen and ${device.tablet} {
+    font-size: 36px;
+  }
 `;
 
 const SpanLink = styled.a`
@@ -75,6 +87,9 @@ const Wavespan = styled.span`
       transform: rotate(0deg);
     }
   }
+  @media screen and (max-width: 340px) {
+    display: none;
+  }
 `;
 
 const Para = styled.p`
@@ -83,13 +98,23 @@ const Para = styled.p`
   font-weight: 400;
   line-height: 145%;
   color: #505050;
-  margin: 25px 0 25px 0;
-  font-size: clamp(14px, 1.35vw, 28px);
+  font-size: 28px;
+
+  @media screen and ${device.smallDesktop} {
+    font-size: 24px;
+  }
+
+  @media screen and ${device.smallLaptop} {
+    font-size: 18px;
+  }
+  @media screen and ${device.tablet} {
+    font-size: 14px;
+  }
 `;
 
 const Dp = styled.img`
   position: absolute;
-  width: clamp(200px, 33vw, 627px);
+  width: 627px;
   left: 0;
   top: 42%;
   border-radius: 20px;
@@ -97,6 +122,22 @@ const Dp = styled.img`
   height: auto;
   @media only screen and (max-width: 900px) {
     align-self: center;
+  }
+
+  @media screen and ${device.smallDesktop} {
+    width: 500px;
+  }
+
+  @media screen and ${device.smallLaptop} {
+    width: 400px;
+  }
+  @media screen and ${device.tablet} {
+    width: 200px;
+  }
+  @media only screen and (max-width: 689px) {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -20%);
   }
 `;
 
@@ -129,6 +170,20 @@ const PersonalInfo = styled.div`
   }
 `;
 
+const Spacer = styled.div`
+  height: ${(props) => props.height[3]};
+  @media screen and ${device.smallDesktop} {
+    height: ${(props) => props.height[2]};
+  }
+
+  @media screen and ${device.smallLaptop} {
+    height: ${(props) => props.height[1]};
+  }
+  @media screen and ${device.tablet} {
+    height: ${(props) => props.height[0]};
+  }
+`;
+
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const About = () => {
@@ -158,13 +213,13 @@ const About = () => {
           <Header>
             I’m Derman! <Wavespan>👋</Wavespan>
           </Header>
-          <div style={{ height: "2.9vw" }}></div>
+          <Spacer height={["10px", "20px", "41px", "81px"]}></Spacer>
 
           <Para>
             <ParaSpan>An affinity for design and technology</ParaSpan> - I love
             going out my way to find new ways to solve complex problems.
           </Para>
-          <div style={{ height: "1.7vw" }}></div>
+          <Spacer height={["21px", "31px", "41px", "81px"]}></Spacer>
           <Para>
             <PersonalInfo>
               <div className="emoji">🎓</div>Bachelor of Interaction Design at
@@ -175,7 +230,7 @@ const About = () => {
               <div className="emoji">🍁</div>Currently based in Toronto, Canada
             </PersonalInfo>
           </Para>
-          <div style={{ height: "0.65vw" }}></div>
+          <Spacer height={["31px", "31px", "41px", "60px"]}></Spacer>
 
           <Para>
             You can currently find me working at{" "}
@@ -191,11 +246,15 @@ const About = () => {
             where I help our clients better understand and solve their user’s
             needs through design.
           </Para>
+          <Spacer height={["20px", "30px", "40px", "50px"]}></Spacer>
+
           <Para>
             When I'm not messing around with design you can find me looking at
             corgi pictures on Instagram, reading (mostly non-fiction), or
             obsessing over the latest PC hardware.
           </Para>
+          <Spacer height={["20px", "30px", "40px", "50px"]}></Spacer>
+
           <Para>
             I’m always looking for new opportunities to learn more, and expand
             my abilities.

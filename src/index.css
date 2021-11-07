@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 :root {
   --main-bg-colour: #f4f4f4;
   --main-txt-colour: #363635;
@@ -358,8 +359,8 @@ footer {
   width: 100%;
   display: flex;
   min-height: 100vh;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
+  padding-top: 70px;
+  padding-bottom: 150px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -446,18 +447,14 @@ footer {
   border-radius: 50%;
 }
 
-.socialBtnWrapper {
-  padding-top: 30px;
-}
-
 .icon {
   color: var(--main-txt-colour);
   font-size: clamp(30px, 3.5vw, 40px);
   margin-right: 20px;
+  transition: all 0.1s ease-in-out;
 }
 
 .icon:hover {
-  transition: all 0.1s ease-in-out;
   color: var(--main-blue);
 }
 
@@ -842,7 +839,7 @@ footer {
 
 @media only screen and (max-width: 1279px) {
   .aboutBio {
-    padding: 53px 62px 108px 200px;
+    padding: 53px 62px 158px 200px;
   }
 
   .aboutContainer {
@@ -853,7 +850,7 @@ footer {
 
 @media only screen and (max-width: 689px) {
   .aboutBio {
-    padding: 280px 30px 30px;
+    padding: 280px 30px 100px;
   }
 
   .aboutContainer {

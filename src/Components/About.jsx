@@ -16,6 +16,7 @@ import { docTitleUpdate } from "./docTitleUpdate";
 import ReactGa from "react-ga";
 import styled from "styled-components";
 import { device } from "../theme";
+import { ReactComponent as Arrow } from "../Img/arrow.svg";
 
 const Header = styled.h2`
   font-family: DM Sans;
@@ -45,6 +46,7 @@ const SpanLink = styled.a`
   text-decoration: underline;
   &:hover {
     color: #0c468a;
+    text-decoration: underline;
   }
 `;
 
@@ -184,6 +186,149 @@ const Spacer = styled.div`
   }
 `;
 
+const Social = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  #arrow {
+    display: flex;
+    margin-bottom: 50px;
+    svg {
+      margin-top: 15px;
+      width: 229px;
+    }
+  }
+  #arrow span {
+    display: block;
+    transform: rotate(-5deg);
+    font-size: 64px;
+    line-height: 115%;
+    max-width: 290px;
+    text-align: center;
+    margin-right: 32px;
+  }
+
+  .icon {
+    margin: 0;
+    width: 75px;
+    height: auto;
+  }
+
+  #icons {
+    padding: 64px 80px;
+    box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.25);
+    border-radius: 20px;
+    display: flex;
+    gap: 100px;
+    background-color: white;
+    position: relative;
+    bottom: -60px;
+    margin-left: 50px;
+  }
+
+  @media screen and ${device.smallDesktop} {
+    #arrow span {
+      font-size: 50px;
+    }
+
+    #arrow svg {
+      width: 180px;
+    }
+
+    .icon {
+      width: 50px;
+    }
+
+    #icons {
+      padding: 54px 70px;
+      gap: 60px;
+    }
+  }
+
+  @media screen and ${device.smallLaptop} {
+    #arrow span {
+      font-size: 40px;
+      max-width: 219px;
+      margin-right: 0px;
+    }
+
+    #arrow svg {
+      width: 160px;
+    }
+
+    .icon {
+      width: 50px;
+    }
+
+    #icons {
+      padding: 34px 60px;
+      gap: 60px;
+      bottom: -40px;
+      margin-left: 30px;
+    }
+  }
+  @media screen and ${device.tablet} {
+    #arrow span {
+      font-size: 30px;
+      max-width: 200px;
+      margin-right: 0px;
+    }
+
+    #arrow svg {
+      width: 120px;
+      margin-top: 0;
+    }
+
+    #arrow {
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      width: 30px;
+    }
+
+    #icons {
+      padding: 24px 40px;
+      gap: 30px;
+      bottom: -25px;
+      margin-left: 20px;
+    }
+
+    @media screen and ${device.mobileTablet} {
+      #arrow span {
+        font-size: 20px;
+        max-width: 130px;
+      }
+      #arrow svg {
+        width: 90px;
+        margin-top: -10px;
+      }
+    }
+
+    @media screen and ${device.mobile} {
+      #arrow span {
+        font-size: 16px;
+        max-width: 86px;
+      }
+      #arrow svg {
+        display: none;
+      }
+      .icon {
+        width: 20px;
+      }
+
+      #icons {
+        padding: 14px 25px;
+        gap: 20px;
+        bottom: -25px;
+        margin-left: 20px;
+      }
+    }
+  }
+`;
+
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const About = () => {
@@ -259,39 +404,47 @@ const About = () => {
             I’m always looking for new opportunities to learn more, and expand
             my abilities.
           </Para>
-          <div className="socialBtnWrapper">
-            <a href="mailto:abdurrehmansultan4@gmail.com" target="_blank">
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                className="icon"
-                onClick={() => gaClickHandler("email was clicked")}
-              />
-            </a>
-            <a href="https://www.instagram.com/ixderman/" target="_blank">
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className="icon"
-                onClick={() => gaClickHandler("IG was clicked")}
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/derman-sultan/"
-              target="_blank"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className="icon"
-                onClick={() => gaClickHandler("LinkedIn was clicked")}
-              />
-            </a>
-            <a href="https://github.com/dermansultan" target="_blank">
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="icon"
-                onClick={() => gaClickHandler("Github was clicked")}
-              />
-            </a>
-          </div>
+          <Social>
+            <div id="arrow">
+              <span style={{ fontFamily: "Indie Flower" }}>
+                Let’s get in touch!
+              </span>
+              <Arrow />
+            </div>
+            <div id="icons">
+              <a href="mailto:abdurrehmansultan4@gmail.com" target="_blank">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="icon"
+                  onClick={() => gaClickHandler("email was clicked")}
+                />
+              </a>
+              <a href="https://www.instagram.com/ixderman/" target="_blank">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="icon"
+                  onClick={() => gaClickHandler("IG was clicked")}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/derman-sultan/"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="icon"
+                  onClick={() => gaClickHandler("LinkedIn was clicked")}
+                />
+              </a>
+              <a href="https://github.com/dermansultan" target="_blank">
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="icon"
+                  onClick={() => gaClickHandler("Github was clicked")}
+                />
+              </a>
+            </div>
+          </Social>
         </div>
       </motion.div>
     </div>

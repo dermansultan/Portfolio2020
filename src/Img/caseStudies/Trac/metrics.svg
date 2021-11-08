@@ -1,4 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1074" height="49" viewBox="0 0 1074 49">
+<defs>
+     <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans');
+ </style>
+ </defs>
   <g id="metrics" transform="translate(-392 -4470)">
     <g id="Group_1561" data-name="Group 1561" transform="translate(392 4464)">
       <text id="Communication" transform="translate(61 7)" fill="#39393a" font-size="24" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="24">Communication</tspan></text>

@@ -81,7 +81,7 @@ const Trac = ({ lightBoxHandler }) => {
               margin={"0 20px 0 0"}
               width={"30%"}
               MobWidth={"100%"}
-              src={images[0].src}
+              data={images[0].src}
               shadow
               borderRad={"12px"}
             />
@@ -116,7 +116,7 @@ const Trac = ({ lightBoxHandler }) => {
               margin={"0 20px 0 0"}
               width={"30%"}
               MobWidth={"100%"}
-              src={images[1].src}
+              data={images[1].src}
               shadow
               borderRad={"12px"}
             />
@@ -127,7 +127,7 @@ const Trac = ({ lightBoxHandler }) => {
               margin={"0 20px 0 0"}
               width={"30%"}
               MobWidth={"100%"}
-              src={images[2].src}
+              data={images[2].src}
               shadow
               borderRad={"12px"}
             />
@@ -157,7 +157,7 @@ const Trac = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"135%"}
             single
-            src={images[4].src}
+            data={images[4].src}
           ></ProjectImg>
         </Section>
         <Section>
@@ -175,7 +175,7 @@ const Trac = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"150%"}
             single
-            src={images[14].src}
+            data={images[14].src}
           />
           <SubHeader margin={"20px 0 0 0"}>Insights</SubHeader>
           <BodyPara>
@@ -200,7 +200,7 @@ const Trac = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"100%"}
             single
-            src={images[3].src}
+            data={images[3].src}
           />
         </Section>
         <Section>
@@ -222,7 +222,7 @@ const Trac = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"150%"}
             single
-            src={images[13].src}
+            data={images[13].src}
           />
         </Section>
         <Section>
@@ -237,7 +237,7 @@ const Trac = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"135%"}
             single
-            src={images[16].src}
+            data={images[16].src}
             onClick={() => {
               lightBoxHandler(images[16].src, "");
             }}
@@ -256,7 +256,7 @@ const Trac = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"135%"}
             single
-            src={images[12].src}
+            data={images[12].src}
             onClick={() => {
               lightBoxHandler(images[12].src, "");
             }}
@@ -275,7 +275,7 @@ const Trac = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"100%"}
             single
-            src={images[10].src}
+            data={images[10].src}
             onClick={() => {
               lightBoxHandler(images[10].src, "");
             }}
@@ -289,7 +289,7 @@ const Trac = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"100%"}
             single
-            src={images[11].src}
+            data={images[11].src}
           />
         </Section>
         <Section padding={"0 0 90px 0"} margin={"40px 0 0 0"}>

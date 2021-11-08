@@ -72,7 +72,7 @@ const Ruma = ({ lightBoxHandler }) => {
               margin={"30px 0 20px 0"}
               noBorder
               MobWidth={"100%"}
-              src={images[9].src}
+              data={images[9].src}
               onClick={() => {
                 lightBoxHandler(images[9].src, "");
               }}
@@ -109,15 +109,15 @@ const Ruma = ({ lightBoxHandler }) => {
               </BodyPara>
             </WrapperCol>
             <ProjectImg
-                width={"60%"}
-                margin={"30px 0 20px 0"}
-                noBorder
-                MobWidth={"100%"}
-                src={images[13].src}
-                onClick={() => {
-                  lightBoxHandler(images[13].src, "");
-                }}
-              />
+              width={"60%"}
+              margin={"30px 0 20px 0"}
+              noBorder
+              MobWidth={"100%"}
+              data={images[13].src}
+              onClick={() => {
+                lightBoxHandler(images[13].src, "");
+              }}
+            />
           </WrapperCol>
           <WrapperCol row margin={"12px 0 0 0"}>
             <ProjectImg
@@ -125,7 +125,7 @@ const Ruma = ({ lightBoxHandler }) => {
               margin={"30px 0 20px 0"}
               noBorder
               MobWidth={"100%"}
-              src={images[14].src}
+              data={images[14].src}
               onClick={() => {
                 lightBoxHandler(images[14].src, "");
               }}
@@ -154,7 +154,7 @@ const Ruma = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"135%"}
             single
-            src={images[18].src}
+            data={images[18].src}
             onClick={() => {
               lightBoxHandler(images[18].src, "");
             }}
@@ -188,7 +188,7 @@ const Ruma = ({ lightBoxHandler }) => {
           margin={"35px 0 25px 0"}
           width={"90%"}
           noBorder
-          src={images[17].src}
+          data={images[17].src}
           onClick={() => {
             lightBoxHandler(images[17].src, "");
           }}
@@ -211,7 +211,7 @@ const Ruma = ({ lightBoxHandler }) => {
           width={"90%"}
           margin={"30px 0 0 0"}
           noBorder
-          src={images[12].src}
+          data={images[12].src}
           onClick={() => {
             lightBoxHandler(images[12].src, "");
           }}
@@ -230,7 +230,7 @@ const Ruma = ({ lightBoxHandler }) => {
             width={"85%"}
             margin={"30px 0 0 0"}
             noBorder
-            src={images[15].src}
+            data={images[15].src}
             onClick={() => {
               lightBoxHandler(images[15].src, "");
             }}
@@ -251,7 +251,7 @@ const Ruma = ({ lightBoxHandler }) => {
             width={"100%"}
             margin={"30px 0 0 0"}
             noBorder
-            src={images[6].src}
+            data={images[6].src}
           />
         </div>
         <div
@@ -269,7 +269,7 @@ const Ruma = ({ lightBoxHandler }) => {
             width={"85%"}
             margin={"30px 0 0 0"}
             noBorder
-            src={images[7].src}
+            data={images[7].src}
             onClick={() => {
               lightBoxHandler(images[7].src, "");
             }}

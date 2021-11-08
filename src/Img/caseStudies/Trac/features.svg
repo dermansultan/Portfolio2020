@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1487.303" height="478.184" viewBox="0 0 1487.303 478.184">
+<defs>     <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans');
+ </style></defs>
   <g id="Group_1576" data-name="Group 1576" transform="translate(-185.789 -5951.5)">
     <text id="User_needs_to_be_able_to_get_a_quick_overview_of_all_upcoming_assignments_and_deadlines." data-name="User needs to be able to get a quick overview of all upcoming assignments and deadlines." transform="translate(294 6072)" fill="#39393a" font-size="24" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="24">User needs to be able to get a quick overview of all </tspan><tspan x="0" y="59">upcoming assignments and deadlines.</tspan></text>
     <text id="User_needs_to_be_able_to_share_group_project_deadlines_with_peers." data-name="User needs to be able to share group project deadlines with peers." transform="translate(294 6185)" fill="#39393a" font-size="24" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="0" y="24">User needs to be able to share group project deadlines </tspan><tspan x="0" y="59">with peers.</tspan></text>

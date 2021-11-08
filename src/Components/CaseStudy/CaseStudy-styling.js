@@ -108,7 +108,7 @@ export const ListItem = styled.li`
   font-weight: ${(props) => props.weight};
 `;
 
-export const ProjectImg = styled.img`
+export const ProjectImg = styled.object`
   cursor: ${(props) => (props.onClick ? "pointer" : "")};
   margin: ${(props) => props.margin};
   width: ${(props) => props.width};

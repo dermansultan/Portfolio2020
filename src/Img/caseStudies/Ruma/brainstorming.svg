@@ -1,4 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1720.184" height="925" viewBox="0 0 1720.184 925">
+<defs>
+     <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans');
+ </style>
+ </defs>
   <g id="Group_1604" data-name="Group 1604" transform="translate(-92.908 -4050)">
     <rect id="Rectangle_690" data-name="Rectangle 690" width="395.184" height="5" rx="2.5" transform="translate(1157.592 4235.592) rotate(180)" fill="#1d66b9"/>
     <rect id="Rectangle_692" data-name="Rectangle 692" width="395.184" height="5" rx="2.5" transform="translate(1157.592 4417.592) rotate(180)" fill="#1d66b9"/>

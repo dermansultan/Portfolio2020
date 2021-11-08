@@ -1,5 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1923" height="1087" viewBox="0 0 1923 1087">
   <defs>
+     <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans');
+ </style>
     <filter id="Rectangle_2" x="0" y="0" width="1923" height="1087" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="15" result="blur"/>

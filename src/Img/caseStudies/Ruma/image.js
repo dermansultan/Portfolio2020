@@ -5,7 +5,7 @@ import process2 from "../Ruma/Process2.png";
 import process3 from "../Ruma/Process3.png";
 import process4 from "../Ruma/Process4.png";
 import moodboard from "../Ruma/moodboard.png";
-import styletile from "../Ruma/styletile.svg";
+import styletile from "../Ruma/styletile.png";
 import solution1 from "../Ruma/solution1.png";
 import solution2 from "../Ruma/solution2.png";
 import solution3 from "../Ruma/solution3.png";
@@ -123,7 +123,7 @@ const images = [
     description: "Collection of wireframes",
   },
   { id: 18, src: brainstorming },
-  {id: 19, src: timelineRuma}
+  { id: 19, src: timelineRuma },
 ];
 
 const solutionArr = [images[8], images[9], images[10], images[11]];

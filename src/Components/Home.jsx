@@ -336,7 +336,7 @@ const Home = () => {
             mainBackCol={"#FFFFFF"}
             projLink={"/Trac"}
             vector={<Trac />}
-            hover="rotate"
+            hover="scale"
           />
           <CaseCard
             title={"Ruma"}

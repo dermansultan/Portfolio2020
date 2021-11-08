@@ -146,20 +146,26 @@ const Dp = styled.img`
 const PersonalInfo = styled.div`
   display: flex;
   align-items: center;
-  background-color: #f9fafa;
+  background-color: #eeeeee;
   width: 100%;
   border-radius: 20px;
   padding: 34px 10px;
   padding-left: 0;
+  font-size: 24px;
+
+  @media (max-width: 1920px) {
+    font-size: 21px;
+  }
 
   .emoji {
     margin: 0 39px 0 43px;
   }
   @media (max-width: 1440px) {
     padding: 24px 20px;
+    font-size: 17px;
 
     .emoji {
-      margin: 0 35px 0 35px;
+      margin: 0 26px 0 23px;
     }
   }
 

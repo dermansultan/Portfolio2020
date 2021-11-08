@@ -13,7 +13,6 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   overflow-x: hidden;
-  background-color: #f9f8fd;
 `;
 
 export const Banner = styled.div`

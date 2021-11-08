@@ -65,7 +65,6 @@ nav > a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #fdfdfd;
 }
 
 .heroContainer {
@@ -815,7 +814,7 @@ footer {
     padding-bottom: 6rem;
   }
 }
-@media only screen and (max-width: 1919px) {
+@media only screen and (max-width: 1920px) {
   .aboutBio {
     padding: 93px 72px 208px 404px;
   }
@@ -826,7 +825,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1440px) {
   .aboutBio {
     padding: 73px 62px 158px 354px;
   }

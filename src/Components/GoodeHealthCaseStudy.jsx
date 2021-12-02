@@ -11,6 +11,8 @@ import timeline from "../Img/caseStudies/GoodeHealth/timeline.png";
 import lumber from "../Img/caseStudies/GoodeHealth/lumber.png";
 import gh from "../Img/caseStudies/GoodeHealth/gh.png";
 import { ReactComponent as Search } from "../Img/caseStudies/GoodeHealth/search.svg";
+import { ReactComponent as Members } from "../Img/caseStudies/GoodeHealth/members.svg";
+import { ReactComponent as Analysis } from "../Img/caseStudies/GoodeHealth/analysis.svg";
 
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -106,7 +108,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             <SpanPara>During this time, my team simultaneously would start the process of the redesign. The research process was informed as follows: </SpanPara>
           </BodyPara>
           <WrapperCol row gap="105px" margin="70px 0 0 100px">
-            <Search style={{ width: "153px", minWidth: "153px" }} />
+            <Search style={{ width: "143px", minWidth: "143px" }} />
             <WrapperCol>
               <Header margin={"20px 0 0 0"}>Heuristic and usability evaluation on the current application.</Header>
               <BodyPara>
@@ -115,17 +117,91 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               </BodyPara>
             </WrapperCol>
           </WrapperCol>
-          <ProjectImg
-            onClick={() => {
-              lightBoxHandler(images[3].src, "");
+          <WrapperCol margin="70px 0 0 70px">
+            <SubHeader color="#004061" margin="0 0 10px 0">
+              Insights / Key takeaways:
+            </SubHeader>
+            <ul style={{ color: "#004061", fontWeight: 500, fontSize: "clamp(14px,1.5vw,18px)", listStylePosition: "inside", lineHeight: "162%" }}>
+              <li>System status was not clear in many cases</li>
+              <li>Language and labels revolving around scientific terms were vague and confusing</li>
+              <li>Important information was behind many clicks</li>
+              <li>Recommendations and Made For You pages felt generic and impersonalized</li>
+              <li>Health Score Breakdown Logic was rounding numbers displaying less accurate information to the user</li>
+              <li>Certain components weren’t clear (hyper links without any styling)</li>
+            </ul>
+          </WrapperCol>
+          <WrapperCol row gap="105px" margin="70px 0 0 100px">
+            <Members style={{ width: "183px", minWidth: "183px" }} />
+            <WrapperCol>
+              <Header margin={"20px 0 0 0"}>Calls directly with the Goodehealth team members.</Header>
+              <BodyPara>
+                Particularly their customer-facing and analytics employees. They would help us gain insights on specific issues customers were facing with the current application. For example: parts
+                of the application that had high drop off rates, or customers conveying frustrations with the current subscription model. The goal here was to really understand user’s frustrations
+                with the current product.
+              </BodyPara>
+            </WrapperCol>
+          </WrapperCol>
+          <WrapperCol margin="70px 0 0 70px">
+            <SubHeader color="#004061" margin="0 0 10px 0">
+              Insights / Key takeaways:
+            </SubHeader>
+            <ul style={{ color: "#004061", fontWeight: 500, fontSize: "clamp(14px,1.5vw,18px)", listStylePosition: "inside", lineHeight: "162%" }}>
+              <li>Users had troubles managing their subscriptions </li>
+              <li>Confusion revolving around the steps required to register a customers blood test kit for the first time</li>
+              <li>Returning kit users also faced frustrations when trying to register a new kit</li>
+            </ul>
+          </WrapperCol>
+          <WrapperCol row gap="105px" margin="70px 0 0 100px">
+            <Analysis style={{ width: "113px", minWidth: "113px" }} />
+            <WrapperCol>
+              <Header margin={"20px 0 0 0"}>Competitor analysis to see what others in our similar niche were doing. </Header>
+              <BodyPara>
+                Goodehealth's product provided biomarkers and an overall score to its users. Getting a grasp of how this complicated data was visualized by other products helped us with our final
+                product.
+              </BodyPara>
+            </WrapperCol>
+          </WrapperCol>
+          <WrapperCol margin="70px 0 0 70px">
+            <SubHeader color="#004061" margin="0 0 10px 0">
+              Insights / Key takeaways:
+            </SubHeader>
+            <BodyPara margin="0 0 20px 0">While many aspects across competitors were repeated some unique features of note we considered were: </BodyPara>
+            <ul style={{ color: "#004061", fontWeight: 500, fontSize: "clamp(14px,1.5vw,18px)", listStylePosition: "inside", lineHeight: "162%" }}>
+              <li>Important trends displayed to the user within the same view of the score</li>
+              <li>Individual biomarkers displayed with a broad approach with insight available upon further click</li>
+              <li>Trends of Data points in terms of data visualization</li>
+              <li>Individual data points on graphs can be interacted with</li>
+              <li>Direct comparison between the two data points for individual markers</li>
+            </ul>
+          </WrapperCol>
+          <BodyPara style={{ textAlign: "center", marginTop: "80px" }}>
+            <SpanPara color="#004061">
+              These together would help us focus down on problems that needed to be addressed from a design perspective.
+              <br /> Our goals from this research ended up being:
+            </SpanPara>
+          </BodyPara>
+          <div
+            style={{
+              width: "100vw",
+              position: "relative",
+              left: "50%",
+              right: "50%",
+              marginLeft: "-50vw",
+              marginRight: "-50vw",
+              backgroundColor: "#F5F5F5",
+              padding: "100px 0",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
-            noBorder
-            margin={"55px 0 0 0"}
-            width={"75%"}
-            MobWidth={"100%"}
-            single
-            data={images[3].src}
-          />
+          >
+            <ul style={{ color: "#004061", fontWeight: 700, fontSize: "clamp(14px,1.5vw,23px)", lineHeight: "107%", maxWidth: "1160px" }}>
+              <li style={{ marginBottom: "30px" }}>Restructuring certain redundant information through the app and making pages accessible and explorable</li>
+              <li style={{ marginBottom: "30px" }}>Educate, and empower users to explore the product</li>
+              <li style={{ marginBottom: "30px" }}>Bridge the gap between the physical aspect of the product and the digital (user gets the kit, must register it)</li>
+              <li>Address Customer service side confusions</li>
+            </ul>
+          </div>
         </Section>
         <Section>
           <Header>Design</Header>

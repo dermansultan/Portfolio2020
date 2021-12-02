@@ -46,7 +46,7 @@ export const SpanPara = styled.span`
   margin: ${(props) => props.margin};
   font-weight: 600;
   font-size: clamp(14px, 1.5vw, 18px);
-  color: var(--second-txt-color);
+  color: ${(props) => props.color || "var(--second-txt-color)"};
 `;
 
 export const Header = styled.h1`
@@ -57,7 +57,7 @@ export const Header = styled.h1`
 
 export const SubHeader = styled.h2`
   margin: ${(props) => props.margin};
-  color: ${(props) => (props.blue ? "var(--main-blue)" : "var(--main-txt-colour)")};
+  color: ${(props) => (props.blue ? "var(--main-blue)" : props.color || "var(--main-txt-colour)")};
   margin: ${(props) => props.margin};
   font-size: ${(props) => (props.listSub ? "clamp(1em, 1.5vw, 1.25em)" : "clamp(18px, 1.5vw, 22px)")};
 `;

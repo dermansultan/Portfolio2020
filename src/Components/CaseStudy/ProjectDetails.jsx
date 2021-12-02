@@ -49,14 +49,15 @@ const DetailsTitle = styled.h1`
 `;
 
 const DetailsPara = styled.p`
-  color: var(--second-txt-color);
+  color: #595a4a;
   white-space: nowrap;
   font-size: clamp(8px, 1.5vw, 18px);
   word-break: break-all;
+  margin-top: 5px;
 `;
 
 const Detailsitem = styled.li`
-  color: var(--second-txt-color);
+  color: #595a4a;
   white-space: nowrap;
   font-size: clamp(8px, 1.5vw, 18px);
   word-break: break-all;
@@ -89,21 +90,18 @@ function ProjectDetails(props) {
     // console.log(`${name} was clicked!`);
   };
 
-  const namelist = props.namelist.map((name) => (
-    <Detailsitem>{name}</Detailsitem>
-  ));
+  const namelist = props.namelist.map((name) => <Detailsitem>{name}</Detailsitem>);
 
   if (props.codeProject) {
     return (
       <DetailsWrapper>
-        <a href={props.demoLink} target="_blank">
-          <ProtoBtn
-            btnCol={props.btnCol}
-            onClick={() => gaClickHandler(props.name)}
-          >
-            Demo + Live Code
-          </ProtoBtn>
-        </a>
+        {props.demoLink && (
+          <a href={props.demoLink} target="_blank">
+            <ProtoBtn btnCol={props.btnCol} onClick={() => gaClickHandler(props.name)}>
+              Demo + Live Code
+            </ProtoBtn>
+          </a>
+        )}
         <ContentWrapper>
           <WrapperCol>
             <DetailsTitle>My Role</DetailsTitle>
@@ -127,14 +125,13 @@ function ProjectDetails(props) {
   } else {
     return (
       <DetailsWrapper>
-        <a href={props.demoLink} target="_blank">
-          <ProtoBtn
-            btnCol={props.btnCol}
-            onClick={() => gaClickHandler(props.name)}
-          >
-            Live Prototype
-          </ProtoBtn>
-        </a>
+        {props.demoLink && (
+          <a href={props.demoLink} target="_blank">
+            <ProtoBtn btnCol={props.btnCol} onClick={() => gaClickHandler(props.name)}>
+              Live Prototype
+            </ProtoBtn>
+          </a>
+        )}
         <ContentWrapper>
           <WrapperCol>
             <DetailsTitle>My Role</DetailsTitle>

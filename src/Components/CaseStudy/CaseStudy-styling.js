@@ -24,8 +24,7 @@ export const Banner = styled.div`
   border: 0;
   width: 100%;
   background-size: cover;
-  border-radius: 10px;
-  height: 70vh;
+  height: 81.5vh;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -40,7 +39,7 @@ export const BodyPara = styled.p`
   padding-top: 12px;
   line-height: 150%;
   font-size: clamp(14px, 1.5vw, 18px);
-  color: var(--second-txt-color);
+  color: #595a4a;
 `;
 
 export const SpanPara = styled.span`
@@ -58,11 +57,9 @@ export const Header = styled.h1`
 
 export const SubHeader = styled.h2`
   margin: ${(props) => props.margin};
-  color: ${(props) =>
-    props.blue ? "var(--main-blue)" : "var(--main-txt-colour)"};
+  color: ${(props) => (props.blue ? "var(--main-blue)" : "var(--main-txt-colour)")};
   margin: ${(props) => props.margin};
-  font-size: ${(props) =>
-    props.listSub ? "clamp(1em, 1.5vw, 1.25em)" : "clamp(18px, 1.5vw, 22px)"};
+  font-size: ${(props) => (props.listSub ? "clamp(1em, 1.5vw, 1.25em)" : "clamp(18px, 1.5vw, 22px)")};
 `;
 
 export const WrapperCol = styled.div`
@@ -70,6 +67,7 @@ export const WrapperCol = styled.div`
   margin: ${(props) => props.margin};
   width: ${(props) => props.width};
   height: ${(props) => props.height};
+  gap: ${(props) => props.gap || "10px"};
   justify-content: ${(props) => props.justCont};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   align-self: ${(props) => props.alignSelf};
@@ -115,8 +113,7 @@ export const ProjectImg = styled.object`
   height: auto;
   border: ${(props) => (props.noBorder ? "none" : "1px solid #252a41")};
   align-self: ${(props) => (props.single ? "center" : "")};
-  box-shadow: ${(props) =>
-    props.shadow ? "0px 4px 4px rgba(180, 180, 180, 0.7)" : ""};
+  box-shadow: ${(props) => (props.shadow ? "0px 4px 4px rgba(180, 180, 180, 0.7)" : "")};
   border-radius: ${(props) => props.borderRad};
   @media only screen and (max-width: 700px) {
     width: ${(props) => props.MobWidth};

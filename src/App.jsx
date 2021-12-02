@@ -15,6 +15,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import styled from "styled-components";
 import { createBrowserHistory } from "history";
 import ReactGa from "react-ga";
+import GoodeHealth from "./Components/GoodeHealthCaseStudy";
 
 const LightBoxWrapper = styled.div`
   position: fixed;
@@ -109,14 +110,12 @@ function App() {
             <AnimatePresence exitBeforeEnter>
               <Switch location={location} key={location.pathname}>
                 <Route exact path="/" component={Home} />
-                <Route
-                  exact
-                  path="/About"
-                  component={About}
-                  title="About Page"
-                />
+                <Route exact path="/About" component={About} title="About Page" />
                 <Route exact path="/Ruma">
                   <Ruma lightBoxHandler={lightBoxHandler}></Ruma>
+                </Route>
+                <Route exact path="/GoodeHealth">
+                  <GoodeHealth lightBoxHandler={lightBoxHandler}></GoodeHealth>
                 </Route>
                 <Route exact path="/ToDo">
                   <ToDo lightBoxHandler={lightBoxHandler}></ToDo>

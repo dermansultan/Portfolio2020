@@ -16,13 +16,13 @@ const QuoteWrapper = styled.div`
   margin-right: -50vw;
   justify-content: center;
   text-align: center;
-  background-color: var(--second-blue);
+  background-color: #f8fdff;
 `;
 
 const QuotePara = styled.p`
   font-size: clamp(1em, 1.5vw, 1.5em);
   font-weight: 700;
-  color: var(--main-txt-colour);
+  color: #575757;
   width: 75%;
 `;
 

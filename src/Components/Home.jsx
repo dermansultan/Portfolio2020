@@ -181,11 +181,7 @@ const Btn = styled.button`
   width: 300px;
   height: 55px;
   cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    #1882ff 0%,
-    rgba(24, 130, 255, 0.76) 103.03%
-  );
+  background: linear-gradient(90deg, #1882ff 0%, rgba(24, 130, 255, 0.76) 103.03%);
   border-radius: 52px;
   transition: transform 0.2s; /* Animation */
 
@@ -237,13 +233,7 @@ const Home = () => {
   return (
     <>
       <div className="mainContainer">
-        <motion.div
-          exit={{ opacity: 0, transition: { outro } }}
-          transition={intro}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="homeContainer"
-        >
+        <motion.div exit={{ opacity: 0, transition: { outro } }} transition={intro} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="homeContainer">
           <HeroContainer>
             <GreetingBio>
               <Header>Hello there.</Header>
@@ -252,19 +242,11 @@ const Home = () => {
                 <Span fColor={"#1882FF"} fWeight={"bold"}>
                   Product Designer
                 </Span>{" "}
-                with a passion for creating elegant and intuitive experiences
-                through Design and Code.
+                with a passion for creating elegant and intuitive experiences through Design and Code.
               </IntroPara>
               <HashLink smooth to="/#projects">
-                <Btn
-                  margin={"55px 0 0 0"}
-                  onClick={() => gaClickHandler("My work was clicked.")}
-                >
-                  My Work{" "}
-                  <FontAwesomeIcon
-                    icon={faChevronDown}
-                    style={{ marginLeft: "15px" }}
-                  />
+                <Btn margin={"55px 0 0 0"} onClick={() => gaClickHandler("My work was clicked.")}>
+                  My Work <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: "15px" }} />
                 </Btn>
               </HashLink>
             </GreetingBio>
@@ -295,15 +277,13 @@ const Home = () => {
             titleCol={"#124561"}
             roles={["UX Consulting", "Information Architecture"]}
             roleCol={"#505050"}
-            desc={
-              "An overhaul to a client of Lumber’s - Goodehealth’s original dashboard with the goal of increasing user retention and conversion."
-            }
+            desc={"An overhaul to a client of Lumber’s - Goodehealth’s original dashboard with the goal of increasing user retention and conversion."}
             descCol={"#505050"}
             btnColor={"#FFFFFF"}
             btnBackCol={"#124561"}
             reverse
             mainBackCol={"#FFFFFF"}
-            projLink={"/Lumber"}
+            projLink={"/GoodeHealth"}
             vector={<Lumber style={{ marginLeft: "90px" }} />}
           />
           <CaseCard
@@ -311,9 +291,7 @@ const Home = () => {
             titleCol={"#4E0BDC"}
             roles={["Research", "Design Systems"]}
             roleCol={"#4E0BDC"}
-            desc={
-              "Health and food based start-up. I had the pleasure of researching and creating a design system to use across web and mobile platforms."
-            }
+            desc={"Health and food based start-up. I had the pleasure of researching and creating a design system to use across web and mobile platforms."}
             descCol={"#505050"}
             btnColor={"#FFFFFF"}
             btnBackCol={"#4E0BDC"}
@@ -326,9 +304,7 @@ const Home = () => {
             titleCol={"#0040C9"}
             roles={["UX/UI Design", "User Research"]}
             roleCol={"#2F62CE"}
-            desc={
-              "A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."
-            }
+            desc={"A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."}
             descCol={"#505050"}
             btnColor={"#FFFFFF"}
             btnBackCol={"#0040C9"}
@@ -343,9 +319,7 @@ const Home = () => {
             titleCol={"#23514F"}
             roles={["UX/UI Design"]}
             roleCol={"#23514F"}
-            desc={
-              "A desktop app that aims to give families and friends a way to enjoy content together remotely."
-            }
+            desc={"A desktop app that aims to give families and friends a way to enjoy content together remotely."}
             descCol={"#505050"}
             imgAlt={"Mockup of Ruma Application"}
             btnColor={"#FFFFFF"}

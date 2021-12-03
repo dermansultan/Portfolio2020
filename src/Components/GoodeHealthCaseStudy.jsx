@@ -344,7 +344,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             </div>
             <ProjectImg
               noBorder
-              width={"100%%"}
+              width={"83%"}
               MobWidth={"135%"}
               single
               data={features}

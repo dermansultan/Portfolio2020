@@ -34,7 +34,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
   return (
     <MainContainer>
       <CaseContainer exit={{ opacity: 0 }} transition={outro} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-        <Banner backImg={ghBanner}>
+        <Banner backImg={ghBanner} bgColor="#004061" mobSize="167%">
           <BackBtn margin={"25px 0 0 0"} btnCol={"#FFFFFF"} textColor="#505050" backArrow></BackBtn>
         </Banner>
         <ProjectDetails

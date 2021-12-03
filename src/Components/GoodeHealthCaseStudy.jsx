@@ -200,7 +200,6 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               right: "50%",
               marginLeft: "-50vw",
               marginRight: "-50vw",
-              backgroundColor: "#F5F5F5",
               padding: "100px 50px",
               display: "flex",
               alignItems: "center",

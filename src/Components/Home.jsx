@@ -275,29 +275,15 @@ const Home = () => {
           <CaseCard
             title={"Dashboard Redesign"}
             titleCol={"#124561"}
-            roles={["UX Consulting", "Information Architecture"]}
+            roles={["UX/UI Design"]}
             roleCol={"#505050"}
             desc={"An overhaul to a client of Lumber’s - Goodehealth’s original dashboard with the goal of increasing user retention and conversion."}
             descCol={"#505050"}
             btnColor={"#FFFFFF"}
             btnBackCol={"#124561"}
-            reverse
             mainBackCol={"#FFFFFF"}
             projLink={"/GoodeHealth"}
             vector={<Lumber style={{ marginLeft: "90px" }} />}
-          />
-          <CaseCard
-            title={"MyPalate Inc."}
-            titleCol={"#4E0BDC"}
-            roles={["Research", "Design Systems"]}
-            roleCol={"#4E0BDC"}
-            desc={"Health and food based start-up. I had the pleasure of researching and creating a design system to use across web and mobile platforms."}
-            descCol={"#505050"}
-            btnColor={"#FFFFFF"}
-            btnBackCol={"#4E0BDC"}
-            mainBackCol={"#FFFFFF"}
-            projLink={"/MyPalate"}
-            vector={<MyPalate />}
           />
           <CaseCard
             title={"Trac"}

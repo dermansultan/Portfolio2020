@@ -6,7 +6,7 @@ import ProjectQuote from "../Components/CaseStudy/ProjectQuote";
 import { CaseContainer, Banner, BodyPara, Header, WrapperCol, Section, SubHeader, MainContainer, ListItem, List, IconWrapper, ProjectImg, SpanPara } from "./CaseStudy/CaseStudy-styling";
 import images from "../Img/caseStudies/Trac/image";
 import BackBtn from "./CaseStudy/BackToProjectsBtn";
-import dashboard from "../Img/ghDashboard.jpg";
+import dashboard from "../Img/caseStudies/GoodeHealth/ghDashboard.jpg";
 import timeline from "../Img/caseStudies/GoodeHealth/timeline.png";
 import lumber from "../Img/caseStudies/GoodeHealth/lumber.png";
 import gh from "../Img/caseStudies/GoodeHealth/gh.png";

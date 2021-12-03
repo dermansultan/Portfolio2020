@@ -153,7 +153,7 @@ const Desc = styled.p`
 
 const CaseImg = styled.div`
   display: flex;
-  align-items: center;
+  align-items: ${(props) => (props.flexEnd ? "flex-end" : "center")};
   justify-content: ${(props) => (!props.reverse ? "flex-end" : "flex-start")};
   width: 50%;
   rect {
@@ -185,22 +185,7 @@ const RolesContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-function CaseCard({
-  title,
-  titleCol,
-  roles,
-  roleCol,
-  desc,
-  descCol,
-  btnColor,
-  btnBackCol,
-  mainBackCol,
-  reverse,
-  projLink,
-  construct,
-  vector,
-  hover,
-}) {
+function CaseCard({ title, titleCol, roles, roleCol, desc, descCol, btnColor, btnBackCol, mainBackCol, reverse, projLink, construct, flexEnd = false, vector, hover }) {
   const [transformEffect, setTransformEffect] = useState("none");
   return (
     <>
@@ -220,22 +205,14 @@ function CaseCard({
             {desc}
           </Desc>
           <Link to={projLink}>
-            <Btn
-              btnColor={btnColor}
-              btnBackCol={btnBackCol}
-              reverse={reverse}
-              construct={construct}
-            >
-              View Case Study{" "}
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                size="sm"
-                style={{ marginLeft: "10px" }}
-              />
+            <Btn btnColor={btnColor} btnBackCol={btnBackCol} reverse={reverse} construct={construct}>
+              View Case Study <FontAwesomeIcon icon={faChevronRight} size="sm" style={{ marginLeft: "10px" }} />
             </Btn>
           </Link>
         </Col>
-        <CaseImg reverse={reverse}>{vector}</CaseImg>
+        <CaseImg flexEnd={flexEnd} reverse={reverse}>
+          {vector}
+        </CaseImg>
       </CardContainer>
     </>
   );

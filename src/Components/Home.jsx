@@ -283,6 +283,7 @@ const Home = () => {
             btnBackCol={"#124561"}
             mainBackCol={"#FFFFFF"}
             projLink={"/GoodeHealth"}
+            flexEnd
             vector={<Lumber style={{ marginLeft: "90px" }} />}
           />
           <CaseCard

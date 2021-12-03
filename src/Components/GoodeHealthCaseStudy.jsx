@@ -35,7 +35,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
     <MainContainer>
       <CaseContainer exit={{ opacity: 0 }} transition={outro} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <Banner backImg={ghBanner}>
-          <BackBtn margin={"55px 0 0 0"} btnCol={"#FFFFFF"} textColor="#505050" backArrow></BackBtn>
+          <BackBtn margin={"25px 0 0 0"} btnCol={"#FFFFFF"} textColor="#505050" backArrow></BackBtn>
         </Banner>
         <ProjectDetails
           name={"Trac"}
@@ -88,7 +88,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               <br /> <br />I was to communicate and receive feedback on design decisions with the Goodehealth team. This would include weekly chats with their team to gain insights on their product
               goals, it's customers and their key performance indicators.
             </BodyPara>
-            <WrapperCol margin="77px 0" row gap="100px">
+            <WrapperCol margin="77px 0" row gap="100px" MobMargin="20px 0">
               <img src={lumber} width="50%" />
               <img src={gh} width="50%" />
             </WrapperCol>
@@ -117,8 +117,8 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             <br />
             <SpanPara>During this time, my team simultaneously would start the process of the redesign. The research process was informed as follows: </SpanPara>
           </BodyPara>
-          <WrapperCol row gap="105px" margin="70px 0 0 100px">
-            <Search style={{ width: "143px", minWidth: "143px" }} />
+          <WrapperCol row gap="105px" margin="70px 0 0 100px" MobMargin="0">
+            <Search style={{ width: "143px", minWidth: "143px" }} class="mobileGraphic" />
             <WrapperCol>
               <Header margin={"20px 0 0 0"}>Heuristic and usability evaluation on the current application.</Header>
               <BodyPara>
@@ -127,7 +127,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               </BodyPara>
             </WrapperCol>
           </WrapperCol>
-          <WrapperCol margin="70px 0 0 70px">
+          <WrapperCol margin="70px 0 0 70px" MobMargin="30px 0 0 30px">
             <SubHeader color="#004061" margin="0 0 10px 0">
               Insights / Key takeaways:
             </SubHeader>
@@ -140,8 +140,8 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               <li>Certain components weren’t clear (hyper links without any styling)</li>
             </ul>
           </WrapperCol>
-          <WrapperCol row gap="105px" margin="70px 0 0 100px">
-            <Members style={{ width: "183px", minWidth: "183px" }} />
+          <WrapperCol row gap="105px" margin="70px 0 0 100px" MobMargin="40px 0 0">
+            <Members style={{ width: "183px", minWidth: "183px" }} class="mobileGraphic" />
             <WrapperCol>
               <Header margin={"20px 0 0 0"}>Calls directly with the Goodehealth team members.</Header>
               <BodyPara>
@@ -151,7 +151,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               </BodyPara>
             </WrapperCol>
           </WrapperCol>
-          <WrapperCol margin="70px 0 0 70px">
+          <WrapperCol margin="70px 0 0 70px" MobMargin="30px 0 0 30px">
             <SubHeader color="#004061" margin="0 0 10px 0">
               Insights / Key takeaways:
             </SubHeader>
@@ -161,8 +161,8 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               <li>Returning kit users also faced frustrations when trying to register a new kit</li>
             </ul>
           </WrapperCol>
-          <WrapperCol row gap="105px" margin="70px 0 0 100px">
-            <Analysis style={{ width: "113px", minWidth: "113px" }} />
+          <WrapperCol row gap="105px" margin="70px 0 0 100px" MobMargin="40px 0 0">
+            <Analysis style={{ width: "113px", minWidth: "113px" }} class="mobileGraphic" />
             <WrapperCol>
               <Header margin={"20px 0 0 0"}>Competitor analysis to see what others in our similar niche were doing. </Header>
               <BodyPara>
@@ -171,7 +171,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               </BodyPara>
             </WrapperCol>
           </WrapperCol>
-          <WrapperCol margin="70px 0 0 70px">
+          <WrapperCol margin="70px 0 0 70px" MobMargin="30px 0 0 30px">
             <SubHeader color="#004061" margin="0 0 10px 0">
               Insights / Key takeaways:
             </SubHeader>
@@ -201,7 +201,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               marginLeft: "-50vw",
               marginRight: "-50vw",
               backgroundColor: "#F5F5F5",
-              padding: "100px 0",
+              padding: "100px 50px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -240,7 +240,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             noBorder
             margin={"55px 0 0 0"}
             width={"75%"}
-            MobWidth={"135%"}
+            MobWidth={"100%"}
             single
             data={informationArchitecture}
             onClick={() => {
@@ -255,7 +255,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             noBorder
             margin={"55px 0 0 0"}
             width={"75%"}
-            MobWidth={"135%"}
+            MobWidth={"100%"}
             single
             data={informationArchitecture2}
             onClick={() => {
@@ -283,7 +283,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             noBorder
             margin={"55px 0 30px 0"}
             width={"100%%"}
-            MobWidth={"135%"}
+            MobWidth={"100%"}
             single
             data={regFlow}
             onClick={() => {
@@ -297,7 +297,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             noBorder
             margin={"55px 0 30px 0"}
             width={"100%%"}
-            MobWidth={"135%"}
+            MobWidth={"100%"}
             single
             data={mainPages}
             onClick={() => {
@@ -307,7 +307,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
           <SubHeader color="#595A4A" listSub margin="30px 0 0">
             User Subscription Management Flow
           </SubHeader>
-          <BodyPara margin="0 0 123px">
+          <BodyPara margin="0 0 123px" MobWidth="0 0 50px">
             Goodehealth's product mainly falls under a subscription model. Their subscription based products use Shopify's and its associated plug-ins. Knowing that there maybe limitations, I
             contacted the developers to get a specific view on what we could offer the user.
             <br /> <br />
@@ -345,7 +345,8 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             <ProjectImg
               noBorder
               width={"83%"}
-              MobWidth={"135%"}
+              MobWidth={"100%"}
+              MobMargin="20px 0 0"
               single
               data={features}
               onClick={() => {
@@ -446,7 +447,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
         <Section>
           <Header margin="0 0 20px">Final Application Designs</Header>
           <BodyPara margin="0 0 30px">In the end there were many flows mapped out in our Figma document. The product is fully designed and ready to ship.</BodyPara>
-          <ProjectImg noBorder margin={"55px 0 90px 0"} width={"100%"} MobWidth={"100%"} single data={final} />
+          <ProjectImg noBorder margin={"55px 0 90px 0"} MobMargin="20px 0 0px 0" width={"100%"} MobWidth={"100%"} single data={final} />
         </Section>
         <Section padding={"0 0 90px 0"} margin={"40px 0 0 0"}>
           <Header margin={"0 0 20px 0"}>Takeaways</Header>

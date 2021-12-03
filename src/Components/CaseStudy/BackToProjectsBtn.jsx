@@ -25,13 +25,20 @@ const Btn = styled.button`
 
   @media only screen and (max-width: 600px) {
     min-height: 50px;
-    width: 195px;
+    width: auto;
+    margin: ${(props) => props.arrow && "26px 0 0 10px"};
+    font-size: ${(props) => props.arrow && "18px"};
+    min-height: ${(props) => props.arrow && "40px"};
+
+    svg {
+      height: 18px;
+    }
   }
 `;
 
 function BackBtn(props) {
   return (
-    <HashLink smooth to="/#projects">
+    <HashLink smooth to="/#projects" style={{ height: "max-content" }}>
       <Btn margin={props.margin} btnCol={props.btnCol} arrow={props.backArrow} textColor={props.textColor}>
         {props.backArrow && <Arrow />}Back to My Projects
       </Btn>

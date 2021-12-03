@@ -6,6 +6,9 @@ export const CaseContainer = styled(motion.div)`
   width: 60%;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const MainContainer = styled.div`
@@ -40,6 +43,9 @@ export const BodyPara = styled.p`
   line-height: 150%;
   font-size: clamp(14px, 1.5vw, 18px);
   color: #595a4a;
+  @media (max-width: 768px) {
+    margin: ${(props) => props.MobWidth && props.MobWidth};
+  }
 `;
 
 export const SpanPara = styled.span`
@@ -77,6 +83,16 @@ export const WrapperCol = styled.div`
     flex-direction: ${(props) => (props.MobDirec ? props.MobDirec : "column")};
     margin: ${(props) => props.MobMargin};
     padding: ${(props) => props.MobPadding};
+    gap: 10px;
+    img {
+      width: 95%;
+    }
+    .mobileGraphic {
+      height: auto;
+      width: 90px !important;
+      min-width: 90px !important;
+      margin: 20px auto -10px;
+    }
   }
 `;
 
@@ -118,5 +134,6 @@ export const ProjectImg = styled.object`
   border-radius: ${(props) => props.borderRad};
   @media only screen and (max-width: 700px) {
     width: ${(props) => props.MobWidth};
+    margin: ${(props) => props.MobMargin};
   }
 `;

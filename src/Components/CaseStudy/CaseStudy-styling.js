@@ -52,7 +52,7 @@ export const SpanPara = styled.span`
 export const Header = styled.h1`
   margin: ${(props) => props.margin};
   font-size: clamp(30px, 1.5vw, 75px);
-  color: var(--main-txt-colour);
+  color: ${(props) => props.color || "var(--main-txt-colour)"};
 `;
 
 export const SubHeader = styled.h2`

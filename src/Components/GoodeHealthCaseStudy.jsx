@@ -205,26 +205,25 @@ const GoodeHealth = ({ lightBoxHandler }) => {
         </Section>
         <Section>
           <Header>Design</Header>
-          <SubHeader margin={"20px 0 0 0"}>Brainstorming</SubHeader>
+          <Header color="#595A4A" margin={"20px 0 0 0"}>
+            Phase One
+          </Header>
           <BodyPara>
-            After reviewing and gaining insights from our research we moved onto iterating over the features we would like in our application. This would range from deciding the intended user-flow,
-            addressing key pain points from our insights, and finally a system map to base the flow on.
+            With this phase the goal was to create a low fidelity prototype of the mobile version of the application. We would eventually present this to the Goodehealth team for feedback. There were
+            a number of considerations to be made as the application was an in browser experience.
           </BodyPara>
-          <ProjectImg
-            onClick={() => {
-              lightBoxHandler(images[13].src, "");
-            }}
-            noBorder
-            margin={"55px 0 0 0"}
-            width={"75%"}
-            MobWidth={"150%"}
-            single
-            data={images[13].src}
-          />
         </Section>
         <Section>
-          <SubHeader>System Map</SubHeader>
-          <BodyPara>With the user-flow in mind we created a system map to better visualize how our application would be structured.</BodyPara>
+          <SubHeader color="#595A4A">Information Architecture</SubHeader>
+          <BodyPara>
+            Before considering wireframes, we focused on the structure of the app given it's current issues. Goodehealth's analytics team mentioned drop off of certain pages of the application was
+            high. The old application was segmented into many different sections, and we wanted to recreate the experience to feel cohesive so that each section felt valuable to the end user.{" "}
+          </BodyPara>
+          <BodyPara>
+            We ended up using a combination of mind-mapping and card sorting with our internal teams to create a structure. This structure eventually would take the form of a site map and user flow.
+            We would regularly iterate and update these throughout our week to week calls with their team. During these calls we would learn more about the individual customers experience and the
+            unique aspects of their product.
+          </BodyPara>
           <ProjectImg
             noBorder
             margin={"55px 0 0 0"}
@@ -236,6 +235,10 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               lightBoxHandler(images[16].src, "");
             }}
           ></ProjectImg>
+          <BodyPara>
+            Having a site map and a user flow may seemed kind of odd at first, but in our context it was the right decision. It was important we had an objective outlook of the entire applications
+            structure for the developers to follow.
+          </BodyPara>
         </Section>
         <Section>
           <SubHeader>Wireframes</SubHeader>

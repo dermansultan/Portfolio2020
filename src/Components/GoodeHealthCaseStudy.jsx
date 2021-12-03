@@ -13,6 +13,16 @@ import gh from "../Img/caseStudies/GoodeHealth/gh.png";
 import { ReactComponent as Search } from "../Img/caseStudies/GoodeHealth/search.svg";
 import { ReactComponent as Members } from "../Img/caseStudies/GoodeHealth/members.svg";
 import { ReactComponent as Analysis } from "../Img/caseStudies/GoodeHealth/analysis.svg";
+import informationArchitecture from "../Img/caseStudies/GoodeHealth/information_architecture.jpg";
+import informationArchitecture2 from "../Img/caseStudies/GoodeHealth/information_architecture2.jpg";
+import regFlow from "../Img/caseStudies/GoodeHealth/reg_flow.png";
+import mainPages from "../Img/caseStudies/GoodeHealth/main_pages.png";
+import features from "../Img/caseStudies/GoodeHealth/features.png";
+import designSys from "../Img/caseStudies/GoodeHealth/designSys.jpg";
+import subMang from "../Img/caseStudies/GoodeHealth/subMang.png";
+import healthScore from "../Img/caseStudies/GoodeHealth/healthScore.png";
+import bio from "../Img/caseStudies/GoodeHealth/bio.png";
+import final from "../Img/caseStudies/GoodeHealth/final.jpg";
 
 const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -178,6 +188,8 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             <SpanPara color="#004061">
               These together would help us focus down on problems that needed to be addressed from a design perspective.
               <br /> Our goals from this research ended up being:
+              <br />
+              <br />
             </SpanPara>
           </BodyPara>
           <div
@@ -230,20 +242,14 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"135%"}
             single
-            data={images[16].src}
+            data={informationArchitecture}
             onClick={() => {
-              lightBoxHandler(images[16].src, "");
+              lightBoxHandler(informationArchitecture, "");
             }}
           ></ProjectImg>
-          <BodyPara>
+          <BodyPara margin="30px 0 0">
             Having a site map and a user flow may seemed kind of odd at first, but in our context it was the right decision. It was important we had an objective outlook of the entire applications
             structure for the developers to follow.
-          </BodyPara>
-        </Section>
-        <Section>
-          <SubHeader>Wireframes</SubHeader>
-          <BodyPara>
-            Once we moved onto creating low fidelity wireframes we decided to prioritize the intended user flow. This consisted of onboarding, the dashboard, task creation and the calendar.
           </BodyPara>
           <ProjectImg
             noBorder
@@ -251,46 +257,217 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             width={"75%"}
             MobWidth={"135%"}
             single
-            data={images[12].src}
+            data={informationArchitecture2}
             onClick={() => {
-              lightBoxHandler(images[12].src, "");
+              lightBoxHandler(informationArchitecture2, "");
             }}
           ></ProjectImg>
+          <BodyPara margin="30px 0 0">
+            Goodehealth's product has a physical part to it (the blood test kit, and the super food blend.) These in application translate to users having access to some features others may not. This
+            specific quirk better visualizes itself in a user flow diagram.
+          </BodyPara>
         </Section>
         <Section>
-          <Header>Design System</Header>
-          <BodyPara margin={"20px 0 0 0"}>
-            We wanted the design system behind the application to match modern interfaces students were accustomed to. The simple but clean identity ensures users are able to comprehend all
-            interactions.
+          <SubHeader color="#595A4A">Low Fidelity Wireframes</SubHeader>
+          <BodyPara>
+            After finalizing how the application would be structured with their team we moved onto creating the layout and features of the page. Once again from the analytics team a key point was that
+            majority of their traffic was on mobile. Something that the previous application neglected to take into consideration.
+            <br /> <br />
+            The low fidelity wireframes would receive a lot of feedback through our back and forth with their team. Through this we were eventually able to land on a low fidelity wireframe prototype
+            that satisfied their needs.
+          </BodyPara>
+          <SubHeader color="#595A4A" listSub margin="30px 0 0">
+            Registration Flow
+          </SubHeader>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 30px 0"}
+            width={"100%%"}
+            MobWidth={"135%"}
+            single
+            data={regFlow}
+            onClick={() => {
+              lightBoxHandler(regFlow, "");
+            }}
+          ></ProjectImg>
+          <SubHeader color="#595A4A" listSub margin="30px 0 0">
+            Main Pages
+          </SubHeader>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 30px 0"}
+            width={"100%%"}
+            MobWidth={"135%"}
+            single
+            data={mainPages}
+            onClick={() => {
+              lightBoxHandler(mainPages, "");
+            }}
+          ></ProjectImg>
+          <SubHeader color="#595A4A" listSub margin="30px 0 0">
+            User Subscription Management Flow
+          </SubHeader>
+          <BodyPara margin="0 0 123px">
+            Goodehealth's product mainly falls under a subscription model. Their subscription based products use Shopify's and its associated plug-ins. Knowing that there maybe limitations, I
+            contacted the developers to get a specific view on what we could offer the user.
+            <br /> <br />
+            Goals with the design were that we would replicate the current features offered, while broadening the actions available to the user.
+          </BodyPara>
+          <WrapperCol row>
+            <div>
+              <SubHeader color="#595A4A">Features List</SubHeader>
+              <BodyPara fontWeight="500" margin="0 15px 0 0">
+                <strong>Subscription:</strong>
+                <br />
+                Cancel subscription
+                <br />
+                Activate subscription
+                <br />
+                Change subscription interval
+                <br />
+                Skip a subscription cycle
+                <br />
+                <br />
+                <strong>Products</strong>
+                <br />
+                Swap product variant
+                <br />
+                Add onetime products to next charge
+                <br />
+                <br />
+                <strong>Payment Details</strong>
+                <br />
+                Change address
+                <br />
+                Change next charge date
+              </BodyPara>
+            </div>
+            <ProjectImg
+              noBorder
+              width={"100%%"}
+              MobWidth={"135%"}
+              single
+              data={features}
+              onClick={() => {
+                lightBoxHandler(features, "");
+              }}
+            ></ProjectImg>
+          </WrapperCol>
+        </Section>
+        <Section>
+          <Header>Phase Two:</Header>
+          <SubHeader color="#595A4A" margin="40px 0 28px">
+            Design System
+          </SubHeader>
+          <BodyPara>
+            It was here where our team would set out to create a design system. This was mainly handled by my design team member YP with feedback based on various teams members such as developers, me
+            and some of the Goodehealth team. She created a sleek modern design system that matched modern day health applications while tying in aspects of their own branding.
+            <br />
+            <br />
+            This system would help us easily iterate upon any pages or features that were missed in the original design planning phase. We also wanted to offer the developers a few pointers within the
+            system. We included grid systems, components, modals, and much more with annotated captions.
+            <br /> <br />
+            During this phase we also were able to create concreate design components that were more ambiguous during the low fidelity wireframe stage. One thing we wanted to nail was navigation.
           </BodyPara>
           <ProjectImg
             noBorder
-            margin={"55px 0 0 0"}
-            width={"75%"}
+            margin={"55px 0 28px"}
+            width={"100%"}
             MobWidth={"100%"}
             single
-            data={images[10].src}
+            data={designSys}
             onClick={() => {
-              lightBoxHandler(images[10].src, "");
+              lightBoxHandler(designSys, "");
+            }}
+          />
+          <BodyPara>
+            Navigation can be a bit challenging on a browser application as different mobile devices allow for different allowances to the top bar. We ended up with a bar that would follow the user
+            and hide itself when not interacted with.
+          </BodyPara>
+          <SubHeader color="#595A4A" margin="40px 0 28px">
+            Feedback
+          </SubHeader>
+          <BodyPara>
+            It was here where we also got in touch with the developers to make sure our "score" design would translate well into how they were implementing the logic on the code side. We were able to
+            hash it out through slack and a few calls.
+            <br /> <br />
+            We consulted with the Goodehealth team, presenting a high fidelity prototype to them. From here we got some feedback that aligned with their business goals. We implemented these changes
+            easily thanks to the design system.
+          </BodyPara>
+          <SubHeader color="#595A4A" margin="40px 0">
+            Original vs Redesigns
+          </SubHeader>
+          <SubHeader color="#595A4A" margin="0 0 30px">
+            Subscription Management
+          </SubHeader>
+          <BodyPara>
+            The subscription management flow was a part of the overall redesign that I had personal impact on. The original design had a lot of glaring issues from a usability stand point.
+          </BodyPara>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 28px"}
+            width={"100%"}
+            MobWidth={"100%"}
+            single
+            data={subMang}
+            onClick={() => {
+              lightBoxHandler(subMang, "");
+            }}
+          />
+          <SubHeader color="#595A4A" margin="0 0 30px">
+            Health Score
+          </SubHeader>
+          <ProjectImg
+            noBorder
+            margin={"35px 0 60px"}
+            width={"100%"}
+            MobWidth={"100%"}
+            single
+            data={healthScore}
+            onClick={() => {
+              lightBoxHandler(healthScore, "");
+            }}
+          />
+          <SubHeader color="#595A4A" margin="0 0 30px">
+            Biomarker Trends Visualization
+          </SubHeader>
+          <ProjectImg
+            noBorder
+            margin={"35px 0 28px"}
+            width={"90%"}
+            MobWidth={"100%"}
+            single
+            data={bio}
+            onClick={() => {
+              lightBoxHandler(bio, "");
             }}
           />
         </Section>
         <Section>
-          <Header>High Fidelity Prototype</Header>
-          <ProjectImg noBorder margin={"55px 0 0 0"} width={"75%"} MobWidth={"100%"} single data={images[11].src} />
+          <Header margin="0 0 20px">Final Application Designs</Header>
+          <BodyPara margin="0 0 30px">In the end there were many flows mapped out in our Figma document. The product is fully designed and ready to ship.</BodyPara>
+          <ProjectImg noBorder margin={"55px 0 90px 0"} width={"100%"} MobWidth={"100%"} single data={final} />
         </Section>
         <Section padding={"0 0 90px 0"} margin={"40px 0 0 0"}>
           <Header margin={"0 0 20px 0"}>Takeaways</Header>
-          <SubHeader margin={"20px 0 0 0"}>Being the listener</SubHeader>
+          <SubHeader margin={"20px 0 0 0"}>Constraints</SubHeader>
           <BodyPara margin={"20px 0 0 0"}>
-            Conducting remote interviews really put me on the spot, but I was able to find my footing. I did my best to let conversations free-flow so I could gain unique insights from each of my
-            interviews. Often I would get similar opinions but frustrations that varied. Each interview provided me with new perspectives that I could incorporate into our brain-storming.
+            There were some limitations during this design process. One being that since this was a complete overhaul of their application the timeline was a bit tight in my opinion. Personally I
+            would've liked a few extra weeks for the initial design phase to hammer out some issues that were eventually solved in phase 2. This was totally expected as we're not a large team, and
+            that we had a deadline to reach.
+            <br />
+            <br />
+            Having a tight timeline was also the reason we weren't able to conduct usability testing in the wild. As we are still working with the Goodehealth team and the product is still under going
+            launch it is not out of the question. I hope to reaffirm the design decisions we made in the process in the future.
+            <br /> <br />
+            That being said I personally learned I should voice my opinion more during design sprints. Especially if I feel as if we needed more time.
+            <br />
+            <br />
+            Overall I was very satisfied with the final product we were able to deliver. I learned a lot in terms of what to take into consideration when designing for the web. Working with a solid
+            team of developers that had great communication. I was able to bug them about specifics and always get a detailed and informative answer.
           </BodyPara>
-          <SubHeader margin={"20px 0 0 0"}>For next time</SubHeader>
-          <BodyPara margin={"20px 0 0 0"}>
-            I would've liked to expand more on the feature set of collaboration amongst students. It was a reoccurring paint point that I felt we could've addressed better if we had more time.
-          </BodyPara>
-          <BackBtn margin={"55px 0 0 0"} btnCol={"#1DB954"}></BackBtn>
+
+          <BackBtn margin={"55px 0 0 0"} btnCol={"#004161"}></BackBtn>
         </Section>
       </CaseContainer>
     </MainContainer>

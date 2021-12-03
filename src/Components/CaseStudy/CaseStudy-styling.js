@@ -35,7 +35,7 @@ export const Banner = styled.div`
 
 export const BodyPara = styled.p`
   margin: ${(props) => props.margin};
-  font-weight: 400;
+  font-weight: ${(props) => props.fontWeight || 400};
   padding-top: 12px;
   line-height: 150%;
   font-size: clamp(14px, 1.5vw, 18px);
@@ -59,6 +59,7 @@ export const SubHeader = styled.h2`
   margin: ${(props) => props.margin};
   color: ${(props) => (props.blue ? "var(--main-blue)" : props.color || "var(--main-txt-colour)")};
   margin: ${(props) => props.margin};
+  font-weight: ${(props) => (props.listSub ? 500 : 600)};
   font-size: ${(props) => (props.listSub ? "clamp(1em, 1.5vw, 1.25em)" : "clamp(18px, 1.5vw, 22px)")};
 `;
 

@@ -28,7 +28,7 @@ const outro = { duration: 1.25, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const GoodeHealth = ({ lightBoxHandler }) => {
   useEffect(() => {
-    docTitleUpdate("| Trac Case Study");
+    docTitleUpdate("| GoodeHealth Case Study");
   });
 
   return (

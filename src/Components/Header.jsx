@@ -29,24 +29,16 @@ function Header() {
     <header>
       <div className="headerMain">
         <Link to="/" className="headerLogo">
-          <Dlogo src={Logo} alt={"Logo"} />
+          derman sultan
         </Link>
         <nav>
-          <Link
-            to="/About"
-            onClick={() => gaClickHandler("About me was clicked")}
-          >
+          <Link to="/About" onClick={() => gaClickHandler("About me was clicked")}>
             About Me
           </Link>
           <HashLink smooth to="/#projects">
             Work
           </HashLink>
-          <a
-            href="https://drive.google.com/file/d/14IzreAWqx-epNf9E1EFd-LYWfenWPV8g/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => gaClickHandler("Resume was clicked")}
-          >
+          <a href="https://drive.google.com/file/d/14IzreAWqx-epNf9E1EFd-LYWfenWPV8g/view?usp=sharing" target="_blank" rel="noopener noreferrer" onClick={() => gaClickHandler("Resume was clicked")}>
             Resume
           </a>
         </nav>

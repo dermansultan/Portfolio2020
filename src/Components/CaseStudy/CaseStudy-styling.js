@@ -63,6 +63,9 @@ export const Header = styled.h1`
   margin: ${(props) => props.margin};
   font-size: clamp(30px, 1.5vw, 75px);
   color: ${(props) => props.color || "var(--main-txt-colour)"};
+  @media screen and (max-width: 768px) {
+    text-align: ${(props) => props.textAlign || "left"};
+  }
 `;
 
 export const SubHeader = styled.h2`
@@ -136,7 +139,7 @@ export const ProjectImg = styled.object`
   align-self: ${(props) => (props.single ? "center" : "")};
   box-shadow: ${(props) => (props.shadow ? "0px 4px 4px rgba(180, 180, 180, 0.7)" : "")};
   border-radius: ${(props) => props.borderRad};
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     width: ${(props) => props.MobWidth};
     margin: ${(props) => props.MobMargin};
   }

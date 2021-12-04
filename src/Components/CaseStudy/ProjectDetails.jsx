@@ -90,15 +90,20 @@ function ProjectDetails(props) {
     // console.log(`${name} was clicked!`);
   };
 
-  const namelist = props.namelist.map((name) => <Detailsitem>{name}</Detailsitem>);
+  const namelist = props.namelist.map((name) => (
+    <Detailsitem>{name}</Detailsitem>
+  ));
 
   if (props.codeProject) {
     return (
       <DetailsWrapper>
         {props.demoLink && (
           <a href={props.demoLink} target="_blank">
-            <ProtoBtn btnCol={props.btnCol} onClick={() => gaClickHandler(props.name)}>
-              Demo + Live Code
+            <ProtoBtn
+              btnCol={props.btnCol}
+              onClick={() => gaClickHandler(props.name)}
+            >
+              Live Application
             </ProtoBtn>
           </a>
         )}
@@ -127,7 +132,10 @@ function ProjectDetails(props) {
       <DetailsWrapper>
         {props.demoLink && (
           <a href={props.demoLink} target="_blank">
-            <ProtoBtn btnCol={props.btnCol} onClick={() => gaClickHandler(props.name)}>
+            <ProtoBtn
+              btnCol={props.btnCol}
+              onClick={() => gaClickHandler(props.name)}
+            >
               Live Prototype
             </ProtoBtn>
           </a>

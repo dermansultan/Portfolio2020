@@ -68,6 +68,9 @@ const GoodeHealth = ({ lightBoxHandler }) => {
           team={"Lumber Team (+ Me) Goodehealth Team"}
           namelist={["Lumber Team (+ Me)", "Goodehealth Team"]}
           duration={"4 months"}
+          demoLink="https://app.goodehealth.com/"
+          btnCol="#004061"
+          codeProject
         ></ProjectDetails>
         <Section>
           <Header>Context</Header>

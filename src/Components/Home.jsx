@@ -15,7 +15,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as MyPalate } from "../Img/caseStudies/MyPalate/mypalate.svg";
 import { ReactComponent as Trac } from "../Img/caseStudies/Trac/trac.svg";
 import { ReactComponent as Ruma } from "../Img/caseStudies/Ruma/ruma.svg";
-import { ReactComponent as Lumber } from "../Img/caseStudies/Lumber/lumber.svg";
+import lumber from "../Img/caseStudies/Lumber/lumber.png";
 import { device } from "../theme";
 
 const hover = keyframes`
@@ -181,7 +181,11 @@ const Btn = styled.button`
   width: 300px;
   height: 55px;
   cursor: pointer;
-  background: linear-gradient(90deg, #1882ff 0%, rgba(24, 130, 255, 0.76) 103.03%);
+  background: linear-gradient(
+    90deg,
+    #1882ff 0%,
+    rgba(24, 130, 255, 0.76) 103.03%
+  );
   border-radius: 52px;
   transition: transform 0.2s; /* Animation */
 
@@ -233,7 +237,13 @@ const Home = () => {
   return (
     <>
       <div className="mainContainer">
-        <motion.div exit={{ opacity: 0, transition: { outro } }} transition={intro} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="homeContainer">
+        <motion.div
+          exit={{ opacity: 0, transition: { outro } }}
+          transition={intro}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="homeContainer"
+        >
           <HeroContainer>
             <GreetingBio>
               <Header>Hello there.</Header>
@@ -242,11 +252,19 @@ const Home = () => {
                 <Span fColor={"#1882FF"} fWeight={"bold"}>
                   Product Designer
                 </Span>{" "}
-                with a passion for creating elegant and intuitive experiences through Design and Code.
+                with a passion for creating elegant and intuitive experiences
+                through Design and Code.
               </IntroPara>
               <HashLink smooth to="/#projects">
-                <Btn margin={"55px 0 0 0"} onClick={() => gaClickHandler("My work was clicked.")}>
-                  My Work <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: "15px" }} />
+                <Btn
+                  margin={"55px 0 0 0"}
+                  onClick={() => gaClickHandler("My work was clicked.")}
+                >
+                  My Work{" "}
+                  <FontAwesomeIcon
+                    icon={faChevronDown}
+                    style={{ marginLeft: "15px" }}
+                  />
                 </Btn>
               </HashLink>
             </GreetingBio>
@@ -277,21 +295,27 @@ const Home = () => {
             titleCol={"#124561"}
             roles={["UX/UI Design"]}
             roleCol={"#505050"}
-            desc={"An overhaul to a client of Lumber’s - Goodehealth’s original dashboard with the goal of increasing user retention and conversion."}
+            desc={
+              "An overhaul to a client of Lumber’s - Goodehealth’s original dashboard with the goal of increasing user retention and conversion."
+            }
             descCol={"#505050"}
             btnColor={"#FFFFFF"}
             btnBackCol={"#124561"}
             mainBackCol={"#FFFFFF"}
             projLink={"/GoodeHealth"}
             flexEnd
-            vector={<Lumber style={{ marginLeft: "90px" }} />}
+            vector={
+              <img src={lumber} style={{ marginLeft: "90px", height: "97%" }} />
+            }
           />
           <CaseCard
             title={"Trac"}
             titleCol={"#0040C9"}
             roles={["UX/UI Design", "User Research"]}
             roleCol={"#2F62CE"}
-            desc={"A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."}
+            desc={
+              "A personal management application that helps students keep track of tasks, deadlines and facilitate planning of group work."
+            }
             descCol={"#505050"}
             btnColor={"#FFFFFF"}
             btnBackCol={"#0040C9"}
@@ -306,7 +330,9 @@ const Home = () => {
             titleCol={"#23514F"}
             roles={["UX/UI Design"]}
             roleCol={"#23514F"}
-            desc={"A desktop app that aims to give families and friends a way to enjoy content together remotely."}
+            desc={
+              "A desktop app that aims to give families and friends a way to enjoy content together remotely."
+            }
             descCol={"#505050"}
             imgAlt={"Mockup of Ruma Application"}
             btnColor={"#FFFFFF"}

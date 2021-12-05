@@ -305,7 +305,10 @@ const Home = () => {
             projLink={"/GoodeHealth"}
             flexEnd
             vector={
-              <img src={lumber} style={{ marginLeft: "90px", height: "97%" }} />
+              <img
+                src={lumber}
+                style={{ height: "97%", maxWidth: "100%", objectFit: "cover" }}
+              />
             }
           />
           <CaseCard

@@ -362,7 +362,7 @@ const About = () => {
         <div className="aboutBio">
           <Dp src={dp} />
           <Header>
-            I’m Derman! <Wavespan>👋</Wavespan>
+            I’m Derman!
           </Header>
           <Spacer height={["10px", "20px", "41px", "81px"]}></Spacer>
 

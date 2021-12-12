@@ -579,7 +579,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
           <BodyPara>
             It was here where our team would set out to create a design system.
             This was mainly handled by my design team member YP with feedback
-            based on various teams members such as developers, me and some of
+            based on various teams members such as developers, myself and some of
             the Goodehealth team. She created a sleek modern design system that
             matched modern day health applications while tying in aspects of
             their own branding.

@@ -28,7 +28,9 @@ import { ReactComponent as Search } from "../Img/caseStudies/GoodeHealth/search.
 import { ReactComponent as Members } from "../Img/caseStudies/GoodeHealth/members.svg";
 import { ReactComponent as Analysis } from "../Img/caseStudies/GoodeHealth/analysis.svg";
 import informationArchitecture from "../Img/caseStudies/GoodeHealth/information_architecture.jpg";
+import informationArchitectureSVG from "../Img/caseStudies/GoodeHealth/information_architecture.svg";
 import informationArchitecture2 from "../Img/caseStudies/GoodeHealth/information_architecture2.jpg";
+import informationArchitectureSVG2 from "../Img/caseStudies/GoodeHealth/information_architecture2.svg";
 import regFlow from "../Img/caseStudies/GoodeHealth/reg_flow.png";
 import mainPages from "../Img/caseStudies/GoodeHealth/main_pages.png";
 import features from "../Img/caseStudies/GoodeHealth/features.png";
@@ -412,7 +414,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
         </Section>
         <Section>
           <SubHeader color="#595A4A">Information Architecture</SubHeader>
-          <BodyPara>
+          <BodyPara margin="0 0 80px">
             Before considering wireframes, we focused on the structure of the
             app given it's current issues.{" "}
             <strong>
@@ -423,7 +425,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               the end user.
             </strong>
           </BodyPara>
-          <BodyPara>
+          <BodyPara margin="0 0 80px">
             We ended up using a combination of mind-mapping and card sorting
             with our internal teams to create a structure. This structure
             eventually would take the form of a site map and user flow. We would
@@ -431,6 +433,48 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             with their team. During these calls we would learn more about the
             individual customers experience and the unique aspects of their
             product.
+          </BodyPara>
+          <BodyPara>
+            We took the raw aspects and data that were currently in the
+            application. We then categorized them on their utility. Here we
+            focused mainly on nouns and verbs represented by what the action or
+            thing would fall under.
+          </BodyPara>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 0 0"}
+            width={"150%"}
+            MobWidth={"100%"}
+            single
+            data={informationArchitectureSVG}
+            onClick={() => {
+              lightBoxHandler(informationArchitectureSVG, "");
+            }}
+          ></ProjectImg>
+          <BodyPara margin="150px 0 10px">
+            Once we had a structure going of the data we then further organized
+            it into the final structure that would be made into the site map.
+          </BodyPara>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 0 0"}
+            width={"130%"}
+            MobWidth={"100%"}
+            single
+            data={informationArchitectureSVG2}
+            onClick={() => {
+              lightBoxHandler(informationArchitectureSVG2, "");
+            }}
+          ></ProjectImg>
+          <BodyPara margin="70px 0 30px">
+            This structure would help inform the site map which would bridge the
+            gap between visualizing the overall product and the application we
+            were working on. Taking a bigger picture approach helped us really
+            understand the client’s business and goals.{" "}
+            <strong>
+              It was important to understand that the E-commerce shopify site
+              was also part of their ecosystem.
+            </strong>
           </BodyPara>
           <ProjectImg
             noBorder
@@ -591,7 +635,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             included grid systems, components, modals, and much more with
             annotated captions.
             <br /> <br />
-            During this phase we also were able to create concreate design
+            During this phase we also were able to create concrete design
             components that were more ambiguous during the low fidelity
             wireframe stage. One thing we wanted to nail was navigation.
           </BodyPara>
@@ -618,13 +662,15 @@ const GoodeHealth = ({ lightBoxHandler }) => {
           <BodyPara>
             It was here where we also got in touch with the developers to make
             sure our "score" design would translate well into how they were
-            implementing the logic on the code side. We were able to hash it out
-            through slack and a few calls.
+            implementing the logic on the code side.
             <br /> <br />
             We consulted with the Goodehealth team, presenting a high fidelity
-            prototype to them. From here we got some feedback that aligned with
-            their business goals. We implemented these changes easily thanks to
-            the design system.
+            prototype to them. From here we got some feedback that helped us
+            align on the logic of the score. We had lengthy calls with them
+            explaining the nuances of each individual biomarker and their
+            sections. It was nice to get a health professionals feedback and
+            input on this design, as it was something I wasn’t totally educated
+            on. We implemented these changes easily thanks to the design system.
           </BodyPara>
           <SubHeader color="#595A4A" margin="40px 0">
             Original vs Redesigns
@@ -713,11 +759,11 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             <br />
             Having a tight timeline was also the reason we weren't able to
             conduct usability testing in the wild. As we are still working with
-            the Goodehealth team and the product is still under going launch it
-            is not out of the question.{" "}
+            the Goodehealth team and the product is freshly launched.{" "}
             <strong>
               I hope to reaffirm the design decisions we made in the process in
-              the future.
+              the future, as the next piece of the puzzle will be their
+              ecommerce site.
             </strong>
             <br /> <br />
             That being said I personally learned I should voice my opinion more

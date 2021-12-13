@@ -70,10 +70,12 @@ export const Header = styled.h1`
 
 export const SubHeader = styled.h2`
   margin: ${(props) => props.margin};
-  color: ${(props) => (props.blue ? "var(--main-blue)" : props.color || "var(--main-txt-colour)")};
+  color: ${(props) =>
+    props.blue ? "var(--main-blue)" : props.color || "var(--main-txt-colour)"};
   margin: ${(props) => props.margin};
   font-weight: ${(props) => (props.listSub ? 500 : 600)};
-  font-size: ${(props) => (props.listSub ? "clamp(1em, 1.5vw, 1.25em)" : "clamp(18px, 1.5vw, 22px)")};
+  font-size: ${(props) =>
+    props.listSub ? "clamp(1em, 1.5vw, 1.25em)" : "clamp(18px, 1.5vw, 22px)"};
 `;
 
 export const WrapperCol = styled.div`
@@ -137,7 +139,8 @@ export const ProjectImg = styled.object`
   height: auto;
   border: ${(props) => (props.noBorder ? "none" : "1px solid #252a41")};
   align-self: ${(props) => (props.single ? "center" : "")};
-  box-shadow: ${(props) => (props.shadow ? "0px 4px 4px rgba(180, 180, 180, 0.7)" : "")};
+  box-shadow: ${(props) =>
+    props.shadow ? "0px 4px 4px rgba(180, 180, 180, 0.7)" : ""};
   border-radius: ${(props) => props.borderRad};
   @media only screen and (max-width: 768px) {
     width: ${(props) => props.MobWidth};

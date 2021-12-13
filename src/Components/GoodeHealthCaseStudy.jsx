@@ -762,8 +762,8 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             the Goodehealth team and the product is freshly launched.{" "}
             <strong>
               I hope to reaffirm the design decisions we made in the process in
-              the future, as the next piece of the puzzle will be their
-              ecommerce site.
+              the future (with usability testing), as the next piece of the
+              puzzle will be their ecommerce site.
             </strong>
             <br /> <br />
             That being said I personally learned I should voice my opinion more

@@ -397,11 +397,6 @@ const About = () => {
           </Para>
           <Spacer height={["20px", "30px", "40px", "50px"]}></Spacer>
 
-          <Para>
-            I'm currently in my third year of my Interaction Design degree at
-            Sheridan College. I am seeking Summer 2022 internship opportunities.
-          </Para>
-          <Spacer height={["20px", "30px", "40px", "50px"]}></Spacer>
 
           <Para>
             When I'm not messing around with design you can find me looking at

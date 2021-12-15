@@ -69,7 +69,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
           tools={"Figma"}
           team={"Lumber Team (+ Me) Goodehealth Team"}
           namelist={["Lumber Team (+ Me)", "Goodehealth Team"]}
-          duration={"4 months"}
+          duration={"4 months (Ongoing)"}
           demoLink="https://app.goodehealth.com/"
           btnCol="#004061"
           codeProject
@@ -105,7 +105,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               Goodehealth's main goal is to provide a personalized health
               experience that is approachable to a non health savvy audience.
             </strong>{" "}
-            The application broad scope ranges from educating the user how to
+            The application's broad scope ranges from educating the user how to
             improve their health, recommending them purchases from their product
             lines and finally a way to visual the data the lab tests give to the
             users.
@@ -173,7 +173,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             case study.
             <br />
             <br />
-            But during this phase calls with the developers better helped me
+            But during this phase, calls with the developers better helped me
             contextualize the limitations we could face with aspects of the
             application.{" "}
             <strong>
@@ -520,7 +520,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
           <SubHeader color="#595A4A">Low Fidelity Wireframes</SubHeader>
           <BodyPara>
             After finalizing how the application would be structured with their
-            team we moved onto creating the layout and features of the page.
+            team we moved onto creating the layout and features of the pages.
             Once again from the analytics team a key point was that majority of
             their traffic was on mobile. Something that the previous application
             neglected to take into consideration.

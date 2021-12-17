@@ -28,9 +28,10 @@ import { ReactComponent as Search } from "../Img/caseStudies/GoodeHealth/search.
 import { ReactComponent as Members } from "../Img/caseStudies/GoodeHealth/members.svg";
 import { ReactComponent as Analysis } from "../Img/caseStudies/GoodeHealth/analysis.svg";
 import informationArchitecture from "../Img/caseStudies/GoodeHealth/information_architecture.jpg";
-import informationArchitectureSVG from "../Img/caseStudies/GoodeHealth/information_architecture.svg";
 import informationArchitecture2 from "../Img/caseStudies/GoodeHealth/information_architecture2.jpg";
-import informationArchitectureSVG2 from "../Img/caseStudies/GoodeHealth/information_architecture2.svg";
+import infoArch1 from "../Img/caseStudies/GoodeHealth/infoArch1.svg";
+import infoArch2 from "../Img/caseStudies/GoodeHealth/infoArch2.svg";
+import infoArch3 from "../Img/caseStudies/GoodeHealth/infoArch3.svg";
 import regFlow from "../Img/caseStudies/GoodeHealth/reg_flow.png";
 import mainPages from "../Img/caseStudies/GoodeHealth/main_pages.png";
 import features from "../Img/caseStudies/GoodeHealth/features.png";
@@ -434,6 +435,17 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             individual customers experience and the unique aspects of their
             product.
           </BodyPara>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 100px 0"}
+            width={"70%"}
+            MobWidth={"100%"}
+            single
+            data={infoArch1}
+            onClick={() => {
+              lightBoxHandler(infoArch1, "");
+            }}
+          ></ProjectImg>
           <BodyPara>
             We took the raw aspects and data that were currently in the
             application. We then categorized them on their utility. Here we
@@ -446,9 +458,9 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             width={"150%"}
             MobWidth={"100%"}
             single
-            data={informationArchitectureSVG}
+            data={infoArch2}
             onClick={() => {
-              lightBoxHandler(informationArchitectureSVG, "");
+              lightBoxHandler(infoArch2, "");
             }}
           ></ProjectImg>
           <BodyPara margin="150px 0 10px">
@@ -461,9 +473,9 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             width={"130%"}
             MobWidth={"100%"}
             single
-            data={informationArchitectureSVG2}
+            data={infoArch3}
             onClick={() => {
-              lightBoxHandler(informationArchitectureSVG2, "");
+              lightBoxHandler(infoArch3, "");
             }}
           ></ProjectImg>
           <BodyPara margin="70px 0 30px">

@@ -24,7 +24,6 @@ export const Banner = styled.div`
   background-size: 150%;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: ${(props) => props.bgColor};
   border: 0;
   width: 100%;
   background-size: cover;
@@ -37,6 +36,7 @@ export const Banner = styled.div`
   margin-right: -50vw;
   @media (max-width: 900px) {
     background-size: ${(props) => props.mobSize || "cover"};
+    background-color: ${(props) => props.bgColor};
   }
 `;
 

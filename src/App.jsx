@@ -16,6 +16,8 @@ import styled from "styled-components";
 import { createBrowserHistory } from "history";
 import ReactGa from "react-ga";
 import GoodeHealth from "./Components/GoodeHealthCaseStudy";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 
 const LightBoxWrapper = styled.div`
   position: fixed;
@@ -47,8 +49,9 @@ const LightBoxContent = styled.div`
 `;
 
 const LightBoxImg = styled.img`
-  width: 60%;
-  height: auto;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
   @media only screen and (max-width: 700px) {
     width: 95%;
   }
@@ -85,23 +88,26 @@ function App() {
   };
 
   const lightBoxHandler = (img, cap) => {
-    setLightBox({ image: img, caption: cap });
-    toggleLightBox();
+    setImage(img);
+    setIsOpen(true);
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [image, setImage] = useState(false);
+  useEffect(() => {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [isOpen]);
   return (
     <div className="App">
-      <LightBoxWrapper
-        id="lightBoxElem"
-        onClick={() => {
-          toggleLightBox();
-        }}
-        style={{ display: "none" }}
-      >
-        <LightBoxContent>
-          <LightBoxImg src={lightBox.image} />
-          <LightBoxCaption>{lightBox.caption}</LightBoxCaption>
-        </LightBoxContent>
-      </LightBoxWrapper>
+      {isOpen && (
+        <Lightbox
+          mainSrc={image}
+          onCloseRequest={() => setIsOpen(false)}
+          imagePadding="50"
+        />
+      )}
       <Router basename="/">
         <ScrollToTop />
         <Header></Header>
@@ -110,7 +116,12 @@ function App() {
             <AnimatePresence exitBeforeEnter>
               <Switch location={location} key={location.pathname}>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/About" component={About} title="About Page" />
+                <Route
+                  exact
+                  path="/About"
+                  component={About}
+                  title="About Page"
+                />
                 <Route exact path="/Ruma">
                   <Ruma lightBoxHandler={lightBoxHandler}></Ruma>
                 </Route>

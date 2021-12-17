@@ -29,9 +29,9 @@ import { ReactComponent as Members } from "../Img/caseStudies/GoodeHealth/member
 import { ReactComponent as Analysis } from "../Img/caseStudies/GoodeHealth/analysis.svg";
 import informationArchitecture from "../Img/caseStudies/GoodeHealth/information_architecture.jpg";
 import informationArchitecture2 from "../Img/caseStudies/GoodeHealth/information_architecture2.jpg";
-import infoArch1 from "../Img/caseStudies/GoodeHealth/infoArch1.svg";
-import infoArch2 from "../Img/caseStudies/GoodeHealth/infoArch2.svg";
-import infoArch3 from "../Img/caseStudies/GoodeHealth/infoArch3.svg";
+import infoArch1 from "../Img/caseStudies/GoodeHealth/infoArch1.png";
+import infoArch2 from "../Img/caseStudies/GoodeHealth/infoArch2.png";
+import infoArch3 from "../Img/caseStudies/GoodeHealth/infoArch3.png";
 import regFlow from "../Img/caseStudies/GoodeHealth/reg_flow.png";
 import mainPages from "../Img/caseStudies/GoodeHealth/main_pages.png";
 import features from "../Img/caseStudies/GoodeHealth/features.png";
@@ -126,11 +126,21 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             be recommended further steps to improve their overall health.
           </BodyPara>
           <WrapperCol row margin={"55px 0 0 0"}>
-            <img src={dashboard} width="100%" />
+            <img
+              src={dashboard}
+              width="100%"
+              onClick={() => lightBoxHandler(dashboard, "")}
+              style={{ cursor: "pointer" }}
+            />
           </WrapperCol>
           <Section margin="20px 0 0 0">
             <Header margin="0 0 30px 0">Timeline</Header>
-            <img src={timeline} width="100%" />
+            <img
+              src={timeline}
+              width="100%"
+              onClick={() => lightBoxHandler(timeline, "")}
+              style={{ cursor: "pointer" }}
+            />
           </Section>
           <Section margin="20px 0 0 0">
             <Header margin="0 0 30px 0">My Role</Header>
@@ -635,10 +645,10 @@ const GoodeHealth = ({ lightBoxHandler }) => {
           <BodyPara>
             It was here where our team would set out to create a design system.
             This was mainly handled by my design team member YP with feedback
-            based on various teams members such as developers, myself and some of
-            the Goodehealth team. She created a sleek modern design system that
-            matched modern day health applications while tying in aspects of
-            their own branding.
+            based on various teams members such as developers, myself and some
+            of the Goodehealth team. She created a sleek modern design system
+            that matched modern day health applications while tying in aspects
+            of their own branding.
             <br />
             <br />
             This system would help us easily iterate upon any pages or features

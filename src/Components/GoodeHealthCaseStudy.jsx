@@ -131,6 +131,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               width="100%"
               onClick={() => lightBoxHandler(dashboard, "")}
               style={{ cursor: "pointer" }}
+              loading="lazy"
             />
           </WrapperCol>
           <Section margin="20px 0 0 0">
@@ -139,6 +140,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               src={timeline}
               width="100%"
               onClick={() => lightBoxHandler(timeline, "")}
+              loading="lazy"
               style={{ cursor: "pointer" }}
             />
           </Section>
@@ -157,8 +159,8 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               it's customers and their key performance indicators.
             </BodyPara>
             <WrapperCol margin="77px 0" row gap="100px" MobMargin="20px 0">
-              <img src={lumber} width="50%" />
-              <img src={gh} width="50%" />
+              <img src={lumber} width="50%" loading="lazy" />
+              <img src={gh} width="50%" loading="lazy" />
             </WrapperCol>
             <BodyPara>
               I would also collaborate with our own team's developers to ensure
@@ -505,9 +507,6 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             MobWidth={"100%"}
             single
             data={informationArchitecture}
-            onClick={() => {
-              lightBoxHandler(informationArchitecture, "");
-            }}
           ></ProjectImg>
           <BodyPara margin="30px 0 0">
             Having a site map and a user flow may seemed kind of odd at first,
@@ -524,9 +523,6 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             MobWidth={"100%"}
             single
             data={informationArchitecture2}
-            onClick={() => {
-              lightBoxHandler(informationArchitecture2, "");
-            }}
           ></ProjectImg>
           <BodyPara margin="30px 0 0">
             Goodehealth's product has a physical part to it (the blood test kit,
@@ -668,9 +664,6 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             MobWidth={"100%"}
             single
             data={designSys}
-            onClick={() => {
-              lightBoxHandler(designSys, "");
-            }}
           />
           <BodyPara>
             Navigation can be a bit challenging on a browser application as
@@ -762,6 +755,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             MobWidth={"100%"}
             single
             data={final}
+            onClick={() => lightBoxHandler(final, "")}
           />
         </Section>
         <Section padding={"0 0 90px 0"} margin={"40px 0 0 0"}>

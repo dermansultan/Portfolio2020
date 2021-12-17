@@ -105,7 +105,7 @@ function App() {
         <Lightbox
           mainSrc={image}
           onCloseRequest={() => setIsOpen(false)}
-          imagePadding="70"
+          imagePadding="50"
         />
       )}
       <Router basename="/">

@@ -1,7 +1,7 @@
 import ProjectDetails from "./CaseStudy/ProjectDetails";
 import { docTitleUpdate } from "./docTitleUpdate";
 import React, { useEffect } from "react";
-import ghBanner from "../Img/goodehealth.jpg";
+import ghBanner from "../Img/goodehealth2.jpg";
 import ProjectQuote from "../Components/CaseStudy/ProjectQuote";
 import {
   CaseContainer,
@@ -18,7 +18,6 @@ import {
   ProjectImg,
   SpanPara,
 } from "./CaseStudy/CaseStudy-styling";
-import images from "../Img/caseStudies/Trac/image";
 import BackBtn from "./CaseStudy/BackToProjectsBtn";
 import dashboard from "../Img/caseStudies/GoodeHealth/ghDashboard.jpg";
 import timeline from "../Img/caseStudies/GoodeHealth/timeline.png";

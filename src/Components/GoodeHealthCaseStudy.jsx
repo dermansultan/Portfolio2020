@@ -107,7 +107,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             </strong>{" "}
             The application's broad scope ranges from educating the user how to
             improve their health, recommending them purchases from their product
-            lines and finally a way to visual the data the lab tests give to the
+            lines and finally a way to visualize the data the lab tests give to the
             users.
           </BodyPara>
         </Section>

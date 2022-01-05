@@ -1,7 +1,7 @@
 import ProjectDetails from "./CaseStudy/ProjectDetails";
 import { docTitleUpdate } from "./docTitleUpdate";
 import React, { useEffect } from "react";
-import ghBanner from "../Img/goodehealth.jpg";
+import ghBanner from "../Img/goodehealth2.jpg";
 import ProjectQuote from "../Components/CaseStudy/ProjectQuote";
 import {
   CaseContainer,
@@ -18,7 +18,6 @@ import {
   ProjectImg,
   SpanPara,
 } from "./CaseStudy/CaseStudy-styling";
-import images from "../Img/caseStudies/Trac/image";
 import BackBtn from "./CaseStudy/BackToProjectsBtn";
 import dashboard from "../Img/caseStudies/GoodeHealth/ghDashboard.jpg";
 import timeline from "../Img/caseStudies/GoodeHealth/timeline.png";
@@ -28,9 +27,10 @@ import { ReactComponent as Search } from "../Img/caseStudies/GoodeHealth/search.
 import { ReactComponent as Members } from "../Img/caseStudies/GoodeHealth/members.svg";
 import { ReactComponent as Analysis } from "../Img/caseStudies/GoodeHealth/analysis.svg";
 import informationArchitecture from "../Img/caseStudies/GoodeHealth/information_architecture.jpg";
-import informationArchitectureSVG from "../Img/caseStudies/GoodeHealth/information_architecture.svg";
 import informationArchitecture2 from "../Img/caseStudies/GoodeHealth/information_architecture2.jpg";
-import informationArchitectureSVG2 from "../Img/caseStudies/GoodeHealth/information_architecture2.svg";
+import infoArch1 from "../Img/caseStudies/GoodeHealth/infoArch1.png";
+import infoArch2 from "../Img/caseStudies/GoodeHealth/infoArch2.png";
+import infoArch3 from "../Img/caseStudies/GoodeHealth/infoArch3.png";
 import regFlow from "../Img/caseStudies/GoodeHealth/reg_flow.png";
 import mainPages from "../Img/caseStudies/GoodeHealth/main_pages.png";
 import features from "../Img/caseStudies/GoodeHealth/features.png";
@@ -125,11 +125,23 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             be recommended further steps to improve their overall health.
           </BodyPara>
           <WrapperCol row margin={"55px 0 0 0"}>
-            <img src={dashboard} width="100%" />
+            <img
+              src={dashboard}
+              width="100%"
+              onClick={() => lightBoxHandler(dashboard, "")}
+              style={{ cursor: "pointer" }}
+              loading="lazy"
+            />
           </WrapperCol>
           <Section margin="20px 0 0 0">
             <Header margin="0 0 30px 0">Timeline</Header>
-            <img src={timeline} width="100%" />
+            <img
+              src={timeline}
+              width="100%"
+              onClick={() => lightBoxHandler(timeline, "")}
+              loading="lazy"
+              style={{ cursor: "pointer" }}
+            />
           </Section>
           <Section margin="20px 0 0 0">
             <Header margin="0 0 30px 0">My Role</Header>
@@ -146,8 +158,8 @@ const GoodeHealth = ({ lightBoxHandler }) => {
               it's customers and their key performance indicators.
             </BodyPara>
             <WrapperCol margin="77px 0" row gap="100px" MobMargin="20px 0">
-              <img src={lumber} width="50%" />
-              <img src={gh} width="50%" />
+              <img src={lumber} width="50%" loading="lazy" />
+              <img src={gh} width="50%" loading="lazy" />
             </WrapperCol>
             <BodyPara>
               I would also collaborate with our own team's developers to ensure
@@ -434,6 +446,17 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             individual customers experience and the unique aspects of their
             product.
           </BodyPara>
+          <ProjectImg
+            noBorder
+            margin={"55px 0 100px 0"}
+            width={"70%"}
+            MobWidth={"100%"}
+            single
+            data={infoArch1}
+            onClick={() => {
+              lightBoxHandler(infoArch1, "");
+            }}
+          ></ProjectImg>
           <BodyPara>
             We took the raw aspects and data that were currently in the
             application. We then categorized them on their utility. Here we
@@ -446,9 +469,9 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             width={"150%"}
             MobWidth={"100%"}
             single
-            data={informationArchitectureSVG}
+            data={infoArch2}
             onClick={() => {
-              lightBoxHandler(informationArchitectureSVG, "");
+              lightBoxHandler(infoArch2, "");
             }}
           ></ProjectImg>
           <BodyPara margin="150px 0 10px">
@@ -461,9 +484,9 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             width={"130%"}
             MobWidth={"100%"}
             single
-            data={informationArchitectureSVG2}
+            data={infoArch3}
             onClick={() => {
-              lightBoxHandler(informationArchitectureSVG2, "");
+              lightBoxHandler(infoArch3, "");
             }}
           ></ProjectImg>
           <BodyPara margin="70px 0 30px">
@@ -483,9 +506,6 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             MobWidth={"100%"}
             single
             data={informationArchitecture}
-            onClick={() => {
-              lightBoxHandler(informationArchitecture, "");
-            }}
           ></ProjectImg>
           <BodyPara margin="30px 0 0">
             Having a site map and a user flow may seemed kind of odd at first,
@@ -502,9 +522,6 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             MobWidth={"100%"}
             single
             data={informationArchitecture2}
-            onClick={() => {
-              lightBoxHandler(informationArchitecture2, "");
-            }}
           ></ProjectImg>
           <BodyPara margin="30px 0 0">
             Goodehealth's product has a physical part to it (the blood test kit,
@@ -623,10 +640,10 @@ const GoodeHealth = ({ lightBoxHandler }) => {
           <BodyPara>
             It was here where our team would set out to create a design system.
             This was mainly handled by my design team member YP with feedback
-            based on various teams members such as developers, myself and some of
-            the Goodehealth team. She created a sleek modern design system that
-            matched modern day health applications while tying in aspects of
-            their own branding.
+            based on various teams members such as developers, myself and some
+            of the Goodehealth team. She created a sleek modern design system
+            that matched modern day health applications while tying in aspects
+            of their own branding.
             <br />
             <br />
             This system would help us easily iterate upon any pages or features
@@ -646,9 +663,6 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             MobWidth={"100%"}
             single
             data={designSys}
-            onClick={() => {
-              lightBoxHandler(designSys, "");
-            }}
           />
           <BodyPara>
             Navigation can be a bit challenging on a browser application as
@@ -740,6 +754,7 @@ const GoodeHealth = ({ lightBoxHandler }) => {
             MobWidth={"100%"}
             single
             data={final}
+            onClick={() => lightBoxHandler(final, "")}
           />
         </Section>
         <Section padding={"0 0 90px 0"} margin={"40px 0 0 0"}>

@@ -122,7 +122,8 @@ nav > a:hover {
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 1.75s steps(45, start), blink-caret 0.5s step-end infinite;
-  -moz-animation: typingFF 1.75s steps(45, start), blink-caret 0.5s step-end infinite;
+  -moz-animation: typingFF 1.75s steps(45, start),
+    blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
@@ -655,6 +656,10 @@ footer {
 }
 
 /* lightBox for Images */
+
+.ril__outer {
+  background-color: rgb(255, 255, 255, 85%) !important;
+}
 
 .lightBox.wrapper {
   position: fixed;

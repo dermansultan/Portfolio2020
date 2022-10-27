@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 :root {
-  --main-bg-colour: #f4f4f4;
+  --main-bg-colour: #191c22;
   --main-txt-colour: #363635;
   --second-txt-color: ##39393a;
   --main-blue: #1d66b9;
   --second-blue: #f3f6ff;
+}
+
+html {
+  background-color: var(--main-bg-colour);
 }
 
 * {
@@ -206,7 +210,6 @@ nav > a:hover {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 460px;
-  background-color: #fdfdfd;
 }
 
 @media screen and (max-width: 1024px) {

@@ -61,7 +61,7 @@ const IntroPara = styled.p`
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
-  width: 92%;
+  width: 62%;
   font-size: clamp(16px, 1.2vw, 48px);
   line-height: 175%;
   color: #343434;
@@ -76,8 +76,10 @@ const Header = styled.h1`
   font-weight: 700;
   font-size: clamp(50px, 3.25vw, 144px);
   line-height: 140%;
-  white-space: nowrap;
   color: #363635;
+  @media only screen and (max-width: 900px) {
+    line-height: 120%;
+  }
 `;
 
 const Subheader = styled.h2`
@@ -246,14 +248,10 @@ const Home = () => {
         >
           <HeroContainer>
             <GreetingBio>
-              <Header>Hello there.</Header>
+              <Header>Hello, I’m Derman</Header>
               <IntroPara margin={"15px 0 0 0"}>
-                I'm <Span fWeight={"bold"}>Derman</Span>, a{" "}
-                <Span fColor={"#1882FF"} fWeight={"bold"}>
-                  Product Designer
-                </Span>{" "}
-                with a passion for creating elegant and intuitive experiences
-                through Design and Code.
+                A Toronto based Product Designer with a passion for designing
+                elegant and intuitive data driven digital experiences.
               </IntroPara>
               <HashLink smooth to="/#projects">
                 <Btn

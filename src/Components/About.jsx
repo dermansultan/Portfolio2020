@@ -232,6 +232,7 @@ const Social = styled.div`
     position: relative;
     bottom: -60px;
     margin-left: 50px;
+    margin-right: 16px;
   }
 
   @media screen and ${device.smallDesktop} {
@@ -330,6 +331,7 @@ const Social = styled.div`
         gap: 20px;
         bottom: -25px;
         margin-left: 20px;
+        margin-right: 7px;
       }
     }
   }
@@ -366,7 +368,7 @@ const About = () => {
 
           <Para>
             <ParaSpan>An affinity for design and technology</ParaSpan> - I love
-            going out my way to find new ways to solve complex problems.
+            going out of my way to find new ways to solve complex problems.
           </Para>
           <Spacer height={["21px", "31px", "41px", "81px"]}></Spacer>
           <Para>
@@ -382,21 +384,10 @@ const About = () => {
           <Spacer height={["31px", "31px", "41px", "60px"]}></Spacer>
 
           <Para>
-            You can currently find me working at{" "}
-            <SpanLink
-              href="https://lumber.dev/"
-              target="_blank"
-              rel="noreferrer"
-              fColor={"#0051B0"}
-              fWeight={"bold"}
-            >
-              Lumber
-            </SpanLink>{" "}
-            where I help our clients better understand and solve their user’s
-            needs through design.
+            You can currently find me working as a Digital Design intern at
+            Shopify where I design data driven experiences for merchants.
           </Para>
           <Spacer height={["20px", "30px", "40px", "50px"]}></Spacer>
-
 
           <Para>
             When I'm not messing around with design you can find me looking at
@@ -406,8 +397,8 @@ const About = () => {
           <Spacer height={["20px", "30px", "40px", "50px"]}></Spacer>
 
           <Para>
-            I’m always looking for new ways to learn more, and expand
-            my abilities. Let's get connected below!
+            I’m always looking for new opportunities to learn more, and expand
+            my abilities.
           </Para>
           <Social>
             <div id="arrow">

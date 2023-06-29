@@ -384,15 +384,17 @@ const About = () => {
           <Spacer height={["31px", "31px", "41px", "60px"]}></Spacer>
 
           <Para>
-            You can currently find me working as a Digital Design intern at
-            Shopify where I design data driven experiences for merchants.
+            Throughout my career, I've had the opportunity to work on a variety of projects across different industries and disciplines, including supply chain management, data analysis, financial technology, e-commerce, and digital health and wellness.
           </Para>
           <Spacer height={["20px", "30px", "40px", "50px"]}></Spacer>
 
+                    <Para>
+I also have diverse experience working across a range of settings, including traditional agencies, start-ups, and global corporations, each offering unique challenges and opportunities for growth.
+                    </Para>
+          <Spacer height={["20px", "30px", "40px", "50px"]}></Spacer>
+
           <Para>
-            When I'm not messing around with design you can find me looking at
-            corgi pictures on Instagram, reading (mostly non-fiction), or
-            obsessing over the latest PC hardware.
+When I'm not designing, I love to stay active and exercise regularly. I'm also a foodie and love travelling! ✈️ 🍣
           </Para>
           <Spacer height={["20px", "30px", "40px", "50px"]}></Spacer>
 
